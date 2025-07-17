@@ -66,11 +66,11 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              About Little Stars
+              About Ec stem
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              For over 15 years, we've been dedicated to providing exceptional early childhood education 
-              in a nurturing, play-based environment where every child can thrive and discover their potential.
+              For over 15 years, we've been pioneering early childhood STEM education, 
+              creating innovative learning experiences where young minds explore, discover, and develop a lifelong love for learning.
             </p>
           </div>
         </div>
@@ -95,16 +95,17 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Mission</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To provide a safe, nurturing, and stimulating environment where young children 
-                    can develop their full potential through play-based learning, quality care, 
-                    and meaningful relationships.
+                    To provide innovative early childhood STEM education that nurtures curiosity, creativity, 
+                    and critical thinking, preparing young learners to become confident problem-solvers 
+                    and future innovators in our technology-driven world.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Vision</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be Singapore's leading preschool, raising confident, creative, and caring 
-                    individuals who are ready to shine bright in their educational journey and beyond.
+                    To be the leading early childhood STEM education center, inspiring the next generation 
+                    of scientists, engineers, and innovators through engaging, hands-on learning experiences 
+                    that spark lifelong passion for discovery.
                   </p>
                 </div>
               </div>
@@ -159,10 +160,10 @@ const About = () => {
                     A Message from Our Principal
                   </h2>
                   <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6 italic">
-                    "Every child who walks through our doors brings their own unique light. 
-                    Our role is to nurture that light, help it grow brighter, and guide each 
-                    little star to discover their own special way of shining. At Little Stars, 
-                    we don't just prepare children for school – we prepare them for life."
+                    "Every child is a natural scientist, engineer, and explorer. At Ec stem, 
+                    we nurture their innate curiosity and wonder about the world around them. 
+                    Through hands-on STEM experiences, we're not just teaching concepts – 
+                    we're inspiring the next generation of innovators and problem-solvers."
                   </blockquote>
                   <div>
                     <p className="font-semibold text-foreground">Mrs. Sarah Chen</p>
@@ -184,7 +185,7 @@ const About = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our passionate educators are the heart of Little Stars, bringing expertise, creativity, and genuine care to every interaction.
+              Our passionate STEM educators combine early childhood expertise with innovative teaching methods to make learning exciting and accessible.
             </p>
           </div>
 

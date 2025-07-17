@@ -45,7 +45,7 @@ const Navigation = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <span>hello@littlestars.edu.sg</span>
+              <span>hello@ecstem.edu.sg</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -63,11 +63,11 @@ const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <div className="bg-primary text-primary-foreground w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl">
-                LS
+                EC
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">Little Stars</h1>
-                <p className="text-sm text-muted-foreground">Preschool & Kindergarten</p>
+                <h1 className="text-xl font-bold text-foreground">Ec stem</h1>
+                <p className="text-sm text-muted-foreground">Early Childhood STEM</p>
               </div>
             </Link>
 

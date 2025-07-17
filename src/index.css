@@ -4,12 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Preschool Design System - Warm, friendly, and playful */
+/* STEM Preschool Design System - Vibrant, innovative, and educational */
 
 @layer base {
   :root {
-    /* Warm, preschool-friendly color palette */
-    --background: 49 100% 98%;
+    /* Clean, modern color palette inspired by STEM learning */
+    --background: 210 40% 98%;
     --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
@@ -18,37 +18,37 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Soft coral primary inspired by preschool warmth */
-    --primary: 14 90% 65%;
+    /* Vibrant blue primary inspired by technology and innovation */
+    --primary: 214 95% 52%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 14 100% 85%;
-    --primary-glow: 14 100% 95%;
+    --primary-light: 214 85% 75%;
+    --primary-glow: 214 95% 95%;
 
-    /* Soft sage secondary for balance */
-    --secondary: 120 30% 85%;
-    --secondary-foreground: 120 25% 25%;
-    --secondary-dark: 120 25% 65%;
+    /* Green secondary for growth and nature */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-dark: 142 60% 25%;
 
-    /* Warm cream for muted elements */
-    --muted: 45 50% 95%;
+    /* Light gray for muted elements */
+    --muted: 210 40% 96%;
     --muted-foreground: 215 15% 55%;
 
-    /* Soft sky blue for accents */
-    --accent: 200 85% 85%;
-    --accent-foreground: 200 50% 25%;
-    --accent-vibrant: 200 85% 65%;
+    /* Orange accent for creativity and energy */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+    --accent-vibrant: 25 95% 48%;
 
-    /* Gentle warning colors */
-    --destructive: 0 65% 55%;
+    /* Red for attention and important elements */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Warm sunshine yellow */
-    --sunshine: 45 100% 75%;
-    --sunshine-light: 45 100% 90%;
+    /* Bright yellow for innovation and discovery */
+    --sunshine: 48 100% 67%;
+    --sunshine-light: 48 100% 85%;
 
-    /* Soft lavender for special elements */
-    --lavender: 270 50% 85%;
-    --lavender-dark: 270 35% 65%;
+    /* Purple for creativity and imagination */
+    --lavender: 259 94% 51%;
+    --lavender-dark: 259 70% 40%;
 
     /* Borders and inputs */
     --border: 45 30% 90%;

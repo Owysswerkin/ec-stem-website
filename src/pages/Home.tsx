@@ -11,26 +11,26 @@ const Home = () => {
   const features = [
     {
       icon: Heart,
-      title: 'Loving Care',
-      description: 'Our nurturing environment ensures every child feels safe, loved, and valued.',
+      title: 'STEM Foundation',
+      description: 'Building strong foundations in Science, Technology, Engineering & Math through hands-on exploration.',
       color: 'bg-primary'
     },
     {
       icon: BookOpen,
-      title: 'Quality Education',
-      description: 'Research-based curriculum designed to develop critical thinking and creativity.',
+      title: 'Inquiry-Based Learning',
+      description: 'Encouraging curiosity and critical thinking through guided discovery and experimentation.',
       color: 'bg-accent-vibrant'
     },
     {
       icon: Users,
-      title: 'Small Class Sizes',
-      description: 'Low teacher-to-child ratios ensure personalized attention for every student.',
-      color: 'bg-secondary-dark'
+      title: 'Collaborative Projects',
+      description: 'Small group activities that foster teamwork, communication, and problem-solving skills.',
+      color: 'bg-secondary'
     },
     {
       icon: Play,
-      title: 'Play-Based Learning',
-      description: 'Learning through play promotes natural development and joy in discovery.',
+      title: 'Play-Based STEM',
+      description: 'Making STEM concepts accessible and fun through creative play and interactive learning.',
       color: 'bg-sunshine'
     }
   ];
@@ -71,11 +71,11 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-                Nurturing
-                <span className="block text-sunshine animate-bounce-gentle">Little Stars</span>
+                Inspiring Young
+                <span className="block text-sunshine animate-bounce-gentle">STEM Minds</span>
               </h1>
               <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
-                Where every child shines bright! Providing loving care and quality education 
+                Where curiosity meets discovery! Nurturing future innovators through early childhood STEM education 
                 for children aged 18 months to 6 years.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -107,10 +107,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why Choose Little Stars?
+              Why Choose Ec stem?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We believe every child is unique and deserves the best start in their educational journey.
+              We integrate Science, Technology, Engineering & Math into playful early childhood learning experiences.
             </p>
           </div>
           
