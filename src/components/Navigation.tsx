@@ -1,0 +1,134 @@
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Programmes', path: '/programmes' },
+    { name: 'Our Centres', path: '/centres' },
+    { name: 'Admissions', path: '/admissions' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
+  const isActive = (path: string) => location.pathname === path;
+
+  return (
+    <>
+      {/* Top Contact Bar */}
+      <div className="bg-primary text-primary-foreground py-2 px-4">
+        <div className="container mx-auto flex justify-between items-center text-sm">
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <Phone className="h-4 w-4" />
+              <span>+65 6234 5678</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Mail className="h-4 w-4" />
+              <span>hello@littlestars.edu.sg</span>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <span>Mon - Fri: 7:00 AM - 7:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
+      <nav className={`sticky top-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-card shadow-warm' : 'bg-card/95 backdrop-blur-sm'
+      }`}>
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center py-4">
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-3">
+              <div className="bg-primary text-primary-foreground w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl">
+                LS
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-foreground">Little Stars</h1>
+                <p className="text-sm text-muted-foreground">Preschool & Kindergarten</p>
+              </div>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-semibold transition-colors duration-200 ${
+                    isActive(item.path)
+                      ? 'text-primary border-b-2 border-primary pb-1'
+                      : 'text-foreground hover:text-primary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <Button variant="hero" size="sm" asChild>
+                <Link to="/admissions">Enroll Now</Link>
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="lg:hidden p-2 rounded-xl bg-muted text-foreground"
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="lg:hidden bg-card border-t shadow-warm">
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex flex-col space-y-4">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`text-base font-semibold transition-colors duration-200 py-2 ${
+                      isActive(item.path)
+                        ? 'text-primary border-l-4 border-primary pl-4'
+                        : 'text-foreground hover:text-primary pl-4'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <Button variant="hero" size="default" className="mt-4" asChild>
+                  <Link to="/admissions">Enroll Now</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
+    </>
+  );
+};
+
+export default Navigation;
