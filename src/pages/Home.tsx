@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import heroImage from '@/assets/hero-preschool.jpg';
@@ -8,51 +9,51 @@ import classroomImage from '@/assets/classroom-activities.jpg';
 import outdoorImage from '@/assets/outdoor-play.jpg';
 
 const Home = () => {
-  const features = [
+  const services = [
     {
-      icon: Heart,
-      title: 'STEM Foundation',
-      description: 'Building strong foundations in Science, Technology, Engineering & Math through hands-on exploration.',
+      icon: Zap,
+      title: 'Robotics Training',
+      description: 'Hands-on robotics workshops and training programs for young learners aged 3-6 years.',
       color: 'bg-primary'
     },
     {
-      icon: BookOpen,
-      title: 'Inquiry-Based Learning',
-      description: 'Encouraging curiosity and critical thinking through guided discovery and experimentation.',
+      icon: Cpu,
+      title: 'STEM Curriculum',
+      description: 'Comprehensive STEM programs designed specifically for early childhood development.',
       color: 'bg-accent-vibrant'
     },
     {
       icon: Users,
-      title: 'Collaborative Projects',
-      description: 'Small group activities that foster teamwork, communication, and problem-solving skills.',
+      title: 'Educator Training',
+      description: 'Professional development workshops for childcare educators to implement STEM activities.',
       color: 'bg-secondary'
     },
     {
-      icon: Play,
-      title: 'Play-Based STEM',
-      description: 'Making STEM concepts accessible and fun through creative play and interactive learning.',
+      icon: Lightbulb,
+      title: 'Program Consultation',
+      description: 'Custom STEM program design and implementation support for childcare centres.',
       color: 'bg-sunshine'
     }
   ];
 
   const programs = [
     {
-      title: 'Nursery (18 months - 3 years)',
-      description: 'Gentle introduction to structured learning with plenty of sensory exploration.',
+      title: 'Toddler STEM Discovery (18 months - 3 years)',
+      description: 'Age-appropriate STEM activities focusing on sensory exploration and basic concepts.',
       image: classroomImage,
-      highlights: ['Social skills', 'Motor development', 'Language basics']
+      highlights: ['Sensory STEM play', 'Basic cause-and-effect', 'Simple robotics toys']
     },
     {
-      title: 'Pre-K (3 - 4 years)',
-      description: 'Building foundation skills through creative activities and group interaction.',
+      title: 'Pre-K STEM Adventures (3 - 4 years)',
+      description: 'Interactive STEM learning through play-based activities and simple experiments.',
       image: outdoorImage,
-      highlights: ['Pre-literacy', 'Math concepts', 'Creative arts']
+      highlights: ['Basic coding concepts', 'Simple machines', 'Nature STEM exploration']
     },
     {
-      title: 'Kindergarten (4 - 6 years)',
-      description: 'Comprehensive preparation for primary school with advanced learning activities.',
+      title: 'Kindergarten STEM Labs (4 - 6 years)',
+      description: 'Advanced STEM activities including robotics, coding, and engineering challenges.',
       image: classroomImage,
-      highlights: ['Reading readiness', 'Problem solving', 'School preparation']
+      highlights: ['Robotics programming', 'Engineering design', 'Scientific method']
     }
   ];
 
@@ -63,7 +64,7 @@ const Home = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="Happy children learning" 
+            alt="Children engaged in STEM learning" 
             className="w-full h-full object-cover opacity-15"
           />
         </div>
@@ -78,12 +79,12 @@ const Home = () => {
             <div className="text-left">
               <div className="animate-fade-in">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 mb-6 leading-tight">
-                  Raising innovators
+                  Empowering childcare centres
                   <br />
-                  <span className="text-blue-600">of tomorrow</span>
+                  <span className="text-blue-600">with STEM excellence</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                  Heroes who think critically and solve problems creatively through STEM exploration.
+                  Professional STEM programs and robotics training designed specifically for early childhood centres across Singapore.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
@@ -93,7 +94,7 @@ const Home = () => {
                     asChild
                   >
                     <Link to="/programmes">
-                      Find out how
+                      Explore Our Services
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
@@ -103,7 +104,7 @@ const Home = () => {
                     className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg rounded-full"
                     asChild
                   >
-                    <Link to="/admissions">Register Interest</Link>
+                    <Link to="/contact">Get Quote</Link>
                   </Button>
                 </div>
               </div>
@@ -114,7 +115,7 @@ const Home = () => {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
                   src={heroImage} 
-                  alt="Children engaged in STEM learning" 
+                  alt="Children engaged in STEM learning with robotics" 
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
               </div>
@@ -128,45 +129,28 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Quick Access Cards */}
+      {/* Services Overview */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Experience Centres */}
-            <Card className="group text-center p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
-              <div className="w-20 h-20 mx-auto mb-6 bg-orange-100 rounded-2xl flex items-center justify-center">
-                <Users className="h-10 w-10 text-orange-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Experience our Centres</h3>
-              <p className="text-gray-600 mb-6">Visit our state-of-the-art STEM learning environments</p>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link to="/centres">Learn More</Link>
-              </Button>
-            </Card>
-
-            {/* STEM Programmes */}
-            <Card className="group text-center p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
-              <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center">
-                <BookOpen className="h-10 w-10 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">STEM Programmes</h3>
-              <p className="text-gray-600 mb-6">Discover our innovative early childhood STEM curriculum</p>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link to="/programmes">Learn More</Link>
-              </Button>
-            </Card>
-
-            {/* Find Centres */}
-            <Card className="group text-center p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
-              <div className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center">
-                <Trophy className="h-10 w-10 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Locate Centres</h3>
-              <p className="text-gray-600 mb-6">Find the most convenient location near you</p>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link to="/centres">Learn More</Link>
-              </Button>
-            </Card>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Our STEM Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive STEM solutions designed to enhance your childcare centre's educational offerings.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <Card key={index} className="group text-center p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
+                <div className={`w-20 h-20 mx-auto mb-6 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6">{service.description}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -176,17 +160,17 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Who we are
+              Why Choose Ec stem?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We are committed to providing the best care and education to young children in Singapore so parents, 
-              like you, can head to work with peace of mind. We do this well across multiple child care centres 
-              island-wide with clean and conducive learning spaces, a strong proprietary STEM curriculum and a team 
-              of passionate educators who will be partners in your parenting journey.
+              We are Singapore's leading provider of STEM education programs for early childhood centres. 
+              Our mission is to make quality STEM education accessible to every childcare centre, 
+              empowering educators with the tools and knowledge to inspire young minds.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Beyond that, we are committed to raising future innovators through early childhood STEM education 
-              that builds critical thinking, creativity, and problem-solving skills from an early age.
+              With over 50 partner centres across Singapore, we deliver age-appropriate robotics training, 
+              hands-on STEM workshops, and comprehensive educator development programs that transform 
+              how children engage with science, technology, engineering, and mathematics.
             </p>
             <Button 
               variant="default" 
@@ -205,10 +189,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Programs
+              Age-Specific STEM Programs
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Age-appropriate curricula designed to foster development at every stage.
+              Carefully designed STEM curricula that grow with children's developmental stages.
             </p>
           </div>
 
@@ -260,19 +244,19 @@ const Home = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Start Your Child's STEM Journey?
+            Ready to Transform Your Centre with STEM?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join our innovative learning community and give your child the foundation for future success in science, technology, engineering, and mathematics.
+            Join our network of forward-thinking childcare centres and give your children access to world-class STEM education.
           </p>
           
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             {[
-              { number: '10+', label: 'Years of STEM Excellence' },
-              { number: '400+', label: 'Future Innovators' },
-              { number: '30+', label: 'Expert Educators' },
-              { number: '3', label: 'Modern Centres' }
+              { number: '50+', label: 'Partner Centres' },
+              { number: '2000+', label: 'Children Reached' },
+              { number: '100+', label: 'Trained Educators' },
+              { number: '5', label: 'Years of Excellence' }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold mb-2 text-yellow-300">{stat.number}</div>
@@ -288,7 +272,7 @@ const Home = () => {
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full shadow-lg"
               asChild
             >
-              <Link to="/admissions">Register Now</Link>
+              <Link to="/contact">Get Started Today</Link>
             </Button>
             <Button 
               variant="outline" 
@@ -296,7 +280,7 @@ const Home = () => {
               className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full"
               asChild
             >
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/programmes">View Programs</Link>
             </Button>
           </div>
         </div>

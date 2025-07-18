@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Heart, Users, Trophy, Star, BookOpen, Shield } from 'lucide-react';
+import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import principalImage from '@/assets/principal-portrait.jpg';
 import classroomImage from '@/assets/classroom-activities.jpg';
@@ -7,55 +8,55 @@ import classroomImage from '@/assets/classroom-activities.jpg';
 const About = () => {
   const values = [
     {
-      icon: Heart,
-      title: 'Love & Care',
-      description: 'Every child is valued and nurtured in a warm, supportive environment.'
+      icon: Target,
+      title: 'Innovation',
+      description: 'Bringing cutting-edge STEM education to early childhood learning environments.'
     },
     {
       icon: BookOpen,
       title: 'Excellence',
-      description: 'We strive for the highest standards in early childhood education.'
+      description: 'Delivering the highest quality STEM programs and professional development.'
     },
     {
       icon: Users,
-      title: 'Community',
-      description: 'Building strong partnerships with families and the wider community.'
+      title: 'Partnership',
+      description: 'Building strong collaborative relationships with childcare centres and educators.'
     },
     {
       icon: Shield,
       title: 'Safety',
-      description: 'Ensuring a secure, healthy environment where children can explore freely.'
+      description: 'Ensuring all programs meet the highest safety standards for young learners.'
     },
     {
       icon: Star,
-      title: 'Potential',
-      description: 'Recognizing and developing the unique talents in every child.'
+      title: 'Accessibility',
+      description: 'Making quality STEM education accessible to every childcare centre.'
     },
     {
-      icon: Trophy,
-      title: 'Achievement',
-      description: 'Celebrating growth and success in all areas of development.'
+      icon: Heart,
+      title: 'Impact',
+      description: 'Creating meaningful learning experiences that inspire lifelong curiosity.'
     }
   ];
 
   const team = [
     {
-      name: 'Mrs. Sarah Chen',
-      role: 'Principal & Founder',
+      name: 'Dr. Sarah Chen',
+      role: 'Founder & STEM Director',
       image: principalImage,
-      description: 'With over 20 years in early childhood education, Mrs. Chen brings passion and expertise to leading our wonderful team.'
+      description: 'PhD in Early Childhood Education with 15 years of experience in STEM curriculum development and educator training.'
     },
     {
       name: 'Ms. Jennifer Lim',
-      role: 'Head of Curriculum',
+      role: 'Head of Programs',
       image: classroomImage,
-      description: 'A specialist in child development with 15 years of experience creating engaging learning programs.'
+      description: 'Specialist in robotics education for young children with extensive experience in program implementation.'
     },
     {
       name: 'Mr. David Wong',
-      role: 'Art & Music Director',
+      role: 'Technology Director',
       image: classroomImage,
-      description: 'Bringing creativity and joy to learning through arts, music, and movement activities.'
+      description: 'Former engineer turned educator, passionate about making technology accessible to young minds.'
     }
   ];
 
@@ -69,8 +70,8 @@ const About = () => {
               About Ec stem
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              For over 15 years, we've been pioneering early childhood STEM education, 
-              creating innovative learning experiences where young minds explore, discover, and develop a lifelong love for learning.
+              Singapore's premier provider of early childhood STEM education services, 
+              empowering childcare centres with innovative robotics training and comprehensive STEM programs since 2019.
             </p>
           </div>
         </div>
@@ -83,7 +84,7 @@ const About = () => {
             <div>
               <img 
                 src={classroomImage} 
-                alt="Children learning together" 
+                alt="STEM training session at childcare centre" 
                 className="rounded-3xl shadow-warm w-full"
               />
             </div>
@@ -95,17 +96,17 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Mission</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To provide innovative early childhood STEM education that nurtures curiosity, creativity, 
-                    and critical thinking, preparing young learners to become confident problem-solvers 
-                    and future innovators in our technology-driven world.
+                    To transform early childhood education by providing childcare centres with world-class STEM programs, 
+                    robotics training, and educator development services that inspire young minds and prepare children 
+                    for a technology-driven future.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Vision</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be the leading early childhood STEM education center, inspiring the next generation 
-                    of scientists, engineers, and innovators through engaging, hands-on learning experiences 
-                    that spark lifelong passion for discovery.
+                    To be the leading STEM education service provider in Southeast Asia, making quality early childhood 
+                    STEM learning accessible to every childcare centre and nurturing the next generation of innovators, 
+                    problem-solvers, and critical thinkers.
                   </p>
                 </div>
               </div>
@@ -122,7 +123,7 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              These values guide everything we do, from curriculum design to daily interactions with children and families.
+              These values guide our approach to serving childcare centres and developing STEM programs for young learners.
             </p>
           </div>
 
@@ -142,7 +143,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Principal's Message */}
+      {/* Founder's Message */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -151,24 +152,24 @@ const About = () => {
                 <div className="md:col-span-1">
                   <img 
                     src={principalImage} 
-                    alt="Mrs. Sarah Chen - Principal" 
+                    alt="Dr. Sarah Chen - Founder" 
                     className="w-48 h-48 rounded-full object-cover mx-auto shadow-warm"
                   />
                 </div>
                 <div className="md:col-span-2">
                   <h2 className="text-3xl font-bold text-foreground mb-6">
-                    A Message from Our Principal
+                    A Message from Our Founder
                   </h2>
                   <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6 italic">
-                    "Every child is a natural scientist, engineer, and explorer. At Ec stem, 
-                    we nurture their innate curiosity and wonder about the world around them. 
-                    Through hands-on STEM experiences, we're not just teaching concepts – 
-                    we're inspiring the next generation of innovators and problem-solvers."
+                    "Every childcare centre deserves access to quality STEM education. At Ec stem, 
+                    we bridge the gap between advanced educational concepts and practical implementation, 
+                    empowering educators with the tools and confidence to inspire young scientists, 
+                    engineers, and innovators."
                   </blockquote>
                   <div>
-                    <p className="font-semibold text-foreground">Mrs. Sarah Chen</p>
-                    <p className="text-muted-foreground">Principal & Founder</p>
-                    <p className="text-sm text-muted-foreground">M.Ed in Early Childhood Education, 20+ years experience</p>
+                    <p className="font-semibold text-foreground">Dr. Sarah Chen</p>
+                    <p className="text-muted-foreground">Founder & STEM Director</p>
+                    <p className="text-sm text-muted-foreground">PhD in Early Childhood Education, 15+ years experience</p>
                   </div>
                 </div>
               </div>
@@ -182,10 +183,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Meet Our Team
+              Meet Our Expert Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our passionate STEM educators combine early childhood expertise with innovative teaching methods to make learning exciting and accessible.
+              Our passionate team combines deep expertise in early childhood development with cutting-edge STEM knowledge.
             </p>
           </div>
 
@@ -221,14 +222,14 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { year: '2023', award: 'Outstanding Preschool Award', body: 'Singapore Education Awards' },
-              { year: '2022', award: 'Best Early Learning Program', body: 'Child Development Council' },
-              { year: '2021', award: 'Community Excellence Award', body: 'Local Community Board' },
-              { year: '2020', award: 'Innovation in Education', body: 'Preschool Association SG' }
+              { year: '2023', award: 'Best STEM Education Provider', body: 'Singapore Education Awards' },
+              { year: '2022', award: 'Innovation in Early Learning', body: 'Child Development Council' },
+              { year: '2021', award: 'Excellence in Educator Training', body: 'Professional Development SG' },
+              { year: '2020', award: 'Outstanding Service to Childcare', body: 'Childcare Association SG' }
             ].map((achievement, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-warm transition-all duration-300 border-none shadow-gentle">
                 <div className="bg-sunshine w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Trophy className="h-6 w-6 text-white" />
+                  <Award className="h-6 w-6 text-white" />
                 </div>
                 <p className="text-2xl font-bold text-primary mb-2">{achievement.year}</p>
                 <h3 className="font-semibold text-foreground mb-2">{achievement.award}</h3>
