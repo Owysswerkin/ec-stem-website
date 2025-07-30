@@ -11,15 +11,15 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-primary text-primary-foreground w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl">
-                LS
+                ES
               </div>
               <div>
-                <h3 className="text-xl font-bold">Little Stars</h3>
-                <p className="text-sm opacity-75">Preschool & Kindergarten</p>
+                <h3 className="text-xl font-bold">EC Stem Club</h3>
+                <p className="text-sm opacity-75">Early Childhood STEM</p>
               </div>
             </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
-              Nurturing young minds with love, care, and quality education. Building the foundation for lifelong learning since 2010.
+              Empowering early childhood education through innovative STEM programs, robotics training, and hands-on learning experiences for childcare centers.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm opacity-75">hello@littlestars.edu.sg</span>
+                <span className="text-sm opacity-75">hello@ecstem.club</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-75 mb-4 md:mb-0">
-              © 2024 Little Stars Preschool. All rights reserved.
+              © 2024 EC Stem Club. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link 
