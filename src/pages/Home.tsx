@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import heroImage from '@/assets/hero-preschool.jpg';
-import classroomImage from '@/assets/classroom-activities.jpg';
-import outdoorImage from '@/assets/outdoor-play.jpg';
+import asianChildrenStem from '@/assets/asian-children-stem.jpg';
+import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
+import asianKidsScience from '@/assets/asian-kids-science.jpg';
 
 const Home = () => {
   const services = [
@@ -40,19 +40,19 @@ const Home = () => {
     {
       title: 'Toddler STEM Discovery (18 months - 3 years)',
       description: 'Age-appropriate STEM activities focusing on sensory exploration and basic concepts.',
-      image: classroomImage,
+      image: asianKidsScience,
       highlights: ['Sensory STEM play', 'Basic cause-and-effect', 'Simple robotics toys']
     },
     {
       title: 'Pre-K STEM Adventures (3 - 4 years)',
       description: 'Interactive STEM learning through play-based activities and simple experiments.',
-      image: outdoorImage,
+      image: asianKidsRobotics,
       highlights: ['Basic coding concepts', 'Simple machines', 'Nature STEM exploration']
     },
     {
       title: 'Kindergarten STEM Labs (4 - 6 years)',
       description: 'Advanced STEM activities including robotics, coding, and engineering challenges.',
-      image: classroomImage,
+      image: asianChildrenStem,
       highlights: ['Robotics programming', 'Engineering design', 'Scientific method']
     }
   ];
@@ -63,7 +63,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-orange-50">
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
+            src={asianChildrenStem}
             alt="Children engaged in STEM learning" 
             className="w-full h-full object-cover opacity-15"
           />
@@ -114,7 +114,7 @@ const Home = () => {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src={heroImage} 
+                  src={asianChildrenStem} 
                   alt="Children engaged in STEM learning with robotics" 
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />

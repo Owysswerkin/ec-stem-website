@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-75 mb-4 md:mb-0">
-              © 2024 EC Stem Club. All rights reserved.
+              © 2025 EC Stem Club. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link 
