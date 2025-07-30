@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programmes": "Programmes",
+    "centres": "Centres",
+    "admissions": "Admissions",
+    "contact": "Contact",
+    "enrollNow": "Enroll Now"
+  },
+  "hero": {
+    "title": "Inspiring Young Minds Through STEM",
+    "subtitle": "Where curiosity meets discovery! EC Stem Club provides innovative STEM education programs for early childhood development, partnering with childcare centres to bring cutting-edge learning experiences directly to young learners.",
+    "cta": "Discover Our Programs"
+  },
+  "about": {
+    "title": "About EC Stem Club",
+    "subtitle": "Nurturing tomorrow's innovators through hands-on STEM education",
+    "description": "EC Stem Club is a leading early childhood STEM education provider, dedicated to inspiring young minds through innovative learning experiences. We partner with childcare centres to deliver comprehensive STEM programs that develop critical thinking, creativity, and problem-solving skills in children aged 18 months to 6 years."
+  },
+  "programs": {
+    "title": "Our STEM Programs",
+    "subtitle": "Age-appropriate STEM learning experiences designed for every stage of development",
+    "toddler": {
+      "title": "Toddler STEM Discovery (18 months - 3 years)",
+      "description": "Age-appropriate STEM activities focusing on sensory exploration and basic concepts.",
+      "highlights": ["Sensory STEM play", "Basic cause-and-effect", "Simple robotics toys"]
+    },
+    "preK": {
+      "title": "Pre-K STEM Adventures (3 - 4 years)",
+      "description": "Interactive STEM learning through play-based activities and simple experiments.",
+      "highlights": ["Basic coding concepts", "Simple machines", "Nature STEM exploration"]
+    },
+    "kindergarten": {
+      "title": "Kindergarten STEM Labs (4 - 6 years)",
+      "description": "Advanced STEM activities including robotics, coding, and engineering challenges.",
+      "highlights": ["Robotics programming", "Engineering design", "Scientific method"]
+    }
+  },
+  "services": {
+    "title": "Why Choose EC Stem Club?",
+    "subtitle": "Comprehensive STEM education that grows with your child",
+    "experienced": {
+      "title": "Expert STEM Educators",
+      "description": "Our certified instructors specialize in early childhood STEM education"
+    },
+    "curriculum": {
+      "title": "Research-Based Curriculum",
+      "description": "Programs designed using latest educational research and best practices"
+    },
+    "development": {
+      "title": "Holistic Development",
+      "description": "Focus on cognitive, social, and emotional growth through STEM activities"
+    },
+    "partnership": {
+      "title": "Centre Partnerships",
+      "description": "Seamless integration with your childcare centre's existing programs"
+    }
+  },
+  "cta": {
+    "title": "Ready to Partner with Us?",
+    "subtitle": "Join the growing network of childcare centres offering innovative STEM education",
+    "button": "Partner with EC Stem Club"
+  },
+  "footer": {
+    "about": {
+      "title": "About EC Stem Club",
+      "description": "Leading early childhood STEM education provider, inspiring young minds through innovative learning experiences and partnerships with childcare centres."
+    },
+    "quickLinks": "Quick Links",
+    "programs": "Programs",
+    "contact": {
+      "title": "Contact Info",
+      "address": "123 Education Street, Singapore 123456",
+      "phone": "+65 1234 5678",
+      "email": "hello@ecstem.club"
+    },
+    "copyright": "© 2025 EC Stem Club. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

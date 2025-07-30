@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "programmes": "课程",
+    "centres": "合作中心",
+    "admissions": "入学申请",
+    "contact": "联系我们",
+    "enrollNow": "立即报名"
+  },
+  "hero": {
+    "title": "通过STEM教育启发年轻心灵",
+    "subtitle": "好奇心与发现相遇的地方！EC Stem Club为儿童早期发展提供创新的STEM教育项目，与托儿中心合作，为年幼学习者带来前沿的学习体验。",
+    "cta": "了解我们的课程"
+  },
+  "about": {
+    "title": "关于EC Stem Club",
+    "subtitle": "通过实践STEM教育培养明日创新者",
+    "description": "EC Stem Club是领先的儿童早期STEM教育提供商，致力于通过创新的学习体验启发年轻心灵。我们与托儿中心合作，为18个月至6岁的儿童提供全面的STEM课程，培养批判性思维、创造力和解决问题的能力。"
+  },
+  "programs": {
+    "title": "我们的STEM课程",
+    "subtitle": "针对每个发展阶段设计的适龄STEM学习体验",
+    "toddler": {
+      "title": "幼儿STEM探索 (18个月 - 3岁)",
+      "description": "专注于感官探索和基础概念的适龄STEM活动。",
+      "highlights": ["感官STEM游戏", "基础因果关系", "简单机器人玩具"]
+    },
+    "preK": {
+      "title": "学前STEM冒险 (3 - 4岁)",
+      "description": "通过游戏式活动和简单实验进行互动STEM学习。",
+      "highlights": ["基础编程概念", "简单机械", "自然STEM探索"]
+    },
+    "kindergarten": {
+      "title": "幼儿园STEM实验室 (4 - 6岁)",
+      "description": "包括机器人、编程和工程挑战的高级STEM活动。",
+      "highlights": ["机器人编程", "工程设计", "科学方法"]
+    }
+  },
+  "services": {
+    "title": "为什么选择EC Stem Club？",
+    "subtitle": "与您的孩子一起成长的全面STEM教育",
+    "experienced": {
+      "title": "专业STEM教育工作者",
+      "description": "我们的认证教师专门从事儿童早期STEM教育"
+    },
+    "curriculum": {
+      "title": "基于研究的课程",
+      "description": "使用最新教育研究和最佳实践设计的课程"
+    },
+    "development": {
+      "title": "全面发展",
+      "description": "通过STEM活动专注于认知、社交和情感发展"
+    },
+    "partnership": {
+      "title": "中心合作伙伴关系",
+      "description": "与您的托儿中心现有课程无缝整合"
+    }
+  },
+  "cta": {
+    "title": "准备与我们合作了吗？",
+    "subtitle": "加入提供创新STEM教育的托儿中心不断发展的网络",
+    "button": "与EC Stem Club合作"
+  },
+  "footer": {
+    "about": {
+      "title": "关于EC Stem Club",
+      "description": "领先的儿童早期STEM教育提供商，通过创新的学习体验和与托儿中心的合作启发年轻心灵。"
+    },
+    "quickLinks": "快速链接",
+    "programs": "课程",
+    "contact": {
+      "title": "联系信息",
+      "address": "新加坡教育街123号 123456",
+      "phone": "+65 1234 5678",
+      "email": "hello@ecstem.club"
+    },
+    "copyright": "© 2025 EC Stem Club. 版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  }
+}

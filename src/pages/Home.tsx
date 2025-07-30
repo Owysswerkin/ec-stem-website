@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -9,51 +10,52 @@ import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 
 const Home = () => {
+  const { t } = useTranslation();
   const services = [
     {
-      icon: Zap,
-      title: 'Robotics Training',
-      description: 'Hands-on robotics workshops and training programs for young learners aged 3-6 years.',
+      icon: Heart,
+      title: t('services.experienced.title'),
+      description: t('services.experienced.description'),
       color: 'bg-primary'
     },
     {
-      icon: Cpu,
-      title: 'STEM Curriculum',
-      description: 'Comprehensive STEM programs designed specifically for early childhood development.',
+      icon: BookOpen,
+      title: t('services.curriculum.title'),
+      description: t('services.curriculum.description'),
       color: 'bg-accent-vibrant'
     },
     {
       icon: Users,
-      title: 'Educator Training',
-      description: 'Professional development workshops for childcare educators to implement STEM activities.',
+      title: t('services.development.title'),
+      description: t('services.development.description'),
       color: 'bg-secondary'
     },
     {
-      icon: Lightbulb,
-      title: 'Program Consultation',
-      description: 'Custom STEM program design and implementation support for childcare centres.',
+      icon: Trophy,
+      title: t('services.partnership.title'),
+      description: t('services.partnership.description'),
       color: 'bg-sunshine'
     }
   ];
 
   const programs = [
     {
-      title: 'Toddler STEM Discovery (18 months - 3 years)',
-      description: 'Age-appropriate STEM activities focusing on sensory exploration and basic concepts.',
+      title: t('programs.toddler.title'),
+      description: t('programs.toddler.description'),
       image: asianKidsScience,
-      highlights: ['Sensory STEM play', 'Basic cause-and-effect', 'Simple robotics toys']
+      highlights: t('programs.toddler.highlights', { returnObjects: true }) as string[]
     },
     {
-      title: 'Pre-K STEM Adventures (3 - 4 years)',
-      description: 'Interactive STEM learning through play-based activities and simple experiments.',
+      title: t('programs.preK.title'),
+      description: t('programs.preK.description'),
       image: asianKidsRobotics,
-      highlights: ['Basic coding concepts', 'Simple machines', 'Nature STEM exploration']
+      highlights: t('programs.preK.highlights', { returnObjects: true }) as string[]
     },
     {
-      title: 'Kindergarten STEM Labs (4 - 6 years)',
-      description: 'Advanced STEM activities including robotics, coding, and engineering challenges.',
+      title: t('programs.kindergarten.title'),
+      description: t('programs.kindergarten.description'),
       image: asianChildrenStem,
-      highlights: ['Robotics programming', 'Engineering design', 'Scientific method']
+      highlights: t('programs.kindergarten.highlights', { returnObjects: true }) as string[]
     }
   ];
 
@@ -79,12 +81,10 @@ const Home = () => {
             <div className="text-left">
               <div className="animate-fade-in">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 mb-6 leading-tight">
-                  Empowering childcare centres
-                  <br />
-                  <span className="text-blue-600">with STEM excellence</span>
+                  {t('hero.title')}
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                  Professional STEM programs and robotics training designed specifically for early childhood centres across Singapore.
+                  {t('hero.subtitle')}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
@@ -94,7 +94,7 @@ const Home = () => {
                     asChild
                   >
                     <Link to="/programmes">
-                      Explore Our Services
+                      {t('hero.cta')}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
@@ -134,10 +134,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Our STEM Services
+              {t('services.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive STEM solutions designed to enhance your childcare centre's educational offerings.
+              {t('services.subtitle')}
             </p>
           </div>
           
@@ -160,17 +160,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Why Choose Ec stem?
+              {t('about.title')}
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We are Singapore's leading provider of STEM education programs for early childhood centres. 
-              Our mission is to make quality STEM education accessible to every childcare centre, 
-              empowering educators with the tools and knowledge to inspire young minds.
+              {t('about.subtitle')}
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              With over 50 partner centres across Singapore, we deliver age-appropriate robotics training, 
-              hands-on STEM workshops, and comprehensive educator development programs that transform 
-              how children engage with science, technology, engineering, and mathematics.
+              {t('about.description')}
             </p>
             <Button 
               variant="default" 
@@ -189,10 +185,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Age-Specific STEM Programs
+              {t('programs.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Carefully designed STEM curricula that grow with children's developmental stages.
+              {t('programs.subtitle')}
             </p>
           </div>
 
@@ -244,10 +240,10 @@ const Home = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Centre with STEM?
+            {t('cta.title')}
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join our network of forward-thinking childcare centres and give your children access to world-class STEM education.
+            {t('cta.subtitle')}
           </p>
           
           {/* Stats */}

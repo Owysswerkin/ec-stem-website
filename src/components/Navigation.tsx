@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import LanguageToggle from './LanguageToggle';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,13 +25,13 @@ const Navigation = () => {
   }, [location.pathname]);
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Programmes', path: '/programmes' },
-    { name: 'Our Centres', path: '/centres' },
-    { name: 'Admissions', path: '/admissions' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.about'), path: '/about' },
+    { name: t('nav.programmes'), path: '/programmes' },
+    { name: t('nav.centres'), path: '/centres' },
+    { name: t('nav.admissions'), path: '/admissions' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -88,8 +91,9 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              <LanguageToggle />
               <Button variant="hero" size="sm" asChild>
-                <Link to="/admissions">Enroll Now</Link>
+                <Link to="/admissions">{t('nav.enrollNow')}</Link>
               </Button>
             </div>
 
@@ -121,9 +125,12 @@ const Navigation = () => {
                     {item.name}
                   </Link>
                 ))}
-                <Button variant="hero" size="default" className="mt-4" asChild>
-                  <Link to="/admissions">Enroll Now</Link>
-                </Button>
+                <div className="flex items-center justify-between mt-4">
+                  <LanguageToggle />
+                  <Button variant="hero" size="default" asChild>
+                    <Link to="/admissions">{t('nav.enrollNow')}</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
