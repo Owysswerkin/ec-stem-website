@@ -451,7 +451,7 @@ const Admissions = () => {
                       <strong className="text-foreground">Phone:</strong> +65 6234 5678
                     </p>
                     <p className="text-muted-foreground">
-                      <strong className="text-foreground">Email:</strong> admissions@littlestars.edu.sg
+                      <strong className="text-foreground">Email:</strong> admissions@ecstem.club
                     </p>
                     <p className="text-muted-foreground">
                       <strong className="text-foreground">Hours:</strong> Mon-Fri, 8:00 AM - 6:00 PM

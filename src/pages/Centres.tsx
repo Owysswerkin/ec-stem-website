@@ -12,7 +12,7 @@ const Centres = () => {
       name: 'Little Stars Main Campus',
       address: '123 Learning Street, Central District, Singapore 123456',
       phone: '+65 6234 5678',
-      email: 'main@littlestars.edu.sg',
+      email: 'main@ecstem.club',
       image: classroomImage,
       features: [
         'Full-day programmes (18 months - 6 years)',
@@ -36,7 +36,7 @@ const Centres = () => {
       name: 'Little Stars East',
       address: '456 Sunshine Avenue, East District, Singapore 456789',
       phone: '+65 6345 6789',
-      email: 'east@littlestars.edu.sg',
+      email: 'east@ecstem.club',
       image: outdoorImage,
       features: [
         'Full-day programmes (18 months - 6 years)',
@@ -60,7 +60,7 @@ const Centres = () => {
       name: 'Little Stars West',
       address: '789 Rainbow Road, West District, Singapore 789012',
       phone: '+65 6456 7890',
-      email: 'west@littlestars.edu.sg',
+      email: 'west@ecstem.club',
       image: classroomImage,
       features: [
         'Full-day programmes (18 months - 6 years)',

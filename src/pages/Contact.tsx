@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['hello@littlestars.edu.sg', 'We reply within 24 hours'],
+      details: ['hello@ecstem.club', 'We reply within 24 hours'],
       action: 'Send Email'
     },
     {
