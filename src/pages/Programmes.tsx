@@ -1,34 +1,36 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Users, Calendar, Star, BookOpen, Palette, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const Programmes = () => {
+  const { t } = useTranslation();
 
   const enrichmentPrograms = [
     {
       icon: Users,
-      title: 'Robotics & Coding',
-      description: 'Introduction to programming concepts and robotic systems through age-appropriate activities.',
-      ages: 'All ages'
+      title: t('programmesPage.enrichment.robotics.title'),
+      description: t('programmesPage.enrichment.robotics.description'),
+      ages: t('programmesPage.enrichment.robotics.ages')
     },
     {
       icon: BookOpen,
-      title: 'Science Experiments',
-      description: 'Hands-on experiments that demonstrate scientific principles and encourage discovery.',
-      ages: 'All ages'
+      title: t('programmesPage.enrichment.science.title'),
+      description: t('programmesPage.enrichment.science.description'),
+      ages: t('programmesPage.enrichment.science.ages')
     },
     {
       icon: Palette,
-      title: 'Engineering Challenges',
-      description: 'Building and design challenges that develop problem-solving and engineering thinking.',
-      ages: '3+ years'
+      title: t('programmesPage.enrichment.engineering.title'),
+      description: t('programmesPage.enrichment.engineering.description'),
+      ages: t('programmesPage.enrichment.engineering.ages')
     },
     {
       icon: Globe,
-      title: 'Math Adventures',
-      description: 'Mathematical concepts explored through games, puzzles, and real-world applications.',
-      ages: '4+ years'
+      title: t('programmesPage.enrichment.math.title'),
+      description: t('programmesPage.enrichment.math.description'),
+      ages: t('programmesPage.enrichment.math.ages')
     }
   ];
 
@@ -39,11 +41,10 @@ const Programmes = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              STEM Education Services
+              {t('programmesPage.title')}
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              We partner with childcare centres to deliver innovative STEM education through specialized enrichment programs 
-              and hands-on learning experiences designed for young learners.
+              {t('programmesPage.subtitle')}
             </p>
           </div>
         </div>
@@ -54,10 +55,10 @@ const Programmes = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              STEM Enrichment Programs
+              {t('programmesPage.enrichment.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Specialized STEM programs designed to deepen learning and explore advanced concepts.
+              {t('programmesPage.enrichment.subtitle')}
             </p>
           </div>
 
@@ -85,29 +86,28 @@ const Programmes = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Partner with EC STEM
+              {t('programmesPage.partnership.title')}
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              We work with childcare centres to integrate STEM education into their existing programs. 
-              Our enrichment activities are designed to complement your curriculum and inspire young learners.
+              {t('programmesPage.partnership.subtitle')}
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {[
                 {
                   icon: Calendar,
-                  title: 'Flexible Scheduling',
-                  description: 'Programs designed to fit your centre\'s timetable and needs'
+                  title: t('programmesPage.partnership.scheduling.title'),
+                  description: t('programmesPage.partnership.scheduling.description')
                 },
                 {
                   icon: BookOpen,
-                  title: 'Curriculum Integration',
-                  description: 'STEM activities that complement your existing educational programs'
+                  title: t('programmesPage.partnership.integration.title'),
+                  description: t('programmesPage.partnership.integration.description')
                 },
                 {
                   icon: Users,
-                  title: 'Professional Support',
-                  description: 'Ongoing training and support for your educators'
+                  title: t('programmesPage.partnership.support.title'),
+                  description: t('programmesPage.partnership.support.description')
                 }
               ].map((item, index) => (
                 <div key={index} className="text-center">
@@ -121,7 +121,7 @@ const Programmes = () => {
             </div>
 
             <Button variant="default" size="lg">
-              Contact Us for Partnership
+              {t('programmesPage.partnership.button')}
             </Button>
           </div>
         </div>

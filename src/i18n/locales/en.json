@@ -61,6 +61,127 @@
     "subtitle": "Join the growing network of childcare centres offering innovative STEM education",
     "button": "Partner with EC STEM"
   },
+  "aboutPage": {
+    "title": "About Ec stem",
+    "subtitle": "Singapore's premier provider of early childhood STEM education services, empowering childcare centres with innovative robotics training and comprehensive STEM programs since 2019.",
+    "mission": {
+      "title": "Our Mission & Vision",
+      "missionHeader": "Mission",
+      "missionText": "To transform early childhood education by providing childcare centres with world-class STEM programs, robotics training, and educator development services that inspire young minds and prepare children for a technology-driven future.",
+      "visionHeader": "Vision",
+      "visionText": "To be the leading STEM education service provider in Southeast Asia, making quality early childhood STEM learning accessible to every childcare centre and nurturing the next generation of innovators, problem-solvers, and critical thinkers."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "These values guide our approach to serving childcare centres and developing STEM programs for young learners.",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Bringing cutting-edge STEM education to early childhood learning environments."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Delivering the highest quality STEM programs and professional development."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "Building strong collaborative relationships with childcare centres and educators."
+      },
+      "safety": {
+        "title": "Safety",
+        "description": "Ensuring all programs meet the highest safety standards for young learners."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Making quality STEM education accessible to every childcare centre."
+      },
+      "impact": {
+        "title": "Impact",
+        "description": "Creating meaningful learning experiences that inspire lifelong curiosity."
+      }
+    },
+    "founder": {
+      "title": "A Message from Our Founder",
+      "quote": "Every child deserves the opportunity to explore, discover, and fall in love with learning. At EC STEM, we bring the wonder of science, technology, engineering, and mathematics directly to childcare centres, empowering educators and inspiring young minds to see the world as their laboratory.",
+      "name": "Ms Huang",
+      "role": "Founder & STEM Director",
+      "description": "Passionate educator and early childhood STEM specialist"
+    },
+    "team": {
+      "title": "Meet Our Expert Team",
+      "subtitle": "Our passionate team combines deep expertise in early childhood development with cutting-edge STEM knowledge.",
+      "msHuang": {
+        "name": "Ms Huang",
+        "role": "Founder & STEM Director",
+        "description": "Passionate educator with extensive experience in early childhood STEM education and curriculum development."
+      },
+      "jennifer": {
+        "name": "Ms. Jennifer Lim",
+        "role": "Head of Programs",
+        "description": "Specialist in robotics education for young children with extensive experience in program implementation."
+      },
+      "david": {
+        "name": "Mr. David Wong",
+        "role": "Technology Director",
+        "description": "Former engineer turned educator, passionate about making technology accessible to young minds."
+      }
+    },
+    "achievements": {
+      "title": "Recognition & Achievements",
+      "award2023": "Best STEM Education Provider",
+      "body2023": "Singapore Education Awards",
+      "award2022": "Innovation in Early Learning",
+      "body2022": "Child Development Council",
+      "award2021": "Excellence in Educator Training",
+      "body2021": "Professional Development SG",
+      "award2020": "Outstanding Service to Childcare",
+      "body2020": "Childcare Association SG"
+    }
+  },
+  "programmesPage": {
+    "title": "STEM Education Services",
+    "subtitle": "We partner with childcare centres to deliver innovative STEM education through specialized enrichment programs and hands-on learning experiences designed for young learners.",
+    "enrichment": {
+      "title": "STEM Enrichment Programs",
+      "subtitle": "Specialized STEM programs designed to deepen learning and explore advanced concepts.",
+      "robotics": {
+        "title": "Robotics & Coding",
+        "description": "Introduction to programming concepts and robotic systems through age-appropriate activities.",
+        "ages": "All ages"
+      },
+      "science": {
+        "title": "Science Experiments",
+        "description": "Hands-on experiments that demonstrate scientific principles and encourage discovery.",
+        "ages": "All ages"
+      },
+      "engineering": {
+        "title": "Engineering Challenges",
+        "description": "Building and design challenges that develop problem-solving and engineering thinking.",
+        "ages": "3+ years"
+      },
+      "math": {
+        "title": "Math Adventures",
+        "description": "Mathematical concepts explored through games, puzzles, and real-world applications.",
+        "ages": "4+ years"
+      }
+    },
+    "partnership": {
+      "title": "Partner with EC STEM",
+      "subtitle": "We work with childcare centres to integrate STEM education into their existing programs. Our enrichment activities are designed to complement your curriculum and inspire young learners.",
+      "scheduling": {
+        "title": "Flexible Scheduling",
+        "description": "Programs designed to fit your centre's timetable and needs"
+      },
+      "integration": {
+        "title": "Curriculum Integration",
+        "description": "STEM activities that complement your existing educational programs"
+      },
+      "support": {
+        "title": "Professional Support",
+        "description": "Ongoing training and support for your educators"
+      },
+      "button": "Contact Us for Partnership"
+    }
+  },
   "footer": {
     "about": {
       "title": "About EC Stem Club",

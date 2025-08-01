@@ -61,6 +61,127 @@
     "subtitle": "加入提供创新STEM教育的托儿中心不断发展的网络",
     "button": "与EC STEM合作"
   },
+  "aboutPage": {
+    "title": "关于EC STEM",
+    "subtitle": "新加坡领先的儿童早期STEM教育服务提供商，自2019年以来通过创新的机器人培训和全面的STEM项目为托儿中心赋能。",
+    "mission": {
+      "title": "我们的使命与愿景",
+      "missionHeader": "使命",
+      "missionText": "通过为托儿中心提供世界级的STEM项目、机器人培训和教育工作者发展服务，改变儿童早期教育，激发年轻心灵，为儿童准备技术驱动的未来。",
+      "visionHeader": "愿景",
+      "visionText": "成为东南亚领先的STEM教育服务提供商，让优质的儿童早期STEM学习对每个托儿中心都可及，培养下一代创新者、问题解决者和批判性思维者。"
+    },
+    "values": {
+      "title": "我们的核心价值观",
+      "subtitle": "这些价值观指导我们为托儿中心服务和为年轻学习者开发STEM项目的方法。",
+      "innovation": {
+        "title": "创新",
+        "description": "将前沿的STEM教育带到儿童早期学习环境中。"
+      },
+      "excellence": {
+        "title": "卓越",
+        "description": "提供最高质量的STEM项目和专业发展。"
+      },
+      "partnership": {
+        "title": "合作",
+        "description": "与托儿中心和教育工作者建立强有力的合作关系。"
+      },
+      "safety": {
+        "title": "安全",
+        "description": "确保所有项目符合年轻学习者的最高安全标准。"
+      },
+      "accessibility": {
+        "title": "可及性",
+        "description": "让优质STEM教育对每个托儿中心都可及。"
+      },
+      "impact": {
+        "title": "影响",
+        "description": "创造有意义的学习体验，激发终身好奇心。"
+      }
+    },
+    "founder": {
+      "title": "来自创始人的话",
+      "quote": "每个孩子都应该有机会探索、发现并爱上学习。在EC STEM，我们将科学、技术、工程和数学的奇迹直接带到托儿中心，赋能教育工作者，激发年轻心灵将世界视为他们的实验室。",
+      "name": "黄女士",
+      "role": "创始人兼STEM总监",
+      "description": "充满热情的教育工作者和儿童早期STEM专家"
+    },
+    "team": {
+      "title": "认识我们的专家团队",
+      "subtitle": "我们充满热情的团队将儿童早期发展的深厚专业知识与前沿的STEM知识相结合。",
+      "msHuang": {
+        "name": "黄女士",
+        "role": "创始人兼STEM总监",
+        "description": "在儿童早期STEM教育和课程开发方面有丰富经验的充满热情的教育工作者。"
+      },
+      "jennifer": {
+        "name": "林詹妮弗女士",
+        "role": "项目主管",
+        "description": "专注于儿童机器人教育，在项目实施方面有丰富经验的专家。"
+      },
+      "david": {
+        "name": "王大卫先生",
+        "role": "技术总监",
+        "description": "前工程师转教育工作者，致力于让技术对年轻心灵易于理解。"
+      }
+    },
+    "achievements": {
+      "title": "认可与成就",
+      "award2023": "最佳STEM教育提供商",
+      "body2023": "新加坡教育奖",
+      "award2022": "早期学习创新奖",
+      "body2022": "儿童发展委员会",
+      "award2021": "教育工作者培训卓越奖",
+      "body2021": "新加坡专业发展",
+      "award2020": "托儿服务杰出奖",
+      "body2020": "新加坡托儿协会"
+    }
+  },
+  "programmesPage": {
+    "title": "STEM教育服务",
+    "subtitle": "我们与托儿中心合作，通过专门的强化项目和为年轻学习者设计的实践学习体验提供创新的STEM教育。",
+    "enrichment": {
+      "title": "STEM强化项目",
+      "subtitle": "专门设计用于深化学习和探索高级概念的STEM项目。",
+      "robotics": {
+        "title": "机器人与编程",
+        "description": "通过适龄活动介绍编程概念和机器人系统。",
+        "ages": "所有年龄"
+      },
+      "science": {
+        "title": "科学实验",
+        "description": "通过动手实验展示科学原理并鼓励发现。",
+        "ages": "所有年龄"
+      },
+      "engineering": {
+        "title": "工程挑战",
+        "description": "发展问题解决和工程思维的建设和设计挑战。",
+        "ages": "3岁以上"
+      },
+      "math": {
+        "title": "数学冒险",
+        "description": "通过游戏、拼图和现实世界应用探索数学概念。",
+        "ages": "4岁以上"
+      }
+    },
+    "partnership": {
+      "title": "与EC STEM合作",
+      "subtitle": "我们与托儿中心合作，将STEM教育整合到他们现有的项目中。我们的强化活动旨在补充您的课程并激发年轻学习者。",
+      "scheduling": {
+        "title": "灵活安排",
+        "description": "根据您中心的时间表和需求设计的项目"
+      },
+      "integration": {
+        "title": "课程整合",
+        "description": "补充您现有教育项目的STEM活动"
+      },
+      "support": {
+        "title": "专业支持",
+        "description": "为您的教育工作者提供持续的培训和支持"
+      },
+      "button": "联系我们进行合作"
+    }
+  },
   "footer": {
     "about": {
       "title": "关于EC Stem Club",

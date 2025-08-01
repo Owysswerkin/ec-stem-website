@@ -1,62 +1,65 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '@/assets/ms-huang-portrait.jpg';
 import classroomImage from '@/assets/classroom-activities.jpg';
 
 const About = () => {
+  const { t } = useTranslation();
+  
   const values = [
     {
       icon: Target,
-      title: 'Innovation',
-      description: 'Bringing cutting-edge STEM education to early childhood learning environments.'
+      title: t('aboutPage.values.innovation.title'),
+      description: t('aboutPage.values.innovation.description')
     },
     {
       icon: BookOpen,
-      title: 'Excellence',
-      description: 'Delivering the highest quality STEM programs and professional development.'
+      title: t('aboutPage.values.excellence.title'),
+      description: t('aboutPage.values.excellence.description')
     },
     {
       icon: Users,
-      title: 'Partnership',
-      description: 'Building strong collaborative relationships with childcare centres and educators.'
+      title: t('aboutPage.values.partnership.title'),
+      description: t('aboutPage.values.partnership.description')
     },
     {
       icon: Shield,
-      title: 'Safety',
-      description: 'Ensuring all programs meet the highest safety standards for young learners.'
+      title: t('aboutPage.values.safety.title'),
+      description: t('aboutPage.values.safety.description')
     },
     {
       icon: Star,
-      title: 'Accessibility',
-      description: 'Making quality STEM education accessible to every childcare centre.'
+      title: t('aboutPage.values.accessibility.title'),
+      description: t('aboutPage.values.accessibility.description')
     },
     {
       icon: Heart,
-      title: 'Impact',
-      description: 'Creating meaningful learning experiences that inspire lifelong curiosity.'
+      title: t('aboutPage.values.impact.title'),
+      description: t('aboutPage.values.impact.description')
     }
   ];
 
   const team = [
     {
-      name: 'Ms Huang',
-      role: 'Founder & STEM Director',
+      name: t('aboutPage.team.msHuang.name'),
+      role: t('aboutPage.team.msHuang.role'),
       image: msHuangPortrait,
-      description: 'Passionate educator with extensive experience in early childhood STEM education and curriculum development.'
+      description: t('aboutPage.team.msHuang.description')
     },
     {
-      name: 'Ms. Jennifer Lim',
-      role: 'Head of Programs',
+      name: t('aboutPage.team.jennifer.name'),
+      role: t('aboutPage.team.jennifer.role'),
       image: classroomImage,
-      description: 'Specialist in robotics education for young children with extensive experience in program implementation.'
+      description: t('aboutPage.team.jennifer.description')
     },
     {
-      name: 'Mr. David Wong',
-      role: 'Technology Director',
+      name: t('aboutPage.team.david.name'),
+      role: t('aboutPage.team.david.role'),
       image: classroomImage,
-      description: 'Former engineer turned educator, passionate about making technology accessible to young minds.'
+      description: t('aboutPage.team.david.description')
     }
   ];
 
@@ -67,11 +70,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              About Ec stem
+              {t('aboutPage.title')}
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Singapore's premier provider of early childhood STEM education services, 
-              empowering childcare centres with innovative robotics training and comprehensive STEM programs since 2019.
+              {t('aboutPage.subtitle')}
             </p>
           </div>
         </div>
@@ -90,23 +92,19 @@ const About = () => {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                Our Mission & Vision
+                {t('aboutPage.mission.title')}
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-3">Mission</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">{t('aboutPage.mission.missionHeader')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To transform early childhood education by providing childcare centres with world-class STEM programs, 
-                    robotics training, and educator development services that inspire young minds and prepare children 
-                    for a technology-driven future.
+                    {t('aboutPage.mission.missionText')}
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-3">Vision</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-3">{t('aboutPage.mission.visionHeader')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    To be the leading STEM education service provider in Southeast Asia, making quality early childhood 
-                    STEM learning accessible to every childcare centre and nurturing the next generation of innovators, 
-                    problem-solvers, and critical thinkers.
+                    {t('aboutPage.mission.visionText')}
                   </p>
                 </div>
               </div>
@@ -120,10 +118,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Our Core Values
+              {t('aboutPage.values.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              These values guide our approach to serving childcare centres and developing STEM programs for young learners.
+              {t('aboutPage.values.subtitle')}
             </p>
           </div>
 
@@ -158,17 +156,15 @@ const About = () => {
                 </div>
                 <div className="md:col-span-2">
                   <h2 className="text-3xl font-bold text-foreground mb-6">
-                    A Message from Our Founder
+                    {t('aboutPage.founder.title')}
                   </h2>
                   <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6 italic">
-                    "Every child deserves the opportunity to explore, discover, and fall in love with learning. 
-                    At EC STEM, we bring the wonder of science, technology, engineering, and mathematics directly 
-                    to childcare centres, empowering educators and inspiring young minds to see the world as their laboratory."
+                    "{t('aboutPage.founder.quote')}"
                   </blockquote>
                   <div>
-                    <p className="font-semibold text-foreground">Ms Huang</p>
-                    <p className="text-muted-foreground">Founder & STEM Director</p>
-                    <p className="text-sm text-muted-foreground">Passionate educator and early childhood STEM specialist</p>
+                    <p className="font-semibold text-foreground">{t('aboutPage.founder.name')}</p>
+                    <p className="text-muted-foreground">{t('aboutPage.founder.role')}</p>
+                    <p className="text-sm text-muted-foreground">{t('aboutPage.founder.description')}</p>
                   </div>
                 </div>
               </div>
@@ -182,10 +178,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Meet Our Expert Team
+              {t('aboutPage.team.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our passionate team combines deep expertise in early childhood development with cutting-edge STEM knowledge.
+              {t('aboutPage.team.subtitle')}
             </p>
           </div>
 
@@ -215,16 +211,16 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Recognition & Achievements
+              {t('aboutPage.achievements.title')}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { year: '2023', award: 'Best STEM Education Provider', body: 'Singapore Education Awards' },
-              { year: '2022', award: 'Innovation in Early Learning', body: 'Child Development Council' },
-              { year: '2021', award: 'Excellence in Educator Training', body: 'Professional Development SG' },
-              { year: '2020', award: 'Outstanding Service to Childcare', body: 'Childcare Association SG' }
+              { year: '2023', award: t('aboutPage.achievements.award2023'), body: t('aboutPage.achievements.body2023') },
+              { year: '2022', award: t('aboutPage.achievements.award2022'), body: t('aboutPage.achievements.body2022') },
+              { year: '2021', award: t('aboutPage.achievements.award2021'), body: t('aboutPage.achievements.body2021') },
+              { year: '2020', award: t('aboutPage.achievements.award2020'), body: t('aboutPage.achievements.body2020') }
             ].map((achievement, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-warm transition-all duration-300 border-none shadow-gentle">
                 <div className="bg-sunshine w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4">
