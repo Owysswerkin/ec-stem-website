@@ -1,21 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-background">
+  return <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* School Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-primary text-primary-foreground w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl">
-                ES
-              </div>
+              
               <div>
-                <h3 className="text-xl font-bold">EC STEM</h3>
-                <p className="text-sm opacity-75">Early Childhood STEM</p>
+                <h3 className="text-xl font-bold">EC STEM Education</h3>
+                
               </div>
             </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
@@ -38,21 +34,23 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {[
-                { name: 'About Us', path: '/about' },
-                { name: 'Programmes', path: '/programmes' },
-                { name: 'Admissions', path: '/admissions' },
-                { name: 'Contact', path: '/contact' },
-              ].map((link) => (
-                <li key={link.path}>
-                  <Link 
-                    to={link.path} 
-                    className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200"
-                  >
+              {[{
+              name: 'About Us',
+              path: '/about'
+            }, {
+              name: 'Programmes',
+              path: '/programmes'
+            }, {
+              name: 'Admissions',
+              path: '/admissions'
+            }, {
+              name: 'Contact',
+              path: '/contact'
+            }].map(link => <li key={link.path}>
+                  <Link to={link.path} className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -92,11 +90,7 @@ const Footer = () => {
               Subscribe to our newsletter for updates on events, programs, and educational tips.
             </p>
             <div className="space-y-3">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="w-full px-4 py-3 rounded-xl bg-card text-card-foreground border border-border focus:ring-2 focus:ring-primary focus:border-transparent"
-              />
+              <input type="email" placeholder="Your email address" className="w-full px-4 py-3 rounded-xl bg-card text-card-foreground border border-border focus:ring-2 focus:ring-primary focus:border-transparent" />
               <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 rounded-xl font-semibold transition-colors">
                 Subscribe
               </button>
@@ -112,24 +106,16 @@ const Footer = () => {
               <p>UEN202525801M</p>
             </div>
             <div className="flex space-x-6">
-              <Link 
-                to="/privacy-policy" 
-                className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200"
-              >
+              <Link to="/privacy-policy" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
                 Privacy Policy
               </Link>
-              <Link 
-                to="/terms" 
-                className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200"
-              >
+              <Link to="/terms" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
                 Terms of Service
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
