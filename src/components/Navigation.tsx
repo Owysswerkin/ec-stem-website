@@ -65,13 +65,9 @@ const Navigation = () => {
             <Link to="/" className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
-                alt="Ec stem Logo" 
+                alt="EC STEM Logo" 
                 className="h-12 w-auto"
               />
-              <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-foreground">EC STEM</h1>
-                <p className="text-sm text-muted-foreground">Early Childhood STEM</p>
-              </div>
             </Link>
 
             {/* Desktop Navigation */}
