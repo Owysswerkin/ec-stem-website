@@ -2,7 +2,7 @@
 import React from 'react';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import principalImage from '@/assets/principal-portrait.jpg';
+import msHuangPortrait from '@/assets/ms-huang-portrait.jpg';
 import classroomImage from '@/assets/classroom-activities.jpg';
 
 const About = () => {
@@ -41,10 +41,10 @@ const About = () => {
 
   const team = [
     {
-      name: 'Dr. Sarah Chen',
+      name: 'Ms Huang',
       role: 'Founder & STEM Director',
-      image: principalImage,
-      description: 'PhD in Early Childhood Education with 15 years of experience in STEM curriculum development and educator training.'
+      image: msHuangPortrait,
+      description: 'Passionate educator with extensive experience in early childhood STEM education and curriculum development.'
     },
     {
       name: 'Ms. Jennifer Lim',
@@ -151,8 +151,8 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <div className="md:col-span-1">
                   <img 
-                    src={principalImage} 
-                    alt="Dr. Sarah Chen - Founder" 
+                    src={msHuangPortrait} 
+                    alt="Ms Huang - Founder" 
                     className="w-48 h-48 rounded-full object-cover mx-auto shadow-warm"
                   />
                 </div>
@@ -161,15 +161,14 @@ const About = () => {
                     A Message from Our Founder
                   </h2>
                   <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6 italic">
-                    "Every childcare centre deserves access to quality STEM education. At Ec stem, 
-                    we bridge the gap between advanced educational concepts and practical implementation, 
-                    empowering educators with the tools and confidence to inspire young scientists, 
-                    engineers, and innovators."
+                    "Every child deserves the opportunity to explore, discover, and fall in love with learning. 
+                    At EC STEM, we bring the wonder of science, technology, engineering, and mathematics directly 
+                    to childcare centres, empowering educators and inspiring young minds to see the world as their laboratory."
                   </blockquote>
                   <div>
-                    <p className="font-semibold text-foreground">Dr. Sarah Chen</p>
+                    <p className="font-semibold text-foreground">Ms Huang</p>
                     <p className="text-muted-foreground">Founder & STEM Director</p>
-                    <p className="text-sm text-muted-foreground">PhD in Early Childhood Education, 15+ years experience</p>
+                    <p className="text-sm text-muted-foreground">Passionate educator and early childhood STEM specialist</p>
                   </div>
                 </div>
               </div>
