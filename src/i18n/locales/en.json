@@ -182,6 +182,158 @@
       "button": "Contact Us for Partnership"
     }
   },
+  "admissionsPage": {
+    "title": "Partner with EC STEM",
+    "subtitle": "Transform your centre with engaging STEM programs. Join our network of partner centres and bring innovative early childhood STEM education to your students.",
+    "processTitle": "Simple 4-Step Partnership Process",
+    "processSubtitle": "Getting started with EC STEM is easy. Follow these simple steps to bring quality STEM education to your centre.",
+    "steps": {
+      "submit": {
+        "title": "Submit Enquiry",
+        "description": "Fill out our partnership enquiry form with your centre details.",
+        "time": "5 minutes"
+      },
+      "consultation": {
+        "title": "Consultation Call",
+        "description": "We'll schedule a call to discuss your needs and our STEM programs.",
+        "time": "1 day"
+      },
+      "demo": {
+        "title": "Program Demo",
+        "description": "Experience our STEM activities and see how they fit your centre.",
+        "time": "30 minutes"
+      },
+      "setup": {
+        "title": "Partnership Setup",
+        "description": "Finalize partnership agreement and begin program implementation.",
+        "time": "1-2 weeks"
+      }
+    },
+    "form": {
+      "title": "Partnership Enquiry Form",
+      "subtitle": "Tell us about your centre and we'll schedule a consultation call to discuss how EC STEM can help.",
+      "centreInfo": "Centre Information",
+      "centreName": "Centre Name",
+      "centreLocation": "Centre Location",
+      "numberOfStudents": "Number of Students",
+      "ageGroup": "Age Group",
+      "contactInfo": "Contact Information",
+      "contactPerson": "Contact Person",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "programInterest": "Program Interest",
+      "interestedPrograms": "Interested Programs",
+      "preferredStartDate": "Preferred Start Date",
+      "currentCurriculum": "Current Curriculum/Programs",
+      "additionalInfo": "Additional Information",
+      "questions": "Questions or Special Requirements",
+      "submit": "Book Consultation Call"
+    },
+    "benefits": {
+      "title": "Partnership Benefits",
+      "subtitle": "What you get when you partner with EC STEM:",
+      "list": [
+        "Expert STEM educators and facilitators",
+        "Age-appropriate curriculum and materials",
+        "Regular progress reports and assessments",
+        "Teacher training and support",
+        "Flexible scheduling options",
+        "Ongoing program updates and improvements"
+      ]
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you! Get in touch to learn more about our programmes, schedule a visit, or ask any questions about your child's early learning journey.",
+    "getInTouch": "Get in Touch",
+    "getInTouchSubtitle": "Choose the most convenient way to reach us. We're here to help!",
+    "contactMethods": {
+      "call": {
+        "title": "Call Us",
+        "details": ["+65 6234 5678", "Mon - Fri: 8:00 AM - 6:00 PM"],
+        "action": "Call Now"
+      },
+      "email": {
+        "title": "Email Us",
+        "details": ["hello@ecstem.club", "We reply within 24 hours"],
+        "action": "Send Email"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "details": ["+65 9123 4567", "Quick responses available"],
+        "action": "Message Us"
+      }
+    },
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+      "parentName": "Parent's Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "preferredCentre": "Preferred Centre",
+      "childAge": "Child's Age",
+      "enquiryType": "Enquiry Type",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "centres": {
+      "title": "Our Centres",
+      "subtitle": "Visit any of our three convenient locations. Each centre offers the same high-quality programmes with unique features.",
+      "getDirections": "Get Directions"
+    },
+    "officeHours": {
+      "title": "Office Hours",
+      "weekday": "Monday - Friday",
+      "weekdayTime": "7:00 AM - 7:00 PM",
+      "saturday": "Saturday",
+      "saturdayTime": "8:00 AM - 12:00 PM",
+      "sunday": "Sunday",
+      "sundayTime": "Closed"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to common questions. Can't find what you're looking for? Contact us directly!"
+    }
+  },
+  "centresPage": {
+    "title": "Our Centres",
+    "subtitle": "Three convenient locations across Singapore, each designed to provide a warm, safe, and inspiring environment for your child's learning journey.",
+    "established": "Established",
+    "servingCommunity": "Serving the community for",
+    "years": "years",
+    "capacity": "Capacity",
+    "centreFeatures": "Centre Features",
+    "gettingHere": "Getting Here",
+    "scheduleVisit": "Schedule Visit",
+    "viewOnMap": "View on Map",
+    "findUs": "Find Us",
+    "findUsSubtitle": "All our centres are conveniently located with excellent transport links and parking facilities.",
+    "interactiveMap": "Interactive Map",
+    "mapDescription": "Visit our centres page to view detailed location information and directions.",
+    "contactCentre": "Contact Centre",
+    "chooseLocation": "Choose Your Preferred Location",
+    "chooseLocationSubtitle": "Each centre offers the same high-quality education with unique features tailored to the local community.",
+    "comparison": {
+      "feature": "Feature",
+      "mainCampus": "Main Campus",
+      "eastCentre": "East Centre",
+      "westCentre": "West Centre",
+      "ageGroups": "Age Groups",
+      "capacity": "Capacity",
+      "specialFeatures": "Special Features",
+      "parkingLots": "Parking Lots",
+      "mainLibrary": "Main library",
+      "swimmingPool": "Swimming pool",
+      "techLab": "Tech lab",
+      "covered": "covered"
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Oops! Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "returnHome": "Return to Home"
+  },
   "footer": {
     "about": {
       "title": "About EC Stem Club",

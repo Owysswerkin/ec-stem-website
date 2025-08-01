@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -15,7 +18,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
-              We bring science, technology, engineering, and math to life for young children through playful, hands-on learning that sparks wonder and builds confidence.
+              {t('footer.about.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
@@ -32,19 +35,19 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6">{t('footer.quickLinks')}</h4>
             <ul className="space-y-3">
               {[{
-              name: 'About Us',
+              name: t('nav.about'),
               path: '/about'
             }, {
-              name: 'Programmes',
+              name: t('nav.programmes'),
               path: '/programmes'
             }, {
-              name: 'Admissions',
+              name: t('nav.admissions'),
               path: '/admissions'
             }, {
-              name: 'Contact',
+              name: t('nav.contact'),
               path: '/contact'
             }].map(link => <li key={link.path}>
                   <Link to={link.path} className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
@@ -56,7 +59,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
+            <h4 className="text-lg font-semibold mb-6">{t('footer.contact.title')}</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -67,11 +70,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm opacity-75">+65 6234 5678</span>
+                <span className="text-sm opacity-75">{t('footer.contact.phone')}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm opacity-75">hello@ecstem.education</span>
+                <span className="text-sm opacity-75">{t('footer.contact.email')}</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -102,15 +105,15 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm opacity-75 mb-4 md:mb-0">
-              <p>© 2025 EC STEM PTE. LTD. All rights reserved.</p>
+              <p>{t('footer.copyright')}</p>
               <p>UEN202525801M</p>
             </div>
             <div className="flex space-x-6">
               <Link to="/privacy-policy" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
-                Privacy Policy
+                {t('footer.privacy')}
               </Link>
               <Link to="/terms" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
-                Terms of Service
+                {t('footer.terms')}
               </Link>
             </div>
           </div>

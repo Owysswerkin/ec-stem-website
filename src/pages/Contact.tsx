@@ -5,8 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -113,11 +115,10 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Contact Us
+              {t('contactPage.title')}
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              We'd love to hear from you! Get in touch to learn more about our programmes, 
-              schedule a visit, or ask any questions about your child's early learning journey.
+              {t('contactPage.subtitle')}
             </p>
           </div>
         </div>
@@ -128,10 +129,10 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Get in Touch
+              {t('contactPage.getInTouch')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Choose the most convenient way to reach us. We're here to help!
+              {t('contactPage.getInTouchSubtitle')}
             </p>
           </div>
 

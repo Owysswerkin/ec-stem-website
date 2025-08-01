@@ -5,8 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 const Admissions = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     centreName: '',
     contactPerson: '',
@@ -56,31 +58,31 @@ const Admissions = () => {
   const partnershipSteps = [
     {
       step: 1,
-      title: 'Submit Enquiry',
-      description: 'Fill out our partnership enquiry form with your centre details.',
+      title: t('admissionsPage.steps.submit.title'),
+      description: t('admissionsPage.steps.submit.description'),
       icon: FileText,
-      estimated: '5 minutes'
+      estimated: t('admissionsPage.steps.submit.time')
     },
     {
       step: 2,
-      title: 'Consultation Call',
-      description: 'We\'ll schedule a call to discuss your needs and our STEM programs.',
+      title: t('admissionsPage.steps.consultation.title'),
+      description: t('admissionsPage.steps.consultation.description'),
       icon: Phone,
-      estimated: '1 day'
+      estimated: t('admissionsPage.steps.consultation.time')
     },
     {
       step: 3,
-      title: 'Program Demo',
-      description: 'Experience our STEM activities and see how they fit your centre.',
+      title: t('admissionsPage.steps.demo.title'),
+      description: t('admissionsPage.steps.demo.description'),
       icon: Users,
-      estimated: '30 minutes'
+      estimated: t('admissionsPage.steps.demo.time')
     },
     {
       step: 4,
-      title: 'Partnership Setup',
-      description: 'Finalize partnership agreement and begin program implementation.',
+      title: t('admissionsPage.steps.setup.title'),
+      description: t('admissionsPage.steps.setup.description'),
       icon: CheckCircle,
-      estimated: '1-2 weeks'
+      estimated: t('admissionsPage.steps.setup.time')
     }
   ];
 
@@ -106,14 +108,7 @@ const Admissions = () => {
     { value: 'mixed', label: 'Mixed Ages' }
   ];
 
-  const partnershipBenefits = [
-    'Expert STEM educators and facilitators',
-    'Age-appropriate curriculum and materials',
-    'Regular progress reports and assessments',
-    'Teacher training and support',
-    'Flexible scheduling options',
-    'Ongoing program updates and improvements'
-  ];
+  const partnershipBenefits = t('admissionsPage.benefits.list', { returnObjects: true }) as string[];
 
   return (
     <div className="min-h-screen">
@@ -122,11 +117,10 @@ const Admissions = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-              Partner with EC STEM
+              {t('admissionsPage.title')}
             </h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Transform your centre with engaging STEM programs. 
-              Join our network of partner centres and bring innovative early childhood STEM education to your students.
+              {t('admissionsPage.subtitle')}
             </p>
           </div>
         </div>
@@ -137,10 +131,10 @@ const Admissions = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Simple 4-Step Partnership Process
+              {t('admissionsPage.processTitle')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Getting started with EC STEM is easy. Follow these simple steps to bring quality STEM education to your centre.
+              {t('admissionsPage.processSubtitle')}
             </p>
           </div>
 
@@ -180,20 +174,20 @@ const Admissions = () => {
             <div className="lg:col-span-2">
               <Card className="border-none shadow-warm">
                 <CardHeader>
-                  <h2 className="text-3xl font-bold text-foreground mb-2">Partnership Enquiry Form</h2>
+                  <h2 className="text-3xl font-bold text-foreground mb-2">{t('admissionsPage.form.title')}</h2>
                   <p className="text-muted-foreground">
-                    Tell us about your centre and we'll schedule a consultation call to discuss how EC STEM can help.
+                    {t('admissionsPage.form.subtitle')}
                   </p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     {/* Centre Information */}
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-4">Centre Information</h3>
+                      <h3 className="text-xl font-semibold text-foreground mb-4">{t('admissionsPage.form.centreInfo')}</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-sm font-semibold text-foreground mb-2">
-                            Centre Name *
+                            {t('admissionsPage.form.centreName')} *
                           </label>
                           <Input
                             type="text"
@@ -376,7 +370,7 @@ const Admissions = () => {
                     </div>
 
                     <Button type="submit" variant="hero" size="lg" className="w-full">
-                      Book Consultation Call
+                      {t('admissionsPage.form.submit')}
                     </Button>
                   </form>
                 </CardContent>
@@ -389,12 +383,12 @@ const Admissions = () => {
                 <CardHeader>
                   <h3 className="text-xl font-bold text-foreground flex items-center">
                     <Building2 className="h-6 w-6 text-primary mr-3" />
-                    Partnership Benefits
+                    {t('admissionsPage.benefits.title')}
                   </h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm mb-4">
-                    What you get when you partner with EC STEM:
+                    {t('admissionsPage.benefits.subtitle')}
                   </p>
                   <ul className="space-y-3">
                     {partnershipBenefits.map((benefit, index) => (

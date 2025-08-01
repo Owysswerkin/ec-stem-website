@@ -2,10 +2,12 @@ import React from 'react';
 import { MapPin, Phone, Clock, Users, Car, Train } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 import classroomImage from '@/assets/classroom-activities.jpg';
 import outdoorImage from '@/assets/outdoor-play.jpg';
 
 const Centres = () => {
+  const { t } = useTranslation();
   const centres = [
     {
       id: 1,
@@ -88,11 +90,10 @@ const Centres = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Our Centres
+              {t('centresPage.title')}
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Three convenient locations across Singapore, each designed to provide a warm, 
-              safe, and inspiring environment for your child's learning journey.
+              {t('centresPage.subtitle')}
             </p>
           </div>
         </div>
@@ -119,11 +120,11 @@ const Centres = () => {
                       <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-4">
                         <div className="flex items-center justify-between">
                           <div>
-                            <p className="text-sm font-semibold text-primary">Established {centre.established}</p>
-                            <p className="text-xs text-muted-foreground">Serving the community for {2024 - parseInt(centre.established)} years</p>
+                            <p className="text-sm font-semibold text-primary">{t('centresPage.established')} {centre.established}</p>
+                            <p className="text-xs text-muted-foreground">{t('centresPage.servingCommunity')} {2024 - parseInt(centre.established)} {t('centresPage.years')}</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-sm font-semibold text-foreground">Capacity</p>
+                            <p className="text-sm font-semibold text-foreground">{t('centresPage.capacity')}</p>
                             <p className="text-xs text-muted-foreground">{centre.capacity}</p>
                           </div>
                         </div>
@@ -156,7 +157,7 @@ const Centres = () => {
 
                   {/* Features */}
                   <div className="mb-8">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">Centre Features</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">{t('centresPage.centreFeatures')}</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                       {centre.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center space-x-2">
@@ -169,7 +170,7 @@ const Centres = () => {
 
                   {/* Transport */}
                   <div className="mb-8">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">Getting Here</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">{t('centresPage.gettingHere')}</h3>
                     <div className="space-y-2">
                       {centre.transport.map((transport, idx) => {
                         const icon = transport.includes('MRT') ? Train : 
@@ -187,10 +188,10 @@ const Centres = () => {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button variant="default">
-                      Schedule Visit
+                      {t('centresPage.scheduleVisit')}
                     </Button>
                     <Button variant="outline">
-                      View on Map
+                      {t('centresPage.viewOnMap')}
                     </Button>
                   </div>
                 </div>

@@ -182,6 +182,158 @@
       "button": "联系我们进行合作"
     }
   },
+  "admissionsPage": {
+    "title": "与EC STEM合作",
+    "subtitle": "通过引人入胜的STEM项目改造您的中心。加入我们的合作伙伴中心网络，为您的学生带来创新的儿童早期STEM教育。",
+    "processTitle": "简单的4步合作流程",
+    "processSubtitle": "开始与EC STEM合作很简单。按照这些简单的步骤为您的中心带来优质的STEM教育。",
+    "steps": {
+      "submit": {
+        "title": "提交咨询",
+        "description": "填写我们的合作咨询表，提供您的中心详细信息。",
+        "time": "5分钟"
+      },
+      "consultation": {
+        "title": "咨询电话",
+        "description": "我们将安排电话讨论您的需求和我们的STEM项目。",
+        "time": "1天"
+      },
+      "demo": {
+        "title": "项目演示",
+        "description": "体验我们的STEM活动，看看它们如何适合您的中心。",
+        "time": "30分钟"
+      },
+      "setup": {
+        "title": "合作建立",
+        "description": "完成合作协议并开始项目实施。",
+        "time": "1-2周"
+      }
+    },
+    "form": {
+      "title": "合作咨询表",
+      "subtitle": "告诉我们您的中心情况，我们将安排咨询电话讨论EC STEM如何帮助您。",
+      "centreInfo": "中心信息",
+      "centreName": "中心名称",
+      "centreLocation": "中心位置",
+      "numberOfStudents": "学生人数",
+      "ageGroup": "年龄组",
+      "contactInfo": "联系信息",
+      "contactPerson": "联系人",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "programInterest": "项目兴趣",
+      "interestedPrograms": "感兴趣的项目",
+      "preferredStartDate": "首选开始日期",
+      "currentCurriculum": "当前课程/项目",
+      "additionalInfo": "附加信息",
+      "questions": "问题或特殊要求",
+      "submit": "预约咨询电话"
+    },
+    "benefits": {
+      "title": "合作优势",
+      "subtitle": "与EC STEM合作您将获得：",
+      "list": [
+        "专业STEM教育工作者和协调员",
+        "适龄的课程和材料",
+        "定期的进度报告和评估",
+        "教师培训和支持",
+        "灵活的时间安排选项",
+        "持续的项目更新和改进"
+      ]
+    }
+  },
+  "contactPage": {
+    "title": "联系我们",
+    "subtitle": "我们很想听到您的声音！联系我们了解更多关于我们的项目、安排参观，或询问关于您孩子早期学习之旅的任何问题。",
+    "getInTouch": "联系我们",
+    "getInTouchSubtitle": "选择最方便的方式联系我们。我们在这里帮助您！",
+    "contactMethods": {
+      "call": {
+        "title": "致电我们",
+        "details": ["+65 6234 5678", "周一至周五：上午8:00 - 下午6:00"],
+        "action": "立即致电"
+      },
+      "email": {
+        "title": "发邮件给我们",
+        "details": ["hello@ecstem.club", "我们在24小时内回复"],
+        "action": "发送邮件"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "details": ["+65 9123 4567", "快速响应可用"],
+        "action": "给我们发消息"
+      }
+    },
+    "form": {
+      "title": "给我们发消息",
+      "subtitle": "填写下面的表格，我们将尽快回复您。",
+      "parentName": "家长姓名",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "preferredCentre": "首选中心",
+      "childAge": "孩子年龄",
+      "enquiryType": "咨询类型",
+      "message": "消息",
+      "submit": "发送消息"
+    },
+    "centres": {
+      "title": "我们的中心",
+      "subtitle": "参观我们三个便利的地点中的任何一个。每个中心都提供相同的高质量项目和独特功能。",
+      "getDirections": "获取路线"
+    },
+    "officeHours": {
+      "title": "办公时间",
+      "weekday": "周一至周五",
+      "weekdayTime": "上午7:00 - 下午7:00",
+      "saturday": "周六",
+      "saturdayTime": "上午8:00 - 下午12:00",
+      "sunday": "周日",
+      "sundayTime": "休息"
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "常见问题的快速答案。找不到您要找的内容？直接联系我们！"
+    }
+  },
+  "centresPage": {
+    "title": "我们的中心",
+    "subtitle": "新加坡三个便利的地点，每个都设计为您孩子的学习之旅提供温暖、安全和鼓舞人心的环境。",
+    "established": "成立于",
+    "servingCommunity": "为社区服务",
+    "years": "年",
+    "capacity": "容量",
+    "centreFeatures": "中心特色",
+    "gettingHere": "到这里",
+    "scheduleVisit": "安排参观",
+    "viewOnMap": "在地图上查看",
+    "findUs": "找到我们",
+    "findUsSubtitle": "我们所有的中心都位置便利，具有优良的交通连接和停车设施。",
+    "interactiveMap": "互动地图",
+    "mapDescription": "访问我们的中心页面查看详细的位置信息和路线。",
+    "contactCentre": "联系中心",
+    "chooseLocation": "选择您的首选位置",
+    "chooseLocationSubtitle": "每个中心都提供相同的高质量教育，具有为当地社区量身定制的独特功能。",
+    "comparison": {
+      "feature": "特色",
+      "mainCampus": "主校区",
+      "eastCentre": "东部中心",
+      "westCentre": "西部中心",
+      "ageGroups": "年龄组",
+      "capacity": "容量",
+      "specialFeatures": "特殊功能",
+      "parkingLots": "停车位",
+      "mainLibrary": "主图书馆",
+      "swimmingPool": "游泳池",
+      "techLab": "技术实验室",
+      "covered": "有盖"
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "哎呀！找不到页面",
+    "description": "您要查找的页面不存在或已被移动。",
+    "returnHome": "返回首页"
+  },
   "footer": {
     "about": {
       "title": "关于EC Stem Club",
