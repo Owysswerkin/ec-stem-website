@@ -3,20 +3,19 @@
     "home": "首页",
     "about": "关于我们",
     "programmes": "课程",
-    "centres": "合作中心",
     "admissions": "入学申请",
     "contact": "联系我们",
     "enrollNow": "立即报名"
   },
   "hero": {
-    "title": "通过STEM教育启发年轻心灵",
-    "subtitle": "好奇心与发现相遇的地方！EC Stem Club为儿童早期发展提供创新的STEM教育项目，与托儿中心合作，为年幼学习者带来前沿的学习体验。",
-    "cta": "了解我们的课程"
+    "title": "好奇心从这里开始。",
+    "subtitle": "我们通过有趣的动手学习，为幼儿带来科学、技术、工程和数学的生活化体验，激发好奇心并建立自信心。",
+    "cta": "探索我们的项目"
   },
   "about": {
-    "title": "关于EC Stem Club",
+    "title": "关于EC STEM",
     "subtitle": "通过实践STEM教育培养明日创新者",
-    "description": "EC Stem Club是领先的儿童早期STEM教育提供商，致力于通过创新的学习体验启发年轻心灵。我们与托儿中心合作，为18个月至6岁的儿童提供全面的STEM课程，培养批判性思维、创造力和解决问题的能力。"
+    "description": "EC STEM是领先的儿童早期STEM教育提供商，由黄女士创立，致力于通过创新的学习体验启发年轻心灵。我们与托儿中心合作，为18个月至6岁的儿童提供全面的STEM课程，培养批判性思维、创造力和解决问题的能力。"
   },
   "programs": {
     "title": "我们的STEM课程",
@@ -38,7 +37,7 @@
     }
   },
   "services": {
-    "title": "为什么选择EC Stem Club？",
+    "title": "为什么选择EC STEM？",
     "subtitle": "与您的孩子一起成长的全面STEM教育",
     "experienced": {
       "title": "专业STEM教育工作者",
@@ -60,7 +59,7 @@
   "cta": {
     "title": "准备与我们合作了吗？",
     "subtitle": "加入提供创新STEM教育的托儿中心不断发展的网络",
-    "button": "与EC Stem Club合作"
+    "button": "与EC STEM合作"
   },
   "footer": {
     "about": {

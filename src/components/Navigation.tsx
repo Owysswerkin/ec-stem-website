@@ -28,9 +28,7 @@ const Navigation = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.programmes'), path: '/programmes' },
-    { name: t('nav.centres'), path: '/centres' },
     { name: t('nav.admissions'), path: '/admissions' },
-    { name: 'Gallery', path: '/gallery' },
     { name: t('nav.contact'), path: '/contact' },
   ];
 
@@ -48,7 +46,7 @@ const Navigation = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <span>hello@ecstem.edu.sg</span>
+              <span>hello@ecstem.education</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -71,7 +69,7 @@ const Navigation = () => {
                 className="h-12 w-auto"
               />
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-foreground">Ec stem</h1>
+                <h1 className="text-xl font-bold text-foreground">EC STEM</h1>
                 <p className="text-sm text-muted-foreground">Early Childhood STEM</p>
               </div>
             </Link>

@@ -14,12 +14,12 @@ const Footer = () => {
                 ES
               </div>
               <div>
-                <h3 className="text-xl font-bold">EC Stem Club</h3>
+                <h3 className="text-xl font-bold">EC STEM</h3>
                 <p className="text-sm opacity-75">Early Childhood STEM</p>
               </div>
             </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
-              Empowering early childhood education through innovative STEM programs, robotics training, and hands-on learning experiences for childcare centers.
+              We bring science, technology, engineering, and math to life for young children through playful, hands-on learning that sparks wonder and builds confidence.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
@@ -41,10 +41,8 @@ const Footer = () => {
               {[
                 { name: 'About Us', path: '/about' },
                 { name: 'Programmes', path: '/programmes' },
-                { name: 'Our Centres', path: '/centres' },
                 { name: 'Admissions', path: '/admissions' },
-                { name: 'Gallery', path: '/gallery' },
-                { name: 'Testimonials', path: '/testimonials' },
+                { name: 'Contact', path: '/contact' },
               ].map((link) => (
                 <li key={link.path}>
                   <Link 
@@ -65,8 +63,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="text-sm opacity-75">
-                  <p>123 Learning Street</p>
-                  <p>Singapore 123456</p>
+                  <p>101A UPPER CROSS STREET, #09-11</p>
+                  <p>PEOPLE'S PARK CENTRE, Singapore 058358</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -75,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm opacity-75">hello@ecstem.club</span>
+                <span className="text-sm opacity-75">hello@ecstem.education</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -109,9 +107,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm opacity-75 mb-4 md:mb-0">
-              © 2025 EC Stem Club. All rights reserved.
-            </p>
+            <div className="text-sm opacity-75 mb-4 md:mb-0">
+              <p>© 2025 EC STEM PTE. LTD. All rights reserved.</p>
+              <p>UEN202525801M</p>
+            </div>
             <div className="flex space-x-6">
               <Link 
                 to="/privacy-policy" 

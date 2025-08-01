@@ -3,20 +3,19 @@
     "home": "Home",
     "about": "About",
     "programmes": "Programmes",
-    "centres": "Centres",
     "admissions": "Admissions",
     "contact": "Contact",
     "enrollNow": "Enroll Now"
   },
   "hero": {
-    "title": "Inspiring Young Minds Through STEM",
-    "subtitle": "Where curiosity meets discovery! EC Stem Club provides innovative STEM education programs for early childhood development, partnering with childcare centres to bring cutting-edge learning experiences directly to young learners.",
-    "cta": "Discover Our Programs"
+    "title": "Curious minds start here.",
+    "subtitle": "We bring science, technology, engineering, and math to life for young children through playful, hands-on learning that sparks wonder and builds confidence.",
+    "cta": "Explore Our Programs"
   },
   "about": {
-    "title": "About EC Stem Club",
+    "title": "About EC STEM",
     "subtitle": "Nurturing tomorrow's innovators through hands-on STEM education",
-    "description": "EC Stem Club is a leading early childhood STEM education provider, dedicated to inspiring young minds through innovative learning experiences. We partner with childcare centres to deliver comprehensive STEM programs that develop critical thinking, creativity, and problem-solving skills in children aged 18 months to 6 years."
+    "description": "EC STEM is a leading early childhood STEM education provider, founded by Ms Huang, dedicated to inspiring young minds through innovative learning experiences. We partner with childcare centres to deliver comprehensive STEM programs that develop critical thinking, creativity, and problem-solving skills in children aged 18 months to 6 years."
   },
   "programs": {
     "title": "Our STEM Programs",
@@ -38,7 +37,7 @@
     }
   },
   "services": {
-    "title": "Why Choose EC Stem Club?",
+    "title": "Why Choose EC STEM?",
     "subtitle": "Comprehensive STEM education that grows with your child",
     "experienced": {
       "title": "Expert STEM Educators",
@@ -60,7 +59,7 @@
   "cta": {
     "title": "Ready to Partner with Us?",
     "subtitle": "Join the growing network of childcare centres offering innovative STEM education",
-    "button": "Partner with EC Stem Club"
+    "button": "Partner with EC STEM"
   },
   "footer": {
     "about": {
