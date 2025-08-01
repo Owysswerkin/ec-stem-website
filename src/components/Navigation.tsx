@@ -64,10 +64,11 @@ const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
-                alt="EC STEM Logo" 
-                className="h-20 w-auto"
+                src="/favicon-e.png" 
+                alt="EC STEM - E Logo" 
+                className="h-12 w-12"
               />
+              <span className="text-xl font-bold text-primary">EC STEM</span>
             </Link>
 
             {/* Desktop Navigation */}
