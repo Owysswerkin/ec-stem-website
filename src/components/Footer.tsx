@@ -7,7 +7,7 @@ const Footer = () => {
   
   return <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* School Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -86,19 +86,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Stay Updated</h4>
-            <p className="text-sm opacity-75 mb-4">
-              Subscribe to our newsletter for updates on events, programs, and educational tips.
-            </p>
-            <div className="space-y-3">
-              <input type="email" placeholder="Your email address" className="w-full px-4 py-3 rounded-xl bg-card text-card-foreground border border-border focus:ring-2 focus:ring-primary focus:border-transparent" />
-              <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 rounded-xl font-semibold transition-colors">
-                Subscribe
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
