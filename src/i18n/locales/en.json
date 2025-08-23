@@ -258,56 +258,115 @@
     }
   },
   "contactPage": {
-    "title": "Contact Us",
-    "subtitle": "We'd love to hear from you! Get in touch to learn more about our programmes, schedule a visit, or ask any questions about your child's early learning journey.",
-    "getInTouch": "Get in Touch",
-    "getInTouchSubtitle": "Choose the most convenient way to reach us. We're here to help!",
-    "contactMethods": {
-      "call": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you! Contact us to learn more about bringing quality STEM education to your childcare centre.",
+    "getInTouch": "Contact EC STEM",
+    "getInTouchSubtitle": "Choose the most convenient way to reach us. We're here to help bring innovative STEM education to your childcare centre!",
+    "contact": {
+      "phone": {
         "title": "Call Us",
-        "details": ["+65 6234 5678", "Mon - Fri: 8:00 AM - 6:00 PM"],
+        "number": "+65 6234 5678",
+        "hours": "Mon - Fri: 8:00 AM - 5:00 PM",
         "action": "Call Now"
       },
       "email": {
         "title": "Email Us",
-        "details": ["hello@ecstem.club", "We reply within 24 hours"],
+        "address": "hello@ecstem.club",
+        "response": "We reply within 24 hours",
         "action": "Send Email"
       },
       "whatsapp": {
         "title": "WhatsApp",
-        "details": ["+65 9123 4567", "Quick responses available"],
+        "number": "+65 9123 4567",
+        "availability": "Quick responses available",
         "action": "Message Us"
       }
     },
     "form": {
       "title": "Send us a Message",
-      "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
-      "parentName": "Parent's Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "preferredCentre": "Preferred Centre",
-      "childAge": "Child's Age",
-      "enquiryType": "Enquiry Type",
-      "message": "Message",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours to discuss how we can support your childcare centre.",
+      "fields": {
+        "name": "Your Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "centre": "Your Childcare Centre",
+        "childAge": "Age Groups at Your Centre",
+        "enquiryType": "How Can We Help You?",
+        "message": "Tell Us More"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "your.email@example.com",
+        "phone": "+65 1234 5678",
+        "centre": "Name of your childcare centre",
+        "childAge": "Select age groups",
+        "enquiryType": "Select enquiry type",
+        "message": "Tell us about your centre, the ages you serve, and how we can help enhance your STEM education offerings..."
+      },
+      "enquiryTypes": {
+        "general": "General Information",
+        "partnership": "Partnership Opportunities",
+        "programs": "Program Details",
+        "pricing": "Pricing Information",
+        "visit": "Schedule a Consultation",
+        "other": "Other"
+      },
+      "childAges": {
+        "toddler": "18 months - 2 years",
+        "early": "2 - 3 years",
+        "preschool": "3 - 4 years",
+        "kindergarten": "4 - 5 years",
+        "primary": "5 - 6 years",
+        "multiple": "Multiple age groups"
+      },
       "submit": "Send Message"
     },
-    "centres": {
-      "title": "Our Centres",
-      "subtitle": "Visit any of our three convenient locations. Each centre offers the same high-quality programmes with unique features.",
-      "getDirections": "Get Directions"
-    },
-    "officeHours": {
-      "title": "Office Hours",
-      "weekday": "Monday - Friday",
-      "weekdayTime": "7:00 AM - 7:00 PM",
-      "saturday": "Saturday",
-      "saturdayTime": "8:00 AM - 12:00 PM",
-      "sunday": "Sunday",
-      "sundayTime": "Closed"
+    "office": {
+      "title": "Our Office",
+      "subtitle": "Visit our office to learn more about our STEM education services and how we can partner with your childcare centre.",
+      "location": {
+        "name": "EC STEM Head Office",
+        "address": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
+        "hours": "Mon - Fri: 8:00 AM - 5:00 PM",
+        "directions": "Get Directions"
+      },
+      "hours": {
+        "title": "Office Hours",
+        "weekdays": "Monday - Friday",
+        "weekdaysTimes": "8:00 AM - 5:00 PM",
+        "weekend": "Saturday - Sunday",
+        "weekendTimes": "Closed"
+      }
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "subtitle": "Quick answers to common questions. Can't find what you're looking for? Contact us directly!"
+      "subtitle": "Common questions from childcare centres about our STEM education services. Can't find what you're looking for? Contact us directly!",
+      "questions": {
+        "whatIsEcStem": {
+          "question": "What is EC STEM and what do you do?",
+          "answer": "EC STEM is Singapore's trusted partner for early childhood STEM education. We provide specialized robotics training, hands-on science programs, and comprehensive STEM enrichment services directly to childcare centres across Singapore."
+        },
+        "howItWorks": {
+          "question": "How does the partnership with childcare centres work?",
+          "answer": "We work closely with childcare centres to integrate age-appropriate STEM programs into their existing curriculum. Our experienced educators visit your centre regularly to deliver engaging, hands-on learning experiences that complement your educational goals."
+        },
+        "whyChooseUs": {
+          "question": "Why should we choose EC STEM over other education providers?",
+          "answer": "We specialize exclusively in early childhood STEM education with experienced educators, age-appropriate curriculum, proven track record with childcare centres, and ongoing support. Our programs are designed specifically for young learners aged 18 months to 6 years."
+        },
+        "safetyConcerns": {
+          "question": "Are your STEM programs safe for young children?",
+          "answer": "Absolutely! All our programs use age-appropriate, child-safe materials and equipment. Our educators are trained in early childhood development and safety protocols. We ensure every activity meets the highest safety standards for young learners."
+        },
+        "costEffective": {
+          "question": "Is it cost-effective to partner with EC STEM?",
+          "answer": "Yes! Partnering with us is more cost-effective than hiring specialized STEM staff. You get expert educators, curriculum, materials, and ongoing support without the overhead costs of recruitment, training, and resource management."
+        },
+        "getStarted": {
+          "question": "How can we get started with EC STEM?",
+          "answer": "Simply contact us for a free consultation! We'll discuss your centre's needs, explain our programs, and arrange a trial session. There's no obligation, and we'll work with you to create a customized STEM education plan for your centre."
+        }
+      }
     }
   },
   "centresPage": {

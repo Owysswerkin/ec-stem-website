@@ -51,61 +51,40 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: 'Call Us',
-      details: ['+65 6234 5678', 'Mon - Fri: 8:00 AM - 6:00 PM'],
-      action: 'Call Now'
+      title: t('contactPage.contact.phone.title'),
+      details: [t('contactPage.contact.phone.number'), t('contactPage.contact.phone.hours')],
+      action: t('contactPage.contact.phone.action')
     },
     {
       icon: Mail,
-      title: 'Email Us',
-      details: ['hello@ecstem.club', 'We reply within 24 hours'],
-      action: 'Send Email'
+      title: t('contactPage.contact.email.title'),
+      details: [t('contactPage.contact.email.address'), t('contactPage.contact.email.response')],
+      action: t('contactPage.contact.email.action')
     },
     {
       icon: MessageCircle,
-      title: 'WhatsApp',
-      details: ['+65 9123 4567', 'Quick responses available'],
-      action: 'Message Us'
-    }
-  ];
-
-  const centres = [
-    {
-      name: 'Little Stars Main Campus',
-      address: '123 Learning Street, Central District, Singapore 123456',
-      phone: '+65 6234 5678',
-      hours: 'Mon - Fri: 7:00 AM - 7:00 PM'
-    },
-    {
-      name: 'Little Stars East',
-      address: '456 Sunshine Avenue, East District, Singapore 456789',
-      phone: '+65 6345 6789',
-      hours: 'Mon - Fri: 7:00 AM - 7:00 PM'
-    },
-    {
-      name: 'Little Stars West',
-      address: '789 Rainbow Road, West District, Singapore 789012',
-      phone: '+65 6456 7890',
-      hours: 'Mon - Fri: 7:00 AM - 7:00 PM'
+      title: t('contactPage.contact.whatsapp.title'),
+      details: [t('contactPage.contact.whatsapp.number'), t('contactPage.contact.whatsapp.availability')],
+      action: t('contactPage.contact.whatsapp.action')
     }
   ];
 
   const enquiryTypes = [
-    'General Information',
-    'Programme Details',
-    'Admission Process',
-    'Centre Visit',
-    'Fees & Payment',
-    'Other'
+    t('contactPage.form.enquiryTypes.general'),
+    t('contactPage.form.enquiryTypes.partnership'),
+    t('contactPage.form.enquiryTypes.programs'),
+    t('contactPage.form.enquiryTypes.pricing'),
+    t('contactPage.form.enquiryTypes.visit'),
+    t('contactPage.form.enquiryTypes.other')
   ];
 
   const childAges = [
-    '18 months - 2 years',
-    '2 - 3 years',
-    '3 - 4 years',
-    '4 - 5 years',
-    '5 - 6 years',
-    'Multiple children'
+    t('contactPage.form.childAges.toddler'),
+    t('contactPage.form.childAges.early'),
+    t('contactPage.form.childAges.preschool'),
+    t('contactPage.form.childAges.kindergarten'),
+    t('contactPage.form.childAges.primary'),
+    t('contactPage.form.childAges.multiple')
   ];
 
   return (
@@ -168,9 +147,9 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="border-none shadow-warm">
               <CardHeader>
-                <h2 className="text-3xl font-bold text-foreground mb-2">Send us a Message</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-2">{t('contactPage.form.title')}</h2>
                 <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  {t('contactPage.form.subtitle')}
                 </p>
               </CardHeader>
               <CardContent>
@@ -178,7 +157,7 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Parent's Name *
+                        {t('contactPage.form.fields.name')} *
                       </label>
                       <Input
                         type="text"
@@ -187,12 +166,12 @@ const Contact = () => {
                         onChange={handleInputChange}
                         required
                         className="rounded-xl"
-                        placeholder="Your full name"
+                        placeholder={t('contactPage.form.placeholders.name')}
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Email Address *
+                        {t('contactPage.form.fields.email')} *
                       </label>
                       <Input
                         type="email"
@@ -201,7 +180,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         required
                         className="rounded-xl"
-                        placeholder="your.email@example.com"
+                        placeholder={t('contactPage.form.placeholders.email')}
                       />
                     </div>
                   </div>
@@ -209,7 +188,7 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Phone Number
+                        {t('contactPage.form.fields.phone')}
                       </label>
                       <Input
                         type="tel"
@@ -217,31 +196,28 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         className="rounded-xl"
-                        placeholder="+65 1234 5678"
+                        placeholder={t('contactPage.form.placeholders.phone')}
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Preferred Centre
+                        {t('contactPage.form.fields.centre')}
                       </label>
-                      <select
+                      <Input
+                        type="text"
                         name="centre"
                         value={formData.centre}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                      >
-                        <option value="">Select a centre</option>
-                        <option value="main">Main Campus</option>
-                        <option value="east">East Centre</option>
-                        <option value="west">West Centre</option>
-                      </select>
+                        className="rounded-xl"
+                        placeholder={t('contactPage.form.placeholders.centre')}
+                      />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Child's Age
+                        {t('contactPage.form.fields.childAge')}
                       </label>
                       <select
                         name="childAge"
@@ -249,15 +225,15 @@ const Contact = () => {
                         onChange={handleInputChange}
                         className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                       >
-                        <option value="">Select age range</option>
-                        {childAges.map((age) => (
-                          <option key={age} value={age}>{age}</option>
+                        <option value="">{t('contactPage.form.placeholders.childAge')}</option>
+                        {childAges.map((age, index) => (
+                          <option key={index} value={age}>{age}</option>
                         ))}
                       </select>
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Enquiry Type
+                        {t('contactPage.form.fields.enquiryType')}
                       </label>
                       <select
                         name="enquiryType"
@@ -265,9 +241,9 @@ const Contact = () => {
                         onChange={handleInputChange}
                         className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                       >
-                        <option value="">Select enquiry type</option>
-                        {enquiryTypes.map((type) => (
-                          <option key={type} value={type}>{type}</option>
+                        <option value="">{t('contactPage.form.placeholders.enquiryType')}</option>
+                        {enquiryTypes.map((type, index) => (
+                          <option key={index} value={type}>{type}</option>
                         ))}
                       </select>
                     </div>
@@ -275,7 +251,7 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-semibold text-foreground mb-2">
-                      Message
+                      {t('contactPage.form.fields.message')}
                     </label>
                     <Textarea
                       name="message"
@@ -283,69 +259,62 @@ const Contact = () => {
                       onChange={handleInputChange}
                       rows={5}
                       className="rounded-xl"
-                      placeholder="Tell us about your enquiry, your child's interests, or any specific questions you have..."
+                      placeholder={t('contactPage.form.placeholders.message')}
                     />
                   </div>
 
                   <Button type="submit" variant="default" size="lg" className="w-full">
                     <Send className="h-5 w-5 mr-2" />
-                    Send Message
+                    {t('contactPage.form.submit')}
                   </Button>
                 </form>
               </CardContent>
             </Card>
 
-            {/* Centre Information */}
+            {/* Office Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-6">Our Centres</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-6">{t('contactPage.office.title')}</h2>
                 <p className="text-muted-foreground mb-8">
-                  Visit any of our three convenient locations. Each centre offers the same high-quality 
-                  programmes with unique features.
+                  {t('contactPage.office.subtitle')}
                 </p>
               </div>
 
-              {centres.map((centre, index) => (
-                <Card key={index} className="border-none shadow-gentle hover:shadow-warm transition-all duration-300">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-4">{centre.name}</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-start space-x-3">
-                        <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <p className="text-muted-foreground text-sm">{centre.address}</p>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                        <p className="text-muted-foreground text-sm">{centre.phone}</p>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Clock className="h-5 w-5 text-primary flex-shrink-0" />
-                        <p className="text-muted-foreground text-sm">{centre.hours}</p>
-                      </div>
+              <Card className="border-none shadow-gentle hover:shadow-warm transition-all duration-300">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-4">{t('contactPage.office.location.name')}</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <p className="text-muted-foreground text-sm">{t('contactPage.office.location.address')}</p>
                     </div>
-                    <Button variant="outline" size="sm" className="mt-4">
-                      Get Directions
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                      <p className="text-muted-foreground text-sm">{t('contactPage.contact.phone.number')}</p>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Clock className="h-5 w-5 text-primary flex-shrink-0" />
+                      <p className="text-muted-foreground text-sm">{t('contactPage.office.location.hours')}</p>
+                    </div>
+                  </div>
+                  <Button variant="outline" size="sm" className="mt-4">
+                    {t('contactPage.office.location.directions')}
+                  </Button>
+                </CardContent>
+              </Card>
 
               {/* Office Hours */}
               <Card className="border-none shadow-gentle bg-primary-glow">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-4">Office Hours</h3>
+                  <h3 className="text-xl font-bold text-foreground mb-4">{t('contactPage.office.hours.title')}</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Monday - Friday</span>
-                      <span className="font-semibold text-foreground">7:00 AM - 7:00 PM</span>
+                      <span className="text-muted-foreground">{t('contactPage.office.hours.weekdays')}</span>
+                      <span className="font-semibold text-foreground">{t('contactPage.office.hours.weekdaysTimes')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Saturday</span>
-                      <span className="font-semibold text-foreground">8:00 AM - 12:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Sunday</span>
-                      <span className="font-semibold text-foreground">Closed</span>
+                      <span className="text-muted-foreground">{t('contactPage.office.hours.weekend')}</span>
+                      <span className="font-semibold text-foreground">{t('contactPage.office.hours.weekendTimes')}</span>
                     </div>
                   </div>
                 </CardContent>
@@ -360,30 +329,38 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Frequently Asked Questions
+              {t('contactPage.faq.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Quick answers to common questions. Can't find what you're looking for? Contact us directly!
+              {t('contactPage.faq.subtitle')}
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                question: "What are your operating hours?",
-                answer: "We're open Monday to Friday from 7:00 AM to 7:00 PM, and Saturday mornings from 8:00 AM to 12:00 PM for centre visits."
+                question: t('contactPage.faq.questions.whatIsEcStem.question'),
+                answer: t('contactPage.faq.questions.whatIsEcStem.answer')
               },
               {
-                question: "How do I schedule a centre visit?",
-                answer: "You can call us, send an email, or fill out our contact form. We offer guided tours every Tuesday and Thursday at 10:00 AM."
+                question: t('contactPage.faq.questions.howItWorks.question'),
+                answer: t('contactPage.faq.questions.howItWorks.answer')
               },
               {
-                question: "What documents do I need for enrollment?",
-                answer: "You'll need your child's birth certificate, immunization records, and a completed application form with recent photos."
+                question: t('contactPage.faq.questions.whyChooseUs.question'),
+                answer: t('contactPage.faq.questions.whyChooseUs.answer')
               },
               {
-                question: "Do you provide meals?",
-                answer: "Yes, we provide nutritious meals and snacks. We can accommodate special dietary requirements with advance notice."
+                question: t('contactPage.faq.questions.safetyConcerns.question'),
+                answer: t('contactPage.faq.questions.safetyConcerns.answer')
+              },
+              {
+                question: t('contactPage.faq.questions.costEffective.question'),
+                answer: t('contactPage.faq.questions.costEffective.answer')
+              },
+              {
+                question: t('contactPage.faq.questions.getStarted.question'),
+                answer: t('contactPage.faq.questions.getStarted.answer')
               }
             ].map((faq, index) => (
               <Card key={index} className="border-none shadow-gentle">

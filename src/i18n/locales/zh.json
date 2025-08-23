@@ -259,55 +259,114 @@
   },
   "contactPage": {
     "title": "联系我们",
-    "subtitle": "我们很想听到您的声音！联系我们了解更多关于我们的项目、安排参观，或询问关于您孩子早期学习之旅的任何问题。",
-    "getInTouch": "联系我们",
-    "getInTouchSubtitle": "选择最方便的方式联系我们。我们在这里帮助您！",
-    "contactMethods": {
-      "call": {
+    "subtitle": "我们很想听到您的声音！联系我们了解更多关于为您的托儿中心带来优质STEM教育的信息。",
+    "getInTouch": "联系EC STEM",
+    "getInTouchSubtitle": "选择最方便的方式联系我们。我们在这里帮助为您的托儿中心带来创新的STEM教育！",
+    "contact": {
+      "phone": {
         "title": "致电我们",
-        "details": ["+65 6234 5678", "周一至周五：上午8:00 - 下午6:00"],
+        "number": "+65 6234 5678",
+        "hours": "周一至周五：上午8:00 - 下午5:00",
         "action": "立即致电"
       },
       "email": {
         "title": "发邮件给我们",
-        "details": ["hello@ecstem.club", "我们在24小时内回复"],
+        "address": "hello@ecstem.club",
+        "response": "我们在24小时内回复",
         "action": "发送邮件"
       },
       "whatsapp": {
         "title": "WhatsApp",
-        "details": ["+65 9123 4567", "快速响应可用"],
-        "action": "给我们发消息"
+        "number": "+65 9123 4567",
+        "availability": "快速响应可用",
+        "action": "发消息给我们"
       }
     },
     "form": {
-      "title": "给我们发消息",
-      "subtitle": "填写下面的表格，我们将尽快回复您。",
-      "parentName": "家长姓名",
-      "email": "电子邮箱",
-      "phone": "电话号码",
-      "preferredCentre": "首选中心",
-      "childAge": "孩子年龄",
-      "enquiryType": "咨询类型",
-      "message": "消息",
+      "title": "给我们留言",
+      "subtitle": "填写下面的表格，我们将在24小时内回复您，讨论我们如何支持您的托儿中心。",
+      "fields": {
+        "name": "您的姓名",
+        "email": "邮箱地址",
+        "phone": "电话号码",
+        "centre": "您的托儿中心",
+        "childAge": "中心的年龄组",
+        "enquiryType": "我们如何帮助您？",
+        "message": "告诉我们更多"
+      },
+      "placeholders": {
+        "name": "您的全名",
+        "email": "your.email@example.com",
+        "phone": "+65 1234 5678",
+        "centre": "您的托儿中心名称",
+        "childAge": "选择年龄组",
+        "enquiryType": "选择咨询类型",
+        "message": "告诉我们您的中心情况、服务的年龄段，以及我们如何帮助增强您的STEM教育服务..."
+      },
+      "enquiryTypes": {
+        "general": "一般信息",
+        "partnership": "合作机会",
+        "programs": "项目详情",
+        "pricing": "价格信息",
+        "visit": "安排咨询",
+        "other": "其他"
+      },
+      "childAges": {
+        "toddler": "18个月 - 2岁",
+        "early": "2 - 3岁",
+        "preschool": "3 - 4岁",
+        "kindergarten": "4 - 5岁",
+        "primary": "5 - 6岁",
+        "multiple": "多个年龄组"
+      },
       "submit": "发送消息"
     },
-    "centres": {
-      "title": "我们的中心",
-      "subtitle": "参观我们三个便利的地点中的任何一个。每个中心都提供相同的高质量项目和独特功能。",
-      "getDirections": "获取路线"
-    },
-    "officeHours": {
-      "title": "办公时间",
-      "weekday": "周一至周五",
-      "weekdayTime": "上午7:00 - 下午7:00",
-      "saturday": "周六",
-      "saturdayTime": "上午8:00 - 下午12:00",
-      "sunday": "周日",
-      "sundayTime": "休息"
+    "office": {
+      "title": "我们的办公室",
+      "subtitle": "参观我们的办公室，了解更多关于我们的STEM教育服务以及我们如何与您的托儿中心合作。",
+      "location": {
+        "name": "EC STEM总部",
+        "address": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
+        "hours": "周一至周五：上午8:00 - 下午5:00",
+        "directions": "获取路线"
+      },
+      "hours": {
+        "title": "办公时间",
+        "weekdays": "周一 - 周五",
+        "weekdaysTimes": "上午8:00 - 下午5:00",
+        "weekend": "周六 - 周日",
+        "weekendTimes": "休息"
+      }
     },
     "faq": {
       "title": "常见问题",
-      "subtitle": "常见问题的快速答案。找不到您要找的内容？直接联系我们！"
+      "subtitle": "托儿中心关于我们STEM教育服务的常见问题。找不到您要找的内容？直接联系我们！",
+      "questions": {
+        "whatIsEcStem": {
+          "question": "什么是EC STEM，你们做什么？",
+          "answer": "EC STEM是新加坡值得信赖的儿童早期STEM教育合作伙伴。我们直接为新加坡各地的托儿中心提供专业的机器人培训、实践科学项目和全面的STEM强化服务。"
+        },
+        "howItWorks": {
+          "question": "与托儿中心的合作如何运作？",
+          "answer": "我们与托儿中心密切合作，将适龄的STEM项目整合到他们现有的课程中。我们经验丰富的教育工作者定期访问您的中心，提供引人入胜的实践学习体验，补充您的教育目标。"
+        },
+        "whyChooseUs": {
+          "question": "为什么我们应该选择EC STEM而不是其他教育提供商？",
+          "answer": "我们专门从事儿童早期STEM教育，拥有经验丰富的教育工作者、适龄课程、在托儿中心的成功记录以及持续支持。我们的项目专门为18个月至6岁的年轻学习者设计。"
+        },
+        "safetyConcerns": {
+          "question": "您的STEM项目对幼儿安全吗？",
+          "answer": "当然！我们所有的项目都使用适龄、儿童安全的材料和设备。我们的教育工作者接受过儿童早期发展和安全协议培训。我们确保每项活动都符合年轻学习者的最高安全标准。"
+        },
+        "costEffective": {
+          "question": "与EC STEM合作成本效益高吗？",
+          "answer": "是的！与我们合作比雇用专业的STEM员工更具成本效益。您可以获得专家教育工作者、课程、材料和持续支持，而无需承担招聘、培训和资源管理的间接成本。"
+        },
+        "getStarted": {
+          "question": "我们如何开始与EC STEM合作？",
+          "answer": "只需联系我们进行免费咨询！我们将讨论您中心的需求，解释我们的项目，并安排试验课程。没有义务，我们将与您合作为您的中心创建定制的STEM教育计划。"
+        }
+      }
     }
   },
   "centresPage": {
