@@ -64,8 +64,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="text-sm opacity-75">
-                  <p>101A UPPER CROSS STREET, #09-11</p>
-                  <p>PEOPLE'S PARK CENTRE, Singapore 058358</p>
+                  <p>CDL King's Centre #06-03</p>
+                  <p>390 Havelock Road, Singapore 169662</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -80,7 +80,7 @@ const Footer = () => {
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="text-sm opacity-75">
                   <p>Monday - Friday</p>
-                  <p>7:00 AM - 7:00 PM</p>
+                  <p>8:00 AM - 5:00 PM</p>
                 </div>
               </div>
             </div>
