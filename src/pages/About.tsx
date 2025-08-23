@@ -212,34 +212,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Achievements */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('aboutPage.achievements.title')}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { year: '2023', award: t('aboutPage.achievements.award2023'), body: t('aboutPage.achievements.body2023') },
-              { year: '2022', award: t('aboutPage.achievements.award2022'), body: t('aboutPage.achievements.body2022') },
-              { year: '2021', award: t('aboutPage.achievements.award2021'), body: t('aboutPage.achievements.body2021') },
-              { year: '2020', award: t('aboutPage.achievements.award2020'), body: t('aboutPage.achievements.body2020') }
-            ].map((achievement, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-warm transition-all duration-300 border-none shadow-gentle">
-                <div className="bg-sunshine w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-6 w-6 text-white" />
-                </div>
-                <p className="text-2xl font-bold text-primary mb-2">{achievement.year}</p>
-                <h3 className="font-semibold text-foreground mb-2">{achievement.award}</h3>
-                <p className="text-sm text-muted-foreground">{achievement.body}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
