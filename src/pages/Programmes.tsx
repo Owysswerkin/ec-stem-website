@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Users, Calendar, Star, BookOpen, Palette, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -120,8 +121,8 @@ const Programmes = () => {
               ))}
             </div>
 
-            <Button variant="default" size="lg">
-              {t('programmesPage.partnership.button')}
+            <Button variant="default" size="lg" asChild>
+              <Link to="/contact">{t('programmesPage.partnership.button')}</Link>
             </Button>
           </div>
         </div>
