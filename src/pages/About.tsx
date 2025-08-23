@@ -157,7 +157,7 @@ const About = () => {
                   <img 
                     src={msHuangPortrait} 
                     alt="Ms Huang - Founder" 
-                    className="w-48 h-48 rounded-full object-cover object-center mx-auto shadow-warm border-4 border-white/20"
+                    className="w-48 h-48 rounded-full object-cover object-top mx-auto shadow-warm border-4 border-white/20"
                   />
                 </div>
                 <div className="md:col-span-2">
