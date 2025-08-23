@@ -98,14 +98,6 @@ const Home = () => {
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg rounded-full"
-                    asChild
-                  >
-                    <Link to="/contact">Get Quote</Link>
-                  </Button>
                 </div>
               </div>
             </div>
