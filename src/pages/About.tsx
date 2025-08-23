@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '@/assets/ms-huang-portrait.jpg';
-import classroomImage from '@/assets/classroom-activities.jpg';
+import preschoolerScientist from '@/assets/preschooler-scientist.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -37,13 +37,13 @@ const About = () => {
     {
       name: t('aboutPage.team.jennifer.name'),
       role: t('aboutPage.team.jennifer.role'),
-      image: classroomImage,
+      image: preschoolerScientist,
       description: t('aboutPage.team.jennifer.description')
     },
     {
       name: t('aboutPage.team.david.name'),
       role: t('aboutPage.team.david.role'),
-      image: classroomImage,
+      image: preschoolerScientist,
       description: t('aboutPage.team.david.description')
     }
   ];
@@ -91,8 +91,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src={classroomImage} 
-                alt="STEM training session at childcare centre" 
+                src={preschoolerScientist} 
+                alt="Confident preschooler in lab coat and glasses ready for STEM learning" 
                 className="rounded-3xl shadow-warm w-full"
               />
             </div>
