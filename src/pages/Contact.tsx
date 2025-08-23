@@ -50,6 +50,12 @@ const Contact = () => {
 
   const contactInfo = [
     {
+      icon: MapPin,
+      title: t('contactPage.contact.address.title'),
+      details: [t('contactPage.contact.address.location'), t('contactPage.contact.address.hours')],
+      action: t('contactPage.contact.address.action')
+    },
+    {
       icon: Phone,
       title: t('contactPage.contact.phone.title'),
       details: [t('contactPage.contact.phone.number'), t('contactPage.contact.phone.hours')],
@@ -60,12 +66,6 @@ const Contact = () => {
       title: t('contactPage.contact.email.title'),
       details: [t('contactPage.contact.email.address'), t('contactPage.contact.email.response')],
       action: t('contactPage.contact.email.action')
-    },
-    {
-      icon: MessageCircle,
-      title: t('contactPage.contact.whatsapp.title'),
-      details: [t('contactPage.contact.whatsapp.number'), t('contactPage.contact.whatsapp.availability')],
-      action: t('contactPage.contact.whatsapp.action')
     }
   ];
 

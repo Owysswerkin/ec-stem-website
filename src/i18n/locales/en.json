@@ -263,6 +263,12 @@
     "getInTouch": "Contact EC STEM",
     "getInTouchSubtitle": "Choose the most convenient way to reach us. We're here to help bring innovative STEM education to your childcare centre!",
     "contact": {
+      "address": {
+        "title": "Visit Our Office",
+        "location": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
+        "hours": "Mon - Fri: 8:00 AM - 5:00 PM",
+        "action": "Get Directions"
+      },
       "phone": {
         "title": "Call Us",
         "number": "+65 6234 5678",
@@ -274,12 +280,6 @@
         "address": "hello@ecstem.club",
         "response": "We reply within 24 hours",
         "action": "Send Email"
-      },
-      "whatsapp": {
-        "title": "WhatsApp",
-        "number": "+65 9123 4567",
-        "availability": "Quick responses available",
-        "action": "Message Us"
       }
     },
     "form": {
