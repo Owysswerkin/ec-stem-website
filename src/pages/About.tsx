@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '/lovable-uploads/4f2e7744-b6c5-4998-b278-9b64e1fe2620.png';
-import preschoolerScientist from '@/assets/preschooler-scientist.jpg';
+import teamGearAvatar from '@/assets/team-gear-avatar.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -37,13 +37,13 @@ const About = () => {
     {
       name: t('aboutPage.team.jennifer.name'),
       role: t('aboutPage.team.jennifer.role'),
-      image: preschoolerScientist,
+      image: teamGearAvatar,
       description: t('aboutPage.team.jennifer.description')
     },
     {
       name: t('aboutPage.team.david.name'),
       role: t('aboutPage.team.david.role'),
-      image: preschoolerScientist,
+      image: teamGearAvatar,
       description: t('aboutPage.team.david.description')
     }
   ];
@@ -91,8 +91,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src={preschoolerScientist} 
-                alt="Confident preschooler in lab coat and glasses ready for STEM learning" 
+                src={teamGearAvatar} 
+                alt="Playful gear avatar representing our STEM education team" 
                 className="rounded-3xl shadow-warm w-full"
               />
             </div>
