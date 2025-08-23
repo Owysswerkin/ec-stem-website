@@ -40,10 +40,10 @@ const Navigation = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
+            <a href="tel:+6562345678" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <Phone className="h-4 w-4" />
-              <span>+65 6234 5678</span>
-            </div>
+              <span className="hidden md:inline">+65 6234 5678</span>
+            </a>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
               <span>hello@ecstem.education</span>
