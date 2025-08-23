@@ -7,7 +7,7 @@ const Footer = () => {
   
   return <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* School Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -33,29 +33,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">{t('footer.quickLinks')}</h4>
-            <ul className="space-y-3">
-              {[{
-              name: t('nav.about'),
-              path: '/about'
-            }, {
-              name: t('nav.programmes'),
-              path: '/programmes'
-            }, {
-              name: t('nav.admissions'),
-              path: '/admissions'
-            }, {
-              name: t('nav.contact'),
-              path: '/contact'
-            }].map(link => <li key={link.path}>
-                  <Link to={link.path} className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
-                    {link.name}
-                  </Link>
-                </li>)}
-            </ul>
-          </div>
 
           {/* Contact Info */}
           <div>
