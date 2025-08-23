@@ -44,10 +44,10 @@ const Navigation = () => {
               <Phone className="h-4 w-4" />
               <span className="hidden md:inline">+65 6234 5678</span>
             </a>
-            <div className="flex items-center space-x-2">
+            <a href="mailto:hello@ecstem.club" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <Mail className="h-4 w-4" />
-              <span>hello@ecstem.education</span>
-            </div>
+              <span className="hidden md:inline">hello@ecstem.club</span>
+            </a>
           </div>
           <div className="hidden md:block">
             <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
