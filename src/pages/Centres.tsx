@@ -151,7 +151,7 @@ const Centres = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <Clock className="h-5 w-5 text-primary flex-shrink-0" />
-                      <p className="text-muted-foreground">Mon - Fri: 7:00 AM - 7:00 PM</p>
+                      <p className="text-muted-foreground">Mon - Fri: 8:00 AM - 5:00 PM</p>
                     </div>
                   </div>
 

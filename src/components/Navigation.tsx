@@ -50,7 +50,7 @@ const Navigation = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <span>Mon - Fri: 7:00 AM - 7:00 PM</span>
+            <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
           </div>
         </div>
       </div>

@@ -435,7 +435,7 @@ const Admissions = () => {
                       <strong className="text-foreground">Email:</strong> partnerships@ecstem.club
                     </p>
                     <p className="text-muted-foreground">
-                      <strong className="text-foreground">Hours:</strong> Mon-Fri, 9:00 AM - 6:00 PM
+                      <strong className="text-foreground">Hours:</strong> Mon-Fri, 8:00 AM - 5:00 PM
                     </p>
                   </div>
                   <Button variant="outline" size="sm" className="w-full mt-4">
