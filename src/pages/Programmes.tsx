@@ -51,6 +51,46 @@ const Programmes = () => {
         </div>
       </section>
 
+      {/* Partner Centers Marquee */}
+      <section className="py-16 bg-muted/30 overflow-hidden">
+        <div className="container mx-auto px-4 mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-2">
+            {t('programmesPage.partnerCenters.title')}
+          </h2>
+          <p className="text-muted-foreground text-center">
+            {t('programmesPage.partnerCenters.subtitle')}
+          </p>
+        </div>
+        
+        <div className="relative">
+          <div className="flex animate-scroll space-x-8">
+            {[...Array(3)].map((_, setIndex) => (
+              <div key={setIndex} className="flex space-x-8 min-w-fit">
+                {[
+                  'Little Scholars Childcare',
+                  'Bright Minds Learning Center',
+                  'Happy Kids Academy',
+                  'Future Leaders Preschool',
+                  'Smart Start Education',
+                  'Growing Minds Center',
+                  'Sunshine Learning Hub',
+                  'Creative Kids Academy'
+                ].map((centerName, index) => (
+                  <div key={`${setIndex}-${index}`} className="flex items-center justify-center bg-white rounded-xl shadow-gentle p-6 min-w-[200px] h-24 border border-border/50">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">{centerName.charAt(0)}</span>
+                      </div>
+                      <span className="font-semibold text-foreground text-sm">{centerName}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* STEM Enrichment Programs */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -77,46 +117,6 @@ const Programmes = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partner Centers Marquee */}
-      <section className="py-16 bg-muted/30 overflow-hidden">
-        <div className="container mx-auto px-4 mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-2">
-            {t('programmesPage.partnerCenters.title')}
-          </h2>
-          <p className="text-muted-foreground text-center">
-            {t('programmesPage.partnerCenters.subtitle')}
-          </p>
-        </div>
-        
-        <div className="relative">
-          <div className="flex animate-[scroll_20s_linear_infinite] space-x-8">
-            {[...Array(3)].map((_, setIndex) => (
-              <div key={setIndex} className="flex space-x-8 min-w-fit">
-                {[
-                  'Little Scholars Childcare',
-                  'Bright Minds Learning Center',
-                  'Happy Kids Academy',
-                  'Future Leaders Preschool',
-                  'Smart Start Education',
-                  'Growing Minds Center',
-                  'Sunshine Learning Hub',
-                  'Creative Kids Academy'
-                ].map((centerName, index) => (
-                  <div key={`${setIndex}-${index}`} className="flex items-center justify-center bg-white rounded-xl shadow-gentle p-6 min-w-[200px] h-24 border border-border/50">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">{centerName.charAt(0)}</span>
-                      </div>
-                      <span className="font-semibold text-foreground text-sm">{centerName}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
             ))}
           </div>
         </div>
