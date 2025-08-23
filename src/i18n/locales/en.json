@@ -64,16 +64,29 @@
   "aboutPage": {
     "title": "About Ec stem",
     "subtitle": "Singapore's premier provider of early childhood STEM education services, empowering childcare centres with innovative robotics training and comprehensive STEM programs since 2019.",
+    "slogan": "Think like a scientist. Solve problems like an engineer.",
     "mission": {
       "title": "Our Mission & Vision",
-      "missionHeader": "Mission",
-      "missionText": "To transform early childhood education by providing childcare centres with world-class STEM programs, robotics training, and educator development services that inspire young minds and prepare children for a technology-driven future.",
-      "visionHeader": "Vision",
-      "visionText": "To be the leading STEM education service provider in Southeast Asia, making quality early childhood STEM learning accessible to every childcare centre and nurturing the next generation of innovators, problem-solvers, and critical thinkers."
+      "missionHeader": "Our Mission",
+      "missionText": "Our mission is to make STEM learning engaging and exploratory. We cultivate children's scientific thinking and procedural skills, empowering them to become the creators and innovators of the future.",
+      "visionHeader": "Our Vision",
+      "visionText": "Our vision is to inspire every child to think like an inventor and to equip them with the practical skills and self-confidence to turn their ideas into reality."
     },
     "values": {
       "title": "Our Core Values",
       "subtitle": "These values guide our approach to serving childcare centres and developing STEM programs for young learners.",
+      "curiosity": {
+        "title": "Nurture Curiosity",
+        "description": "We protect and stimulate every child's innate sense of wonder and desire to ask 'why?'"
+      },
+      "understanding": {
+        "title": "Beyond Understanding",
+        "description": "We believe in moving beyond merely understanding the world; we empower children to actively and creatively shape it."
+      },
+      "handsMinds": {
+        "title": "Hands & Minds",
+        "description": "We are committed to learning by doing, using both our hands and minds to solve problems and build solutions."
+      },
       "innovation": {
         "title": "Innovation",
         "description": "Bringing cutting-edge STEM education to early childhood learning environments."

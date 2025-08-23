@@ -11,34 +11,19 @@ const About = () => {
   
   const values = [
     {
-      icon: Target,
-      title: t('aboutPage.values.innovation.title'),
-      description: t('aboutPage.values.innovation.description')
-    },
-    {
-      icon: BookOpen,
-      title: t('aboutPage.values.excellence.title'),
-      description: t('aboutPage.values.excellence.description')
-    },
-    {
-      icon: Users,
-      title: t('aboutPage.values.partnership.title'),
-      description: t('aboutPage.values.partnership.description')
-    },
-    {
-      icon: Shield,
-      title: t('aboutPage.values.safety.title'),
-      description: t('aboutPage.values.safety.description')
-    },
-    {
       icon: Star,
-      title: t('aboutPage.values.accessibility.title'),
-      description: t('aboutPage.values.accessibility.description')
+      title: t('aboutPage.values.curiosity.title'),
+      description: t('aboutPage.values.curiosity.description')
+    },
+    {
+      icon: Zap,
+      title: t('aboutPage.values.understanding.title'),
+      description: t('aboutPage.values.understanding.description')
     },
     {
       icon: Heart,
-      title: t('aboutPage.values.impact.title'),
-      description: t('aboutPage.values.impact.description')
+      title: t('aboutPage.values.handsMinds.title'),
+      description: t('aboutPage.values.handsMinds.description')
     }
   ];
 
@@ -72,9 +57,14 @@ const About = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               {t('aboutPage.title')}
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               {t('aboutPage.subtitle')}
             </p>
+            <div className="bg-primary/10 rounded-2xl p-6 inline-block">
+              <p className="text-lg font-semibold text-primary italic">
+                "{t('aboutPage.slogan')}"
+              </p>
+            </div>
           </div>
         </div>
       </section>
