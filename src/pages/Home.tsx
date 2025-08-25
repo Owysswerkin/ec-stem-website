@@ -222,57 +222,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white relative overflow-hidden">
-        {/* Background decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 right-20 w-40 h-40 bg-white/10 rounded-full"></div>
-          <div className="absolute bottom-16 left-16 w-32 h-32 bg-white/5 rounded-full"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            {t('cta.title')}
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            {t('cta.subtitle')}
-          </p>
-          
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-            {[
-              { number: '50+', label: 'Partner Centres' },
-              { number: '2000+', label: 'Children Reached' },
-              { number: '100+', label: 'Trained Educators' },
-              { number: '5', label: 'Years of Excellence' }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold mb-2 text-yellow-300">{stat.number}</div>
-                <div className="text-sm text-blue-100">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full shadow-lg"
-              asChild
-            >
-              <Link to="/contact">Get Started Today</Link>
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full"
-              asChild
-            >
-              <Link to="/programmes">View Programs</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
