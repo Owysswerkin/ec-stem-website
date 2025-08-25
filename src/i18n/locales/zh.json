@@ -277,7 +277,7 @@
       },
       "email": {
         "title": "发邮件给我们",
-        "address": "hello@ecstem.club",
+        "address": "hello@ecstem.education",
         "response": "我们在24小时内回复",
         "action": "发送邮件"
       }
@@ -419,7 +419,7 @@
       "title": "联系信息",
       "address": "新加坡教育街123号 123456",
       "phone": "+65 1234 5678",
-      "email": "hello@ecstem.club"
+      "email": "hello@ecstem.education"
     },
     "copyright": "© 2025 EC Stem Club. 版权所有。",
     "privacy": "隐私政策",

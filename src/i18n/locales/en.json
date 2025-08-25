@@ -277,7 +277,7 @@
       },
       "email": {
         "title": "Email Us",
-        "address": "hello@ecstem.club",
+        "address": "hello@ecstem.education",
         "response": "We reply within 24 hours",
         "action": "Send Email"
       }
@@ -419,7 +419,7 @@
       "title": "Contact Info",
       "address": "123 Education Street, Singapore 123456",
       "phone": "+65 1234 5678",
-      "email": "hello@ecstem.club"
+      "email": "hello@ecstem.education"
     },
     "copyright": "© 2025 EC Stem Club. All rights reserved.",
     "privacy": "Privacy Policy",

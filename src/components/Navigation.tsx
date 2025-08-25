@@ -44,16 +44,16 @@ const Navigation = () => {
               <Phone className="h-4 w-4" />
               <span>+65 6234 5678</span>
             </a>
-            <a href="mailto:hello@ecstem.club" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+            <a href="mailto:hello@ecstem.education" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <Mail className="h-4 w-4" />
-              <span>hello@ecstem.club</span>
+              <span>hello@ecstem.education</span>
             </a>
           </div>
           <div className="md:hidden ml-auto flex items-center space-x-4">
             <a href="tel:+6562345678" className="flex items-center hover:opacity-80 transition-opacity">
               <Phone className="h-4 w-4" />
             </a>
-            <a href="mailto:hello@ecstem.club" className="flex items-center hover:opacity-80 transition-opacity">
+            <a href="mailto:hello@ecstem.education" className="flex items-center hover:opacity-80 transition-opacity">
               <Mail className="h-4 w-4" />
             </a>
           </div>
