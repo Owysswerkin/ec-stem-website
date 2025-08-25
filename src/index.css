@@ -46,15 +46,6 @@
     --sunshine: 48 100% 67%;
     --sunshine-light: 48 100% 85%;
 
-    /* Exquisite gold palette for premium touch */
-    --gold: 43 96% 56%;
-    --gold-light: 43 80% 72%;
-    --gold-dark: 43 100% 45%;
-    --gold-muted: 43 30% 85%;
-    --gold-accent: 43 100% 50%;
-    --champagne: 45 65% 88%;
-    --bronze: 33 43% 48%;
-
     /* Purple for creativity and imagination */
     --lavender: 259 94% 51%;
     --lavender-dark: 259 70% 40%;
@@ -70,17 +61,11 @@
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--accent) / 0.8));
     --gradient-warm: linear-gradient(45deg, hsl(var(--sunshine-light)), hsl(var(--primary-light)));
     --gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold-accent)));
-    --gradient-gold-subtle: linear-gradient(45deg, hsl(var(--champagne)), hsl(var(--gold-muted)));
-    --gradient-premium: linear-gradient(135deg, hsl(var(--gold-dark)), hsl(var(--bronze)));
 
     /* Shadows for playful depth */
     --shadow-soft: 0 4px 12px hsl(var(--primary) / 0.15);
     --shadow-warm: 0 8px 24px hsl(var(--primary) / 0.2);
     --shadow-gentle: 0 2px 8px hsl(var(--foreground) / 0.1);
-    --shadow-gold: 0 8px 32px hsl(var(--gold) / 0.25);
-    --shadow-gold-glow: 0 0 24px hsl(var(--gold-accent) / 0.4);
-    --shadow-premium: 0 12px 48px hsl(var(--gold-dark) / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

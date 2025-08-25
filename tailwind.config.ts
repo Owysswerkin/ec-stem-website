@@ -63,15 +63,6 @@ export default {
 					DEFAULT: 'hsl(var(--sunshine))',
 					light: 'hsl(var(--sunshine-light))'
 				},
-				gold: {
-					DEFAULT: 'hsl(var(--gold))',
-					light: 'hsl(var(--gold-light))',
-					dark: 'hsl(var(--gold-dark))',
-					muted: 'hsl(var(--gold-muted))',
-					accent: 'hsl(var(--gold-accent))'
-				},
-				champagne: 'hsl(var(--champagne))',
-				bronze: 'hsl(var(--bronze))',
 				lavender: {
 					DEFAULT: 'hsl(var(--lavender))',
 					dark: 'hsl(var(--lavender-dark))'
@@ -80,18 +71,12 @@ export default {
 			backgroundImage: {
 				'hero-gradient': 'var(--gradient-hero)',
 				'warm-gradient': 'var(--gradient-warm)',
-				'soft-gradient': 'var(--gradient-soft)',
-				'gold-gradient': 'var(--gradient-gold)',
-				'gold-subtle': 'var(--gradient-gold-subtle)',
-				'premium-gradient': 'var(--gradient-premium)'
+				'soft-gradient': 'var(--gradient-soft)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'warm': 'var(--shadow-warm)',
-				'gentle': 'var(--shadow-gentle)',
-				'gold': 'var(--shadow-gold)',
-				'gold-glow': 'var(--shadow-gold-glow)',
-				'premium': 'var(--shadow-premium)'
+				'gentle': 'var(--shadow-gentle)'
 			},
 			borderRadius: {
 				'xl': '1.5rem',
