@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-4">
-            Privacy Policy
+            Ec stem Privacy Policy
           </h1>
           <p className="text-lg text-muted-foreground">
             Last updated: {new Date().toLocaleDateString()}
