@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               
               <div>
-                <h3 className="text-xl font-bold">Ëc stem Education</h3>
+                <h3 className="text-xl font-bold">Ec stem Education</h3>
                 
               </div>
             </div>
