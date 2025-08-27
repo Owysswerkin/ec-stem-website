@@ -10,6 +10,7 @@ import Programmes from "./pages/Programmes";
 import Admissions from "./pages/Admissions";
 import Contact from "./pages/Contact";
 import CookiesPolicy from "./pages/CookiesPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cookies-policy" element={<CookiesPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

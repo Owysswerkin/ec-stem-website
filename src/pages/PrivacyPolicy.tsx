@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 
-const CookiesPolicy = () => {
+const PrivacyPolicy = () => {
   const { t } = useTranslation();
 
   return (
@@ -9,7 +9,7 @@ const CookiesPolicy = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-4">
-            Cookies Policy
+            Privacy Policy
           </h1>
           <p className="text-lg text-muted-foreground">
             Last updated: {new Date().toLocaleDateString()}
@@ -19,9 +19,15 @@ const CookiesPolicy = () => {
         <Card className="mb-8">
           <CardContent className="p-8">
             <div className="prose prose-lg max-w-none">
-              <div id="termly-cookies-policy">
+              {/* Termly.io content container */}
+              <div id="termly-privacy-policy">
+                {/* 
+                  Replace this div with your termly.io privacy policy HTML code
+                  You can paste the HTML directly here using dangerouslySetInnerHTML
+                  or replace this entire div with your Termly.io embed code
+                */}
                 <p className="text-muted-foreground italic">
-                  Please insert your Termly.io cookies policy HTML code here.
+                  Please insert your Termly.io privacy policy HTML code here.
                 </p>
               </div>
             </div>
@@ -32,4 +38,4 @@ const CookiesPolicy = () => {
   );
 };
 
-export default CookiesPolicy;
+export default PrivacyPolicy;
