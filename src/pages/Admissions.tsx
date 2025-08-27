@@ -457,7 +457,7 @@ const Admissions = () => {
               Partnership FAQ
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Common questions about partnering with EC STEM and our programs.
+              Common questions about partnering with Ëc stem and our programs.
             </p>
           </div>
 

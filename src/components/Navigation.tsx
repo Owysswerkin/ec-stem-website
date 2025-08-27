@@ -73,7 +73,7 @@ const Navigation = () => {
             <Link to="/" className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
-                alt="EC STEM Logo" 
+                alt="Ëc stem Logo" 
                 className="h-20 w-auto"
               />
             </Link>
