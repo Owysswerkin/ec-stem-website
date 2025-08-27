@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 const Footer = () => {
-  const { t } = useTranslation();
-  
+  const {
+    t
+  } = useTranslation();
   return <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -13,7 +14,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               
               <div>
-                <h3 className="text-xl font-bold">Ec stem Education</h3>
+                <h3 className="text-xl font-bold">Ec stem</h3>
                 
               </div>
             </div>
