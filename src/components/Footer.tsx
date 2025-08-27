@@ -80,6 +80,9 @@ const Footer = () => {
               <Link to="/terms" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
                 {t('footer.terms')}
               </Link>
+              <a href="#" className="termly-display-preferences text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
+                Consent Preferences
+              </a>
             </div>
           </div>
         </div>
