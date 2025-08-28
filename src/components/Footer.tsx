@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 const Footer = () => {
   const {
@@ -22,14 +22,11 @@ const Footer = () => {
               {t('footer.about.description')}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
+              <a href="https://www.facebook.com/share/16qP9nRm1F/" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
                 <Facebook className="h-5 w-5 text-primary-foreground" />
               </a>
-              <a href="#" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
+              <a href="https://www.instagram.com/ecstemedu?igsh=MXhwOTZxaTlsc2RxZA==" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
                 <Instagram className="h-5 w-5 text-primary-foreground" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
-                <Youtube className="h-5 w-5 text-primary-foreground" />
               </a>
             </div>
           </div>
