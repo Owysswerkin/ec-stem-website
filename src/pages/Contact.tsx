@@ -118,42 +118,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Quick Contact Options */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('contactPage.getInTouch')}
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('contactPage.getInTouchSubtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {contactInfo.map((contact, index) => (
-              <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
-                <CardContent className="p-8 text-center">
-                  <div className="bg-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <contact.icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{contact.title}</h3>
-                  <div className="space-y-2 mb-6">
-                    {contact.details.map((detail, idx) => (
-                      <p key={idx} className={`${idx === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground text-sm'}`}>
-                        {detail}
-                      </p>
-                    ))}
-                  </div>
-                  <Button variant="outline" className="w-full">
-                    {contact.action}
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact Form & Info */}
       <section className="py-20 bg-muted/30">
