@@ -29,11 +29,37 @@ const Contact = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    // Allow natural form submission to Netlify
-    // Show success message after form is submitted
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your enquiry. We'll get back to you within 24 hours.",
+    e.preventDefault();
+    
+    // Submit to Netlify
+    const form = e.target as HTMLFormElement;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form) as any).toString(),
+    })
+    .then(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your enquiry. We'll get back to you within 24 hours.",
+      });
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        centre: '',
+        childAge: '',
+        enquiryType: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
     });
   };
 
