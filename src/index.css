@@ -102,6 +102,5 @@
 
   body {
     @apply bg-background text-foreground;
-    cursor: url('/puzzle-cursor.png') 8 8, auto;
   }
 }
