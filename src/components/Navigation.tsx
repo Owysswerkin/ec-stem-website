@@ -70,7 +70,7 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-1">
               <img 
                 src="/lovable-uploads/55f281bc-95bf-4adb-9db1-58a4f98dd2f4.png" 
                 alt="STEM Puzzle Logo" 
