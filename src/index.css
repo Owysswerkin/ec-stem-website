@@ -102,6 +102,34 @@
 
   body {
     @apply bg-background text-foreground;
-    cursor: url('/lovable-uploads/0a1fa423-2293-4bf9-ac2b-c3691035e1b7.png') 16 16, auto;
+    cursor: none;
+  }
+
+  /* Custom CSS STEM cursor */
+  :root {
+    --cursor-x: 0px;
+    --cursor-y: 0px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: var(--cursor-y);
+    left: var(--cursor-x);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      hsl(var(--destructive)) 0deg 90deg,
+      hsl(var(--primary)) 90deg 180deg,
+      hsl(var(--secondary)) 180deg 270deg,
+      hsl(var(--accent)) 270deg 360deg
+    );
+    border: 2px solid hsl(var(--foreground));
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
   }
 }
