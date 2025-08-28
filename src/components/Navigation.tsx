@@ -72,14 +72,14 @@ const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
-                alt="Ec stem Logo" 
-                className="h-20 w-auto"
-              />
-              <img 
                 src="/lovable-uploads/55f281bc-95bf-4adb-9db1-58a4f98dd2f4.png" 
                 alt="STEM Puzzle Logo" 
                 className="h-16 w-auto"
+              />
+              <img 
+                src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
+                alt="Ec stem Logo" 
+                className="h-20 w-auto"
               />
             </Link>
 
