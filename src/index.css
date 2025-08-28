@@ -102,6 +102,6 @@
 
   body {
     @apply bg-background text-foreground;
-    cursor: url('/cursor-logo.png') 16 16, auto;
+    cursor: url('/puzzle-cursor.png') 8 8, auto;
   }
 }
