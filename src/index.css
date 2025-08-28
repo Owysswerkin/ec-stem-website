@@ -102,5 +102,6 @@
 
   body {
     @apply bg-background text-foreground;
+    cursor: url('/lovable-uploads/0a1fa423-2293-4bf9-ac2b-c3691035e1b7.png') 16 16, auto;
   }
 }
