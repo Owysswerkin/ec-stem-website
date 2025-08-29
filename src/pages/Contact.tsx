@@ -132,20 +132,18 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <form name="contact" data-netlify="true" onSubmit={handleSubmit} className="space-y-6">
+                <form name="contact" method="POST" data-netlify="true" className="space-y-6">
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
                         {t('contactPage.form.fields.name')} *
                       </label>
-                      <Input
+                      <input
                         type="text"
                         name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
                         required
-                        className="rounded-xl"
+                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder={t('contactPage.form.placeholders.name')}
                       />
                     </div>
@@ -153,13 +151,11 @@ const Contact = () => {
                       <label className="block text-sm font-semibold text-foreground mb-2">
                         {t('contactPage.form.fields.email')} *
                       </label>
-                      <Input
+                      <input
                         type="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
                         required
-                        className="rounded-xl"
+                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder={t('contactPage.form.placeholders.email')}
                       />
                     </div>
@@ -170,12 +166,10 @@ const Contact = () => {
                       <label className="block text-sm font-semibold text-foreground mb-2">
                         {t('contactPage.form.fields.phone')}
                       </label>
-                      <Input
+                      <input
                         type="tel"
                         name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="rounded-xl"
+                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder={t('contactPage.form.placeholders.phone')}
                       />
                     </div>
@@ -183,12 +177,10 @@ const Contact = () => {
                       <label className="block text-sm font-semibold text-foreground mb-2">
                         {t('contactPage.form.fields.centre')}
                       </label>
-                      <Input
+                      <input
                         type="text"
                         name="centre"
-                        value={formData.centre}
-                        onChange={handleInputChange}
-                        className="rounded-xl"
+                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder={t('contactPage.form.placeholders.centre')}
                       />
                     </div>
@@ -201,8 +193,6 @@ const Contact = () => {
                       </label>
                       <select
                         name="childAge"
-                        value={formData.childAge}
-                        onChange={handleInputChange}
                         className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                       >
                         <option value="">{t('contactPage.form.placeholders.childAge')}</option>
@@ -217,8 +207,6 @@ const Contact = () => {
                       </label>
                       <select
                         name="enquiryType"
-                        value={formData.enquiryType}
-                        onChange={handleInputChange}
                         className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
                       >
                         <option value="">{t('contactPage.form.placeholders.enquiryType')}</option>
@@ -233,20 +221,18 @@ const Contact = () => {
                     <label className="block text-sm font-semibold text-foreground mb-2">
                       {t('contactPage.form.fields.message')}
                     </label>
-                    <Textarea
+                    <textarea
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       rows={5}
-                      className="rounded-xl"
+                      className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
                       placeholder={t('contactPage.form.placeholders.message')}
-                    />
+                    ></textarea>
                   </div>
 
-                  <Button type="submit" variant="default" size="lg" className="w-full">
-                    <Send className="h-5 w-5 mr-2" />
-                    {t('contactPage.form.submit')}
-                  </Button>
+                  <button type="submit" className="w-full h-12 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-primary/90 transition-colors duration-200 flex items-center justify-center space-x-2">
+                    <Send className="h-5 w-5" />
+                    <span>{t('contactPage.form.submit')}</span>
+                  </button>
                 </form>
               </CardContent>
             </Card>
