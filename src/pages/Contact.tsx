@@ -29,9 +29,37 @@ const Contact = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your enquiry. We'll get back to you within 24 hours.",
+    e.preventDefault();
+    
+    // Submit to Netlify
+    const form = e.target as HTMLFormElement;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form) as any).toString(),
+    })
+    .then(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your enquiry. We'll get back to you within 24 hours.",
+      });
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        centre: '',
+        childAge: '',
+        enquiryType: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
     });
   };
 
@@ -104,16 +132,8 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <form 
-                  name="contact" 
-                  method="POST" 
-                  data-netlify="true" 
-                  data-netlify-honeypot="bot-field"
-                  onSubmit={handleSubmit}
-                  className="space-y-6"
-                >
+                <form name="contact" method="POST" data-netlify="true" className="space-y-6">
                   <input type="hidden" name="form-name" value="contact" />
-                  <input type="hidden" name="bot-field" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
