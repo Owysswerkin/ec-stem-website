@@ -98,6 +98,16 @@ const Home = () => {
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
+                  <Button 
+                    variant="blueAccent" 
+                    size="lg"
+                    className="px-8 py-6 text-lg rounded-full shadow-lg"
+                    asChild
+                  >
+                    <a href="https://dripl.ink/cIah2" target="_blank" rel="noopener noreferrer">
+                      Download Brochure
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
