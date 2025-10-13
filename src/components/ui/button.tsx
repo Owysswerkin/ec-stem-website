@@ -21,6 +21,7 @@ const buttonVariants = cva(
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-warm hover:shadow-lg transform hover:scale-105 text-lg font-bold rounded-2xl",
         warm: "bg-warm-gradient text-primary-foreground hover:opacity-90 shadow-soft hover:shadow-warm transform hover:scale-105",
         playful: "bg-accent-vibrant text-white hover:bg-accent shadow-soft hover:shadow-warm transform hover:scale-105",
+        blueAccent: "bg-blue-accent text-blue-accent-foreground hover:bg-blue-accent/90 shadow-soft hover:shadow-warm transform hover:scale-105",
       },
       size: {
         default: "h-12 px-6 py-3",

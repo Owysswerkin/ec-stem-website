@@ -66,6 +66,10 @@ export default {
 				lavender: {
 					DEFAULT: 'hsl(var(--lavender))',
 					dark: 'hsl(var(--lavender-dark))'
+				},
+				'blue-accent': {
+					DEFAULT: 'hsl(var(--blue-accent))',
+					foreground: 'hsl(var(--blue-accent-foreground))'
 				}
 			},
 			backgroundImage: {

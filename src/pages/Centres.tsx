@@ -92,9 +92,18 @@ const Centres = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               {t('centresPage.title')}
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               {t('centresPage.subtitle')}
             </p>
+            <Button 
+              variant="blueAccent" 
+              size="lg"
+              asChild
+            >
+              <a href="https://dripl.ink/cIah2" target="_blank" rel="noopener noreferrer">
+                Download Brochure
+              </a>
+            </Button>
           </div>
         </div>
       </section>

@@ -50,6 +50,10 @@
     --lavender: 259 94% 51%;
     --lavender-dark: 259 70% 40%;
 
+    /* Blue accent for CTAs */
+    --blue-accent: 214 100% 50%;
+    --blue-accent-foreground: 0 0% 100%;
+
     /* Borders and inputs */
     --border: 45 30% 90%;
     --input: 45 30% 95%;
