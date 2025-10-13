@@ -55,7 +55,7 @@ const Footer = () => {
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="text-sm opacity-75">
                   <p>Monday - Friday</p>
-                  <p>8:00 AM - 5:00 PM</p>
+                  <p>9:00 AM - 6:30 PM</p>
                 </div>
               </div>
             </div>

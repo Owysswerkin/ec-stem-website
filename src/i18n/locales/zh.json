@@ -266,13 +266,13 @@
       "address": {
         "title": "访问我们的办公室",
         "location": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
-        "hours": "周一至周五：上午8:00 - 下午5:00",
+        "hours": "周一至周五：上午9:00 - 下午6:30",
         "action": "获取路线"
       },
       "phone": {
         "title": "致电我们",
-        "number": "+65 6234 5678",
-        "hours": "周一至周五：上午8:00 - 下午5:00",
+        "number": "+65 87203007",
+        "hours": "周一至周五：上午9:00 - 下午6:30",
         "action": "立即致电"
       },
       "email": {
@@ -327,13 +327,13 @@
       "location": {
         "name": "Ec stem总部",
         "address": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
-        "hours": "周一至周五：上午8:00 - 下午5:00",
+        "hours": "周一至周五：上午9:00 - 下午6:30",
         "directions": "获取路线"
       },
       "hours": {
         "title": "办公时间",
         "weekdays": "周一 - 周五",
-        "weekdaysTimes": "上午8:00 - 下午5:00",
+        "weekdaysTimes": "上午9:00 - 下午6:30",
         "weekend": "周六 - 周日",
         "weekendTimes": "休息"
       }
@@ -418,7 +418,7 @@
     "contact": {
       "title": "联系信息",
       "address": "新加坡教育街123号 123456",
-      "phone": "+65 1234 5678",
+      "phone": "+65 87203007",
       "email": "hello@ecstem.education"
     },
     "copyright": "© 2025 Ec stem. 版权所有。",
