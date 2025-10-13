@@ -11,27 +11,21 @@ const Programmes = () => {
   const enrichmentPrograms = [
     {
       icon: Users,
-      title: t('programmesPage.enrichment.robotics.title'),
-      description: t('programmesPage.enrichment.robotics.description'),
-      ages: t('programmesPage.enrichment.robotics.ages')
-    },
-    {
-      icon: BookOpen,
-      title: t('programmesPage.enrichment.science.title'),
-      description: t('programmesPage.enrichment.science.description'),
-      ages: t('programmesPage.enrichment.science.ages')
+      title: 'Early Explorers',
+      level: 'Nursery 2',
+      description: 'Children explore building blocks, learning to interlock pieces and create simple structures. Focused on fine motor skills, problem-solving, and curiosity, this stage lays the foundation for hands-on STEM learning.'
     },
     {
       icon: Palette,
-      title: t('programmesPage.enrichment.engineering.title'),
-      description: t('programmesPage.enrichment.engineering.description'),
-      ages: t('programmesPage.enrichment.engineering.ages')
+      title: 'Curious Creators',
+      level: 'Kindergarten 1',
+      description: 'Children use simple tools like screws to connect blocks securely, developing coordination, precision, and early engineering thinking. Creativity and collaboration are nurtured through guided and open-ended construction challenges.'
     },
     {
-      icon: Globe,
-      title: t('programmesPage.enrichment.math.title'),
-      description: t('programmesPage.enrichment.math.description'),
-      ages: t('programmesPage.enrichment.math.ages')
+      icon: BookOpen,
+      title: 'Super Solvers',
+      level: 'Kindergarten 2',
+      description: 'Children engage with gears and mechanisms, exploring a new mechanism concept in each lesson. Hands-on experimentation builds problem-solving, critical thinking, and engineering understanding in a fun, interactive way.'
     }
   ];
 
@@ -64,18 +58,18 @@ const Programmes = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {enrichmentPrograms.map((program, index) => (
               <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
-                <CardContent className="p-6 text-center">
-                  <div className="bg-accent w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <CardContent className="p-8">
+                  <div className="bg-accent w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <program.icon className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">{program.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{program.description}</p>
-                  <div className="text-xs font-semibold text-primary bg-primary-glow px-3 py-1 rounded-full">
-                    {program.ages}
+                  <h3 className="text-2xl font-bold text-foreground mb-2">{program.title}</h3>
+                  <div className="text-sm font-semibold text-primary bg-primary-glow px-3 py-1 rounded-full inline-block mb-4">
+                    {program.level}
                   </div>
+                  <p className="text-muted-foreground leading-relaxed">{program.description}</p>
                 </CardContent>
               </Card>
             ))}
