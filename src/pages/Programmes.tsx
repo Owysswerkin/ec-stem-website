@@ -50,12 +50,29 @@ const Programmes = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('programmesPage.enrichment.title')}
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+              Program Highlights
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('programmesPage.enrichment.subtitle')}
-            </p>
+            <div className="max-w-2xl mx-auto text-left">
+              <ul className="space-y-3 text-lg text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="mr-3">•</span>
+                  <span><strong>Duration:</strong> 30–45 minutes per session</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3">•</span>
+                  <span><strong>Class size:</strong> up to 10–12 children per group</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3">•</span>
+                  <span><strong>Flexible models:</strong> weekly enrichment / holiday camps / STEM week themes</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3">•</span>
+                  <span><strong>All materials and setup</strong> provided by our team</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
