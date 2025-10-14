@@ -423,27 +423,6 @@ const Admissions = () => {
                   </p>
                 </CardContent>
               </Card>
-
-              <Card className="border-none shadow-gentle">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-foreground mb-4">Contact Our Partnership Team</h3>
-                  <div className="space-y-3 text-sm">
-                    <p className="text-muted-foreground">
-                      <strong className="text-foreground">Phone:</strong> +65 6234 5678
-                    </p>
-                    <p className="text-muted-foreground">
-                      <strong className="text-foreground">Email:</strong> partnerships@ecstem.club
-                    </p>
-                    <p className="text-muted-foreground">
-                      <strong className="text-foreground">Hours:</strong> Mon-Fri, 8:00 AM - 5:00 PM
-                    </p>
-                  </div>
-                  <Button variant="outline" size="sm" className="w-full mt-4">
-                    <Phone className="h-4 w-4 mr-2" />
-                    Call Partnership Team
-                  </Button>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
