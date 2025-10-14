@@ -113,14 +113,14 @@ const Admissions = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-gradient py-20">
+      <section className="bg-soft-gradient py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-              {t('admissionsPage.title')}
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+              Partner With Us
             </h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              {t('admissionsPage.subtitle')}
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              We're currently inviting preschools to host complimentary demo sessions — let your teachers and children experience the fun and learning first-hand!
             </p>
           </div>
         </div>
