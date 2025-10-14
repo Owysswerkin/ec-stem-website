@@ -31,21 +31,6 @@ const Programmes = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-soft-gradient py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              {t('programmesPage.title')}
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              {t('programmesPage.subtitle')}
-            </p>
-          </div>
-        </div>
-      </section>
-
-
       {/* STEM Enrichment Programs */}
       <section className="py-20">
         <div className="container mx-auto px-4">
