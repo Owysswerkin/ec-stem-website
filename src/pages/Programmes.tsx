@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Users, Calendar, Star, BookOpen, Palette, Globe } from 'lucide-react';
+import { Users, Calendar, Star, BookOpen, Palette, Globe, Clock, Package } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -38,25 +38,48 @@ const Programmes = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
               Program Highlights
             </h2>
-            <div className="max-w-2xl mx-auto text-left">
-              <ul className="space-y-3 text-lg text-muted-foreground">
-                <li className="flex items-start">
-                  <span className="mr-3">•</span>
-                  <span><strong>Duration:</strong> 30–45 minutes per session</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">•</span>
-                  <span><strong>Class size:</strong> up to 10–12 children per group</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">•</span>
-                  <span><strong>Flexible models:</strong> weekly enrichment / holiday camps / STEM week themes</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3">•</span>
-                  <span><strong>All materials and setup</strong> provided by our team</span>
-                </li>
-              </ul>
+            <div className="max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Clock className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">Duration</h3>
+                    <p className="text-muted-foreground">30–45 minutes per session</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">Class Size</h3>
+                    <p className="text-muted-foreground">Up to 10–12 children per group</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Calendar className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">Flexible Models</h3>
+                    <p className="text-muted-foreground">Weekly enrichment / holiday camps / STEM week themes</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Package className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">All Materials Provided</h3>
+                    <p className="text-muted-foreground">Complete setup provided by our team</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
