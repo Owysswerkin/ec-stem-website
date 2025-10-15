@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import msHuangPortrait from 'https://res.cloudinary.com/dylxm9fqw/image/upload/v1760506104/mmexport1760495124419_y8jtqa.jpg';
+import msHuangPortrait from '/lovable-uploads/4f2e7744-b6c5-4998-b278-9b64e1fe2620.png';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 
 const About = () => {
@@ -31,7 +31,7 @@ const About = () => {
     {
       name: t('aboutPage.team.msHuang.name'),
       role: t('aboutPage.team.msHuang.role'),
-      image: msHuangPortrait,
+      image: gearClippyCharacter,
       description: t('aboutPage.team.msHuang.description')
     },
     {
@@ -155,7 +155,7 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <div className="md:col-span-1">
                   <img 
-                    src={msHuangPortrait} 
+                    src={gearClippyCharacter} 
                     alt="Ms Huang - Founder" 
                     className="w-48 h-48 rounded-full object-cover object-top mx-auto shadow-warm border-4 border-white/20"
                   />
