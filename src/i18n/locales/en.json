@@ -21,18 +21,21 @@
     "title": "Our STEM Programs",
     "subtitle": "Age-appropriate STEM learning experiences designed for every stage of development",
     "toddler": {
-      "title": "Toddler STEM Discovery (18 months - 3 years)",
-      "description": "Age-appropriate STEM activities focusing on sensory exploration and basic concepts.",
+      "title": "Nursery 2 - Early Explorers",
+      "description": "Children explore building blocks, learning to interlock pieces and create simple structures. Focused on fine motor skills,
+problem-solving, and curiosity, this stage lays the foundation for hands-on STEM learning.",
       "highlights": ["Sensory STEM play", "Basic cause-and-effect", "Simple robotics toys"]
     },
     "preK": {
-      "title": "Pre-K STEM Adventures (3 - 4 years)",
-      "description": "Interactive STEM learning through play-based activities and simple experiments.",
+      "title": "Kindergarten 1 - Curious Creators",
+      "description": "Children use simple tools like screws to connect blocks securely, developing coordination, precision, and early
+engineering thinking. Creativity and collaboration are nurtured through guided and open-ended construction challenges.",
       "highlights": ["Basic coding concepts", "Simple machines", "Nature STEM exploration"]
     },
     "kindergarten": {
-      "title": "Kindergarten STEM Labs (4 - 6 years)",
-      "description": "Advanced STEM activities including robotics, coding, and engineering challenges.",
+      "title": "Kindergarten 2 - Super Solvers",
+      "description": "Children engage with gears and mechanisms, exploring a new mechanism concept in each lesson. Hands-on
+experimentation builds problem-solving, critical thinking, and engineering understanding in a fun, interactive way.",
       "highlights": ["Robotics programming", "Engineering design", "Scientific method"]
     }
   },
