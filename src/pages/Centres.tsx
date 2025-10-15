@@ -13,7 +13,7 @@ const Centres = () => {
       id: 1,
       name: 'Little Stars Main Campus',
       address: '123 Learning Street, Central District, Singapore 123456',
-      phone: '+65 6234 5678',
+      phone: '+65 8720 3007',
       email: 'main@ecstem.club',
       image: classroomImage,
       features: [

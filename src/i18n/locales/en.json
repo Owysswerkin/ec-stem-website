@@ -271,7 +271,7 @@
       },
       "phone": {
         "title": "Call Us",
-        "number": "+65 87203007",
+        "number": "+65 8720 3007",
         "hours": "Mon - Fri: 9:00 AM - 6:30 PM",
         "action": "Call Now"
       },
@@ -418,7 +418,7 @@
     "contact": {
       "title": "Contact Info",
       "address": "123 Education Street, Singapore 123456",
-      "phone": "+65 87203007",
+      "phone": "+65 8720 3007",
       "email": "hello@ecstem.education"
     },
     "copyright": "© 2025 Ec stem. All rights reserved.",
