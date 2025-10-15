@@ -46,7 +46,7 @@ const Programmes = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="font-semibold text-foreground mb-1">Duration</h3>
-                    <p className="text-muted-foreground">30–45 minutes per session</p>
+                    <p className="text-muted-foreground">45 minutes per session</p>
                   </div>
                 </div>
                 
