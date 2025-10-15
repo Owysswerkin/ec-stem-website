@@ -56,7 +56,7 @@ const Programmes = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="font-semibold text-foreground mb-1">Class Size</h3>
-                    <p className="text-muted-foreground">up to 8 children</p>
+                    <p className="text-muted-foreground">up to 8 children per group</p>
                   </div>
                 </div>
                 
