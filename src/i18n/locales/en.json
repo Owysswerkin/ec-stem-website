@@ -18,27 +18,24 @@
     "description": "Ec stem is a leading early childhood STEM education provider, founded by Ms Huang, dedicated to inspiring young minds through innovative learning experiences. We partner with childcare centres to deliver comprehensive STEM programs that develop critical thinking, creativity, and problem-solving skills in children aged 18 months to 6 years."
   },
   "programs": {
-    "title": "Our STEM Programs",
-    "subtitle": "Age-appropriate STEM learning experiences designed for every stage of development",
-    "toddler": {
-      "title": "Nursery 2 - Early Explorers",
-      "description": "Children explore building blocks, learning to interlock pieces and create simple structures. Focused on fine motor skills,
-problem-solving, and curiosity, this stage lays the foundation for hands-on STEM learning.",
-      "highlights": ["Sensory STEM play", "Basic cause-and-effect", "Simple robotics toys"]
-    },
-    "preK": {
-      "title": "Kindergarten 1 - Curious Creators",
-      "description": "Children use simple tools like screws to connect blocks securely, developing coordination, precision, and early
-engineering thinking. Creativity and collaboration are nurtured through guided and open-ended construction challenges.",
-      "highlights": ["Basic coding concepts", "Simple machines", "Nature STEM exploration"]
-    },
-    "kindergarten": {
-      "title": "Kindergarten 2 - Super Solvers",
-      "description": "Children engage with gears and mechanisms, exploring a new mechanism concept in each lesson. Hands-on
-experimentation builds problem-solving, critical thinking, and engineering understanding in a fun, interactive way.",
-      "highlights": ["Robotics programming", "Engineering design", "Scientific method"]
-    }
+  "title": "Our STEM Programs",
+  "subtitle": "Age-appropriate STEM learning experiences designed for every stage of development",
+  "toddler": {
+    "title": "Nursery 2 - Early Explorers",
+    "description": "Children explore building blocks, learning to interlock pieces and create simple structures. Focused on fine motor skills, problem-solving, and curiosity, this stage lays the foundation for hands-on STEM learning.",
+    "highlights": ["Sensory STEM play", "Basic cause-and-effect", "Simple robotics toys"]
   },
+  "preK": {
+    "title": "Kindergarten 1 - Curious Creators",
+    "description": "Children use simple tools like screws to connect blocks securely, developing coordination, precision, and early engineering thinking. Creativity and collaboration are nurtured through guided and open-ended construction challenges.",
+    "highlights": ["Basic coding concepts", "Simple machines", "Nature STEM exploration"]
+  },
+  "kindergarten": {
+    "title": "Kindergarten 2 - Super Solvers",
+    "description": "Children engage with gears and mechanisms, exploring a new mechanism concept in each lesson. Hands-on experimentation builds problem-solving, critical thinking, and engineering understanding in a fun, interactive way.",
+    "highlights": ["Robotics programming", "Engineering design", "Scientific method"]
+  }
+},
   "services": {
     "title": "Why Choose Ec stem?",
     "subtitle": "Comprehensive STEM education that grows with your child",
