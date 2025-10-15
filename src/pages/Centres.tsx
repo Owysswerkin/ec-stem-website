@@ -100,7 +100,7 @@ const Centres = () => {
               size="lg"
               asChild
             >
-              <a href="https://dripl.ink/cIah2" target="_blank" rel="noopener noreferrer">
+              <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
                 Download Brochure
               </a>
             </Button>
