@@ -189,49 +189,6 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
               {t('programs.title')}
             </h2>
-            <div className="max-w-3xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
-                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">Duration</h3>
-                    <p className="text-muted-foreground">30–45 minutes per session</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
-                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Users className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">Class Size</h3>
-                    <p className="text-muted-foreground">Up to 10–12 children per group</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
-                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <BookOpen className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">Flexible Models</h3>
-                    <p className="text-muted-foreground">Weekly enrichment / holiday camps / STEM week themes</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
-                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Play className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">All Materials Provided</h3>
-                    <p className="text-muted-foreground">Complete setup provided by our team</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
