@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb } from 'lucide-react';
+import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
@@ -186,36 +186,70 @@ const Home = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
               {t('programs.title')}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('programs.subtitle')}
-            </p>
+            <div className="max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Clock className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">Duration</h3>
+                    <p className="text-muted-foreground">30–45 minutes per session</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">Class Size</h3>
+                    <p className="text-muted-foreground">Up to 10–12 children per group</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <BookOpen className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">Flexible Models</h3>
+                    <p className="text-muted-foreground">Weekly enrichment / holiday camps / STEM week themes</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-card/50">
+                  <div className="bg-primary w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Play className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-semibold text-foreground mb-1">All Materials Provided</h3>
+                    <p className="text-muted-foreground">Complete setup provided by our team</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programs.map((program, index) => (
-              <Card key={index} className="group overflow-hidden hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={program.image} 
-                    alt={program.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-300"></div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-3">{program.title}</h3>
-                  <p className="text-muted-foreground mb-4">{program.description}</p>
-                  <ul className="space-y-2">
-                    {program.highlights.map((highlight, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
+              <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
+                <CardContent className="p-8">
+                  <div className="bg-accent w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {index === 0 && <Users className="h-8 w-8 text-white" />}
+                    {index === 1 && <Lightbulb className="h-8 w-8 text-white" />}
+                    {index === 2 && <Cpu className="h-8 w-8 text-white" />}
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">{program.title}</h3>
+                  <div className="text-sm font-semibold text-primary bg-primary-glow px-3 py-1 rounded-full inline-block mb-4">
+                    {index === 0 && 'Nursery 2'}
+                    {index === 1 && 'Kindergarten 1'}
+                    {index === 2 && 'Kindergarten 2'}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">{program.description}</p>
                 </CardContent>
               </Card>
             ))}
