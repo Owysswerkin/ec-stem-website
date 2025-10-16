@@ -11,19 +11,16 @@ const About = () => {
   
   const values = [
     {
-      icon: Star,
-      title: t('aboutPage.values.curiosity.title'),
-      description: t('aboutPage.values.curiosity.description')
+      title: t('aboutPage.values.curiosityFirst.title'),
+      description: t('aboutPage.values.curiosityFirst.description')
     },
     {
-      icon: Zap,
-      title: t('aboutPage.values.understanding.title'),
-      description: t('aboutPage.values.understanding.description')
+      title: t('aboutPage.values.createBeyond.title'),
+      description: t('aboutPage.values.createBeyond.description')
     },
     {
-      icon: Heart,
-      title: t('aboutPage.values.handsMinds.title'),
-      description: t('aboutPage.values.handsMinds.description')
+      title: t('aboutPage.values.thinkBuild.title'),
+      description: t('aboutPage.values.thinkBuild.description')
     }
   ];
 
@@ -131,14 +128,11 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle bg-card">
                 <CardContent className="p-8 text-center">
-                  <div className="bg-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <value.icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-4">{value.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </CardContent>
               </Card>

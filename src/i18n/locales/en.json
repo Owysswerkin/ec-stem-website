@@ -74,19 +74,17 @@
   },
   "aboutPage": {
     "title": "",
-    "subtitle": "EC STEM is an early childhood  (4-6 years old) enrichment provider dedicated to making STEM — Science, Technology, Engineering, and Mathematics — fun, hands-on, and meaningful for young learners.
-Through structured, age-appropriate programmes, children explore and create using interactive kits that spark curiosity and build essential skills like problem-solving, creativity, and teamwork.
-Aligned with the MOE NEL Framework, EC STEM delivers engaging learning experiences that nurture confident, curious, and future-ready innovators from a young age.",
+    "subtitle": "EC STEM is an early childhood (4-6 years old) enrichment provider dedicated to making STEM — Science, Technology, Engineering, and Mathematics — fun, hands-on, and meaningful for young learners. Through structured, age-appropriate programmes, children explore and create using interactive kits that spark curiosity and build essential skills like problem-solving, creativity, and teamwork. Aligned with the MOE NEL Framework, EC STEM delivers engaging learning experiences that nurture confident, curious, and future-ready innovators from a young age.",
     "slogan": "Think like a scientist. Solve problems like an engineer.",
     "mission": {
       "title": "Our Mission & Vision",
       "missionHeader": "Our Mission",
-      "missionText": "To make STEM learning fun, hands-on, and full of discovery. We nurture curious minds and build confident young creators who love to explore, experiment, and innovate. ",
+      "missionText": "To make STEM learning fun, hands-on, and full of discovery. We nurture curious minds and build confident young creators who love to explore, experiment, and innovate.",
       "visionHeader": "Our Vision",
       "visionText": "To inspire every child to think like an inventor — equipped with the creativity, confidence, and practical skills to turn ideas into reality."
     },
     "values": {
-      "title": "Our Core Values",
+      "title": "Core Values",
       "subtitle": "These values guide our approach to serving childcare centres and developing STEM programs for young learners.",
       "curiosity": {
         "title": "Nurture Curiosity",
