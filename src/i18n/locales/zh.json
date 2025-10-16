@@ -84,19 +84,43 @@
       "visionText": "我们的愿景是激发每个孩子像发明家一样思考，并为他们提供实用技能和自信心，将想法变为现实。"
     },
     "values": {
-      "title": "核心价值观",
+      "title": "我们的核心价值观",
       "subtitle": "这些价值观指导我们为托儿中心服务和为年轻学习者开发STEM项目的方法。",
-      "curiosityFirst": {
-        "title": "🌟 好奇心第一",
-        "description": "我们激发好奇心，鼓励孩子们提问、勇敢探索并发现他们周围的世界。"
+      "curiosity": {
+        "title": "培养好奇心",
+        "description": "我们保护和激发每个孩子天生的好奇心和想要问'为什么？'的欲望。"
       },
-      "createBeyond": {
-        "title": "✨ 超越创造",
-        "description": "我们赋予年轻学习者超越理解的能力——去想象、设计和构建将他们的想法变为现实的解决方案。"
+      "understanding": {
+        "title": "超越理解",
+        "description": "我们相信超越仅仅理解世界；我们赋予孩子们积极且创造性地塑造世界的能力。"
       },
-      "thinkBuild": {
-        "title": "⚙️ 思考与构建",
-        "description": "我们将批判性思维与动手实践相结合，教导孩子们创造性地、自信地解决问题。"
+      "handsMinds": {
+        "title": "手脑并用",
+        "description": "我们致力于通过实践学习，同时使用我们的双手和大脑来解决问题和构建解决方案。"
+      },
+      "innovation": {
+        "title": "创新",
+        "description": "将前沿的STEM教育带到儿童早期学习环境中。"
+      },
+      "excellence": {
+        "title": "卓越",
+        "description": "提供最高质量的STEM项目和专业发展。"
+      },
+      "partnership": {
+        "title": "合作",
+        "description": "与托儿中心和教育工作者建立强有力的合作关系。"
+      },
+      "safety": {
+        "title": "安全",
+        "description": "确保所有项目符合年轻学习者的最高安全标准。"
+      },
+      "accessibility": {
+        "title": "可及性",
+        "description": "让优质STEM教育对每个托儿中心都可及。"
+      },
+      "impact": {
+        "title": "影响",
+        "description": "创造有意义的学习体验，激发终身好奇心。"
       }
     },
     "founder": {
