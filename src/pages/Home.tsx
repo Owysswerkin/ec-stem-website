@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock } from 'lucide-react';
+import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
@@ -13,28 +13,25 @@ const Home = () => {
   const { t } = useTranslation();
   const services = [
     {
-      icon: Heart,
-      title: t('services.experienced.title'),
-      description: t('services.experienced.description'),
-      color: 'bg-primary'
-    },
-    {
       icon: BookOpen,
       title: t('services.curriculum.title'),
       description: t('services.curriculum.description'),
-      color: 'bg-accent-vibrant'
+      points: t('services.curriculum.points', { returnObjects: true }) as string[],
+      color: 'bg-primary'
     },
     {
-      icon: Users,
-      title: t('services.development.title'),
-      description: t('services.development.description'),
-      color: 'bg-secondary'
+      icon: Heart,
+      title: t('services.satisfaction.title'),
+      description: t('services.satisfaction.description'),
+      points: t('services.satisfaction.points', { returnObjects: true }) as string[],
+      color: 'bg-accent-vibrant'
     },
     {
       icon: Trophy,
       title: t('services.partnership.title'),
       description: t('services.partnership.description'),
-      color: 'bg-sunshine'
+      points: t('services.partnership.points', { returnObjects: true }) as string[],
+      color: 'bg-secondary'
     }
   ];
 
@@ -143,14 +140,22 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="group text-center p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
-                <div className={`w-20 h-20 mx-auto mb-6 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+              <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
+                <div className={`w-20 h-20 mb-6 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                   <service.icon className="h-10 w-10 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
+                <p className="text-gray-600 mb-4">{service.description}</p>
+                <ul className="space-y-3 text-left">
+                  {service.points.map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </Card>
             ))}
           </div>

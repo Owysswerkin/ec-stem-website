@@ -37,23 +37,34 @@
     }
   },
   "services": {
-    "title": "为什么选择Ec stem？",
-    "subtitle": "与您的孩子一起成长的全面STEM教育",
-    "experienced": {
-      "title": "专业STEM教育工作者",
-      "description": "我们的认证教师专门从事儿童早期STEM教育"
-    },
+    "title": "为什么选择EC STEM？",
+    "subtitle": "为高质量幼儿STEM教育建立牢固的合作伙伴关系",
     "curriculum": {
-      "title": "基于研究的课程",
-      "description": "使用最新教育研究和最佳实践设计的课程"
+      "title": "全面课程",
+      "description": "符合NEL框架和教育部标准",
+      "points": [
+        "课程计划符合NEL框架和教育部要求",
+        "根据框架、倾向和原则精心策划和调整",
+        "安全、适合年龄和发展阶段"
+      ]
     },
-    "development": {
-      "title": "全面发展",
-      "description": "通过STEM活动专注于认知、社交和情感发展"
+    "satisfaction": {
+      "title": "提高家长满意度",
+      "description": "家长喜爱的可见学习成果",
+      "points": [
+        "EC STEM是一个独特的、面向未来的课程，让家长见证孩子的进步和改善",
+        "家长喜爱可见的、实践性的学习成果",
+        "高满意度并为孩子的发展增值"
+      ]
     },
     "partnership": {
-      "title": "中心合作伙伴关系",
-      "description": "与您的托儿中心现有课程无缝整合"
+      "title": "强大的学前教育合作伙伴关系",
+      "description": "合作式的优质教育方法",
+      "points": [
+        "与学前教育机构合作，追求质量、声誉和家长信任",
+        "通过我们的课程补充学前教育机构现有的课程和活动",
+        "将合作伙伴关系提升到更高的水平和机遇"
+      ]
     }
   },
   "cta": {

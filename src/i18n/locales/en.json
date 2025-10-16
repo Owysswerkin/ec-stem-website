@@ -37,23 +37,34 @@
   }
 },
   "services": {
-    "title": "Why Choose Ec stem?",
-    "subtitle": "Comprehensive STEM education that grows with your child",
-    "experienced": {
-      "title": "Expert STEM Educators",
-      "description": "Our certified instructors specialize in early childhood STEM education"
-    },
+    "title": "Why Choose EC STEM?",
+    "subtitle": "Building strong partnerships for quality early childhood STEM education",
     "curriculum": {
-      "title": "Research-Based Curriculum",
-      "description": "Programs designed using latest educational research and best practices"
+      "title": "Holistic Curriculum",
+      "description": "Aligned with NEL Framework and MOE standards",
+      "points": [
+        "Lesson plans are aligned with the NEL Framework, MOE",
+        "Intentionally curated and adapted according to the framework, dispositions and principles",
+        "Safe, age & developmentally appropriate"
+      ]
     },
-    "development": {
-      "title": "Holistic Development",
-      "description": "Focus on cognitive, social, and emotional growth through STEM activities"
+    "satisfaction": {
+      "title": "Increase Parent's Satisfaction",
+      "description": "Visible learning outcomes that parents love",
+      "points": [
+        "EC STEM is a unique, future-focused program where parents witness their child's progress & improvements",
+        "Parents love visible, hands-on learning outcomes",
+        "High Satisfaction rate and value adding to their child's development"
+      ]
     },
     "partnership": {
-      "title": "Centre Partnerships",
-      "description": "Seamless integration with your childcare centre's existing programs"
+      "title": "Strong Preschool Partnership",
+      "description": "Collaborative approach to quality education",
+      "points": [
+        "Collaborate with preschools to strive for quality, reputation, and parents' trust",
+        "Complement the preschool's current curriculum and events with our programs",
+        "Taking partnership to greater heights & opportunities"
+      ]
     }
   },
   "cta": {
