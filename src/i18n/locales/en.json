@@ -74,9 +74,7 @@
   },
   "aboutPage": {
     "title": "",
-    "subtitle": "EC STEM is an early childhood  (4-6 years old) enrichment provider dedicated to making STEM — Science, Technology, Engineering, and Mathematics — fun, hands-on, and meaningful for young learners.
-Through structured, age-appropriate programmes, children explore and create using interactive kits that spark curiosity and build essential skills like problem-solving, creativity, and teamwork.
-Aligned with the MOE NEL Framework, EC STEM delivers engaging learning experiences that nurture confident, curious, and future-ready innovators from a young age.",
+    "subtitle": "EC STEM is an early childhood (4-6 years old) enrichment provider dedicated to making STEM — Science, Technology, Engineering, and Mathematics — fun, hands-on, and meaningful for young learners. Through structured, age-appropriate programmes, children explore and create using interactive kits that spark curiosity and build essential skills like problem-solving, creativity, and teamwork. Aligned with the MOE NEL Framework, EC STEM delivers engaging learning experiences that nurture confident, curious, and future-ready innovators from a young age.",
     "slogan": "Think like a scientist. Solve problems like an engineer.",
     "mission": {
       "title": "Our Mission & Vision",
@@ -89,16 +87,16 @@ Aligned with the MOE NEL Framework, EC STEM delivers engaging learning experienc
       "title": "Our Core Values",
       "subtitle": "These values guide our approach to serving childcare centres and developing STEM programs for young learners.",
       "curiosity": {
-        "title": "Nurture Curiosity",
-        "description": "We protect and stimulate every child's innate sense of wonder and desire to ask 'why?'"
+        "title": "Curiosity First",
+        "description": "We nurture natural curiosity by encouraging children to ask questions, explore ideas, and discover through hands-on experiences. Every 'why?' opens a door to deeper understanding."
       },
       "understanding": {
-        "title": "Beyond Understanding",
-        "description": "We believe in moving beyond merely understanding the world; we empower children to actively and creatively shape it."
+        "title": "Create Beyond",
+        "description": "We empower children to go beyond observation and become creators. Through design thinking and problem-solving, they learn to build solutions and bring their ideas to life."
       },
       "handsMinds": {
-        "title": "Hands & Minds",
-        "description": "We are committed to learning by doing, using both our hands and minds to solve problems and build solutions."
+        "title": "Think & Build",
+        "description": "We believe in learning by doing. Children develop critical thinking and engineering skills as they construct, test, and refine their creations, building confidence along the way."
       },
       "innovation": {
         "title": "Innovation",
