@@ -11,21 +11,21 @@ const Programmes = () => {
   const enrichmentPrograms = [
     {
       icon: Users,
-      title: 'Early Explorers',
-      level: 'Nursery 2',
-      description: 'Children explore building blocks, learning to interlock pieces and create simple structures. Focused on fine motor skills, problem-solving, and curiosity, this stage lays the foundation for hands-on STEM learning.'
+      title: t('programmesPage.programs.earlyExplorers.title'),
+      level: t('programmesPage.programs.earlyExplorers.level'),
+      description: t('programmesPage.programs.earlyExplorers.description')
     },
     {
       icon: Palette,
-      title: 'Curious Creators',
-      level: 'Kindergarten 1',
-      description: 'Children use simple tools like screws to connect blocks securely, developing coordination, precision, and early engineering thinking. Creativity and collaboration are nurtured through guided and open-ended construction challenges.'
+      title: t('programmesPage.programs.curiousCreators.title'),
+      level: t('programmesPage.programs.curiousCreators.level'),
+      description: t('programmesPage.programs.curiousCreators.description')
     },
     {
       icon: BookOpen,
-      title: 'Super Solvers',
-      level: 'Kindergarten 2',
-      description: 'Children engage with gears and mechanisms, exploring a new mechanism concept in each lesson. Hands-on experimentation builds problem-solving, critical thinking, and engineering understanding in a fun, interactive way.'
+      title: t('programmesPage.programs.superSolvers.title'),
+      level: t('programmesPage.programs.superSolvers.level'),
+      description: t('programmesPage.programs.superSolvers.description')
     }
   ];
 
@@ -36,7 +36,7 @@ const Programmes = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              Program Highlights
+              {t('programmesPage.highlights.title')}
             </h2>
             <div className="max-w-3xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -45,8 +45,8 @@ const Programmes = () => {
                     <Clock className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">Duration</h3>
-                    <p className="text-muted-foreground">45 minutes per session</p>
+                    <h3 className="font-semibold text-foreground mb-1">{t('programmesPage.highlights.duration.title')}</h3>
+                    <p className="text-muted-foreground">{t('programmesPage.highlights.duration.description')}</p>
                   </div>
                 </div>
                 
@@ -55,8 +55,8 @@ const Programmes = () => {
                     <Users className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">Class Size</h3>
-                    <p className="text-muted-foreground">up to 8 children per group</p>
+                    <h3 className="font-semibold text-foreground mb-1">{t('programmesPage.highlights.classSize.title')}</h3>
+                    <p className="text-muted-foreground">{t('programmesPage.highlights.classSize.description')}</p>
                   </div>
                 </div>
                 
@@ -65,8 +65,8 @@ const Programmes = () => {
                     <Calendar className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">Flexible Models</h3>
-                    <p className="text-muted-foreground">Weekly enrichment / holiday camps / STEM week themes</p>
+                    <h3 className="font-semibold text-foreground mb-1">{t('programmesPage.highlights.flexible.title')}</h3>
+                    <p className="text-muted-foreground">{t('programmesPage.highlights.flexible.description')}</p>
                   </div>
                 </div>
                 
@@ -75,8 +75,8 @@ const Programmes = () => {
                     <Package className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-semibold text-foreground mb-1">All Materials Provided</h3>
-                    <p className="text-muted-foreground">Complete setup provided by our team</p>
+                    <h3 className="font-semibold text-foreground mb-1">{t('programmesPage.highlights.materials.title')}</h3>
+                    <p className="text-muted-foreground">{t('programmesPage.highlights.materials.description')}</p>
                   </div>
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Programmes = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Why Preschools Love Our Program
+              {t('programmesPage.whyTitle')}
             </h2>
           </div>
 
@@ -123,16 +123,16 @@ const Programmes = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">
-                      Children Learn Science Through Play
+                      {t('programmesPage.benefits.playBased.title')}
                     </h3>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Every build becomes a discovery: bridges teach balance, cars teach motion, and towers teach structure and stability.
+                  {t('programmesPage.benefits.playBased.description')}
                 </p>
                 <div className="bg-primary-glow p-4 rounded-xl border-l-4 border-primary">
                   <p className="text-foreground font-semibold italic">
-                    "We make STEM concepts come alive — one LEGO brick at a time."
+                    "{t('programmesPage.benefits.playBased.quote')}"
                   </p>
                 </div>
               </CardContent>
@@ -145,27 +145,27 @@ const Programmes = () => {
                   <Award className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">
-                  100% Aligned with Singapore's NEL Framework
+                  {t('programmesPage.benefits.aligned.title')}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Our lessons reinforce key learning areas:
+                  {t('programmesPage.benefits.aligned.intro')}
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Discovery of the World — exploring how things work</span>
+                    <span>{t('programmesPage.benefits.aligned.items.discovery')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Motor Skills Development — fine hand coordination</span>
+                    <span>{t('programmesPage.benefits.aligned.items.motor')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Creative Expression — design and imagination</span>
+                    <span>{t('programmesPage.benefits.aligned.items.creative')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Social & Emotional Development — teamwork, sharing</span>
+                    <span>{t('programmesPage.benefits.aligned.items.social')}</span>
                   </li>
                 </ul>
               </CardContent>
@@ -178,28 +178,28 @@ const Programmes = () => {
                   <Star className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">
-                  Builds 21st Century Skills
+                  {t('programmesPage.benefits.skills.title')}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Through open-ended challenges, children develop:
+                  {t('programmesPage.benefits.skills.intro')}
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
-                    <span>Problem-solving</span>
+                    <span>{t('programmesPage.benefits.skills.items.problem')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
-                    <span>Critical thinking</span>
+                    <span>{t('programmesPage.benefits.skills.items.critical')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-secondary mt-0.5 flex-shrink-0" />
-                    <span>Collaboration and communication</span>
+                    <span>{t('programmesPage.benefits.skills.items.collaboration')}</span>
                   </li>
                 </ul>
                 <div className="bg-secondary/10 p-3 rounded-lg">
                   <p className="text-foreground text-sm font-semibold italic">
-                    "Every build is a teamwork challenge that grows both the mind and the heart."
+                    "{t('programmesPage.benefits.skills.quote')}"
                   </p>
                 </div>
               </CardContent>
@@ -214,22 +214,22 @@ const Programmes = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">
-                      Safe, Clean & Mess-Free STEM Learning
+                      {t('programmesPage.benefits.safe.title')}
                     </h3>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  No chemicals, no wires, no clutter — just creative exploration with child-safe LEGO® DUPLO® blocks.
+                  {t('programmesPage.benefits.safe.description')}
                 </p>
                 <div className="grid grid-cols-3 gap-4">
                   <div className="bg-card p-4 rounded-xl text-center border-2 border-primary/20">
-                    <p className="text-sm font-semibold text-foreground">✅ Suitable for ages 3–6</p>
+                    <p className="text-sm font-semibold text-foreground">{t('programmesPage.benefits.safe.features.ages')}</p>
                   </div>
                   <div className="bg-card p-4 rounded-xl text-center border-2 border-primary/20">
-                    <p className="text-sm font-semibold text-foreground">✅ Easy to set up and clean</p>
+                    <p className="text-sm font-semibold text-foreground">{t('programmesPage.benefits.safe.features.setup')}</p>
                   </div>
                   <div className="bg-card p-4 rounded-xl text-center border-2 border-primary/20">
-                    <p className="text-sm font-semibold text-foreground">✅ All materials provided</p>
+                    <p className="text-sm font-semibold text-foreground">{t('programmesPage.benefits.safe.features.materials')}</p>
                   </div>
                 </div>
               </CardContent>
@@ -242,26 +242,26 @@ const Programmes = () => {
                   <Users className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">
-                  Zero Prep for Teachers — We Handle Everything
+                  {t('programmesPage.benefits.zeroPrep.title')}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4">We bring:</p>
+                <p className="text-muted-foreground text-sm mb-4">{t('programmesPage.benefits.zeroPrep.intro')}</p>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-lavender mt-0.5 flex-shrink-0" />
-                    <span>Trained STEM instructors</span>
+                    <span>{t('programmesPage.benefits.zeroPrep.items.instructors')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-lavender mt-0.5 flex-shrink-0" />
-                    <span>Complete lesson kits and LEGO® sets</span>
+                    <span>{t('programmesPage.benefits.zeroPrep.items.kits')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-lavender mt-0.5 flex-shrink-0" />
-                    <span>Post-class reports and activity photos</span>
+                    <span>{t('programmesPage.benefits.zeroPrep.items.reports')}</span>
                   </li>
                 </ul>
                 <div className="bg-lavender/10 p-3 rounded-lg">
                   <p className="text-foreground text-sm font-semibold italic">
-                    "We bring everything your centre needs — lessons, materials, and the smiles."
+                    "{t('programmesPage.benefits.zeroPrep.quote')}"
                   </p>
                 </div>
               </CardContent>
@@ -276,16 +276,16 @@ const Programmes = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">
-                      Parent-Engaging & School-Enhancing
+                      {t('programmesPage.benefits.engaging.title')}
                     </h3>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Each class ends with a tangible creation that children can proudly share. We also provide photo and story templates for your school's Facebook, newsletter, or parent communications.
+                  {t('programmesPage.benefits.engaging.description')}
                 </p>
                 <div className="bg-accent/10 p-4 rounded-xl">
                   <p className="text-foreground font-semibold">
-                    Boost parent satisfaction and showcase your preschool's innovation.
+                    {t('programmesPage.benefits.engaging.benefit')}
                   </p>
                 </div>
               </CardContent>

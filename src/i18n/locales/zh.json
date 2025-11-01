@@ -162,53 +162,105 @@
     }
   },
   "programmesPage": {
-    "title": "STEM教育服务",
-    "subtitle": "我们与托儿中心合作，通过专门的强化项目和为年轻学习者设计的实践学习体验提供创新的STEM教育。",
-    "enrichment": {
-      "title": "STEM强化项目",
-      "subtitle": "专门设计用于深化学习和探索高级概念的STEM项目。",
-      "robotics": {
-        "title": "机器人与编程",
-        "description": "通过适龄活动介绍编程概念和机器人系统。",
-        "ages": "所有年龄"
+    "title": "STEM拓展课程",
+    "subtitle": "培养学龄前儿童的好奇心、创造力和批判性思维。",
+    "trusted": "获得领先托儿中心的信赖与选择",
+    "description": "我们的STEM拓展课程以游戏为基础，与新加坡教育部NEL框架相结合，专为4-6岁儿童设计。我们将STEM学习融入您现有的课程体系，适合不同年龄段。",
+    "highlights": {
+      "title": "课程亮点",
+      "duration": {
+        "title": "课程时长",
+        "description": "每节课45分钟"
       },
-      "science": {
-        "title": "科学实验",
-        "description": "通过动手实验展示科学原理并鼓励发现。",
-        "ages": "所有年龄"
+      "classSize": {
+        "title": "班级规模",
+        "description": "每组最多8名儿童"
       },
-      "engineering": {
-        "title": "工程挑战",
-        "description": "发展问题解决和工程思维的建设和设计挑战。",
-        "ages": "3岁以上"
+      "flexible": {
+        "title": "灵活模式",
+        "description": "每周拓展课程 / 假期营 / STEM主题周"
       },
-      "math": {
-        "title": "数学冒险",
-        "description": "通过游戏、拼图和现实世界应用探索数学概念。",
-        "ages": "4岁以上"
+      "materials": {
+        "title": "提供全部材料",
+        "description": "由我们的团队提供完整配置"
       }
     },
-    "partnerCenters": {
-      "title": "受到领先托儿中心信赖",
-      "subtitle": "加入我们在新加坡不断增长的合作伙伴中心网络"
+    "programs": {
+      "earlyExplorers": {
+        "title": "初级探索者",
+        "level": "幼儿园小班(Nursery 2)",
+        "description": "儿童探索积木搭建，学习拼接积木并创建简单结构。专注于精细动作技能、解决问题和好奇心培养，为实践STEM学习奠定基础。"
+      },
+      "curiousCreators": {
+        "title": "好奇创造者",
+        "level": "幼儿园中班(Kindergarten 1)",
+        "description": "儿童使用螺丝等简单工具牢固连接积木，发展协调性、精准度和早期工程思维。通过引导式和开放式搭建挑战培养创造力和协作能力。"
+      },
+      "superSolvers": {
+        "title": "超级解题者",
+        "level": "幼儿园大班(Kindergarten 2)",
+        "description": "儿童接触齿轮和机械装置，每节课探索一个新的机械概念。通过实践性实验以有趣、互动的方式培养解决问题、批判性思维和工程理解能力。"
+      }
     },
-    "partnership": {
-      "title": "与Ec stem合作",
-      "subtitle": "我们与托儿中心合作，将STEM教育整合到他们现有的项目中。我们的强化活动旨在补充您的课程并激发年轻学习者。",
-      "scheduling": {
-        "title": "灵活安排",
-        "description": "根据您中心的时间表和需求设计的项目"
+    "whyTitle": "为什么幼儿园热爱我们的课程",
+    "benefits": {
+      "playBased": {
+        "title": "儿童通过游戏学习科学",
+        "description": "每次搭建都是一次发现：桥梁教会平衡，汽车教会运动，塔楼教会结构和稳定性。",
+        "quote": "我们让STEM概念活起来——一块乐高积木接一块。"
       },
-      "integration": {
-        "title": "课程整合",
-        "description": "补充您现有教育项目的STEM活动"
+      "aligned": {
+        "title": "100%符合新加坡NEL框架",
+        "intro": "我们的课程强化关键学习领域：",
+        "items": {
+          "discovery": "探索世界 — 探究事物运作原理",
+          "motor": "动作技能发展 — 精细手部协调",
+          "creative": "创意表达 — 设计与想象力",
+          "social": "社交与情感发展 — 团队合作、分享"
+        }
       },
-      "support": {
-        "title": "专业支持",
-        "description": "为您的教育工作者提供持续的培训和支持"
+      "skills": {
+        "title": "培养21世纪技能",
+        "intro": "通过开放式挑战，儿童发展：",
+        "items": {
+          "problem": "解决问题的能力",
+          "critical": "批判性思维",
+          "collaboration": "协作与沟通能力"
+        },
+        "quote": "每次搭建都是一次团队挑战，让思维和心灵共同成长。"
       },
-      "button": "联系我们进行合作"
-    }
+      "safe": {
+        "title": "安全、整洁、无需清理的STEM学习",
+        "description": "没有化学品、没有电线、没有杂乱——只有使用儿童安全的乐高®得宝®积木进行创意探索。",
+        "features": {
+          "ages": "✅ 适合3-6岁儿童",
+          "setup": "✅ 易于设置和清理",
+          "materials": "✅ 提供所有材料"
+        }
+      },
+      "zeroPrep": {
+        "title": "教师零准备——我们处理一切",
+        "intro": "我们提供：",
+        "items": {
+          "instructors": "经过培训的STEM导师",
+          "kits": "完整的课程套装和乐高®套组",
+          "reports": "课后报告和活动照片"
+        },
+        "quote": "我们带来您的中心所需的一切——课程、材料和笑容。"
+      },
+      "engaging": {
+        "title": "让家长参与并提升学校形象",
+        "description": "每节课结束时都有孩子可以自豪分享的实体作品。我们还为您学校的Facebook、新闻简报或家长沟通提供照片和故事模板。",
+        "benefit": "提升家长满意度并展示您幼儿园的创新能力。"
+      }
+    },
+    "features": {
+      "feature1": "通过互动工具进行基于游戏的学习",
+      "feature2": "与新加坡教育部NEL框架整合",
+      "feature3": "适合所有年龄"
+    },
+    "partnershipTitle": "为什么幼儿园选择EC STEM",
+    "partnershipIntro": "我们的项目旨在与您现有的课程无缝整合，同时为您的课堂带来激动人心的实践STEM学习体验。"
   },
   "admissionsPage": {
     "title": "与Ec stem合作",

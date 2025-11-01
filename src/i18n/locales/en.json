@@ -162,53 +162,105 @@
     }
   },
   "programmesPage": {
-    "title": "STEM Education Services",
-    "subtitle": "We partner with childcare centres to deliver innovative STEM education through specialized enrichment programs and hands-on learning experiences designed for young learners.",
-    "enrichment": {
-      "title": "STEM Enrichment Programs",
-      "subtitle": "Specialized STEM programs designed to deepen learning and explore advanced concepts.",
-      "robotics": {
-        "title": "Robotics & Coding",
-        "description": "Introduction to programming concepts and robotic systems through age-appropriate activities.",
-        "ages": "All ages"
+    "title": "STEM Enrichment Programs",
+    "subtitle": "Nurture curiosity, creativity, and critical thinking in preschoolers.",
+    "trusted": "Trusted by Leading Childcare Centres",
+    "description": "Our STEM Enrichment Programs are play-based and aligned with the MOE NEL Framework, designed for children aged 4-6 years old. We integrate STEM learning into your existing curriculum for suitable ages.",
+    "highlights": {
+      "title": "Program Highlights",
+      "duration": {
+        "title": "Duration",
+        "description": "45 minutes per session"
       },
-      "science": {
-        "title": "Science Experiments",
-        "description": "Hands-on experiments that demonstrate scientific principles and encourage discovery.",
-        "ages": "All ages"
+      "classSize": {
+        "title": "Class Size",
+        "description": "up to 8 children per group"
       },
-      "engineering": {
-        "title": "Engineering Challenges",
-        "description": "Building and design challenges that develop problem-solving and engineering thinking.",
-        "ages": "3+ years"
+      "flexible": {
+        "title": "Flexible Models",
+        "description": "Weekly enrichment / holiday camps / STEM week themes"
       },
-      "math": {
-        "title": "Math Adventures",
-        "description": "Mathematical concepts explored through games, puzzles, and real-world applications.",
-        "ages": "4+ years"
+      "materials": {
+        "title": "All Materials Provided",
+        "description": "Complete setup provided by our team"
       }
     },
-    "partnerCenters": {
-      "title": "Trusted by Leading Childcare Centers",
-      "subtitle": "Join our growing network of partner centers across Singapore"
+    "programs": {
+      "earlyExplorers": {
+        "title": "Early Explorers",
+        "level": "Nursery 2",
+        "description": "Children explore building blocks, learning to interlock pieces and create simple structures. Focused on fine motor skills, problem-solving, and curiosity, this stage lays the foundation for hands-on STEM learning."
+      },
+      "curiousCreators": {
+        "title": "Curious Creators",
+        "level": "Kindergarten 1",
+        "description": "Children use simple tools like screws to connect blocks securely, developing coordination, precision, and early engineering thinking. Creativity and collaboration are nurtured through guided and open-ended construction challenges."
+      },
+      "superSolvers": {
+        "title": "Super Solvers",
+        "level": "Kindergarten 2",
+        "description": "Children engage with gears and mechanisms, exploring a new mechanism concept in each lesson. Hands-on experimentation builds problem-solving, critical thinking, and engineering understanding in a fun, interactive way."
+      }
     },
-    "partnership": {
-      "title": "Partner with Ec stem",
-      "subtitle": "We work with childcare centres to integrate STEM education into their existing programs. Our enrichment activities are designed to complement your curriculum and inspire young learners.",
-      "scheduling": {
-        "title": "Flexible Scheduling",
-        "description": "Programs designed to fit your centre's timetable and needs"
+    "whyTitle": "Why Preschools Love Our Program",
+    "benefits": {
+      "playBased": {
+        "title": "Children Learn Science Through Play",
+        "description": "Every build becomes a discovery: bridges teach balance, cars teach motion, and towers teach structure and stability.",
+        "quote": "We make STEM concepts come alive — one LEGO brick at a time."
       },
-      "integration": {
-        "title": "Curriculum Integration",
-        "description": "STEM activities that complement your existing educational programs"
+      "aligned": {
+        "title": "100% Aligned with Singapore's NEL Framework",
+        "intro": "Our lessons reinforce key learning areas:",
+        "items": {
+          "discovery": "Discovery of the World — exploring how things work",
+          "motor": "Motor Skills Development — fine hand coordination",
+          "creative": "Creative Expression — design and imagination",
+          "social": "Social & Emotional Development — teamwork, sharing"
+        }
       },
-      "support": {
-        "title": "Professional Support",
-        "description": "Ongoing training and support for your educators"
+      "skills": {
+        "title": "Builds 21st Century Skills",
+        "intro": "Through open-ended challenges, children develop:",
+        "items": {
+          "problem": "Problem-solving",
+          "critical": "Critical thinking",
+          "collaboration": "Collaboration and communication"
+        },
+        "quote": "Every build is a teamwork challenge that grows both the mind and the heart."
       },
-      "button": "Contact Us for Partnership"
-    }
+      "safe": {
+        "title": "Safe, Clean & Mess-Free STEM Learning",
+        "description": "No chemicals, no wires, no clutter — just creative exploration with child-safe LEGO® DUPLO® blocks.",
+        "features": {
+          "ages": "✅ Suitable for ages 3–6",
+          "setup": "✅ Easy to set up and clean",
+          "materials": "✅ All materials provided"
+        }
+      },
+      "zeroPrep": {
+        "title": "Zero Prep for Teachers — We Handle Everything",
+        "intro": "We bring:",
+        "items": {
+          "instructors": "Trained STEM instructors",
+          "kits": "Complete lesson kits and LEGO® sets",
+          "reports": "Post-class reports and activity photos"
+        },
+        "quote": "We bring everything your centre needs — lessons, materials, and the smiles."
+      },
+      "engaging": {
+        "title": "Parent-Engaging & School-Enhancing",
+        "description": "Each class ends with a tangible creation that children can proudly share. We also provide photo and story templates for your school's Facebook, newsletter, or parent communications.",
+        "benefit": "Boost parent satisfaction and showcase your preschool's innovation."
+      }
+    },
+    "features": {
+      "feature1": "Play-based learning with interactive kits",
+      "feature2": "Aligned with MOE NEL Framework",
+      "feature3": "Suitable for all ages"
+    },
+    "partnershipTitle": "Why Preschools Choose EC STEM",
+    "partnershipIntro": "Our programs are designed to seamlessly integrate with your existing curriculum while bringing the excitement of hands-on STEM learning to your classroom."
   },
   "admissionsPage": {
     "title": "Partner with Ec stem",
