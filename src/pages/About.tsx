@@ -99,7 +99,49 @@ const About = () => {
       </section>
 
       {/* Founder's Message */}
-      
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                {t('aboutPage.founder.title')}
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="relative">
+                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary/10 rounded-full blur-xl"></div>
+                  <blockquote className="relative text-lg text-muted-foreground leading-relaxed italic mb-8">
+                    "{t('aboutPage.founder.quote')}"
+                  </blockquote>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex-1">
+                    <p className="text-xl font-bold text-foreground">{t('aboutPage.founder.name')}</p>
+                    <p className="text-primary font-semibold mb-2">{t('aboutPage.founder.role')}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {t('aboutPage.founder.description')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <div className="absolute -top-6 -right-6 w-40 h-40 bg-accent/20 rounded-full blur-2xl"></div>
+                  <img 
+                    src={msHuangPortrait} 
+                    alt="Ms Huang, Founder of EC STEM, passionate early childhood STEM educator" 
+                    className="relative rounded-3xl shadow-warm w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Team Section */}
       <section className="py-20 bg-soft-gradient">
