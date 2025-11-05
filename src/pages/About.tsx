@@ -134,7 +134,7 @@ const About = () => {
                   <img 
                     src={msHuangPortrait} 
                     alt="Ms Huang, Founder of EC STEM, passionate early childhood STEM educator" 
-                    className="relative rounded-3xl shadow-warm w-full"
+                    className="relative rounded-3xl shadow-warm w-1/2 mx-auto"
                   />
                 </div>
               </div>
