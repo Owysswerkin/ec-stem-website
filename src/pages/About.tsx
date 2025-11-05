@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import msHuangPortrait from '/lovable-uploads/Gemini_Generated_Image_c6tfp1c6tfp1c6tf.png';
+import msHuangPortrait from '@/assets/ms-huang-new.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 
 const About = () => {
