@@ -8,6 +8,7 @@ import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 import teacherClairabel from '@/assets/teacher-clairabel.jpg';
 import teamPhoto from '@/assets/team-photo.jpg';
 import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
+import teacherJayne from '@/assets/teacher-jayne.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -46,7 +47,7 @@ const About = () => {
     {
       name: t('aboutPage.team.david.name'),
       role: t('aboutPage.team.david.role'),
-      image: gearClippyCharacter,
+      image: teacherJayne,
       description: t('aboutPage.team.david.description')
     }
   ];
