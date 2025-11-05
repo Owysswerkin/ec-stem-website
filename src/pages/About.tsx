@@ -102,9 +102,6 @@ const About = () => {
       <section className="bg-soft-gradient py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-              {t('aboutPage.subtitle')}
-            </p>
             <div className="relative bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 rounded-3xl p-8 md:p-12 overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-full opacity-10">
                 <div className="absolute top-4 left-4 w-12 h-12 bg-primary rounded-full animate-pulse"></div>
