@@ -89,34 +89,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('aboutPage.values.title')}
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('aboutPage.values.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle bg-card">
-                <CardContent className="p-8 text-center">
-                  <div className="bg-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <value.icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Mission & Vision */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -147,6 +119,34 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              {t('aboutPage.values.title')}
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t('aboutPage.values.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle bg-card">
+                <CardContent className="p-8 text-center">
+                  <div className="bg-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <value.icon className="h-8 w-8 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
