@@ -128,16 +128,6 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="order-1 lg:order-2">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-primary/20 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
-                  <img 
-                    src={msHuangPortrait} 
-                    alt="Ms Huang, Founder of EC STEM, passionate early childhood STEM educator" 
-                    className="relative rounded-3xl shadow-warm w-full"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
