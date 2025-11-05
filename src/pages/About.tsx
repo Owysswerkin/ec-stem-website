@@ -164,7 +164,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
                 <div className="relative h-64 overflow-hidden rounded-t-3xl">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <img src={member.image} alt={member.name} className="w-full h-full object-cover scale-120 group-hover:scale-125 transition-transform duration-300" />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">{member.name}</h3>
