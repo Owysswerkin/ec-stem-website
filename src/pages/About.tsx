@@ -40,6 +40,11 @@ const About = () => {
     role: t('aboutPage.team.david.role'),
     image: teacherJayne,
     description: t('aboutPage.team.david.description')
+  }, {
+    name: t('aboutPage.team.flynne.name'),
+    role: t('aboutPage.team.flynne.role'),
+    image: gearClippyCharacter,
+    description: t('aboutPage.team.flynne.description')
   }];
   return <div className="min-h-screen">
       {/* Mission & Vision */}
@@ -155,7 +160,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
                 <div className="relative h-64 overflow-hidden rounded-t-3xl">
                   <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
