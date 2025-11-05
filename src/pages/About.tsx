@@ -5,6 +5,7 @@ import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from
 import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '@/assets/ms-huang-new.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
+import teacherClairabel from '@/assets/teacher-clairabel.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -31,7 +32,7 @@ const About = () => {
     {
       name: t('aboutPage.team.msHuang.name'),
       role: t('aboutPage.team.msHuang.role'),
-      image: gearClippyCharacter,
+      image: teacherClairabel,
       description: t('aboutPage.team.msHuang.description')
     },
     {
