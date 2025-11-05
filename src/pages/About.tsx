@@ -155,9 +155,9 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <div className="md:col-span-1">
                   <img 
-                    src={gearClippyCharacter} 
+                    src={msHuangPortrait} 
                     alt="Ms Huang - Founder" 
-                    className="w-48 h-48 rounded-full object-cover object-top mx-auto shadow-warm border-4 border-white/20"
+                    className="w-64 h-64 rounded-full object-cover object-center mx-auto shadow-warm border-4 border-white/20"
                   />
                 </div>
                 <div className="md:col-span-2">
