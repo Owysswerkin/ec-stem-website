@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
+import msHuangPortrait from '@/assets/ms-huang-founder-portrait.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 import teacherClairabel from '@/assets/teacher-clairabel.jpg';
 import teamPhoto from '@/assets/team-photo.jpg';
@@ -130,7 +130,7 @@ const About = () => {
               
               <div className="order-1 lg:order-2">
                 <div className="relative">
-                  <div className="absolute -top-6 -right-6 w-40 h-40 bg-accent/20 rounded-full blur-2xl"></div>
+                  <div className="absolute inset-0 bg-primary/20 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
                   <img 
                     src={msHuangPortrait} 
                     alt="Ms Huang, Founder of EC STEM, passionate early childhood STEM educator" 
