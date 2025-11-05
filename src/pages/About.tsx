@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import msHuangPortrait from '@/assets/ms-huang-new.jpg';
+import msHuangPortrait from '@/assets/ms-huang-founder.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 import teacherClairabel from '@/assets/teacher-clairabel.jpg';
 import teamPhoto from '@/assets/team-photo.jpg';
