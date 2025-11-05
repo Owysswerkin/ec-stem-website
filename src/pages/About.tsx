@@ -7,6 +7,7 @@ import msHuangPortrait from '@/assets/ms-huang-new.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 import teacherClairabel from '@/assets/teacher-clairabel.jpg';
 import teamPhoto from '@/assets/team-photo.jpg';
+import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ const About = () => {
     {
       name: t('aboutPage.team.jennifer.name'),
       role: t('aboutPage.team.jennifer.role'),
-      image: gearClippyCharacter,
+      image: teacherWanRong,
       description: t('aboutPage.team.jennifer.description')
     },
     {
