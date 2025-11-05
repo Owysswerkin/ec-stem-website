@@ -54,41 +54,6 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-soft-gradient py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-              {t('aboutPage.subtitle')}
-            </p>
-            <div className="relative bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 rounded-3xl p-8 md:p-12 overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-full opacity-10">
-                <div className="absolute top-4 left-4 w-12 h-12 bg-primary rounded-full animate-pulse"></div>
-                <div className="absolute bottom-4 right-4 w-8 h-8 bg-secondary rounded-full animate-pulse delay-700"></div>
-                <div className="absolute top-1/2 right-8 w-6 h-6 bg-accent rounded-full animate-pulse delay-1000"></div>
-              </div>
-              <div className="relative z-10">
-                <div className="flex items-center justify-center mb-6">
-                  <div className="w-2 h-2 bg-primary rounded-full mr-3 animate-pulse"></div>
-                  <div className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse delay-300"></div>
-                  <div className="w-2 h-2 bg-accent rounded-full animate-pulse delay-500"></div>
-                </div>
-                <blockquote className="text-2xl md:text-3xl font-bold text-foreground leading-relaxed">
-                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                    "{t('aboutPage.slogan')}"
-                  </span>
-                </blockquote>
-                <div className="flex items-center justify-center mt-6">
-                  <div className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse delay-200"></div>
-                  <div className="w-3 h-3 bg-primary rounded-full mr-3 animate-pulse delay-600"></div>
-                  <div className="w-2 h-2 bg-secondary rounded-full animate-pulse delay-900"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Mission & Vision */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -147,6 +112,41 @@ const About = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Section */}
+      <section className="bg-soft-gradient py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-12">
+              {t('aboutPage.subtitle')}
+            </p>
+            <div className="relative bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 rounded-3xl p-8 md:p-12 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-full opacity-10">
+                <div className="absolute top-4 left-4 w-12 h-12 bg-primary rounded-full animate-pulse"></div>
+                <div className="absolute bottom-4 right-4 w-8 h-8 bg-secondary rounded-full animate-pulse delay-700"></div>
+                <div className="absolute top-1/2 right-8 w-6 h-6 bg-accent rounded-full animate-pulse delay-1000"></div>
+              </div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-2 h-2 bg-primary rounded-full mr-3 animate-pulse"></div>
+                  <div className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse delay-300"></div>
+                  <div className="w-2 h-2 bg-accent rounded-full animate-pulse delay-500"></div>
+                </div>
+                <blockquote className="text-2xl md:text-3xl font-bold text-foreground leading-relaxed">
+                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                    "{t('aboutPage.slogan')}"
+                  </span>
+                </blockquote>
+                <div className="flex items-center justify-center mt-6">
+                  <div className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse delay-200"></div>
+                  <div className="w-3 h-3 bg-primary rounded-full mr-3 animate-pulse delay-600"></div>
+                  <div className="w-2 h-2 bg-secondary rounded-full animate-pulse delay-900"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
