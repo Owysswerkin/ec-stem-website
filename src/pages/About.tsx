@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '@/assets/ms-huang-new.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
 import teacherClairabel from '@/assets/teacher-clairabel.jpg';
+import teamPhoto from '@/assets/team-photo.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -92,8 +93,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src={gearClippyCharacter} 
-                alt="Friendly gear character representing our helpful STEM education team" 
+                src={teamPhoto} 
+                alt="EC STEM education team collaborating with STEM materials and technology" 
                 className="rounded-3xl shadow-warm w-full"
               />
             </div>
