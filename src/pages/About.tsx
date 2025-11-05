@@ -8,6 +8,7 @@ import teacherClairabel from '@/assets/teacher-clairabel.jpg';
 import teamPhoto from '@/assets/team-photo.jpg';
 import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
 import teacherJayne from '@/assets/teacher-jayne.jpg';
+import teacherFlynne from '@/assets/teacher-flynne.jpg';
 const About = () => {
   const {
     t
@@ -43,7 +44,7 @@ const About = () => {
   }, {
     name: t('aboutPage.team.flynne.name'),
     role: t('aboutPage.team.flynne.role'),
-    image: gearClippyCharacter,
+    image: teacherFlynne,
     description: t('aboutPage.team.flynne.description')
   }];
   return <div className="min-h-screen">
