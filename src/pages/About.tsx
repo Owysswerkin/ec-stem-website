@@ -88,6 +88,38 @@ const About = () => {
         </div>
       </section>
 
+      {/* Founder's Message */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-primary-glow rounded-3xl p-8 md:p-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div className="md:col-span-1">
+                  <img 
+                    src={msHuangPortrait} 
+                    alt="Ms Huang - Founder" 
+                    className="w-64 h-64 rounded-full object-cover object-center mx-auto shadow-warm border-4 border-white/20"
+                  />
+                </div>
+                <div className="md:col-span-2">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    {t('aboutPage.founder.title')}
+                  </h2>
+                  <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6 italic">
+                    "{t('aboutPage.founder.quote')}"
+                  </blockquote>
+                  <div>
+                    <p className="font-semibold text-foreground">{t('aboutPage.founder.name')}</p>
+                    <p className="text-muted-foreground">{t('aboutPage.founder.role')}</p>
+                    <p className="text-sm text-muted-foreground">{t('aboutPage.founder.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -144,38 +176,6 @@ const About = () => {
                   <div className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse delay-200"></div>
                   <div className="w-3 h-3 bg-primary rounded-full mr-3 animate-pulse delay-600"></div>
                   <div className="w-2 h-2 bg-secondary rounded-full animate-pulse delay-900"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founder's Message */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-primary-glow rounded-3xl p-8 md:p-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <div className="md:col-span-1">
-                  <img 
-                    src={msHuangPortrait} 
-                    alt="Ms Huang - Founder" 
-                    className="w-64 h-64 rounded-full object-cover object-center mx-auto shadow-warm border-4 border-white/20"
-                  />
-                </div>
-                <div className="md:col-span-2">
-                  <h2 className="text-3xl font-bold text-foreground mb-6">
-                    {t('aboutPage.founder.title')}
-                  </h2>
-                  <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6 italic">
-                    "{t('aboutPage.founder.quote')}"
-                  </blockquote>
-                  <div>
-                    <p className="font-semibold text-foreground">{t('aboutPage.founder.name')}</p>
-                    <p className="text-muted-foreground">{t('aboutPage.founder.role')}</p>
-                    <p className="text-sm text-muted-foreground">{t('aboutPage.founder.description')}</p>
-                  </div>
                 </div>
               </div>
             </div>
