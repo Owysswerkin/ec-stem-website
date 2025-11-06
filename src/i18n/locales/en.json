@@ -471,10 +471,17 @@
     }
   },
   "notFound": {
-    "title": "404",
-    "subtitle": "Oops! Page not found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
-    "returnHome": "Return to Home"
+    "header": "Let's help you find what you're looking for",
+    "subtitle": "Explore our pages below",
+    "pages": {
+      "home": "Return to our homepage and discover what EC STEM offers",
+      "about": "Learn about EC STEM, our mission, and our expert team",
+      "programmes": "Discover our STEM programs for different age groups",
+      "partnership": "Partner with us and bring STEM education to your centre",
+      "contact": "Get in touch with our team for inquiries and support",
+      "cookies": "Cookies Policy"
+    },
+    "additionalLinks": "Additional Resources"
   },
   "footer": {
     "about": {

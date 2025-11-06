@@ -471,10 +471,17 @@
     }
   },
   "notFound": {
-    "title": "404",
-    "subtitle": "哎呀！找不到页面",
-    "description": "您要查找的页面不存在或已被移动。",
-    "returnHome": "返回首页"
+    "header": "让我们帮您找到您要查找的内容",
+    "subtitle": "浏览下面的页面",
+    "pages": {
+      "home": "返回我们的主页，了解 EC STEM 提供的服务",
+      "about": "了解 EC STEM、我们的使命和我们的专家团队",
+      "programmes": "探索适合不同年龄段的 STEM 课程",
+      "partnership": "与我们合作，将 STEM 教育带到您的中心",
+      "contact": "联系我们的团队进行咨询和支持",
+      "cookies": "Cookie 政策"
+    },
+    "additionalLinks": "其他资源"
   },
   "footer": {
     "about": {
