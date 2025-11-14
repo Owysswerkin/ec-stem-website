@@ -7,25 +7,6 @@ const LearningBuddy = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <img 
-              src={boosterLogo} 
-              alt="Booster Robotics" 
-              className="h-24 md:h-32 mx-auto mb-8"
-            />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Learning Buddy
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              EC STEM brings K1, designed by Booster, into the classroom to immerse young thinkers with the experience of co-learning with an autonomous artificial intelligent robot.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Story Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -46,6 +27,44 @@ const LearningBuddy = () => {
                   className="w-full rounded-2xl shadow-2xl"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Section */}
+      <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <img 
+              src={boosterLogo} 
+              alt="Booster Robotics" 
+              className="h-24 md:h-32 mx-auto mb-8"
+            />
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+              Learning Buddy
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              EC STEM brings K1, designed by Booster, into the classroom to immerse young thinkers with the experience of co-learning with an autonomous artificial intelligent robot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners in Innovation Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+              Partners in Innovation
+            </h2>
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                Our collaboration with Booster bring the latest robotics to co-learn with the children across preschools. This partnership allows children to experience first hand learning and interactive with our learning buddy to build confidence and compassion while exploring real-world technology.
+              </p>
+              <p>
+                Together, we're nurturing future-ready creators by combining EC STEM's pedagogy and Booster's robotics innovation.
+              </p>
             </div>
           </div>
         </div>
