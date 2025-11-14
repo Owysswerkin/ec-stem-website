@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Programmes from "./pages/Programmes";
 import Admissions from "./pages/Admissions";
 import Contact from "./pages/Contact";
+import LearningBuddy from "./pages/LearningBuddy";
 import CookiesPolicy from "./pages/CookiesPolicy";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/programmes" element={<Programmes />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/learning-buddy" element={<LearningBuddy />} />
             <Route path="/cookies-policy" element={<CookiesPolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

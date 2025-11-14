@@ -102,6 +102,9 @@ const Navigation = () => {
               <Button variant="hero" size="sm" asChild>
                 <Link to="/admissions">{t('nav.enrollNow')}</Link>
               </Button>
+              <Button variant="default" size="sm" className="bg-blue-600 hover:bg-blue-700" asChild>
+                <Link to="/learning-buddy">Learning Buddy</Link>
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -132,10 +135,13 @@ const Navigation = () => {
                     {item.name}
                   </Link>
                 ))}
-                <div className="flex items-center justify-between mt-4">
+                <div className="flex items-center justify-between mt-4 gap-2">
                   <LanguageToggle />
                   <Button variant="hero" size="default" asChild>
                     <Link to="/admissions">{t('nav.enrollNow')}</Link>
+                  </Button>
+                  <Button variant="default" size="default" className="bg-blue-600 hover:bg-blue-700" asChild>
+                    <Link to="/learning-buddy">Learning Buddy</Link>
                   </Button>
                 </div>
               </div>
