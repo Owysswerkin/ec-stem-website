@@ -17,27 +17,27 @@ const LearningBuddy = () => {
               <div className="space-y-6 animate-fade-in">
                 <div className="inline-block">
                   <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-                    🤖 Our Story
+                    🤖 {t('learningBuddy.storyBadge')}
                   </span>
                 </div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                  Meet the EC STEM Learning Buddy
+                  {t('learningBuddy.title')}
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                  The Learning Buddy was made in a little workshop where a team of builders wanted to create a friend who loves learning all the time. They put together helpful sensors, a bright smart brain, and a spark of imagination.
+                  {t('learningBuddy.storyDescription')}
                 </p>
                 <div className="pt-4">
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
-                      <span className="text-sm font-medium">AI-Powered Learning</span>
+                      <span className="text-sm font-medium">{t('learningBuddy.aiPowered')}</span>
                     </div>
                     <span className="text-muted-foreground/40">•</span>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" style={{
                       animationDelay: '0.2s'
                     }}></div>
-                      <span className="text-sm font-medium">Interactive Robot</span>
+                      <span className="text-sm font-medium">{t('learningBuddy.interactive')}</span>
                     </div>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const LearningBuddy = () => {
               animationDelay: '0.1s'
             }}>
                 <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                  EC STEM brings K1, designed by Booster, into the classroom to immerse young thinkers with the experience of co-learning with an autonomous artificial intelligent robot.
+                  {t('learningBuddy.description')}
                 </p>
               </div>
             </div>
@@ -99,11 +99,11 @@ const LearningBuddy = () => {
             <div className="text-center space-y-8 animate-fade-in">
               <div className="inline-block">
                 <span className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
-                  🤝 Collaboration
+                  🤝 {t('learningBuddy.collaborationBadge')}
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Partners in Innovation
+                {t('learningBuddy.partnersTitle')}
               </h2>
             </div>
             
@@ -112,13 +112,15 @@ const LearningBuddy = () => {
           }}>
               <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-warm border border-border/50">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
-                  Our collaboration with <a href="https://www.booster.tech/booster-k1/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline transition-all">Booster</a> bring the latest robotics to co-learn with the children across preschools. This partnership allows children to experience first hand learning and interactive with our learning buddy to build confidence and compassion while exploring real-world technology.
+                  {t('learningBuddy.partnersDescription').split('Booster')[0]}
+                  <a href="https://www.booster.tech/booster-k1/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline transition-all">Booster</a>
+                  {t('learningBuddy.partnersDescription').split('Booster')[1]}
                 </p>
               </div>
               
               <div className="bg-gradient-to-br from-primary/5 to-secondary/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-primary/10">
                 <p className="text-lg md:text-xl text-foreground leading-relaxed text-center font-medium">
-                  Together, we're nurturing future-ready creators by combining EC STEM's pedagogy and Booster's robotics innovation.
+                  {t('learningBuddy.partnersTagline')}
                 </p>
               </div>
             </div>
