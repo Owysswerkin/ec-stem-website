@@ -8,7 +8,7 @@ const LearningBuddy = () => {
   } = useTranslation();
   return <div className="min-h-screen">
       {/* Story Section */}
-      <section className="relative py-24 md:py-32 lg:py-40 overflow-hidden min-h-[85vh] flex items-center">
+      <section className="relative py-16 md:py-24 overflow-hidden min-h-[60vh] flex items-center">
         {/* Video Background */}
         <div className="absolute inset-0 w-full h-full">
           <iframe 
@@ -21,7 +21,7 @@ const LearningBuddy = () => {
         </div>
         
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/60 via-background/50 to-background/40"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
