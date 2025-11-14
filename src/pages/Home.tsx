@@ -126,6 +126,21 @@ const Home = () => {
               <div className="absolute top-1/3 -left-8 w-12 h-12 bg-orange-400 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
             </div>
           </div>
+          
+          {/* Learning Buddy Button */}
+          <div className="mt-12 text-center">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full shadow-lg"
+              asChild
+            >
+              <Link to="/learning-buddy">
+                Learning Buddy
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
