@@ -499,5 +499,17 @@
     "copyright": "© 2025 Ec stem. 版权所有。",
     "privacy": "隐私政策",
     "terms": "服务条款"
+  },
+  "learningBuddy": {
+    "storyBadge": "我们的故事",
+    "title": "认识EC STEM乐学伙伴",
+    "storyDescription": "乐学伙伴诞生于一个小工坊，一群创造者希望打造一个热爱学习的朋友。他们结合了智能传感器、聪明的大脑和想象的火花。",
+    "aiPowered": "AI驱动学习",
+    "interactive": "互动机器人",
+    "description": "EC STEM将Booster设计的K1机器人带入课堂，让年轻的思考者沉浸在与自主人工智能机器人共同学习的体验中。",
+    "collaborationBadge": "合作",
+    "partnersTitle": "创新伙伴",
+    "partnersDescription": "我们与Booster的合作将最新的机器人技术带入学前教育中心，与孩子们共同学习。这种合作伙伴关系让孩子们亲身体验与乐学伙伴的学习和互动，在探索真实世界技术的同时建立信心和同理心。",
+    "partnersTagline": "我们将EC STEM的教学法与Booster的机器人创新相结合，培养面向未来的创造者。"
   }
 }

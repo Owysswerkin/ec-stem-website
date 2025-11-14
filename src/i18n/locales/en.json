@@ -499,5 +499,17 @@
     "copyright": "© 2025 Ec stem. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "learningBuddy": {
+    "storyBadge": "Our Story",
+    "title": "Meet the EC STEM Learning Buddy",
+    "storyDescription": "The Learning Buddy was made in a little workshop where a team of builders wanted to create a friend who loves learning all the time. They put together helpful sensors, a bright smart brain, and a spark of imagination.",
+    "aiPowered": "AI-Powered Learning",
+    "interactive": "Interactive Robot",
+    "description": "EC STEM brings K1, designed by Booster, into the classroom to immerse young thinkers with the experience of co-learning with an autonomous artificial intelligent robot.",
+    "collaborationBadge": "Collaboration",
+    "partnersTitle": "Partners in Innovation",
+    "partnersDescription": "Our collaboration with Booster bring the latest robotics to co-learn with the children across preschools. This partnership allows children to experience first hand learning and interactive with our learning buddy to build confidence and compassion while exploring real-world technology.",
+    "partnersTagline": "Together, we're nurturing future-ready creators by combining EC STEM's pedagogy and Booster's robotics innovation."
   }
 }
