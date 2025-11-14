@@ -11,18 +11,18 @@ const LearningBuddy = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzIxOTZGMyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] opacity-30"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-20 items-center">
               <div className="space-y-6 animate-fade-in">
                 <div className="inline-block">
                   <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
                     🤖 Our Story
                   </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
                   Meet the EC STEM Learning Buddy
                 </h1>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
                   The Learning Buddy was made in a little workshop where a team of builders wanted to create a friend who loves learning all the time. They put together helpful sensors, a bright smart brain, and a spark of imagination.
                 </p>
                 <div className="pt-4">
@@ -47,7 +47,7 @@ const LearningBuddy = () => {
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
                 <div className="relative w-full rounded-3xl shadow-2xl overflow-hidden aspect-video">
                   <iframe 
-                    src="https://www.youtube.com/embed/SiXZYbIDvRw?autoplay=1&mute=1&loop=1&playlist=SiXZYbIDvRw"
+                    src="https://www.youtube.com/embed/SiXZYbIDvRw?autoplay=1&mute=1&loop=1&playlist=SiXZYbIDvRw&controls=0&modestbranding=1&showinfo=0&rel=0"
                     title="K1 Learning Buddy Robot"
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
