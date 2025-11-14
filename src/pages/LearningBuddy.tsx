@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import boosterLogo from '@/assets/booster-robotics-logo.png';
 import learningBuddyHero from '@/assets/learning-buddy-hero.png';
+import k1RobotsPlaying from '@/assets/k1-robots-playing.png';
 const LearningBuddy = () => {
   const {
     t
@@ -63,17 +64,26 @@ const LearningBuddy = () => {
       {/* Hero Section with Logo */}
       <section className="relative py-20 md:py-28 bg-gradient-to-br from-background via-muted/30 to-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center space-y-8">
-            <div className="inline-block animate-fade-in">
-              <img src={boosterLogo} alt="Booster Robotics" className="h-20 md:h-28 mx-auto drop-shadow-xl hover:scale-110 transition-transform duration-300" />
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-block animate-fade-in">
+                <img src={boosterLogo} alt="Booster Robotics" className="h-20 md:h-28 mx-auto drop-shadow-xl hover:scale-110 transition-transform duration-300" />
+              </div>
             </div>
-            <div className="space-y-6 animate-fade-in" style={{
-            animationDelay: '0.1s'
-          }}>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative animate-fade-in">
+                <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
+                <img src={k1RobotsPlaying} alt="K1 Robots Playing Soccer" className="relative w-full rounded-3xl shadow-2xl" />
+              </div>
               
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                EC STEM brings K1, designed by Booster, into the classroom to immerse young thinkers with the experience of co-learning with an autonomous artificial intelligent robot.
-              </p>
+              <div className="space-y-6 animate-fade-in" style={{
+              animationDelay: '0.1s'
+            }}>
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                  EC STEM brings K1, designed by Booster, into the classroom to immerse young thinkers with the experience of co-learning with an autonomous artificial intelligent robot.
+                </p>
+              </div>
             </div>
           </div>
         </div>
