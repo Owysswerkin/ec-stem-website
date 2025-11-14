@@ -93,7 +93,7 @@ const LearningBuddy = () => {
           }}>
               <div className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-warm border border-border/50">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
-                  Our collaboration with Booster bring the latest robotics to co-learn with the children across preschools. This partnership allows children to experience first hand learning and interactive with our learning buddy to build confidence and compassion while exploring real-world technology.
+                  Our collaboration with <a href="https://www.booster.tech/booster-k1/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline transition-all">Booster</a> bring the latest robotics to co-learn with the children across preschools. This partnership allows children to experience first hand learning and interactive with our learning buddy to build confidence and compassion while exploring real-world technology.
                 </p>
               </div>
               
