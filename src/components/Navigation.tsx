@@ -102,7 +102,7 @@ const Navigation = () => {
               <Button variant="hero" size="sm" asChild>
                 <Link to="/admissions">{t('nav.enrollNow')}</Link>
               </Button>
-              <Button variant="default" size="sm" className="bg-red-600 hover:bg-red-700" asChild>
+              <Button variant="default" size="sm" className="bg-[#2f528f] hover:bg-[#243f6f]" asChild>
                 <Link to="/learning-buddy">Learning Buddy</Link>
               </Button>
             </div>
@@ -140,7 +140,7 @@ const Navigation = () => {
                   <Button variant="hero" size="default" asChild>
                     <Link to="/admissions">{t('nav.enrollNow')}</Link>
                   </Button>
-                  <Button variant="default" size="default" className="bg-red-600 hover:bg-red-700" asChild>
+                  <Button variant="default" size="default" className="bg-[#2f528f] hover:bg-[#243f6f]" asChild>
                     <Link to="/learning-buddy">Learning Buddy</Link>
                   </Button>
                 </div>
