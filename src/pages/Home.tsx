@@ -114,7 +114,7 @@ const Home = () => {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src={asianChildrenStem} 
+                  src={learningBuddyHero} 
                   alt="Children engaged in STEM learning with robotics" 
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
