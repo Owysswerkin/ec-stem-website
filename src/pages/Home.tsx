@@ -120,26 +120,26 @@ const Home = () => {
                 />
               </div>
               
+              {/* Learning Buddy Button - Floating on hero image */}
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+                <Button 
+                  variant="default" 
+                  size="lg" 
+                  className="bg-[#F8B529] hover:bg-[#e6a418] text-white px-10 py-7 text-lg rounded-full shadow-2xl font-semibold"
+                  asChild
+                >
+                  <Link to="/learning-buddy">
+                    Learning Buddy
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+              
               {/* Floating decorative elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-300 rounded-full animate-bounce-gentle"></div>
               <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-blue-400 rounded-full animate-float"></div>
               <div className="absolute top-1/3 -left-8 w-12 h-12 bg-orange-400 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
             </div>
-          </div>
-          
-          {/* Learning Buddy Button */}
-          <div className="mt-12 text-center">
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-[#EB524A] hover:bg-[#d63d35] text-white px-10 py-7 text-lg rounded-full shadow-lg font-semibold"
-              asChild
-            >
-              <Link to="/learning-buddy">
-                Learning Buddy
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>
