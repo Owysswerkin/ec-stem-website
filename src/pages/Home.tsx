@@ -8,6 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
+import learningBuddyHero from '@/assets/learning-buddy-hero.png';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -62,7 +63,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-orange-50">
         <div className="absolute inset-0">
           <img 
-            src={asianChildrenStem}
+            src={learningBuddyHero}
             alt="Children engaged in STEM learning" 
             className="w-full h-full object-cover opacity-15"
           />
