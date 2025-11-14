@@ -132,7 +132,7 @@ const Home = () => {
             <Button 
               variant="default" 
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full shadow-lg"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg rounded-full shadow-lg"
               asChild
             >
               <Link to="/learning-buddy">
