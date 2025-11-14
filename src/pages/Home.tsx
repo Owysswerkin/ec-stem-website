@@ -116,7 +116,7 @@ const Home = () => {
                 <img 
                   src={learningBuddyHero} 
                   alt="Children engaged in STEM learning with robotics" 
-                  className="w-full h-96 lg:h-[500px] object-cover"
+                  className="w-full h-96 lg:h-[500px] object-cover object-top"
                 />
               </div>
               
