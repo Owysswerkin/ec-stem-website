@@ -45,7 +45,15 @@ const LearningBuddy = () => {
               animationDelay: '0.2s'
             }}>
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
-                <img src={learningBuddyHero} alt="K1 Learning Buddy Robot" className="relative w-full rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" />
+                <div className="relative w-full rounded-3xl shadow-2xl overflow-hidden aspect-video">
+                  <iframe 
+                    src="https://www.youtube.com/embed/SiXZYbIDvRw?autoplay=1&mute=1&loop=1&playlist=SiXZYbIDvRw"
+                    title="K1 Learning Buddy Robot"
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </div>
           </div>
