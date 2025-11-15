@@ -71,7 +71,7 @@ const LearningBuddy = () => {
                 <img 
                   src={boosterLogo} 
                   alt="Booster Logo" 
-                  className="h-[400px] md:h-[560px] mx-auto drop-shadow-xl hover:scale-110 transition-transform duration-300"
+                  className="h-32 md:h-48 mx-auto drop-shadow-xl hover:scale-110 transition-transform duration-300"
                 />
               </div>
             </div>
