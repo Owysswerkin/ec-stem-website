@@ -79,7 +79,7 @@ const LearningBuddy = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative animate-fade-in">
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
-                <img src={k1RobotsPlaying} alt="K1 Robots Playing Soccer" className="relative w-full rounded-3xl shadow-2xl" />
+                <img src={learningBuddyHero} alt="Learning Buddy Hero" className="relative w-full rounded-3xl shadow-2xl" />
               </div>
               
               <div className="space-y-6 animate-fade-in" style={{
