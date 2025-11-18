@@ -3,33 +3,27 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
-
 const Contact = () => {
-  const { t } = useTranslation();
-
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: t('contactPage.contact.address.title'),
-      details: [t('contactPage.contact.address.location'), t('contactPage.contact.address.hours')],
-      action: t('contactPage.contact.address.action')
-    },
-    {
-      icon: Phone,
-      title: t('contactPage.contact.phone.title'),
-      details: [t('contactPage.contact.phone.number'), t('contactPage.contact.phone.hours')],
-      action: t('contactPage.contact.phone.action')
-    },
-    {
-      icon: Mail,
-      title: t('contactPage.contact.email.title'),
-      details: [t('contactPage.contact.email.address'), t('contactPage.contact.email.response')],
-      action: t('contactPage.contact.email.action')
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const {
+    t
+  } = useTranslation();
+  const contactInfo = [{
+    icon: MapPin,
+    title: t('contactPage.contact.address.title'),
+    details: [t('contactPage.contact.address.location'), t('contactPage.contact.address.hours')],
+    action: t('contactPage.contact.address.action')
+  }, {
+    icon: Phone,
+    title: t('contactPage.contact.phone.title'),
+    details: [t('contactPage.contact.phone.number'), t('contactPage.contact.phone.hours')],
+    action: t('contactPage.contact.phone.action')
+  }, {
+    icon: Mail,
+    title: t('contactPage.contact.email.title'),
+    details: [t('contactPage.contact.email.address'), t('contactPage.contact.email.response')],
+    action: t('contactPage.contact.email.action')
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-soft-gradient py-20">
         <div className="container mx-auto px-4">
@@ -51,22 +45,9 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <Card className="border-none shadow-warm">
-              <CardHeader>
-                <h2 className="text-3xl font-bold text-foreground mb-2">{t('contactPage.form.title')}</h2>
-                <p className="text-muted-foreground">
-                  {t('contactPage.form.subtitle')}
-                </p>
-              </CardHeader>
+              
               <CardContent>
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSe8_df3eLRk1e8RAx_sGPJZBb0KStutvqI2EsIW-c8RE_IoMQ/viewform?embedded=true"
-                  width="100%"
-                  height="1200"
-                  frameBorder="0"
-                  marginHeight={0}
-                  marginWidth={0}
-                  className="rounded-lg"
-                >
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8_df3eLRk1e8RAx_sGPJZBb0KStutvqI2EsIW-c8RE_IoMQ/viewform?embedded=true" width="100%" height="1200" frameBorder="0" marginHeight={0} marginWidth={0} className="rounded-lg">
                   Loading…
                 </iframe>
               </CardContent>
@@ -138,44 +119,33 @@ const Contact = () => {
           </div>
 
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                question: t('contactPage.faq.questions.whatIsEcStem.question'),
-                answer: t('contactPage.faq.questions.whatIsEcStem.answer')
-              },
-              {
-                question: t('contactPage.faq.questions.howItWorks.question'),
-                answer: t('contactPage.faq.questions.howItWorks.answer')
-              },
-              {
-                question: t('contactPage.faq.questions.whyChooseUs.question'),
-                answer: t('contactPage.faq.questions.whyChooseUs.answer')
-              },
-              {
-                question: t('contactPage.faq.questions.safetyConcerns.question'),
-                answer: t('contactPage.faq.questions.safetyConcerns.answer')
-              },
-              {
-                question: t('contactPage.faq.questions.costEffective.question'),
-                answer: t('contactPage.faq.questions.costEffective.answer')
-              },
-              {
-                question: t('contactPage.faq.questions.getStarted.question'),
-                answer: t('contactPage.faq.questions.getStarted.answer')
-              }
-            ].map((faq, index) => (
-              <Card key={index} className="border-none shadow-gentle">
+            {[{
+            question: t('contactPage.faq.questions.whatIsEcStem.question'),
+            answer: t('contactPage.faq.questions.whatIsEcStem.answer')
+          }, {
+            question: t('contactPage.faq.questions.howItWorks.question'),
+            answer: t('contactPage.faq.questions.howItWorks.answer')
+          }, {
+            question: t('contactPage.faq.questions.whyChooseUs.question'),
+            answer: t('contactPage.faq.questions.whyChooseUs.answer')
+          }, {
+            question: t('contactPage.faq.questions.safetyConcerns.question'),
+            answer: t('contactPage.faq.questions.safetyConcerns.answer')
+          }, {
+            question: t('contactPage.faq.questions.costEffective.question'),
+            answer: t('contactPage.faq.questions.costEffective.answer')
+          }, {
+            question: t('contactPage.faq.questions.getStarted.question'),
+            answer: t('contactPage.faq.questions.getStarted.answer')
+          }].map((faq, index) => <Card key={index} className="border-none shadow-gentle">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold text-foreground mb-3">{faq.question}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{faq.answer}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
