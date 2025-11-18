@@ -78,7 +78,7 @@ const Navigation = () => {
               />
               <img 
                 src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
-                alt="Ec stem Logo" 
+                alt="EC STEM Logo" 
                 className="h-20 w-auto"
               />
             </Link>
