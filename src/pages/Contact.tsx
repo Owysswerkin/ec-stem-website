@@ -1,67 +1,11 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
+import React from 'react';
+import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    centre: '',
-    childAge: '',
-    enquiryType: '',
-    message: ''
-  });
-  const { toast } = useToast();
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Submit to Netlify
-    const form = e.target as HTMLFormElement;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(new FormData(form) as any).toString(),
-    })
-    .then(() => {
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for your enquiry. We'll get back to you within 24 hours.",
-      });
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        centre: '',
-        childAge: '',
-        enquiryType: '',
-        message: ''
-      });
-    })
-    .catch((error) => {
-      toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
-        variant: "destructive",
-      });
-    });
-  };
 
   const contactInfo = [
     {
@@ -82,24 +26,6 @@ const Contact = () => {
       details: [t('contactPage.contact.email.address'), t('contactPage.contact.email.response')],
       action: t('contactPage.contact.email.action')
     }
-  ];
-
-  const enquiryTypes = [
-    t('contactPage.form.enquiryTypes.general'),
-    t('contactPage.form.enquiryTypes.partnership'),
-    t('contactPage.form.enquiryTypes.programs'),
-    t('contactPage.form.enquiryTypes.pricing'),
-    t('contactPage.form.enquiryTypes.visit'),
-    t('contactPage.form.enquiryTypes.other')
-  ];
-
-  const childAges = [
-    t('contactPage.form.childAges.toddler'),
-    t('contactPage.form.childAges.early'),
-    t('contactPage.form.childAges.preschool'),
-    t('contactPage.form.childAges.kindergarten'),
-    t('contactPage.form.childAges.primary'),
-    t('contactPage.form.childAges.multiple')
   ];
 
   return (
@@ -132,108 +58,17 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <form name="contact" method="POST" data-netlify="true" className="space-y-6">
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        {t('contactPage.form.fields.name')} *
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        required
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                        placeholder={t('contactPage.form.placeholders.name')}
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        {t('contactPage.form.fields.email')} *
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                        placeholder={t('contactPage.form.placeholders.email')}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        {t('contactPage.form.fields.phone')}
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                        placeholder={t('contactPage.form.placeholders.phone')}
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        {t('contactPage.form.fields.centre')}
-                      </label>
-                      <input
-                        type="text"
-                        name="centre"
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                        placeholder={t('contactPage.form.placeholders.centre')}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        {t('contactPage.form.fields.childAge')}
-                      </label>
-                      <select
-                        name="childAge"
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                      >
-                        <option value="">{t('contactPage.form.placeholders.childAge')}</option>
-                        {childAges.map((age, index) => (
-                          <option key={index} value={age}>{age}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        {t('contactPage.form.fields.enquiryType')}
-                      </label>
-                      <select
-                        name="enquiryType"
-                        className="w-full h-12 px-4 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                      >
-                        <option value="">{t('contactPage.form.placeholders.enquiryType')}</option>
-                        {enquiryTypes.map((type, index) => (
-                          <option key={index} value={type}>{type}</option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">
-                      {t('contactPage.form.fields.message')}
-                    </label>
-                    <textarea
-                      name="message"
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                      placeholder={t('contactPage.form.placeholders.message')}
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" className="w-full h-12 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-primary/90 transition-colors duration-200 flex items-center justify-center space-x-2">
-                    <Send className="h-5 w-5" />
-                    <span>{t('contactPage.form.submit')}</span>
-                  </button>
-                </form>
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSe8_df3eLRk1e8RAx_sGPJZBb0KStutvqI2EsIW-c8RE_IoMQ/viewform?embedded=true"
+                  width="100%"
+                  height="1200"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  className="rounded-lg"
+                >
+                  Loading…
+                </iframe>
               </CardContent>
             </Card>
 
