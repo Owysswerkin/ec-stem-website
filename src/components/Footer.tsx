@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               
               <div>
-                <h3 className="text-xl font-bold">Ec stem</h3>
+                <h3 className="text-xl font-bold">EC STEM</h3>
                 
               </div>
             </div>

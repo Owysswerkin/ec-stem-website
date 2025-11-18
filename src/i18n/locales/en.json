@@ -13,7 +13,7 @@
     "cta": "Explore Our Programs"
   },
   "about": {
-    "title": "About Ec stem",
+    "title": "About EC STEM",
     "subtitle": "Nurturing tomorrow's innovators through hands-on STEM education",
     "description": "EC STEM is an early childhood (4-6 years old) enrichment provider dedicated to making STEM — Science, Technology, Engineering, and Mathematics — fun, hands-on, and meaningful for young learners. Through structured, age-appropriate programmes, children explore and create using interactive kits that spark curiosity and build essential skills like problem-solving, creativity, and teamwork. Aligned with the MOE NEL Framework, EC STEM delivers engaging learning experiences that nurture confident, curious, and future-ready innovators from a young age."
   },
@@ -70,7 +70,7 @@
   "cta": {
     "title": "Ready to Partner with Us?",
     "subtitle": "Join the growing network of childcare centres offering innovative STEM education",
-    "button": "Partner with Ec stem"
+    "button": "Partner with EC STEM"
   },
   "aboutPage": {
     "title": "",
@@ -268,10 +268,10 @@
     "partnershipIntro": "Our programs are designed to seamlessly integrate with your existing curriculum while bringing the excitement of hands-on STEM learning to your classroom."
   },
   "admissionsPage": {
-    "title": "Partner with Ec stem",
+    "title": "Partner with EC STEM",
     "subtitle": "Transform your centre with engaging STEM programs. Join our network of partner centres and bring innovative early childhood STEM education to your students.",
     "processTitle": "Simple 4-Step Partnership Process",
-    "processSubtitle": "Getting started with Ec stem is easy. Follow these simple steps to bring quality STEM education to your centre.",
+    "processSubtitle": "Getting started with EC STEM is easy. Follow these simple steps to bring quality STEM education to your centre.",
     "steps": {
       "submit": {
         "title": "Submit Enquiry",
@@ -296,7 +296,7 @@
     },
     "form": {
       "title": "Partnership Enquiry Form",
-      "subtitle": "Tell us about your centre and we'll schedule a consultation call to discuss how Ec stem can help.",
+      "subtitle": "Tell us about your centre and we'll schedule a consultation call to discuss how EC STEM can help.",
       "centreInfo": "Centre Information",
       "centreName": "Centre Name",
       "centreLocation": "Centre Location",
@@ -316,7 +316,7 @@
     },
     "benefits": {
       "title": "Partnership Benefits",
-      "subtitle": "What you get when you partner with Ec stem:",
+      "subtitle": "What you get when you partner with EC STEM:",
       "list": [
         "Expert STEM educators and facilitators",
         "Age-appropriate curriculum and materials",
@@ -328,7 +328,7 @@
   "contactPage": {
     "title": "Get in Touch",
     "subtitle": "We'd love to hear from you! Contact us to learn more about bringing quality STEM education to your childcare centre.",
-    "getInTouch": "Contact Ec stem",
+    "getInTouch": "Contact EC STEM",
     "getInTouchSubtitle": "Choose the most convenient way to reach us. We're here to help bring innovative STEM education to your childcare centre!",
     "contact": {
       "address": {
@@ -393,7 +393,7 @@
       "title": "Our Office",
       "subtitle": "Visit our office to learn more about our STEM education services and how we can partner with your childcare centre.",
       "location": {
-        "name": "Ec stem Head Office",
+        "name": "EC STEM Head Office",
         "address": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
         "hours": "Mon - Fri: 9:00 AM - 6:30 PM",
         "directions": "Get Directions"
@@ -411,15 +411,15 @@
       "subtitle": "Common questions from childcare centres about our STEM education services. Can't find what you're looking for? Contact us directly!",
       "questions": {
         "whatIsEcStem": {
-          "question": "What is Ec stem and what do you do?",
-          "answer": "Ec stem is Singapore's trusted partner for early childhood STEM education. We provide specialized robotics training, hands-on science programs, and comprehensive STEM enrichment services directly to childcare centres across Singapore."
+          "question": "What is EC STEM and what do you do?",
+          "answer": "EC STEM is Singapore's trusted partner for early childhood STEM education. We provide specialized robotics training, hands-on science programs, and comprehensive STEM enrichment services directly to childcare centres across Singapore."
         },
         "howItWorks": {
           "question": "How does the partnership with childcare centres work?",
           "answer": "We work closely with childcare centres to integrate age-appropriate STEM programs into their existing curriculum. Our experienced educators visit your centre regularly to deliver engaging, hands-on learning experiences that complement your educational goals."
         },
         "whyChooseUs": {
-          "question": "Why should we choose Ec stem over other education providers?",
+          "question": "Why should we choose EC STEM over other education providers?",
           "answer": "We specialize exclusively in early childhood STEM education with experienced educators, age-appropriate curriculum, proven track record with childcare centres, and ongoing support. Our programs are designed specifically for young learners aged 18 months to 6 years."
         },
         "safetyConcerns": {
@@ -427,11 +427,11 @@
           "answer": "Absolutely! All our programs use age-appropriate, child-safe materials and equipment. Our educators are trained in early childhood development and safety protocols. We ensure every activity meets the highest safety standards for young learners."
         },
         "costEffective": {
-          "question": "Is it cost-effective to partner with Ec stem?",
+          "question": "Is it cost-effective to partner with EC STEM?",
           "answer": "Yes! Partnering with us is more cost-effective than hiring specialized STEM staff. You get expert educators, curriculum, materials, and ongoing support without the overhead costs of recruitment, training, and resource management."
         },
         "getStarted": {
-          "question": "How can we get started with Ec stem?",
+          "question": "How can we get started with EC STEM?",
           "answer": "Simply contact us for a free consultation! We'll discuss your centre's needs, explain our programs, and arrange a trial session. There's no obligation, and we'll work with you to create a customized STEM education plan for your centre."
         }
       }
@@ -485,7 +485,7 @@
   },
   "footer": {
     "about": {
-      "title": "About Ec stem",
+      "title": "About EC STEM",
       "description": "Leading early childhood STEM education provider, inspiring young minds through innovative learning experiences and partnerships with childcare centres."
     },
     "quickLinks": "Quick Links",
@@ -496,7 +496,7 @@
       "phone": "+65 8720 3007",
       "email": "hello@ecstem.education"
     },
-    "copyright": "© 2025 Ec stem. All rights reserved.",
+    "copyright": "© 2025 EC STEM. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },

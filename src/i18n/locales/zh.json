@@ -13,7 +13,7 @@
     "cta": "探索我们的项目"
   },
   "about": {
-    "title": "关于Ec stem",
+    "title": "关于EC STEM",
     "subtitle": "通过实践STEM教育培养明日创新者",
     "description": "EC STEM 是一家专注于幼儿（4-6 岁）的丰富课程提供者，致力于让 STEM（科学、技术、工程和数学）变得有趣、实践性强且对年轻学习者有意义。通过结构化、适龄的课程，儿童使用互动套件进行探索和创造，激发好奇心并培养解决问题、创造力和团队合作等基本技能。与教育部 NEL 框架保持一致，EC STEM 提供引人入胜的学习体验，从小培养自信、好奇和面向未来的创新者。"
   },
@@ -70,7 +70,7 @@
   "cta": {
     "title": "准备与我们合作了吗？",
     "subtitle": "加入提供创新STEM教育的托儿中心不断发展的网络",
-    "button": "与Ec stem合作"
+    "button": "与EC STEM合作"
   },
   "aboutPage": {
     "title": "",
@@ -268,10 +268,10 @@
     "partnershipIntro": "我们的项目旨在与您现有的课程无缝整合，同时为您的课堂带来激动人心的实践STEM学习体验。"
   },
   "admissionsPage": {
-    "title": "与Ec stem合作",
+    "title": "与EC STEM合作",
     "subtitle": "通过引人入胜的STEM项目改造您的中心。加入我们的合作伙伴中心网络，为您的学生带来创新的儿童早期STEM教育。",
     "processTitle": "简单的4步合作流程",
-    "processSubtitle": "开始与Ec stem合作很简单。按照这些简单的步骤为您的中心带来优质的STEM教育。",
+    "processSubtitle": "开始与EC STEM合作很简单。按照这些简单的步骤为您的中心带来优质的STEM教育。",
     "steps": {
       "submit": {
         "title": "提交咨询",
@@ -296,7 +296,7 @@
     },
     "form": {
       "title": "合作咨询表",
-      "subtitle": "告诉我们您的中心情况，我们将安排咨询电话讨论Ec stem如何帮助您。",
+      "subtitle": "告诉我们您的中心情况，我们将安排咨询电话讨论EC STEM如何帮助您。",
       "centreInfo": "中心信息",
       "centreName": "中心名称",
       "centreLocation": "中心位置",
@@ -316,7 +316,7 @@
     },
     "benefits": {
       "title": "合作优势",
-      "subtitle": "与Ec stem合作您将获得：",
+      "subtitle": "与EC STEM合作您将获得：",
       "list": [
         "专业STEM教育工作者和协调员",
         "适龄的课程和材料",
@@ -328,7 +328,7 @@
   "contactPage": {
     "title": "联系我们",
     "subtitle": "我们很想听到您的声音！联系我们了解更多关于为您的托儿中心带来优质STEM教育的信息。",
-    "getInTouch": "联系Ec stem",
+    "getInTouch": "联系EC STEM",
     "getInTouchSubtitle": "选择最方便的方式联系我们。我们在这里帮助为您的托儿中心带来创新的STEM教育！",
     "contact": {
       "address": {
@@ -393,7 +393,7 @@
       "title": "我们的办公室",
       "subtitle": "参观我们的办公室，了解更多关于我们的STEM教育服务以及我们如何与您的托儿中心合作。",
       "location": {
-        "name": "Ec stem总部",
+        "name": "EC STEM总部",
         "address": "CDL King's Centre #06-03, 390 Havelock Road, Singapore 169662",
         "hours": "周一至周五：上午9:00 - 下午6:30",
         "directions": "获取路线"
@@ -419,7 +419,7 @@
           "answer": "我们与托儿中心密切合作，将适龄的STEM项目整合到他们现有的课程中。我们经验丰富的教育工作者定期访问您的中心，提供引人入胜的实践学习体验，补充您的教育目标。"
         },
         "whyChooseUs": {
-          "question": "为什么我们应该选择Ec stem而不是其他教育提供商？",
+          "question": "为什么我们应该选择EC STEM而不是其他教育提供商？",
           "answer": "我们专门从事儿童早期STEM教育，拥有经验丰富的教育工作者、适龄课程、在托儿中心的成功记录以及持续支持。我们的项目专门为18个月至6岁的年轻学习者设计。"
         },
         "safetyConcerns": {
@@ -427,11 +427,11 @@
           "answer": "当然！我们所有的项目都使用适龄、儿童安全的材料和设备。我们的教育工作者接受过儿童早期发展和安全协议培训。我们确保每项活动都符合年轻学习者的最高安全标准。"
         },
         "costEffective": {
-          "question": "与Ec stem合作成本效益高吗？",
+          "question": "与EC STEM合作成本效益高吗？",
           "answer": "是的！与我们合作比雇用专业的STEM员工更具成本效益。您可以获得专家教育工作者、课程、材料和持续支持，而无需承担招聘、培训和资源管理的间接成本。"
         },
         "getStarted": {
-          "question": "我们如何开始与Ec stem合作？",
+          "question": "我们如何开始与EC STEM合作？",
           "answer": "只需联系我们进行免费咨询！我们将讨论您中心的需求，解释我们的项目，并安排试验课程。没有义务，我们将与您合作为您的中心创建定制的STEM教育计划。"
         }
       }
@@ -485,7 +485,7 @@
   },
   "footer": {
     "about": {
-      "title": "关于Ec stem",
+      "title": "关于EC STEM",
       "description": "领先的儿童早期STEM教育提供商，通过创新的学习体验和与托儿中心的合作启发年轻心灵。"
     },
     "quickLinks": "快速链接",
