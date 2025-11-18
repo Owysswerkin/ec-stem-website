@@ -1,12 +1,10 @@
 import { Card } from "@/components/ui/card";
-
 const AccessControl = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20 py-16">
+  return <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20 py-16">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Header */}
         <div className="mb-12 text-center animate-fade-in">
-          <p className="text-sm text-muted-foreground mb-2">Confidential – Internal Use Only</p>
+          
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Access Control Policy
           </h1>
@@ -219,17 +217,8 @@ const AccessControl = () => {
         </Card>
 
         {/* Contact Information */}
-        <Card className="p-6 bg-secondary/50 animate-fade-in">
-          <div className="text-center space-y-2 text-sm text-muted-foreground">
-            <p className="font-semibold">EC STEM PTE. LTD.</p>
-            <p>CDL King's Centre #06-03, 90 Havelock Road, Singapore 169662</p>
-            <p>+65 8720 3007</p>
-            <p>UEN: 202525801M</p>
-          </div>
-        </Card>
+        
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default AccessControl;
