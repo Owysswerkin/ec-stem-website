@@ -40,9 +40,9 @@ const Navigation = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+6587203007" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+            <a href="tel:+6586445667" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <Phone className="h-4 w-4" />
-              <span>+65 8720 3007</span>
+              <span>+65 8644 5667</span>
             </a>
             <a href="mailto:hello@ecstem.education" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <Mail className="h-4 w-4" />
@@ -50,7 +50,7 @@ const Navigation = () => {
             </a>
           </div>
           <div className="md:hidden ml-auto flex items-center space-x-4">
-            <a href="tel:+6587203007" className="flex items-center hover:opacity-80 transition-opacity">
+            <a href="tel:+6586445667" className="flex items-center hover:opacity-80 transition-opacity">
               <Phone className="h-4 w-4" />
             </a>
             <a href="mailto:hello@ecstem.education" className="flex items-center hover:opacity-80 transition-opacity">
