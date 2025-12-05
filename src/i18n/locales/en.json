@@ -217,12 +217,13 @@
       "aligned": {
         "title": "100% Aligned with Singapore's NEL Framework",
         "intro": "Our lessons reinforce key learning areas:",
-        "items": {
-          "discovery": "Discovery of the World — exploring how things work",
-          "motor": "Motor Skills Development — fine hand coordination",
-          "creative": "Creative Expression — design and imagination",
-          "social": "Social & Emotional Development — teamwork, sharing"
-        }
+"items": {
+            "discovery": "Discovery of the World — exploring how things work",
+            "motor": "Motor Skills Development — fine hand coordination",
+            "creative": "Creative Expression — design and imagination",
+            "social": "Social & Emotional Development — teamwork, sharing",
+            "numeracy": "Numeracy — counting, matching, sorting, comparing"
+          }
       },
       "skills": {
         "title": "Builds 21st Century Skills",
