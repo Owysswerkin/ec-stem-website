@@ -36,7 +36,6 @@ const Navigation = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.admissions'), path: '/admissions' },
-    { name: t('nav.contact'), path: '/contact' },
     { name: t('nav.whatsNew'), path: '/whats-new' },
   ];
 
@@ -154,7 +153,7 @@ const Navigation = () => {
               ))}
               <LanguageToggle />
               <Button variant="hero" size="sm" asChild>
-                <Link to="/admissions">{t('nav.enrollNow')}</Link>
+                <Link to="/contact">{t('nav.enrollNow')}</Link>
               </Button>
               <Button variant="hero" size="sm" className="bg-[#F8B529] hover:bg-[#e6a418]" asChild>
                 <Link to="/learning-buddy">Learning Buddy</Link>
@@ -238,7 +237,7 @@ const Navigation = () => {
                 <div className="flex items-center justify-between mt-4 gap-2">
                   <LanguageToggle />
                   <Button variant="hero" size="default" asChild>
-                    <Link to="/admissions">{t('nav.enrollNow')}</Link>
+                    <Link to="/contact">{t('nav.enrollNow')}</Link>
                   </Button>
                   <Button variant="hero" size="default" className="bg-[#F8B529] hover:bg-[#e6a418]" asChild>
                     <Link to="/learning-buddy">Learning Buddy</Link>
