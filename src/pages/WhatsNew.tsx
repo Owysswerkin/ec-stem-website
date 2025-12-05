@@ -4,8 +4,9 @@ import { LayoutGrid, List, Newspaper } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import holidayTrialBanner from '@/assets/holiday-stem-trial-banner.jpg';
 
-// Type definitions for future content
+// Type definitions for content
 export interface Post {
   id: string;
   title: string;
@@ -14,6 +15,8 @@ export interface Post {
   tag: 'article' | 'event';
   image?: string;
   slug: string;
+  link?: string;
+  linkText?: string;
 }
 
 type ViewMode = 'card' | 'list';
@@ -24,8 +27,28 @@ const WhatsNew = () => {
   const [viewMode, setViewMode] = useState<ViewMode>('card');
   const [activeFilter, setActiveFilter] = useState<FilterTag>('all');
 
-  // Empty posts array - content will be added later via prompts
-  const posts: Post[] = [];
+  const posts: Post[] = [
+    {
+      id: '1',
+      title: 'Holiday STEM Trial Class',
+      excerpt: `🎄 Join us for our very first Holiday STEM Trial Class on Saturday, 27th December 2025!
+
+We're excited to partner with Edventure Learning to bring your little ones an unforgettable hands-on STEM experience this holiday season.
+
+📅 Schedule:
+• N2 Early Explorers (4 years old): 10:00am - 11:00am
+• K1 Creative Creators (5 years old): 11:15am - 12:15pm
+• K2 Super Solvers (6 years old): 12:30pm - 1:30pm
+
+Spaces are limited – register now to secure your spot!`,
+      date: 'Dec 5, 2025',
+      tag: 'event',
+      image: holidayTrialBanner,
+      slug: 'holiday-stem-trial-class',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfFcEDVyW_wfqg9cZM8WOZxNo3Sw8nmS2ygCG7V3NpVC4Q9uQ/viewform?usp=header',
+      linkText: 'Find Out More',
+    },
+  ];
 
   const filteredPosts = posts.filter(post => 
     activeFilter === 'all' || post.tag === activeFilter
@@ -128,12 +151,23 @@ const WhatsNew = () => {
                       <h3 className="text-xl font-semibold text-foreground mb-2 line-clamp-2">
                         {post.title}
                       </h3>
-                      <p className="text-muted-foreground mb-4 line-clamp-3">
+                      <p className="text-muted-foreground mb-4 line-clamp-6 whitespace-pre-line">
                         {post.excerpt}
                       </p>
-                      <Button variant="link" className="p-0 h-auto text-primary">
-                        {t('whatsNewPage.readMore')} →
-                      </Button>
+                      {post.link ? (
+                        <a 
+                          href={post.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline font-medium"
+                        >
+                          {post.linkText || t('whatsNewPage.readMore')} →
+                        </a>
+                      ) : (
+                        <Button variant="link" className="p-0 h-auto text-primary">
+                          {t('whatsNewPage.readMore')} →
+                        </Button>
+                      )}
                     </CardContent>
                   </Card>
                 ))}
@@ -163,12 +197,23 @@ const WhatsNew = () => {
                         <h3 className="text-lg font-semibold text-foreground mb-2">
                           {post.title}
                         </h3>
-                        <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
+                        <p className="text-muted-foreground text-sm mb-3 line-clamp-3 whitespace-pre-line">
                           {post.excerpt}
                         </p>
-                        <Button variant="link" className="p-0 h-auto text-primary">
-                          {t('whatsNewPage.readMore')} →
-                        </Button>
+                        {post.link ? (
+                          <a 
+                            href={post.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline font-medium text-sm"
+                          >
+                            {post.linkText || t('whatsNewPage.readMore')} →
+                          </a>
+                        ) : (
+                          <Button variant="link" className="p-0 h-auto text-primary">
+                            {t('whatsNewPage.readMore')} →
+                          </Button>
+                        )}
                       </CardContent>
                     </div>
                   </Card>
