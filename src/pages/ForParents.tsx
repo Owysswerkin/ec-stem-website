@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { 
+import parentsDuploImage from '@/assets/parents-child-duplo.jpg';
+import {
   Clock, 
   Users, 
   Calendar, 
@@ -101,13 +102,21 @@ const ForParents = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-sunshine/10">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${parentsDuploImage})` }}
+        />
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-background/85 to-sunshine/70" />
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 drop-shadow-sm">
               {t('forParentsPage.title')}
             </h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-foreground/90 mb-8 drop-shadow-sm">
               {t('forParentsPage.subtitle')}
             </p>
             <Button asChild size="lg">
