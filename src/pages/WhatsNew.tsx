@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { LayoutGrid, List, Newspaper } from 'lucide-react';
+import { LayoutGrid, List, Newspaper, ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -26,6 +26,7 @@ const WhatsNew = () => {
   const { t } = useTranslation();
   const [viewMode, setViewMode] = useState<ViewMode>('card');
   const [activeFilter, setActiveFilter] = useState<FilterTag>('all');
+  const [expandedPostId, setExpandedPostId] = useState<string | null>(null);
 
   const posts: Post[] = [
     {
@@ -46,7 +47,7 @@ Spaces are limited – register now to secure your spot!`,
       image: holidayTrialBanner,
       slug: 'holiday-stem-trial-class',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfFcEDVyW_wfqg9cZM8WOZxNo3Sw8nmS2ygCG7V3NpVC4Q9uQ/viewform?usp=header',
-      linkText: 'Find Out More',
+      linkText: 'Register here',
     },
   ];
 
@@ -59,6 +60,10 @@ Spaces are limited – register now to secure your spot!`,
     { key: 'article', label: t('whatsNewPage.filters.articles') },
     { key: 'event', label: t('whatsNewPage.filters.events') },
   ];
+
+  const toggleExpand = (postId: string) => {
+    setExpandedPostId(expandedPostId === postId ? null : postId);
+  };
 
   return (
     <div className="min-h-screen">
@@ -130,56 +135,16 @@ Spaces are limited – register now to secure your spot!`,
             viewMode === 'card' ? (
               /* Card View */
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredPosts.map((post) => (
-                  <Card key={post.id} className="overflow-hidden hover:shadow-warm transition-shadow duration-300">
-                    {post.image && (
-                      <div className="aspect-video bg-muted">
-                        <img 
-                          src={post.image} 
-                          alt={post.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    )}
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-2 mb-3">
-                        <Badge variant={post.tag === 'article' ? 'default' : 'secondary'}>
-                          {post.tag === 'article' ? t('whatsNewPage.filters.articles') : t('whatsNewPage.filters.events')}
-                        </Badge>
-                        <span className="text-sm text-muted-foreground">{post.date}</span>
-                      </div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2 line-clamp-2">
-                        {post.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-4 line-clamp-6 whitespace-pre-line">
-                        {post.excerpt}
-                      </p>
-                      {post.link ? (
-                        <a 
-                          href={post.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-primary hover:underline font-medium"
-                        >
-                          {post.linkText || t('whatsNewPage.readMore')} →
-                        </a>
-                      ) : (
-                        <Button variant="link" className="p-0 h-auto text-primary">
-                          {t('whatsNewPage.readMore')} →
-                        </Button>
-                      )}
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            ) : (
-              /* List View */
-              <div className="space-y-4">
-                {filteredPosts.map((post) => (
-                  <Card key={post.id} className="overflow-hidden hover:shadow-warm transition-shadow duration-300">
-                    <div className="flex flex-col sm:flex-row">
+                {filteredPosts.map((post) => {
+                  const isExpanded = expandedPostId === post.id;
+                  return (
+                    <Card 
+                      key={post.id} 
+                      className="overflow-hidden hover:shadow-warm transition-all duration-300 cursor-pointer"
+                      onClick={() => toggleExpand(post.id)}
+                    >
                       {post.image && (
-                        <div className="sm:w-48 sm:h-32 flex-shrink-0">
+                        <div className="aspect-video bg-muted">
                           <img 
                             src={post.image} 
                             alt={post.title}
@@ -187,37 +152,129 @@ Spaces are limited – register now to secure your spot!`,
                           />
                         </div>
                       )}
-                      <CardContent className="p-6 flex-1">
-                        <div className="flex items-center gap-2 mb-2">
+                      <CardContent className="p-6">
+                        <div className="flex items-center gap-2 mb-3">
                           <Badge variant={post.tag === 'article' ? 'default' : 'secondary'}>
                             {post.tag === 'article' ? t('whatsNewPage.filters.articles') : t('whatsNewPage.filters.events')}
                           </Badge>
                           <span className="text-sm text-muted-foreground">{post.date}</span>
                         </div>
-                        <h3 className="text-lg font-semibold text-foreground mb-2">
+                        <h3 className="text-xl font-semibold text-foreground mb-2 line-clamp-2">
                           {post.title}
                         </h3>
-                        <p className="text-muted-foreground text-sm mb-3 line-clamp-3 whitespace-pre-line">
+                        <p className={`text-muted-foreground mb-4 whitespace-pre-line transition-all duration-300 ${isExpanded ? '' : 'line-clamp-3'}`}>
                           {post.excerpt}
                         </p>
-                        {post.link ? (
-                          <a 
-                            href={post.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline font-medium text-sm"
-                          >
-                            {post.linkText || t('whatsNewPage.readMore')} →
-                          </a>
+                        
+                        {isExpanded ? (
+                          <div className="flex flex-col gap-3">
+                            {post.link && (
+                              <Button
+                                asChild
+                                className="w-full"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                <a 
+                                  href={post.link} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                >
+                                  {post.linkText || t('whatsNewPage.readMore')} →
+                                </a>
+                              </Button>
+                            )}
+                            <button 
+                              className="text-muted-foreground hover:text-foreground text-sm flex items-center justify-center gap-1 transition-colors"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                toggleExpand(post.id);
+                              }}
+                            >
+                              Show less <ChevronUp className="h-4 w-4" />
+                            </button>
+                          </div>
                         ) : (
-                          <Button variant="link" className="p-0 h-auto text-primary">
-                            {t('whatsNewPage.readMore')} →
-                          </Button>
+                          <button className="text-primary hover:underline font-medium flex items-center gap-1">
+                            Find Out More <ChevronDown className="h-4 w-4" />
+                          </button>
                         )}
                       </CardContent>
-                    </div>
-                  </Card>
-                ))}
+                    </Card>
+                  );
+                })}
+              </div>
+            ) : (
+              /* List View */
+              <div className="space-y-4">
+                {filteredPosts.map((post) => {
+                  const isExpanded = expandedPostId === post.id;
+                  return (
+                    <Card 
+                      key={post.id} 
+                      className="overflow-hidden hover:shadow-warm transition-all duration-300 cursor-pointer"
+                      onClick={() => toggleExpand(post.id)}
+                    >
+                      <div className="flex flex-col sm:flex-row">
+                        {post.image && (
+                          <div className="sm:w-48 sm:h-32 flex-shrink-0">
+                            <img 
+                              src={post.image} 
+                              alt={post.title}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        )}
+                        <CardContent className="p-6 flex-1">
+                          <div className="flex items-center gap-2 mb-2">
+                            <Badge variant={post.tag === 'article' ? 'default' : 'secondary'}>
+                              {post.tag === 'article' ? t('whatsNewPage.filters.articles') : t('whatsNewPage.filters.events')}
+                            </Badge>
+                            <span className="text-sm text-muted-foreground">{post.date}</span>
+                          </div>
+                          <h3 className="text-lg font-semibold text-foreground mb-2">
+                            {post.title}
+                          </h3>
+                          <p className={`text-muted-foreground text-sm mb-3 whitespace-pre-line transition-all duration-300 ${isExpanded ? '' : 'line-clamp-2'}`}>
+                            {post.excerpt}
+                          </p>
+                          
+                          {isExpanded ? (
+                            <div className="flex flex-wrap items-center gap-3">
+                              {post.link && (
+                                <Button
+                                  asChild
+                                  size="sm"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <a 
+                                    href={post.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                  >
+                                    {post.linkText || t('whatsNewPage.readMore')} →
+                                  </a>
+                                </Button>
+                              )}
+                              <button 
+                                className="text-muted-foreground hover:text-foreground text-sm flex items-center gap-1 transition-colors"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  toggleExpand(post.id);
+                                }}
+                              >
+                                Show less <ChevronUp className="h-4 w-4" />
+                              </button>
+                            </div>
+                          ) : (
+                            <button className="text-primary hover:underline font-medium text-sm flex items-center gap-1">
+                              Find Out More <ChevronDown className="h-4 w-4" />
+                            </button>
+                          )}
+                        </CardContent>
+                      </div>
+                    </Card>
+                  );
+                })}
               </div>
             )
           ) : (
