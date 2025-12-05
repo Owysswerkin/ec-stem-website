@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, ChevronDown, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import LanguageToggle from './LanguageToggle';
@@ -142,13 +142,16 @@ const Navigation = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-semibold transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 flex items-center gap-1 ${
                     isActive(item.path)
                       ? 'text-primary border-b-2 border-primary pb-1'
                       : 'text-foreground hover:text-primary'
                   }`}
                 >
                   {item.name}
+                  {item.path === '/whats-new' && (
+                    <Sparkles className="h-4 w-4 text-[#F8B529]" />
+                  )}
                 </Link>
               ))}
               <LanguageToggle />
@@ -225,13 +228,16 @@ const Navigation = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`text-base font-semibold transition-colors duration-200 py-2 ${
+                    className={`text-base font-semibold transition-colors duration-200 py-2 flex items-center gap-1 ${
                       isActive(item.path)
                         ? 'text-primary border-l-4 border-primary pl-4'
                         : 'text-foreground hover:text-primary pl-4'
                     }`}
                   >
                     {item.name}
+                    {item.path === '/whats-new' && (
+                      <Sparkles className="h-4 w-4 text-[#F8B529]" />
+                    )}
                   </Link>
                 ))}
                 <div className="flex items-center justify-between mt-4 gap-2">
