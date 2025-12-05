@@ -110,6 +110,11 @@ const ForParents = () => {
             <p className="text-lg text-muted-foreground mb-8">
               {t('forParentsPage.subtitle')}
             </p>
+            <Button asChild size="lg">
+              <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
+                {t('forParentsPage.downloadBrochure')}
+              </a>
+            </Button>
           </div>
         </div>
       </section>
