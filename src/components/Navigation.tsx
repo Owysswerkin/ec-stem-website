@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import LanguageToggle from './LanguageToggle';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProgrammesOpen, setIsProgrammesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const { t } = useTranslation();
@@ -22,17 +29,23 @@ const Navigation = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    setIsProgrammesOpen(false);
   }, [location.pathname]);
 
   const navItems = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
-    { name: t('nav.programmes'), path: '/programmes' },
     { name: t('nav.admissions'), path: '/admissions' },
     { name: t('nav.contact'), path: '/contact' },
   ];
 
+  const programmesSubItems = [
+    { name: t('nav.forPreschool'), path: '/programmes' },
+    { name: t('nav.forParents'), path: '/programmes/for-parents' },
+  ];
+
   const isActive = (path: string) => location.pathname === path;
+  const isProgrammesActive = location.pathname.startsWith('/programmes');
 
   return (
     <>
@@ -85,7 +98,47 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
-              {navItems.map((item) => (
+              {navItems.slice(0, 2).map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-semibold transition-colors duration-200 ${
+                    isActive(item.path)
+                      ? 'text-primary border-b-2 border-primary pb-1'
+                      : 'text-foreground hover:text-primary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              
+              {/* Programmes Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className={`flex items-center gap-1 text-sm font-semibold transition-colors duration-200 ${
+                  isProgrammesActive
+                    ? 'text-primary border-b-2 border-primary pb-1'
+                    : 'text-foreground hover:text-primary'
+                }`}>
+                  {t('nav.programmes')}
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="bg-card border shadow-warm z-50">
+                  {programmesSubItems.map((item) => (
+                    <DropdownMenuItem key={item.path} asChild>
+                      <Link
+                        to={item.path}
+                        className={`w-full cursor-pointer ${
+                          isActive(item.path) ? 'text-primary font-medium' : ''
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              {navItems.slice(2).map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
@@ -122,7 +175,53 @@ const Navigation = () => {
           <div className="lg:hidden bg-card border-t shadow-warm">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
-                {navItems.map((item) => (
+                {navItems.slice(0, 2).map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`text-base font-semibold transition-colors duration-200 py-2 ${
+                      isActive(item.path)
+                        ? 'text-primary border-l-4 border-primary pl-4'
+                        : 'text-foreground hover:text-primary pl-4'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                
+                {/* Mobile Programmes Dropdown */}
+                <div>
+                  <button
+                    onClick={() => setIsProgrammesOpen(!isProgrammesOpen)}
+                    className={`flex items-center justify-between w-full text-base font-semibold transition-colors duration-200 py-2 ${
+                      isProgrammesActive
+                        ? 'text-primary border-l-4 border-primary pl-4'
+                        : 'text-foreground hover:text-primary pl-4'
+                    }`}
+                  >
+                    {t('nav.programmes')}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${isProgrammesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isProgrammesOpen && (
+                    <div className="pl-8 space-y-2 mt-2">
+                      {programmesSubItems.map((item) => (
+                        <Link
+                          key={item.path}
+                          to={item.path}
+                          className={`block text-sm py-2 ${
+                            isActive(item.path)
+                              ? 'text-primary font-medium'
+                              : 'text-muted-foreground hover:text-primary'
+                          }`}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {navItems.slice(2).map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
