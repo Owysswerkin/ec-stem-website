@@ -37,6 +37,7 @@ const Navigation = () => {
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.admissions'), path: '/admissions' },
     { name: t('nav.contact'), path: '/contact' },
+    { name: t('nav.whatsNew'), path: '/whats-new' },
   ];
 
   const programmesSubItems = [

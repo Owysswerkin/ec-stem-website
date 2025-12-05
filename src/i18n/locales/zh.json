@@ -7,7 +7,26 @@
     "forParents": "家长专区",
     "admissions": "合作伙伴",
     "contact": "联系我们",
+    "whatsNew": "最新动态",
     "enrollNow": "预约通话"
+  },
+  "whatsNewPage": {
+    "title": "最新动态",
+    "subtitle": "了解我们最新的文章、新闻和即将举行的活动。",
+    "filters": {
+      "all": "全部",
+      "articles": "文章",
+      "events": "活动"
+    },
+    "views": {
+      "card": "卡片视图",
+      "list": "列表视图"
+    },
+    "emptyState": {
+      "title": "敬请期待！",
+      "description": "新内容即将推出。请稍后查看精彩的更新、文章和活动。"
+    },
+    "readMore": "阅读更多"
   },
   "hero": {
     "title": "好奇心从这里开始。",
