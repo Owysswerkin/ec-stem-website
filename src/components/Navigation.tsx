@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, ChevronDown, Sparkles } from 'lucide-react';
+import ecStemLogo from '@/assets/ec-stem-logo.jpg';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import LanguageToggle from './LanguageToggle';
@@ -83,16 +84,11 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-1">
+            <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/55f281bc-95bf-4adb-9db1-58a4f98dd2f4.png" 
-                alt="STEM Puzzle Logo" 
-                className="h-16 w-auto"
-              />
-              <img 
-                src="/lovable-uploads/64b9fd11-f7bf-426a-8783-5295b1b746ee.png" 
+                src={ecStemLogo} 
                 alt="EC STEM Logo" 
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
 

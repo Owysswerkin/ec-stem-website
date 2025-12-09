@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import ecStemLogo from '@/assets/ec-stem-logo.jpg';
 const Footer = () => {
   const {
     t
@@ -12,11 +13,11 @@ const Footer = () => {
           {/* School Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              
-              <div>
-                <h3 className="text-xl font-bold">EC STEM</h3>
-                
-              </div>
+              <img 
+                src={ecStemLogo} 
+                alt="EC STEM Logo" 
+                className="h-12 w-auto rounded"
+              />
             </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
               {t('footer.about.description')}
