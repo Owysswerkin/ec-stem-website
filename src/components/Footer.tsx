@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import ecStemLogo from '@/assets/ec-stem-logo.jpg';
+import ecStemLogoWhite from '@/assets/ec-stem-logo-white.jpg';
 const Footer = () => {
   const {
     t
@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src={ecStemLogo} 
+                src={ecStemLogoWhite} 
                 alt="EC STEM Logo" 
                 className="h-12 w-auto rounded"
               />
