@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
+import WhatsAppButton from './WhatsAppButton';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
         {children}
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
