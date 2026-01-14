@@ -21,6 +21,7 @@ const emailSchema = z.object({
 const InterestPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasShown, setHasShown] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -94,7 +95,22 @@ const InterestPopup = () => {
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <>
+    {isMinimized && !isOpen && (
+      <button
+        onClick={() => {
+          setIsOpen(true);
+          setIsMinimized(false);
+        }}
+        className="fixed bottom-4 left-4 z-50 bg-primary text-primary-foreground px-4 py-2 rounded-full shadow-lg hover:bg-primary/90 transition-all animate-fade-in"
+      >
+        Register Interest
+      </button>
+    )}
+    <Dialog open={isOpen} onOpenChange={(open) => {
+      setIsOpen(open);
+      if (!open) setIsMinimized(true);
+    }}>
       <DialogContent className="sm:max-w-[420px]">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold text-primary">
@@ -163,10 +179,22 @@ const InterestPopup = () => {
                 "Register Interest"
               )}
             </Button>
+
+            <button
+              type="button"
+              onClick={() => {
+                setIsOpen(false);
+                setIsMinimized(true);
+              }}
+              className="text-sm text-muted-foreground hover:text-primary underline mt-2 w-full text-center transition-colors"
+            >
+              I'll do this later
+            </button>
           </form>
         )}
       </DialogContent>
     </Dialog>
+    </>
   );
 };
 
