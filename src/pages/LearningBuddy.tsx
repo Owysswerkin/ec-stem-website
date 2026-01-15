@@ -49,7 +49,7 @@ const LearningBuddy = () => {
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
                 <div className="relative w-full rounded-3xl shadow-2xl overflow-hidden aspect-video">
                   <iframe 
-                    src="https://www.youtube.com/embed/SiXZYbIDvRw?autoplay=1&mute=1&loop=1&playlist=SiXZYbIDvRw&controls=0&modestbranding=1&showinfo=0&rel=0"
+                    src="https://www.youtube.com/embed/3iVEKk_UKI0?autoplay=1&mute=1&loop=1&playlist=3iVEKk_UKI0&controls=0&modestbranding=1&showinfo=0&rel=0"
                     title="K1 Learning Buddy Robot"
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
