@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import LearningBuddy from "./pages/LearningBuddy";
 import CookiesPolicy from "./pages/CookiesPolicy";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 import AccessControl from "./pages/AccessControl";
 import WhatsNew from "./pages/WhatsNew";
 import NotFound from "./pages/NotFound";
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/learning-buddy" element={<LearningBuddy />} />
             <Route path="/cookies-policy" element={<CookiesPolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/policies/access-control" element={<AccessControl />} />
             <Route path="/whats-new" element={<WhatsNew />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
