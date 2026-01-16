@@ -75,6 +75,9 @@ const Footer = () => {
               <Link to="/privacy-policy" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
                 {t('footer.privacy')}
               </Link>
+              <Link to="/terms-conditions" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
+                {t('footer.terms')}
+              </Link>
             </div>
           </div>
         </div>
