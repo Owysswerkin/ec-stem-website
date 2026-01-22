@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -9,64 +8,62 @@ import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import learningBuddyHero from '@/assets/learning-buddy-hero.png';
-
 const Home = () => {
-  const { t } = useTranslation();
-  const services = [
-    {
-      icon: BookOpen,
-      title: t('services.curriculum.title'),
-      description: t('services.curriculum.description'),
-      points: t('services.curriculum.points', { returnObjects: true }) as string[],
-      color: 'bg-primary'
-    },
-    {
-      icon: Heart,
-      title: t('services.satisfaction.title'),
-      description: t('services.satisfaction.description'),
-      points: t('services.satisfaction.points', { returnObjects: true }) as string[],
-      color: 'bg-accent-vibrant'
-    },
-    {
-      icon: Trophy,
-      title: t('services.partnership.title'),
-      description: t('services.partnership.description'),
-      points: t('services.partnership.points', { returnObjects: true }) as string[],
-      color: 'bg-secondary'
-    }
-  ];
-
-  const programs = [
-    {
-      title: t('programs.toddler.title'),
-      description: t('programs.toddler.description'),
-      image: asianKidsScience,
-      highlights: t('programs.toddler.highlights', { returnObjects: true }) as string[]
-    },
-    {
-      title: t('programs.preK.title'),
-      description: t('programs.preK.description'),
-      image: asianKidsRobotics,
-      highlights: t('programs.preK.highlights', { returnObjects: true }) as string[]
-    },
-    {
-      title: t('programs.kindergarten.title'),
-      description: t('programs.kindergarten.description'),
-      image: asianChildrenStem,
-      highlights: t('programs.kindergarten.highlights', { returnObjects: true }) as string[]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const {
+    t
+  } = useTranslation();
+  const services = [{
+    icon: BookOpen,
+    title: t('services.curriculum.title'),
+    description: t('services.curriculum.description'),
+    points: t('services.curriculum.points', {
+      returnObjects: true
+    }) as string[],
+    color: 'bg-primary'
+  }, {
+    icon: Heart,
+    title: t('services.satisfaction.title'),
+    description: t('services.satisfaction.description'),
+    points: t('services.satisfaction.points', {
+      returnObjects: true
+    }) as string[],
+    color: 'bg-accent-vibrant'
+  }, {
+    icon: Trophy,
+    title: t('services.partnership.title'),
+    description: t('services.partnership.description'),
+    points: t('services.partnership.points', {
+      returnObjects: true
+    }) as string[],
+    color: 'bg-secondary'
+  }];
+  const programs = [{
+    title: t('programs.toddler.title'),
+    description: t('programs.toddler.description'),
+    image: asianKidsScience,
+    highlights: t('programs.toddler.highlights', {
+      returnObjects: true
+    }) as string[]
+  }, {
+    title: t('programs.preK.title'),
+    description: t('programs.preK.description'),
+    image: asianKidsRobotics,
+    highlights: t('programs.preK.highlights', {
+      returnObjects: true
+    }) as string[]
+  }, {
+    title: t('programs.kindergarten.title'),
+    description: t('programs.kindergarten.description'),
+    image: asianChildrenStem,
+    highlights: t('programs.kindergarten.highlights', {
+      returnObjects: true
+    }) as string[]
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-orange-50">
         <div className="absolute inset-0">
-          <img 
-            src={learningBuddyHero}
-            alt="Children engaged in STEM learning" 
-            className="w-full h-full object-cover opacity-15"
-          />
+          <img src={learningBuddyHero} alt="Children engaged in STEM learning" className="w-full h-full object-cover opacity-15" />
         </div>
         
         {/* Decorative clouds and elements */}
@@ -85,23 +82,13 @@ const Home = () => {
                   {t('hero.subtitle')}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    variant="default" 
-                    size="lg" 
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-full shadow-lg"
-                    asChild
-                  >
+                  <Button variant="default" size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-full shadow-lg" asChild>
                     <Link to="/programmes">
                       {t('hero.cta')}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button 
-                    variant="blueAccent" 
-                    size="lg"
-                    className="px-8 py-6 text-lg rounded-full shadow-lg"
-                    asChild
-                  >
+                  <Button variant="blueAccent" size="lg" className="px-8 py-6 text-lg rounded-full shadow-lg" asChild>
                     <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
                       Download Brochure
                     </a>
@@ -113,21 +100,12 @@ const Home = () => {
             {/* Right side - Hero image */}
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                  src={learningBuddyHero} 
-                  alt="Children engaged in STEM learning with robotics" 
-                  className="w-full h-96 lg:h-[500px] object-cover object-top"
-                />
+                <img alt="Children engaged in STEM learning with robotics" className="w-full h-96 lg:h-[500px] object-cover object-top" src="/lovable-uploads/a5cce224-38a1-49ec-97d6-fbaa3f157670.jpg" />
               </div>
               
               {/* Learning Buddy Button - Floating on hero image */}
               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-                <Button 
-                  variant="default" 
-                  size="lg" 
-                  className="bg-[#F8B529] hover:bg-[#e6a418] text-white px-10 py-7 text-lg rounded-full shadow-2xl font-semibold"
-                  asChild
-                >
+                <Button variant="default" size="lg" className="bg-[#F8B529] hover:bg-[#e6a418] text-white px-10 py-7 text-lg rounded-full shadow-2xl font-semibold" asChild>
                   <Link to="/learning-buddy">
                     Learning Buddy
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -138,7 +116,9 @@ const Home = () => {
               {/* Floating decorative elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-300 rounded-full animate-bounce-gentle"></div>
               <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-blue-400 rounded-full animate-float"></div>
-              <div className="absolute top-1/3 -left-8 w-12 h-12 bg-orange-400 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+              <div className="absolute top-1/3 -left-8 w-12 h-12 bg-orange-400 rounded-full animate-float" style={{
+              animationDelay: '1s'
+            }}></div>
             </div>
           </div>
         </div>
@@ -157,23 +137,19 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
+            {services.map((service, index) => <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
                 <div className={`w-20 h-20 mb-6 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                   <service.icon className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <ul className="space-y-3 text-left">
-                  {service.points.map((point, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
+                  {service.points.map((point, idx) => <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>{point}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -223,12 +199,7 @@ const Home = () => {
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               {t('about.description')}
             </p>
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full"
-              asChild
-            >
+            <Button variant="default" size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full" asChild>
               <Link to="/about">Learn More About Us</Link>
             </Button>
           </div>
@@ -245,8 +216,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {programs.map((program, index) => (
-              <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
+            {programs.map((program, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
                 <CardContent className="p-8">
                   <div className="bg-accent w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     {index === 0 && <Users className="h-8 w-8 text-white" />}
@@ -261,8 +231,7 @@ const Home = () => {
                   </div>
                   <p className="text-muted-foreground leading-relaxed">{program.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center mt-12">
@@ -276,8 +245,6 @@ const Home = () => {
         </div>
       </section>
 
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
