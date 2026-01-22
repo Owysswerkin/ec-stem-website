@@ -37,7 +37,8 @@ const InterestPopup = () => {
     }
 
     const handleScroll = () => {
-      if (window.scrollY > 400 && !hasShown) {
+      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercent >= 80 && !hasShown) {
         setIsOpen(true);
         setHasShown(true);
         sessionStorage.setItem('interestPopupShown', 'true');
