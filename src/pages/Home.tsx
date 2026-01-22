@@ -100,7 +100,7 @@ const Home = () => {
             {/* Right side - Hero image */}
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img alt="Children engaged in STEM learning with robotics" className="w-full h-96 lg:h-[500px] object-cover object-top" src="/lovable-uploads/a5cce224-38a1-49ec-97d6-fbaa3f157670.jpg" />
+                <img alt="Children engaged in STEM learning with robotics" className="w-full h-[500px] lg:h-[600px] object-cover object-center aspect-[3/4]" src="/lovable-uploads/a5cce224-38a1-49ec-97d6-fbaa3f157670.jpg" />
               </div>
               
               {/* Learning Buddy Button - Floating on hero image */}
