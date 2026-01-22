@@ -255,7 +255,7 @@ const ForParents = () => {
           <blockquote className="text-2xl md:text-3xl font-bold text-primary-foreground max-w-3xl mx-auto mb-8">
             "{t('forParentsPage.motto')}"
           </blockquote>
-          <Button variant="secondary" size="lg" asChild>
+          <Button size="lg" className="bg-[#F8B529] hover:bg-[#e6a418] text-white font-semibold" asChild>
             <Link to="/contact">{t('forParentsPage.cta')}</Link>
           </Button>
         </div>
