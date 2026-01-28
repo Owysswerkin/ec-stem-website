@@ -4,7 +4,7 @@ import { LayoutGrid, List, Newspaper, ChevronDown, ChevronUp } from 'lucide-reac
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import holidayTrialBanner from '@/assets/holiday-stem-trial-banner.jpg';
+import trialClassJan2026 from '@/assets/trial-class-jan-2026.jpg';
 
 // Type definitions for content
 export interface Post {
@@ -31,21 +31,23 @@ const WhatsNew = () => {
   const posts: Post[] = [
     {
       id: '1',
-      title: 'Holiday STEM Trial Class',
-      excerpt: `🎄 Join us for our very first Holiday STEM Trial Class on Saturday, 27th December 2025!
+      title: 'FREE STEM Trial Class – 31 Jan 2026',
+      excerpt: `🚀 Calling all curious kids! Join our FREE STEM Trial Class at LC Education Singapore on 31st January 2026!
 
-We're excited to partner with Edventure Learning to bring your little ones an unforgettable hands-on STEM experience this holiday season.
+Watch your little ones build, create, and discover through hands-on play with our age-appropriate programmes.
 
 📅 Schedule:
 • N2 Early Explorers (4 years old): 10:00am - 11:00am
-• K1 Creative Creators (5 years old): 11:15am - 12:15pm
+• K1 Curious Creators (5 years old): 11:15am - 12:15pm
 • K2 Super Solvers (6 years old): 12:30pm - 1:30pm
 
-Spaces are limited – register now to secure your spot!`,
-      date: 'Dec 5, 2025',
+📍 155B Thomson Rd, Goldhill Centre, Singapore 307610
+
+Limited slots available – sign up now!`,
+      date: 'Jan 27, 2026',
       tag: 'event',
-      image: holidayTrialBanner,
-      slug: 'holiday-stem-trial-class',
+      image: trialClassJan2026,
+      slug: 'free-stem-trial-class-jan-2026',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfFcEDVyW_wfqg9cZM8WOZxNo3Sw8nmS2ygCG7V3NpVC4Q9uQ/viewform?usp=header',
       linkText: 'Register here',
     },
