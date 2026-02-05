@@ -5,14 +5,11 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import StemDecorations from '@/components/StemDecorations';
 import WaveDivider from '@/components/WaveDivider';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
-import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
-import stemGearCoral from '@/assets/stem-gear-coral.png';
 const Home = () => {
   const {
     t
@@ -83,20 +80,6 @@ const Home = () => {
         <div className="absolute top-24 left-[20%] w-5 h-12 bg-secondary/40 rounded-full rotate-[10deg]"></div>
         <div className="absolute top-12 right-[20%] w-10 h-10 bg-accent/60 rounded-[40%_60%_30%_70%/60%_40%_60%_40%]"></div>
         
-        {/* Floating STEM gears */}
-        <img 
-          src={stemGearsYellowBlue} 
-          alt="" 
-          className="absolute top-32 right-[10%] w-16 h-16 object-contain animate-spin-slow opacity-80"
-          aria-hidden="true"
-        />
-        <img 
-          src={stemGearCoral} 
-          alt="" 
-          className="absolute bottom-[35%] left-[8%] w-12 h-12 object-contain animate-float-gentle opacity-70"
-          aria-hidden="true"
-        />
-        
         {/* Main content - centered */}
         <div className="flex-1 flex flex-col items-center justify-center px-4 pt-20 pb-8">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
@@ -164,7 +147,6 @@ const Home = () => {
 
       {/* Services Overview */}
         <section className="py-20 bg-gray-50 relative overflow-hidden">
-          <StemDecorations variant="section" />
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -256,7 +238,6 @@ const Home = () => {
 
       {/* Programs Preview */}
         <section className="py-20 bg-teal-soft relative overflow-hidden">
-          <StemDecorations variant="section" />
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
