@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import ecStemLogoWhite from '@/assets/ec-stem-logo-white.jpg';
 const Footer = () => {
   const {
     t
@@ -12,13 +11,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* School Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src={ecStemLogoWhite} 
-                alt="Ec stem Logo" 
-                className="h-12 w-auto rounded"
-              />
-            </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
               {t('footer.about.description')}
             </p>
