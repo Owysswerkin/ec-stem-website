@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import StemDecorations from '@/components/StemDecorations';
+import WaveDivider from '@/components/WaveDivider';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
@@ -99,6 +101,9 @@ const Home = () => {
             
             {/* Right side - Hero image */}
             <div className="relative">
+                {/* STEM gear decorations */}
+                <StemDecorations variant="hero" />
+                
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img alt="Children engaged in STEM learning with robotics" className="w-full h-[500px] lg:h-[600px] object-cover object-center aspect-[3/4]" src="/lovable-uploads/a5cce224-38a1-49ec-97d6-fbaa3f157670.jpg" />
                 <div className="absolute inset-0 bg-white/15 backdrop-blur-[1px]"></div>
@@ -113,20 +118,17 @@ const Home = () => {
                   </Link>
                 </Button>
               </div>
-              
-              {/* Floating decorative elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-300 rounded-full animate-bounce-gentle"></div>
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-blue-400 rounded-full animate-float"></div>
-              <div className="absolute top-1/3 -left-8 w-12 h-12 bg-orange-400 rounded-full animate-float" style={{
-              animationDelay: '1s'
-            }}></div>
             </div>
           </div>
         </div>
       </section>
 
+        {/* Wave Divider - Hero to Services */}
+        <WaveDivider variant="wave1" colorClass="fill-gray-50" />
+
       {/* Services Overview */}
-      <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gray-50 relative overflow-hidden">
+          <StemDecorations variant="section" />
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -154,6 +156,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+        {/* Wave Divider - Services to Slogan */}
+        <WaveDivider variant="wave2" colorClass="fill-background" flip />
 
       {/* Slogan Section */}
       <section className="bg-soft-gradient py-20">
@@ -187,6 +192,9 @@ const Home = () => {
         </div>
       </section>
 
+        {/* Wave Divider - Slogan to About */}
+        <WaveDivider variant="wave3" colorClass="fill-background" />
+
       {/* About Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -207,8 +215,12 @@ const Home = () => {
         </div>
       </section>
 
+        {/* Wave Divider - About to Programs */}
+        <WaveDivider variant="wave1" colorClass="fill-teal-soft" flip />
+
       {/* Programs Preview */}
-      <section className="py-20">
+        <section className="py-20 bg-teal-soft relative overflow-hidden">
+          <StemDecorations variant="section" />
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">

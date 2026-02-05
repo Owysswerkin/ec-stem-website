@@ -54,6 +54,12 @@
     --blue-accent: 214 100% 50%;
     --blue-accent-foreground: 0 0% 100%;
 
+    /* STEM component colors */
+    --gear-yellow: 45 100% 55%;
+    --gear-blue: 220 80% 45%;
+    --coral: 5 75% 58%;
+    --teal-soft: 180 50% 95%;
+
     /* Borders and inputs */
     --border: 45 30% 90%;
     --input: 45 30% 95%;
