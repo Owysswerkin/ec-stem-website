@@ -134,11 +134,8 @@ const Home = () => {
         <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              {t('services.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('services.subtitle')}
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
             </p>
           </div>
           
