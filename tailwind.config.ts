@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'sans': ['Nunito', 'system-ui', 'sans-serif'],
+				'display': ['Bagel Fat One', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
