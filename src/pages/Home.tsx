@@ -107,9 +107,11 @@ const Home = () => {
             
             {/* Main headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-dark mb-6 leading-[1.1] tracking-tight">
-              ROBOTS-FIRST
+              Early Childhood
               <br />
-              <span className="text-primary">CLASSROOM</span>
+              <span className="text-primary">STEM Education</span>
+              <br />
+              <span className="text-secondary">in Singapore</span>
             </h1>
             
             {/* Subtitle */}
