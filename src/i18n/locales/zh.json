@@ -35,9 +35,9 @@
     "cta": "探索我们的项目"
   },
   "about": {
-    "title": "关于EC STEM",
+    "title": "关于Ec stem",
     "subtitle": "通过实践STEM教育培养明日创新者",
-    "description": "EC STEM 是一家专注于幼儿（4-6 岁）的丰富课程提供者，致力于让 STEM（科学、技术、工程和数学）变得有趣、实践性强且对年轻学习者有意义。通过结构化、适龄的课程，儿童使用互动套件进行探索和创造，激发好奇心并培养解决问题、创造力和团队合作等基本技能。与教育部 NEL 框架保持一致，EC STEM 提供引人入胜的学习体验，从小培养自信、好奇和面向未来的创新者。"
+    "description": "Ec stem 是一家专注于幼儿（4-6 岁）的丰富课程提供者，致力于让 STEM（科学、技术、工程和数学）变得有趣、实践性强且对年轻学习者有意义。通过结构化、适龄的课程，儿童使用互动套件进行探索和创造，激发好奇心并培养解决问题、创造力和团队合作等基本技能。与教育部 NEL 框架保持一致，Ec stem 提供引人入胜的学习体验，从小培养自信、好奇和面向未来的创新者。"
   },
   "programs": {
     "title": "我们的STEM课程",
@@ -59,7 +59,7 @@
     }
   },
   "services": {
-    "title": "为什么选择EC STEM？",
+    "title": "为什么选择Ec stem？",
     "subtitle": "为高质量幼儿STEM教育建立牢固的合作伙伴关系",
     "curriculum": {
       "title": "全面课程",
@@ -74,7 +74,7 @@
       "title": "提高家长满意度",
       "description": "家长喜爱的可见学习成果",
       "points": [
-        "EC STEM是一个独特的、面向未来的课程，让家长见证孩子的进步和改善",
+        "Ec stem是一个独特的、面向未来的课程，让家长见证孩子的进步和改善",
         "家长喜爱可见的、实践性的学习成果",
         "高满意度并为孩子的发展增值"
       ]
@@ -92,7 +92,7 @@
   "cta": {
     "title": "准备与我们合作了吗？",
     "subtitle": "加入提供创新STEM教育的托儿中心不断发展的网络",
-    "button": "与EC STEM合作"
+    "button": "与Ec stem合作"
   },
   "aboutPage": {
     "title": "",
@@ -147,9 +147,9 @@
     },
     "founder": {
       "title": "来自创始人的话",
-      "quote": "我坚信，游戏化探索是点燃终身学习热情的关键。在EC STEM，我们以新加坡NEL框架为指导，精心设计每一个课程，将孩子的好奇心转化为解决现实问题的能力，让他们成为明日的创造者。\n\n我期待与有远见的园长和教育工作者合作，为孩子的未来奠定充满活力和坚实的基础。",
+      "quote": "我坚信，游戏化探索是点燃终身学习热情的关键。在Ec stem，我们以新加坡NEL框架为指导，精心设计每一个课程，将孩子的好奇心转化为解决现实问题的能力，让他们成为明日的创造者。\n\n我期待与有远见的园长和教育工作者合作，为孩子的未来奠定充满活力和坚实的基础。",
       "name": "黄校长",
-      "role": "创始人 | EC STEM",
+      "role": "创始人 | Ec stem",
       "description": "一位深深扎根于幼儿教育领域的创新者，致力于将前瞻性的STEM教育理念无缝融入新加坡幼儿园课堂。"
     },
     "team": {
@@ -287,14 +287,14 @@
       "feature2": "与新加坡教育部NEL框架整合",
       "feature3": "适合所有年龄"
     },
-    "partnershipTitle": "为什么幼儿园选择EC STEM",
+    "partnershipTitle": "为什么幼儿园选择Ec stem",
     "partnershipIntro": "我们的项目旨在与您现有的课程无缝整合，同时为您的课堂带来激动人心的实践STEM学习体验。"
   },
   "admissionsPage": {
-    "title": "与EC STEM合作",
+    "title": "与Ec stem合作",
     "subtitle": "通过引人入胜的STEM项目改造您的中心。加入我们的合作伙伴中心网络，为您的学生带来创新的儿童早期STEM教育。",
     "processTitle": "简单的4步合作流程",
-    "processSubtitle": "开始与EC STEM合作很简单。按照这些简单的步骤为您的中心带来优质的STEM教育。",
+    "processSubtitle": "开始与Ec stem合作很简单。按照这些简单的步骤为您的中心带来优质的STEM教育。",
     "steps": {
       "submit": {
         "title": "提交咨询",
@@ -319,7 +319,7 @@
     },
     "form": {
       "title": "合作咨询表",
-      "subtitle": "告诉我们您的中心情况，我们将安排咨询电话讨论EC STEM如何帮助您。",
+      "subtitle": "告诉我们您的中心情况，我们将安排咨询电话讨论Ec stem如何帮助您。",
       "centreInfo": "中心信息",
       "centreName": "中心名称",
       "centreLocation": "中心位置",
@@ -497,8 +497,8 @@
     "header": "让我们帮您找到您要查找的内容",
     "subtitle": "浏览下面的页面",
     "pages": {
-      "home": "返回我们的主页，了解 EC STEM 提供的服务",
-      "about": "了解 EC STEM、我们的使命和我们的专家团队",
+      "home": "返回我们的主页，了解 Ec stem 提供的服务",
+      "about": "了解 Ec stem、我们的使命和我们的专家团队",
       "programmes": "探索适合不同年龄段的 STEM 课程",
       "partnership": "与我们合作，将 STEM 教育带到您的中心",
       "contact": "联系我们的团队进行咨询和支持",
@@ -508,7 +508,7 @@
   },
   "footer": {
     "about": {
-      "title": "关于EC STEM",
+      "title": "关于Ec stem",
       "description": "领先的儿童早期STEM教育提供商，通过创新的学习体验和与托儿中心的合作启发年轻心灵。"
     },
     "quickLinks": "快速链接",
@@ -529,11 +529,11 @@
     "storyDescription": "乐学伙伴诞生于一个小工坊，一群创造者希望打造一个热爱学习的朋友。他们结合了智能传感器、聪明的大脑和想象的火花。",
     "aiPowered": "AI驱动学习",
     "interactive": "互动机器人",
-    "description": "EC STEM将Booster设计的K1机器人带入课堂，让年轻的思考者沉浸在与自主人工智能机器人共同学习的体验中。",
+    "description": "Ec stem将Booster设计的K1机器人带入课堂，让年轻的思考者沉浸在与自主人工智能机器人共同学习的体验中。",
     "collaborationBadge": "合作",
     "partnersTitle": "创新伙伴",
     "partnersDescription": "我们与Booster的合作将最新的机器人技术带入学前教育中心，与孩子们共同学习。这种合作伙伴关系让孩子们亲身体验与乐学伙伴的学习和互动，在探索真实世界技术的同时建立信心和同理心。",
-    "partnersTagline": "我们将EC STEM的教学法与Booster的机器人创新相结合，培养面向未来的创造者。"
+    "partnersTagline": "我们将Ec stem的教学法与Booster的机器人创新相结合，培养面向未来的创造者。"
   },
   "forParentsPage": {
     "title": "充实中心",

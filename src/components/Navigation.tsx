@@ -87,7 +87,7 @@ const Navigation = () => {
             <Link to="/" className="flex items-center">
               <img 
                 src={ecStemLogo} 
-                alt="EC STEM Logo" 
+                alt="Ec stem Logo" 
                 className="h-16 w-auto"
               />
             </Link>

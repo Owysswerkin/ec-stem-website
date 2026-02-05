@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const WhatsAppButton = () => {
   const [showBubble, setShowBubble] = useState(false);
   const phoneNumber = '6586445667';
-  const message = encodeURIComponent('Hi, I would like to enquire about EC STEM programs.');
+  const message = encodeURIComponent('Hi, I would like to enquire about Ec stem programs.');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   useEffect(() => {
