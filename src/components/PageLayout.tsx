@@ -2,7 +2,6 @@ import React from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import WhatsAppButton from './WhatsAppButton';
-import InterestPopup from './InterestPopup';
 import SEOHead from './SEOHead';
 
 interface PageLayoutProps {
@@ -19,7 +18,6 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       </main>
       <Footer />
       <WhatsAppButton />
-      <InterestPopup />
     </div>
   );
 };
