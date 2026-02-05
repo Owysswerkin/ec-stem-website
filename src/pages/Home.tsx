@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock, CheckCircle } from 'lucide-react';
@@ -11,18 +10,7 @@ import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
 const Home = () => {
-  const {
-    t
-  } = useTranslation();
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const { t } = useTranslation();
 
   const services = [{
     icon: BookOpen,
@@ -130,14 +118,11 @@ const Home = () => {
         </div>
         
         {/* Scrolling photo strip at bottom */}
-        <div className="w-full overflow-hidden h-72 md:h-96 lg:h-[28rem]">
+        <div className="w-full">
           <img 
             src={heroRobotClassroom} 
             alt="Children learning with robots in classroom" 
-            className="w-full h-[140%] object-cover object-left-top md:object-top"
-            style={{
-              transform: `translateY(${scrollY * 0.3}px)`,
-            }}
+            className="w-full h-auto object-contain"
           />
         </div>
       </section>
