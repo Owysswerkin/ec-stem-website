@@ -50,7 +50,7 @@ const Centres = () => {
               Our Locations
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Discover where EC STEM brings hands-on STEM education to young learners across Singapore.
+              Discover where Ec stem brings hands-on STEM education to young learners across Singapore.
             </p>
           </div>
         </div>
@@ -98,7 +98,7 @@ const Centres = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Want EC STEM at Your Centre?
+              Want Ec stem at Your Centre?
             </h2>
             <p className="text-primary-foreground/90 mb-6 max-w-xl mx-auto">
               Partner with us to bring engaging STEM education to your preschool or enrichment centre.
