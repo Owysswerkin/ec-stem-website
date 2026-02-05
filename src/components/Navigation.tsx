@@ -79,21 +79,12 @@ const Navigation = () => {
 
       {/* Main Navigation */}
       <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-card shadow-warm' : 'bg-card/95 backdrop-blur-sm'
+        isScrolled ? 'bg-teal-soft shadow-warm' : 'bg-teal-soft'
       }`}>
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            {/* Logo */}
-            <Link to="/" className="flex items-center">
-              <img 
-                src={ecStemLogo} 
-                alt="Ec stem Logo" 
-                className="h-16 w-auto"
-              />
-            </Link>
-
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+          <div className="flex justify-between items-center py-3">
+            {/* Left Navigation (Desktop) */}
+            <div className="hidden lg:flex items-center space-x-6 flex-1">
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.path}
@@ -150,6 +141,19 @@ const Navigation = () => {
                   )}
                 </Link>
               ))}
+            </div>
+
+            {/* Centered Logo */}
+            <Link to="/" className="flex items-center justify-center lg:absolute lg:left-1/2 lg:-translate-x-1/2">
+              <img 
+                src={ecStemLogo} 
+                alt="Ec stem Logo" 
+                className="h-10 w-auto"
+              />
+            </Link>
+
+            {/* Right Navigation (Desktop) */}
+            <div className="hidden lg:flex items-center space-x-4 flex-1 justify-end">
               <LanguageToggle />
               <Button variant="hero" size="sm" asChild>
                 <Link to="/contact">{t('nav.enrollNow')}</Link>
