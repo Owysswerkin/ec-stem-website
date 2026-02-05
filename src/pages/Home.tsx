@@ -206,10 +206,7 @@ const Home = () => {
               {t('about.title')}
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              {t('about.subtitle')}
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              {t('about.description')}
+              We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
             </p>
             <Button variant="default" size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full" asChild>
               <Link to="/about">Learn More About Us</Link>
