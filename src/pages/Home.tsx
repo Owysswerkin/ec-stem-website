@@ -9,7 +9,9 @@ import WaveDivider from '@/components/WaveDivider';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
-import learningBuddyHero from '@/assets/learning-buddy-hero.png';
+import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
+import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
+import stemGearCoral from '@/assets/stem-gear-coral.png';
 const Home = () => {
   const {
     t
@@ -63,62 +65,94 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-orange-50">
-        <div className="absolute inset-0">
-          <img src={learningBuddyHero} alt="Children engaged in STEM learning" className="w-full h-full object-cover opacity-15" />
+      <section className="relative min-h-[90vh] flex flex-col overflow-hidden bg-teal-soft">
+        {/* Decorative organic shapes */}
+        <div className="absolute top-20 left-[15%] w-8 h-16 bg-secondary/70 rounded-full rotate-[-15deg]"></div>
+        <div className="absolute top-16 left-[18%] w-6 h-14 bg-secondary/50 rounded-full rotate-[-5deg]"></div>
+        <div className="absolute top-24 left-[20%] w-5 h-12 bg-secondary/40 rounded-full rotate-[10deg]"></div>
+        <div className="absolute top-12 right-[20%] w-10 h-10 bg-accent/60 rounded-[40%_60%_30%_70%/60%_40%_60%_40%]"></div>
+        
+        {/* Floating STEM gears */}
+        <img 
+          src={stemGearsYellowBlue} 
+          alt="" 
+          className="absolute top-32 right-[10%] w-16 h-16 object-contain animate-spin-slow opacity-80"
+          aria-hidden="true"
+        />
+        <img 
+          src={stemGearCoral} 
+          alt="" 
+          className="absolute bottom-[35%] left-[8%] w-12 h-12 object-contain animate-float-gentle opacity-70"
+          aria-hidden="true"
+        />
+        
+        {/* Main content - centered */}
+        <div className="flex-1 flex flex-col items-center justify-center px-4 pt-20 pb-8">
+          <div className="text-center max-w-4xl mx-auto animate-fade-in">
+            {/* Accent text */}
+            <span className="inline-block bg-primary/20 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+              Singapore's First
+            </span>
+            
+            {/* Main headline */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-dark mb-6 leading-[1.1] tracking-tight">
+              ROBOTS-FIRST
+              <br />
+              <span className="text-primary">CLASSROOM</span>
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+              {t('hero.subtitle')}
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="bg-coral hover:bg-coral/90 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold" 
+                asChild
+              >
+                <Link to="/admissions">
+                  Book a Visit
+                </Link>
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold" 
+                asChild
+              >
+                <Link to="/learning-buddy">
+                  Meet Learning Buddy
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
         
-        {/* Decorative clouds and elements */}
-        <div className="absolute top-10 right-10 w-32 h-24 bg-white/30 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 left-16 w-24 h-18 bg-blue-200/40 rounded-full blur-lg"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left content */}
-            <div className="text-left">
-              <div className="animate-fade-in">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 mb-6 leading-tight">
-                  {t('hero.title')}
-                </h1>
-                <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                  {t('hero.subtitle')}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="default" size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-full shadow-lg" asChild>
-                    <Link to="/programmes">
-                      {t('hero.cta')}
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
-                  <Button variant="blueAccent" size="lg" className="px-8 py-6 text-lg rounded-full shadow-lg" asChild>
-                    <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
-                      Download Brochure
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right side - Hero image */}
-            <div className="relative">
-                {/* STEM gear decorations */}
-                <StemDecorations variant="hero" />
-                
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img alt="Children engaged in STEM learning with robotics" className="w-full h-[500px] lg:h-[600px] object-cover object-center aspect-[3/4]" src="/lovable-uploads/a5cce224-38a1-49ec-97d6-fbaa3f157670.jpg" />
-                <div className="absolute inset-0 bg-white/15 backdrop-blur-[1px]"></div>
-              </div>
-              
-              {/* Learning Buddy Button - Floating on hero image */}
-              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-                <Button variant="default" size="lg" className="bg-[#F8B529] hover:bg-[#e6a418] text-white px-10 py-7 text-lg rounded-full shadow-2xl font-semibold" asChild>
-                  <Link to="/learning-buddy">
-                    Learning Buddy
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
+        {/* Scrolling photo strip at bottom */}
+        <div className="w-full overflow-hidden">
+          <div className="flex animate-scroll">
+            <img 
+              src={heroRobotClassroom} 
+              alt="Children learning with robots in classroom" 
+              className="h-48 md:h-64 lg:h-80 w-auto object-cover flex-shrink-0"
+            />
+            <img 
+              src={heroRobotClassroom} 
+              alt="" 
+              className="h-48 md:h-64 lg:h-80 w-auto object-cover flex-shrink-0"
+              aria-hidden="true"
+            />
+            <img 
+              src={heroRobotClassroom} 
+              alt="" 
+              className="h-48 md:h-64 lg:h-80 w-auto object-cover flex-shrink-0"
+              aria-hidden="true"
+            />
           </div>
         </div>
       </section>
