@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, Heart, Users, Trophy, BookOpen, Play, Sparkles, Zap, Cpu, Lightbulb, Clock, CheckCircle } from 'lucide-react';
@@ -16,6 +17,16 @@ const Home = () => {
   const {
     t
   } = useTranslation();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const services = [{
     icon: BookOpen,
     title: t('services.curriculum.title'),
@@ -134,11 +145,14 @@ const Home = () => {
         </div>
         
         {/* Scrolling photo strip at bottom */}
-        <div className="w-full">
+        <div className="w-full overflow-hidden h-48 md:h-64 lg:h-80">
           <img 
             src={heroRobotClassroom} 
             alt="Children learning with robots in classroom" 
-            className="w-full h-48 md:h-64 lg:h-80 object-cover"
+            className="w-full h-[150%] object-cover object-top"
+            style={{
+              transform: `translateY(${scrollY * 0.3}px)`,
+            }}
           />
         </div>
       </section>
