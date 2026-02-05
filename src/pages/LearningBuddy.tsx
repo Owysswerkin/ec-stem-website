@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import learningBuddyHero from '@/assets/learning-buddy-hero.png';
 import k1RobotsPlaying from '@/assets/k1-robots-playing.png';
-import boosterLogo from '@/assets/booster-logo.png';
 const LearningBuddy = () => {
   const {
     t
@@ -62,20 +61,10 @@ const LearningBuddy = () => {
         </div>
       </section>
 
-      {/* Hero Section with Logo */}
+      {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-gradient-to-br from-background via-muted/30 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="inline-block animate-fade-in">
-                <img 
-                  src={boosterLogo} 
-                  alt="Booster Logo" 
-                  className="h-32 md:h-48 mx-auto drop-shadow-xl hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-            </div>
-            
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative animate-fade-in">
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
