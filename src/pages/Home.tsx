@@ -147,11 +147,11 @@ const Home = () => {
         </div>
         
         {/* Scrolling photo strip at bottom */}
-        <div className="w-full overflow-hidden h-48 md:h-64 lg:h-80">
+        <div className="w-full overflow-hidden h-64 md:h-80 lg:h-96">
           <img 
             src={heroRobotClassroom} 
             alt="Children learning with robots in classroom" 
-            className="w-full h-[150%] object-cover object-top"
+            className="w-full h-[150%] object-cover object-left-top md:object-top"
             style={{
               transform: `translateY(${scrollY * 0.3}px)`,
             }}
