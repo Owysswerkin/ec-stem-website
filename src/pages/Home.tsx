@@ -71,11 +71,6 @@ const Home = () => {
         {/* Main content - centered */}
         <div className="flex-1 flex flex-col items-center justify-center px-4 pt-20 pb-8">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            {/* Accent text */}
-            <span className="inline-block bg-primary/20 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-              Singapore's First
-            </span>
-            
             {/* Main headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-dark mb-6 leading-[1.1] tracking-tight">
               Early Childhood
