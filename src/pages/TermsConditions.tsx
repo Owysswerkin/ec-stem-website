@@ -7,7 +7,7 @@ const TermsConditions = () => {
         {/* Header */}
         <header className="text-center space-y-4 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-primary">Terms & Conditions</h1>
-          <p className="text-lg text-secondary font-medium">EC STEM Enrichment Programme</p>
+          <p className="text-lg text-secondary font-medium">Ec stem Enrichment Programme</p>
           <p className="text-sm text-muted-foreground">
             <strong>Last updated:</strong> January 2025
           </p>

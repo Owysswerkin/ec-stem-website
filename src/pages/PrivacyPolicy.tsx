@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
             <strong>Last updated:</strong> 14 November 2025
           </p>
           <p className="text-foreground leading-relaxed max-w-3xl mx-auto">
-            This Privacy Notice for <strong className="text-primary">EC STEM PTE. LTD</strong> ("we", "us", or "our") describes how and why we access, collect, store, use, and/or share ("process") your personal data when you use our services ("Services"), including when you:
+            This Privacy Notice for <strong className="text-primary">Ec stem PTE. LTD</strong> ("we", "us", or "our") describes how and why we access, collect, store, use, and/or share ("process") your personal data when you use our services ("Services"), including when you:
           </p>
           <ul className="text-left max-w-2xl mx-auto space-y-2 text-foreground">
             <li className="flex items-start">

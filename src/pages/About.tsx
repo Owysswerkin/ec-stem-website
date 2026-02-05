@@ -53,7 +53,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img src={teamPhoto} alt="EC STEM education team collaborating with STEM materials and technology" className="rounded-3xl shadow-warm w-full" />
+              <img src={teamPhoto} alt="Ec stem education team collaborating with STEM materials and technology" className="rounded-3xl shadow-warm w-full" />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
@@ -139,7 +139,7 @@ const About = () => {
                   <div className="absolute inset-0 bg-primary/20 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
                   <img 
                     src={msHuangPortrait} 
-                    alt="Ms Huang, Founder of EC STEM, passionate early childhood STEM educator" 
+                    alt="Ms Huang, Founder of Ec stem, passionate early childhood STEM educator" 
                     className="relative rounded-3xl shadow-warm w-[70%] mx-auto"
                   />
                 </div>

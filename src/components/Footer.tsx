@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <img 
                 src={ecStemLogoWhite} 
-                alt="EC STEM Logo" 
+                alt="Ec stem Logo" 
                 className="h-12 w-auto rounded"
               />
             </div>
