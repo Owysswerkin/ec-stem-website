@@ -43,6 +43,7 @@ const Navigation = () => {
   const programmesSubItems = [
     { name: t('nav.forPreschool'), path: '/programmes' },
     { name: t('nav.forParents'), path: '/programmes/for-parents' },
+    { name: t('nav.ourLocations'), path: '/centres' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
