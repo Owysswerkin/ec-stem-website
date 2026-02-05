@@ -37,7 +37,6 @@ const Navigation = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.ourLocations'), path: '/centres' },
-    { name: t('nav.admissions'), path: '/admissions' },
     { name: t('nav.whatsNew'), path: '/whats-new' },
   ];
 
