@@ -134,26 +134,12 @@ const Home = () => {
         </div>
         
         {/* Scrolling photo strip at bottom */}
-        <div className="w-full overflow-hidden">
-          <div className="flex animate-scroll">
-            <img 
-              src={heroRobotClassroom} 
-              alt="Children learning with robots in classroom" 
-              className="h-48 md:h-64 lg:h-80 w-auto object-cover flex-shrink-0"
-            />
-            <img 
-              src={heroRobotClassroom} 
-              alt="" 
-              className="h-48 md:h-64 lg:h-80 w-auto object-cover flex-shrink-0"
-              aria-hidden="true"
-            />
-            <img 
-              src={heroRobotClassroom} 
-              alt="" 
-              className="h-48 md:h-64 lg:h-80 w-auto object-cover flex-shrink-0"
-              aria-hidden="true"
-            />
-          </div>
+        <div className="w-full">
+          <img 
+            src={heroRobotClassroom} 
+            alt="Children learning with robots in classroom" 
+            className="w-full h-48 md:h-64 lg:h-80 object-cover"
+          />
         </div>
       </section>
 
