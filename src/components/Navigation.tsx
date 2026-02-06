@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, ChevronDown, Sparkles } from 'lucide-react';
-import ecStemLogo from '@/assets/ec-stem-logo.jpg';
+import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
+import ecStemLogo from '@/assets/ec-stem-logo-new.png';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import LanguageToggle from './LanguageToggle';
@@ -50,36 +50,9 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Top Contact Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+6586445667" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <Phone className="h-4 w-4" />
-              <span>+65 8644 5667</span>
-            </a>
-            <a href="mailto:hello@ecstem.education" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <Mail className="h-4 w-4" />
-              <span>hello@ecstem.education</span>
-            </a>
-          </div>
-          <div className="md:hidden ml-auto flex items-center space-x-4">
-            <a href="tel:+6586445667" className="flex items-center hover:opacity-80 transition-opacity">
-              <Phone className="h-4 w-4" />
-            </a>
-            <a href="mailto:hello@ecstem.education" className="flex items-center hover:opacity-80 transition-opacity">
-              <Mail className="h-4 w-4" />
-            </a>
-          </div>
-          <div className="hidden md:block">
-            <span>Mon - Fri: 9:00 AM - 6:30 PM</span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-card shadow-warm' : 'bg-card/95 backdrop-blur-sm'
+        isScrolled ? 'bg-teal-soft shadow-warm' : 'bg-teal-soft'
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
@@ -88,7 +61,7 @@ const Navigation = () => {
               <img 
                 src={ecStemLogo} 
                 alt="Ec stem Logo" 
-                className="h-16 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
 
@@ -171,7 +144,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-card border-t shadow-warm">
+          <div className="lg:hidden bg-teal-soft border-t shadow-warm">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
                 {navItems.slice(0, 2).map((item) => (
