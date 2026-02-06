@@ -187,27 +187,7 @@ const Home = () => {
         </div>
       </section>
 
-        {/* Wave Divider - Slogan to About */}
-        <WaveDivider variant="wave3" colorClass="fill-background" />
-
-      {/* About Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              {t('about.title')}
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
-            </p>
-            <Button variant="default" size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full" asChild>
-              <Link to="/about">Learn More About Us</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-        {/* Wave Divider - About to Programs */}
+        {/* Wave Divider - Slogan to Programs */}
         <WaveDivider variant="wave1" colorClass="fill-teal-soft" flip />
 
       {/* Programs Preview */}
