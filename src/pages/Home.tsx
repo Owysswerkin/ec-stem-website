@@ -93,9 +93,9 @@ const Home = () => {
                 className="bg-coral hover:bg-coral/90 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold" 
                 asChild
               >
-                <Link to="/admissions">
-                  Book a Visit
-                </Link>
+                <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
+                  Download Brochure
+                </a>
               </Button>
               <Button 
                 variant="outline" 
