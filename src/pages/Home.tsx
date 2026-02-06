@@ -10,8 +10,9 @@ import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
 const Home = () => {
-  const { t } = useTranslation();
-
+  const {
+    t
+  } = useTranslation();
   const services = [{
     icon: BookOpen,
     title: t('services.curriculum.title'),
@@ -87,22 +88,12 @@ const Home = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="bg-coral hover:bg-coral/90 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold" 
-                asChild
-              >
+              <Button variant="default" size="lg" className="bg-coral hover:bg-coral/90 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold" asChild>
                 <Link to="/admissions">
                   Book a Visit
                 </Link>
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold" 
-                asChild
-              >
+              <Button variant="outline" size="lg" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold" asChild>
                 <Link to="/learning-buddy">
                   Meet Learning Buddy
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -114,11 +105,7 @@ const Home = () => {
         
         {/* Scrolling photo strip at bottom */}
         <div className="w-full">
-          <img 
-            src={heroRobotClassroom} 
-            alt="Children learning with robots in classroom" 
-            className="w-full h-auto object-contain"
-          />
+          <img src={heroRobotClassroom} alt="Children learning with robots in classroom" className="w-full h-auto object-contain" />
         </div>
       </section>
 
@@ -191,43 +178,7 @@ const Home = () => {
         <WaveDivider variant="wave1" colorClass="fill-teal-soft" flip />
 
       {/* Programs Preview */}
-        <section className="py-20 bg-teal-soft relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              {t('programs.title')}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {programs.map((program, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
-                <CardContent className="p-8">
-                  <div className="bg-accent w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {index === 0 && <Users className="h-8 w-8 text-white" />}
-                    {index === 1 && <Lightbulb className="h-8 w-8 text-white" />}
-                    {index === 2 && <Cpu className="h-8 w-8 text-white" />}
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{program.title}</h3>
-                  <div className="text-sm font-semibold text-primary bg-primary-glow px-3 py-1 rounded-full inline-block mb-4">
-                    {index === 0 && 'Nursery 2'}
-                    {index === 1 && 'Kindergarten 1'}
-                    {index === 2 && 'Kindergarten 2'}
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">{program.description}</p>
-                </CardContent>
-              </Card>)}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button variant="default" size="lg" asChild>
-              <Link to="/programmes">
-                View All Programs
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+        
 
     </div>;
 };
