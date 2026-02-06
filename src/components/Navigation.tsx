@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
 import ecStemLogo from '@/assets/ec-stem-logo-new.png';
 import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
+
 import LanguageToggle from './LanguageToggle';
 import {
   DropdownMenu,
@@ -124,12 +124,6 @@ const Navigation = () => {
                 </Link>
               ))}
               <LanguageToggle />
-              <Button variant="hero" size="sm" asChild>
-                <Link to="/contact">{t('nav.enrollNow')}</Link>
-              </Button>
-              <Button variant="hero" size="sm" className="bg-[#F8B529] hover:bg-[#e6a418]" asChild>
-                <Link to="/learning-buddy">Learning Buddy</Link>
-              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -209,14 +203,8 @@ const Navigation = () => {
                     )}
                   </Link>
                 ))}
-                <div className="flex items-center justify-between mt-4 gap-2">
+                <div className="flex items-center mt-4 gap-2">
                   <LanguageToggle />
-                  <Button variant="hero" size="default" asChild>
-                    <Link to="/contact">{t('nav.enrollNow')}</Link>
-                  </Button>
-                  <Button variant="hero" size="default" className="bg-[#F8B529] hover:bg-[#e6a418]" asChild>
-                    <Link to="/learning-buddy">Learning Buddy</Link>
-                  </Button>
                 </div>
               </div>
             </div>
