@@ -3,6 +3,8 @@ import { MapPin, Building2 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import edventureLogo from '@/assets/edventure-logo.png';
+import lcentralLogo from '@/assets/lcentral-logo.png';
 
 const Centres = () => {
   const centres = [
@@ -11,24 +13,21 @@ const Centres = () => {
       name: 'Edventure Learning Academy',
       address: 'Esr Bizpark @Chai Chee, 750 Chai Chee Rd Singapore 46',
       color: 'from-primary/20 to-lavender/20',
-      iconBg: 'bg-primary/20',
-      iconColor: 'text-primary'
+      logo: edventureLogo
     },
     {
       id: 2,
       name: 'LCENTRAL English (NOVENA)',
       address: '157B THOMSON ROAD Singapore 307610',
       color: 'from-sunshine/20 to-coral/20',
-      iconBg: 'bg-sunshine/20',
-      iconColor: 'text-sunshine-dark'
+      logo: lcentralLogo
     },
     {
       id: 3,
       name: 'Chicky&Olive International Preschool',
       address: '52 MEDWAY DRIVE Singapore 556552',
       color: 'from-lavender/20 to-primary/20',
-      iconBg: 'bg-lavender/20',
-      iconColor: 'text-lavender-dark'
+      logo: null
     }
   ];
 
@@ -75,9 +74,13 @@ const Centres = () => {
                 className={`relative overflow-hidden border-0 shadow-warm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${centre.color} opacity-50`} />
-                <CardContent className="relative p-6">
-                  <div className={`w-14 h-14 rounded-2xl ${centre.iconBg} flex items-center justify-center mb-4`}>
-                    <Building2 className={`h-7 w-7 ${centre.iconColor}`} />
+                <CardContent className="relative p-6 flex flex-col items-center text-center">
+                  <div className="w-32 h-32 flex items-center justify-center mb-4">
+                    {centre.logo ? (
+                      <img src={centre.logo} alt={centre.name} className="max-w-full max-h-full object-contain" />
+                    ) : (
+                      <Building2 className="h-16 w-16 text-primary" />
+                    )}
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {centre.name}
