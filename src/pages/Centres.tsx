@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import edventureLogo from '@/assets/edventure-logo.png';
 import lcentralLogo from '@/assets/lcentral-logo.png';
+import chickyOliveLogo from '@/assets/chicky-olive-logo.png';
 
 const Centres = () => {
   const centres = [
@@ -27,7 +28,7 @@ const Centres = () => {
       name: 'Chicky&Olive International Preschool',
       address: '52 MEDWAY DRIVE Singapore 556552',
       color: 'from-lavender/20 to-primary/20',
-      logo: null
+      logo: chickyOliveLogo
     }
   ];
 
@@ -75,7 +76,7 @@ const Centres = () => {
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${centre.color} opacity-50`} />
                 <CardContent className="relative p-6 flex flex-col items-center text-center">
-                  <div className="w-32 h-32 flex items-center justify-center mb-4">
+                  <div className="w-48 h-48 flex items-center justify-center mb-4">
                     {centre.logo ? (
                       <img src={centre.logo} alt={centre.name} className="max-w-full max-h-full object-contain" />
                     ) : (
