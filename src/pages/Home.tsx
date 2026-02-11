@@ -65,8 +65,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex flex-col overflow-hidden bg-teal-soft">
         {/* Decorative STEM gears */}
-        <AnimatedGear image={stemGearsYellowBlue} size="xl" speed="slow" direction="cw" className="absolute top-20 left-[8%] z-10 opacity-80" />
-        <AnimatedGear image={stemGearsYellowBlue} size="lg" speed="slow" direction="ccw" className="absolute top-16 right-[10%] z-10 opacity-70" />
+        <AnimatedGear image={stemGearsYellowBlue} size="xl" speed="slow" direction="cw" className="absolute top-12 left-[5%] z-10 opacity-80 !w-44 !h-44" />
         
         {/* Main content - centered */}
         <div className="flex-1 flex flex-col items-center justify-center px-4 pt-20 pb-8">
