@@ -9,6 +9,8 @@ import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
+import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
+import AnimatedGear from '@/components/AnimatedGear';
 const Home = () => {
   const { t } = useTranslation();
 
@@ -62,11 +64,9 @@ const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex flex-col overflow-hidden bg-teal-soft">
-        {/* Decorative organic shapes */}
-        <div className="absolute top-20 left-[15%] w-8 h-16 bg-secondary/70 rounded-full rotate-[-15deg]"></div>
-        <div className="absolute top-16 left-[18%] w-6 h-14 bg-secondary/50 rounded-full rotate-[-5deg]"></div>
-        <div className="absolute top-24 left-[20%] w-5 h-12 bg-secondary/40 rounded-full rotate-[10deg]"></div>
-        <div className="absolute top-12 right-[20%] w-10 h-10 bg-accent/60 rounded-[40%_60%_30%_70%/60%_40%_60%_40%]"></div>
+        {/* Decorative STEM gears */}
+        <AnimatedGear image={stemGearsYellowBlue} size="xl" speed="slow" direction="cw" className="absolute top-20 left-[8%] z-10 opacity-80" />
+        <AnimatedGear image={stemGearsYellowBlue} size="lg" speed="slow" direction="ccw" className="absolute top-16 right-[10%] z-10 opacity-70" />
         
         {/* Main content - centered */}
         <div className="flex-1 flex flex-col items-center justify-center px-4 pt-20 pb-8">
