@@ -1,36 +1,43 @@
-## Add "Join Our Team" Career Page
 
-### Overview
 
-Create a new career/recruitment page and add it to the navigation bar, following the site's warm, playful aesthetic with STEM-themed decorations.
+## Set Team Photo as Hero Background
 
-### Changes Required
+Move the team photo from the two-column grid into the hero section's background, with a gradient overlay for text readability.
 
-**1. New Page: `src/pages/JoinOurTeam.tsx**`
+### Changes
 
-A full career page with three sections:
+**File: `src/pages/JoinOurTeam.tsx`**
 
-- **Hero Section**: "Build the Future. Start with Yours." headline on a gradient background (Growth Green / Innovation Blue tones blended with the existing teal-soft palette). Includes a CTA button that scrolls to the roles section. Decorative gear image in corner, matching the Home page pattern.
-- **"More Than a Classroom" Section**: Three-pillar card layout with icons (Lightbulb for Impact, MessageCircle for Voice, TrendingUp for Growth), each with a short description. Uses WaveDivider for smooth transitions between sections.
-- &nbsp;
-- **Call-to-Action Footer**: A closing section encouraging candidates to reach out send their resume to hr@ecstem.education, CTA button link to ec stem linkedin [https://www.linkedin.com/company/ecstemeducation/jobs/](https://www.linkedin.com/company/ecstemeducation/jobs/)
+- Replace the current two-column grid layout with a single-column centered text layout
+- Set `teamBuildingLego` as an inline background image on the hero `<section>` using `style={{ backgroundImage: url(...) }}` with `bg-cover bg-center`
+- Add a dark gradient overlay (`bg-black/50` or similar) so the white/green text remains readable
+- Update text colors to white for contrast against the photo background
+- Remove the standalone `<img>` tag
 
-**2. Navigation Update: `src/components/Navigation.tsx**`
+### Technical Detail
 
-Add "Join Our Team" as a new nav item to the left of "What's New" in the `navItems` array, linking to `/join-our-team`.
+The hero section will change from:
+```
+<section className="... bg-gradient-to-br from-emerald-50 ...">
+  <div className="grid grid-cols-2">
+    <div>text + CTA</div>
+    <div><img /></div>
+  </div>
+</section>
+```
 
-**3. Route Update: `src/App.tsx**`
+To:
+```
+<section className="... bg-cover bg-center" style={{ backgroundImage: `url(${teamBuildingLego})` }}>
+  <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
+  <div className="container relative z-10">
+    <div className="max-w-3xl">
+      text + CTA (white text)
+    </div>
+  </div>
+</section>
+```
 
-- Import the new `JoinOurTeam` component
-- Add route: `<Route path="/join-our-team" element={<JoinOurTeam />} />`
+- Headline and subtitle text switch to white/white-alpha for contrast
+- CTA button styling stays the same (already solid emerald green)
 
-**4. Translation Files**
-
-- `**src/i18n/locales/en.json**`: Add `"nav.joinOurTeam": "Join Our Team"` and a `joinOurTeamPage` section with all page content strings.
-- `**src/i18n/locales/zh.json**`: Add corresponding Chinese translations (`"nav.joinOurTeam": "加入我们"` and page content).
-
-### Design Notes
-
-- Color accents will lean toward green (`emerald`/`teal`) and blue (`sky`/`blue`) to convey "Growth Green" and "Innovation Blue" while staying harmonious with the site's palette.
-- Imagery will use existing teacher/classroom photos from `src/assets/` as placeholders for the "in-action" shots described.
-- Typography uses the site's existing rounded, friendly style with bold headers.
