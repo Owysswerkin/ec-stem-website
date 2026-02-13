@@ -33,36 +33,31 @@ const JoinOurTeam = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-soft to-sky-50">
+      <section
+        className="relative min-h-[70vh] flex items-center overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(${teamBuildingLego})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
         <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
-                <span className="text-emerald-700">{t('joinOurTeamPage.hero.headline1')}</span>
-                <br />
-                <span className="text-sky-600">{t('joinOurTeamPage.hero.headline2')}</span>
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-                {t('joinOurTeamPage.hero.subtitle')}
-              </p>
-              <Button
-                size="lg"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold"
-                asChild
-              >
-                <a href="https://www.linkedin.com/company/ecstemeducation/jobs/" target="_blank" rel="noopener noreferrer">
-                  {t('joinOurTeamPage.hero.cta')}
-                  <ExternalLink className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src={teamBuildingLego}
-                alt="Ec STEM team collaborating with building blocks"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          <div className="max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
+              <span className="text-emerald-300">{t('joinOurTeamPage.hero.headline1')}</span>
+              <br />
+              <span className="text-sky-300">{t('joinOurTeamPage.hero.headline2')}</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+              {t('joinOurTeamPage.hero.subtitle')}
+            </p>
+            <Button
+              size="lg"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold"
+              asChild
+            >
+              <a href="https://www.linkedin.com/company/ecstemeducation/jobs/" target="_blank" rel="noopener noreferrer">
+                {t('joinOurTeamPage.hero.cta')}
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
           </div>
         </div>
       </section>
