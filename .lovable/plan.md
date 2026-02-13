@@ -1,20 +1,36 @@
+## Add "Join Our Team" Career Page
 
+### Overview
 
-## Increase Gear Decoration Size
+Create a new career/recruitment page and add it to the navigation bar, following the site's warm, playful aesthetic with STEM-themed decorations.
 
-Make the static gear image in the hero section larger across all breakpoints.
+### Changes Required
 
-### Changes
+**1. New Page: `src/pages/JoinOurTeam.tsx**`
 
-**File: `src/pages/Home.tsx`**
+A full career page with three sections:
 
-Update the gear image sizing classes from the current values to larger ones:
+- **Hero Section**: "Build the Future. Start with Yours." headline on a gradient background (Growth Green / Innovation Blue tones blended with the existing teal-soft palette). Includes a CTA button that scrolls to the roles section. Decorative gear image in corner, matching the Home page pattern.
+- **"More Than a Classroom" Section**: Three-pillar card layout with icons (Lightbulb for Impact, MessageCircle for Voice, TrendingUp for Growth), each with a short description. Uses WaveDivider for smooth transitions between sections.
+- &nbsp;
+- **Call-to-Action Footer**: A closing section encouraging candidates to reach out send their resume to hr@ecstem.education, CTA button link to ec stem linkedin [https://www.linkedin.com/company/ecstemeducation/jobs/](https://www.linkedin.com/company/ecstemeducation/jobs/)
 
-| Breakpoint | Current | New |
-|---|---|---|
-| Mobile | `w-24 h-24` (96px) | `w-32 h-32` (128px) |
-| Medium (md) | `w-36 h-36` (144px) | `w-48 h-48` (192px) |
-| Large (lg) | `w-44 h-44` (176px) | `w-56 h-56` (224px) |
+**2. Navigation Update: `src/components/Navigation.tsx**`
 
-The positioning (`top-4 right-4` / `md:top-8 md:right-8`) and other properties remain unchanged.
+Add "Join Our Team" as a new nav item to the left of "What's New" in the `navItems` array, linking to `/join-our-team`.
 
+**3. Route Update: `src/App.tsx**`
+
+- Import the new `JoinOurTeam` component
+- Add route: `<Route path="/join-our-team" element={<JoinOurTeam />} />`
+
+**4. Translation Files**
+
+- `**src/i18n/locales/en.json**`: Add `"nav.joinOurTeam": "Join Our Team"` and a `joinOurTeamPage` section with all page content strings.
+- `**src/i18n/locales/zh.json**`: Add corresponding Chinese translations (`"nav.joinOurTeam": "加入我们"` and page content).
+
+### Design Notes
+
+- Color accents will lean toward green (`emerald`/`teal`) and blue (`sky`/`blue`) to convey "Growth Green" and "Innovation Blue" while staying harmonious with the site's palette.
+- Imagery will use existing teacher/classroom photos from `src/assets/` as placeholders for the "in-action" shots described.
+- Typography uses the site's existing rounded, friendly style with bold headers.
