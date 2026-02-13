@@ -37,15 +37,15 @@ const JoinOurTeam = () => {
         className="relative min-h-[70vh] flex items-center overflow-hidden bg-cover bg-top"
         style={{ backgroundImage: `url(${teamBuildingLego})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/70 to-white/40" />
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
-              <span className="text-emerald-300">{t('joinOurTeamPage.hero.headline1')}</span>
+              <span className="text-emerald-700">{t('joinOurTeamPage.hero.headline1')}</span>
               <br />
-              <span className="text-sky-300">{t('joinOurTeamPage.hero.headline2')}</span>
+              <span className="text-sky-600">{t('joinOurTeamPage.hero.headline2')}</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
               {t('joinOurTeamPage.hero.subtitle')}
             </p>
             <Button
