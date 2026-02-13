@@ -4,8 +4,7 @@ import { Lightbulb, MessageCircle, TrendingUp, Mail, ExternalLink } from 'lucide
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import WaveDivider from '@/components/WaveDivider';
-import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
-import classroomActivities from '@/assets/classroom-activities.jpg';
+import teamBuildingLego from '@/assets/team-building-lego.jpg';
 
 const JoinOurTeam = () => {
   const { t } = useTranslation();
@@ -35,34 +34,35 @@ const JoinOurTeam = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-soft to-sky-50">
-        {/* Decorative gear */}
-        <img
-          src={stemGearsYellowBlue}
-          alt=""
-          aria-hidden="true"
-          className="absolute top-4 right-4 md:top-8 md:right-8 z-0 w-28 h-28 md:w-40 md:h-40 lg:w-48 lg:h-48 opacity-60 pointer-events-none select-none object-contain"
-        />
-
         <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
-              <span className="text-emerald-700">{t('joinOurTeamPage.hero.headline1')}</span>
-              <br />
-              <span className="text-sky-600">{t('joinOurTeamPage.hero.headline2')}</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              {t('joinOurTeamPage.hero.subtitle')}
-            </p>
-            <Button
-              size="lg"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold"
-              asChild
-            >
-              <a href="https://www.linkedin.com/company/ecstemeducation/jobs/" target="_blank" rel="noopener noreferrer">
-                {t('joinOurTeamPage.hero.cta')}
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
+                <span className="text-emerald-700">{t('joinOurTeamPage.hero.headline1')}</span>
+                <br />
+                <span className="text-sky-600">{t('joinOurTeamPage.hero.headline2')}</span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+                {t('joinOurTeamPage.hero.subtitle')}
+              </p>
+              <Button
+                size="lg"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold"
+                asChild
+              >
+                <a href="https://www.linkedin.com/company/ecstemeducation/jobs/" target="_blank" rel="noopener noreferrer">
+                  {t('joinOurTeamPage.hero.cta')}
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={teamBuildingLego}
+                alt="Ec STEM team collaborating with building blocks"
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
