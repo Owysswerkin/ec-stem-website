@@ -17,6 +17,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import AccessControl from "./pages/AccessControl";
 import WhatsNew from "./pages/WhatsNew";
+import JoinOurTeam from "./pages/JoinOurTeam";
 import NotFound from "./pages/NotFound";
 import Centres from "./pages/Centres";
 
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/policies/access-control" element={<AccessControl />} />
             <Route path="/whats-new" element={<WhatsNew />} />
+            <Route path="/join-our-team" element={<JoinOurTeam />} />
             <Route path="/centres" element={<Centres />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

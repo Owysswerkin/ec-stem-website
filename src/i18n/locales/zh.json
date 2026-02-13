@@ -9,6 +9,7 @@
     "admissions": "招生",
     "contact": "联系我们",
     "whatsNew": "最新动态",
+    "joinOurTeam": "加入我们",
     "enrollNow": "预约通话"
   },
   "whatsNewPage": {
@@ -618,5 +619,37 @@
     },
     "motto": "像科学家一样思考，像工程师一样解决问题。",
     "cta": "登记您的兴趣"
+  },
+  "joinOurTeamPage": {
+    "hero": {
+      "headline1": "构建未来。",
+      "headline2": "从你开始。",
+      "subtitle": "在Ec STEM，我们不仅仅教科学和数学。我们培养明天的创新者。你准备好产生持久的影响了吗？",
+      "cta": "探索职位"
+    },
+    "community": {
+      "title": "不仅是课堂，更是一个社区。",
+      "body": "我们相信，要激励学生，老师首先必须被激励。我们寻找充满热情、适应力强的教育者，他们体现我们的使命，并渴望成长。"
+    },
+    "pillars": {
+      "impact": {
+        "title": "影响力",
+        "description": "传递激发「啊哈！」时刻的课程，点燃每个孩子对发现的终身热爱。"
+      },
+      "voice": {
+        "title": "话语权",
+        "description": "协作和沟通，塑造我们不断发展的课程。你的想法在这里推动创新。"
+      },
+      "growth": {
+        "title": "成长",
+        "description": "我们对你的投入与你对学生的投入一样多。你的职业发展是我们的优先事项。"
+      }
+    },
+    "cta": {
+      "title": "准备好做出改变了吗？",
+      "body": "将您的简历发送至 hr@ecstem.education 或在我们的LinkedIn页面上探索开放职位。我们期待您的消息。",
+      "emailButton": "发送简历",
+      "linkedinButton": "在LinkedIn查看"
+    }
   }
 }

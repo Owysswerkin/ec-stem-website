@@ -9,6 +9,7 @@
     "ourLocations": "Our Locations",
     "contact": "Contact",
     "whatsNew": "What's New",
+    "joinOurTeam": "Join Our Team",
     "enrollNow": "Book a Call"
   },
   "whatsNewPage": {
@@ -618,5 +619,37 @@
     },
     "motto": "Think like a scientist, solve problems like an engineer.",
     "cta": "Register Your Interest"
+  },
+  "joinOurTeamPage": {
+    "hero": {
+      "headline1": "Build the Future.",
+      "headline2": "Start with Yours.",
+      "subtitle": "At Ec STEM, we don't just teach science and math. We cultivate the innovators of tomorrow. Are you ready to make a lasting impact?",
+      "cta": "Explore Our Roles"
+    },
+    "community": {
+      "title": "More Than a Classroom. A Community.",
+      "body": "We believe that to inspire students, our teachers must first be inspired. We seek passionate, adaptable educators who embody our mission and are eager to grow."
+    },
+    "pillars": {
+      "impact": {
+        "title": "Impact",
+        "description": "Deliver lessons that spark \"Aha!\" moments and ignite a lifelong love for discovery in every child."
+      },
+      "voice": {
+        "title": "Voice",
+        "description": "Collaborate and communicate to shape our evolving curriculum. Your ideas drive innovation here."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "We invest in you as much as you invest in our students. Your professional development is our priority."
+      }
+    },
+    "cta": {
+      "title": "Ready to Make a Difference?",
+      "body": "Send your resume to hr@ecstem.education or explore open positions on our LinkedIn page. We'd love to hear from you.",
+      "emailButton": "Send Your Resume",
+      "linkedinButton": "View on LinkedIn"
+    }
   }
 }
