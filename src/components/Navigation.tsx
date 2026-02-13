@@ -37,6 +37,7 @@ const Navigation = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.ourLocations'), path: '/centres' },
+    { name: t('nav.joinOurTeam'), path: '/join-our-team' },
     { name: t('nav.whatsNew'), path: '/whats-new' },
   ];
 
