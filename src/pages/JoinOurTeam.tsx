@@ -34,7 +34,7 @@ const JoinOurTeam = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative min-h-[70vh] flex items-center overflow-hidden bg-cover bg-center"
+        className="relative min-h-[70vh] flex items-center overflow-hidden bg-cover bg-top"
         style={{ backgroundImage: `url(${teamBuildingLego})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
