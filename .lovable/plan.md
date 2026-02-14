@@ -1,43 +1,36 @@
 
 
-## Set Team Photo as Hero Background
+## Redesign "More Than a Classroom" Section
 
-Move the team photo from the two-column grid into the hero section's background, with a gradient overlay for text readability.
+Currently this section has a centered title + subtitle followed by a 3-column pillar card grid. The proposal is to convert it into a **2-column layout** with the uploaded child-building-blocks photo on one side and the text content on the other.
+
+### Layout
+
+```text
++--------------------------------------------------+
+|  [Photo of child        |  "More Than a Classroom.|
+|   building blocks]      |   A Community."         |
+|                         |                         |
+|   (rounded corners,     |   Body text paragraph   |
+|    object-cover)        |                         |
+|                         |   Three pillars stacked  |
+|                         |   vertically as compact  |
+|                         |   icon + text rows       |
++--------------------------------------------------+
+```
+
+- On desktop (md+): 2-column grid with image on the left, text + pillars on the right
+- On mobile: single column, image on top, text below
 
 ### Changes
 
-**File: `src/pages/JoinOurTeam.tsx`**
+**New asset file**: Copy uploaded image to `src/assets/child-building-blocks.jpg`
 
-- Replace the current two-column grid layout with a single-column centered text layout
-- Set `teamBuildingLego` as an inline background image on the hero `<section>` using `style={{ backgroundImage: url(...) }}` with `bg-cover bg-center`
-- Add a dark gradient overlay (`bg-black/50` or similar) so the white/green text remains readable
-- Update text colors to white for contrast against the photo background
-- Remove the standalone `<img>` tag
+**`src/pages/JoinOurTeam.tsx`**:
+- Import the new image asset
+- Replace the current centered header + 3-column card grid with a 2-column layout (`grid grid-cols-1 md:grid-cols-2 gap-12 items-center`)
+- Left column: the photo with rounded corners and shadow
+- Right column: section title, body text, and the three pillars displayed as a vertical list (icon + title + description in a compact row format instead of large cards)
 
-### Technical Detail
-
-The hero section will change from:
-```
-<section className="... bg-gradient-to-br from-emerald-50 ...">
-  <div className="grid grid-cols-2">
-    <div>text + CTA</div>
-    <div><img /></div>
-  </div>
-</section>
-```
-
-To:
-```
-<section className="... bg-cover bg-center" style={{ backgroundImage: `url(${teamBuildingLego})` }}>
-  <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
-  <div className="container relative z-10">
-    <div className="max-w-3xl">
-      text + CTA (white text)
-    </div>
-  </div>
-</section>
-```
-
-- Headline and subtitle text switch to white/white-alpha for contrast
-- CTA button styling stays the same (already solid emerald green)
+No translation file changes needed -- existing keys are reused as-is.
 
