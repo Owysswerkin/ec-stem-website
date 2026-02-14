@@ -63,7 +63,7 @@ const JoinOurTeam = () => {
         </div>
       </section>
 
-      <WaveDivider variant="wave1" colorClass="fill-white" />
+      
 
       {/* Three Pillars Section */}
       <section className="py-20 bg-white">
