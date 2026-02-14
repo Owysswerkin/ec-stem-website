@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import WaveDivider from '@/components/WaveDivider';
 import teamBuildingLego from '@/assets/team-building-lego.jpg';
+import childBuildingBlocks from '@/assets/child-building-blocks.jpg';
 
 const JoinOurTeam = () => {
   const { t } = useTranslation();
@@ -67,27 +68,35 @@ const JoinOurTeam = () => {
       {/* Three Pillars Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              {t('joinOurTeamPage.community.title')}
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {t('joinOurTeamPage.community.body')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pillars.map((pillar, index) => (
-              <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 border-none shadow-gentle">
-                <CardContent className="p-0">
-                  <div className={`w-16 h-16 mb-6 ${pillar.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                    <pillar.icon className="h-8 w-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={childBuildingBlocks}
+                alt="Child building with colourful blocks"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                {t('joinOurTeamPage.community.title')}
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                {t('joinOurTeamPage.community.body')}
+              </p>
+              <div className="space-y-6">
+                {pillars.map((pillar, index) => (
+                  <div key={index} className="flex gap-4 items-start">
+                    <div className={`w-12 h-12 shrink-0 ${pillar.color} rounded-xl flex items-center justify-center`}>
+                      <pillar.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-foreground mb-1">{pillar.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{pillar.description}</p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">{pillar.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{pillar.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
