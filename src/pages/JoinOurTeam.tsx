@@ -121,8 +121,8 @@ const JoinOurTeam = () => {
                 className="border-2 border-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white px-8 py-6 text-lg rounded-full font-semibold"
                 asChild
               >
-                <a href="https://www.linkedin.com/company/ecstemeducation/jobs/" target="_blank" rel="noopener noreferrer">
-                  {t('joinOurTeamPage.cta.linkedinButton')}
+                <a href="https://www.linkedin.com/company/ecstemeducation/" target="_blank" rel="noopener noreferrer">
+                  Connect on LinkedIn
                   <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
               </Button>
