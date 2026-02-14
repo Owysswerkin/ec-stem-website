@@ -110,9 +110,9 @@ const JoinOurTeam = () => {
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold"
                 asChild
               >
-                <a href="mailto:hr@ecstem.education">
-                  <Mail className="mr-2 h-5 w-5" />
-                  {t('joinOurTeamPage.cta.emailButton')}
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5GqK8rdRMyO7oKEYi75GPFhwEm3aZeVhw5QKJx-v3qjf7Mg/viewform?usp=sharing&ouid=116558226394152860899" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  {t('joinOurTeamPage.hero.cta')}
                 </a>
               </Button>
               <Button
