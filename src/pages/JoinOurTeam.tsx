@@ -45,7 +45,7 @@ const JoinOurTeam = () => {
               <br />
               <span className="text-sky-600">{t('joinOurTeamPage.hero.headline2')}</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl leading-relaxed">
               {t('joinOurTeamPage.hero.subtitle')}
             </p>
             <Button
