@@ -10,6 +10,7 @@ import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
 import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
+import stemChildBuilding from '@/assets/stem-child-building.jpg';
 import AnimatedGear from '@/components/AnimatedGear';
 import YouTubeVideoSection from '@/components/YouTubeVideoSection';
 const Home = () => {
@@ -136,10 +137,18 @@ const Home = () => {
       {/* Services Overview */}
         <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
+            <div className="w-full md:w-1/2">
+              <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]" />
+            </div>
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Learning Through Play, with the <span className="text-primary">"Fix-it Mindset"</span>
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
+              </p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
