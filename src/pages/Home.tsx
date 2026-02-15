@@ -153,21 +153,6 @@ const Home = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 bg-white border-none">
-                <div className={`w-20 h-20 mb-6 ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <ul className="space-y-3 text-left">
-                  {service.points.map((point, idx) => <li key={idx} className="flex items-start gap-2 text-gray-600 text-sm">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{point}</span>
-                    </li>)}
-                </ul>
-              </Card>)}
-          </div>
         </div>
       </section>
 
