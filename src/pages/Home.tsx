@@ -11,6 +11,7 @@ import asianKidsScience from '@/assets/asian-kids-science.jpg';
 import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
 import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
 import AnimatedGear from '@/components/AnimatedGear';
+import YouTubeVideoSection from '@/components/YouTubeVideoSection';
 const Home = () => {
   const { t } = useTranslation();
 
@@ -121,8 +122,11 @@ const Home = () => {
         </div>
       </section>
 
-        {/* Wave Divider - Hero to Services */}
-        <WaveDivider variant="wave1" colorClass="fill-gray-50" />
+      {/* YouTube Video Section */}
+      <YouTubeVideoSection />
+
+      {/* Wave Divider - Hero to Services */}
+      <WaveDivider variant="wave1" colorClass="fill-gray-50" />
 
       {/* Services Overview */}
         <section className="py-20 bg-gray-50 relative overflow-hidden">
