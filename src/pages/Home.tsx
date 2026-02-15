@@ -71,7 +71,7 @@ const Home = () => {
           style={{ backgroundImage: `url(${heroRobotClassroom})` }}
         />
         {/* Light overlay for soft washed-out look */}
-        <div className="absolute inset-0 bg-white/55" />
+        <div className="absolute inset-0 bg-white/[0.78]" />
         {/* Grain noise overlay - subtle rasterised texture */}
         <div 
           className="absolute inset-0 opacity-[0.18] pointer-events-none z-[1]"
