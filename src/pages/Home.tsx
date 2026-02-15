@@ -95,8 +95,8 @@ const Home = () => {
             </h1>
             
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              {t('hero.subtitle')}
+            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+              From 'I can't' to 'Let's fix it!' Our hands-on STEM play empowers your child to manage frustration and find solutions with others. We give them the tools to look at any challenge and say, 'I've got this.'
             </p>
             
             {/* CTA Buttons */}
