@@ -100,7 +100,7 @@ const Home = () => {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center items-center">
               <Button 
                 variant="default" 
                 size="lg" 
@@ -110,17 +110,6 @@ const Home = () => {
                 <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
                   Download Brochure
                 </a>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold" 
-                asChild
-              >
-                <Link to="/learning-buddy">
-                  Meet Learning Buddy
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
               </Button>
             </div>
           </div>
