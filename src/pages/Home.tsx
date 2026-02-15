@@ -70,15 +70,13 @@ const Home = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroRobotClassroom})` }}
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/40" />
-        {/* Grain noise overlay */}
+        {/* Light overlay for soft washed-out look */}
+        <div className="absolute inset-0 bg-white/55" />
+        {/* Grain noise overlay - subtle rasterised texture */}
         <div 
-          className="absolute inset-0 opacity-[0.08] pointer-events-none mix-blend-overlay z-[1]"
+          className="absolute inset-0 opacity-[0.18] pointer-events-none z-[1]"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-            width: '100%',
-            height: '100%',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           }}
         />
         {/* Decorative STEM gears */}
@@ -88,16 +86,16 @@ const Home = () => {
         <div className="relative z-[3] flex flex-col items-center justify-center px-4 pt-20 pb-16">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             {/* Main headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-dark mb-6 leading-[1.1] tracking-tight">
               Early Childhood
               <br />
               <span className="text-primary">STEM Education</span>
               <br />
-              <span className="text-accent">in Singapore</span>
+              <span className="text-secondary">in Singapore</span>
             </h1>
             
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
               {t('hero.subtitle')}
             </p>
             
@@ -116,7 +114,7 @@ const Home = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-2 border-white text-white hover:bg-white hover:text-secondary px-8 py-6 text-lg rounded-full font-semibold" 
+                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold" 
                 asChild
               >
                 <Link to="/learning-buddy">
