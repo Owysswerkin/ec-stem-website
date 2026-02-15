@@ -1,36 +1,42 @@
 
+## Add YouTube Video Section Below Hero
 
-## Redesign "More Than a Classroom" Section
+A new section will be inserted between the hero and the wave divider on the Home page. It will embed the YouTube video (`cr1b_0xommY`) that autoplays silently in the background, with a styled overlay containing a "Watch Video" play button. Clicking the button hides the overlay and replays the video with sound.
 
-Currently this section has a centered title + subtitle followed by a 3-column pillar card grid. The proposal is to convert it into a **2-column layout** with the uploaded child-building-blocks photo on one side and the text content on the other.
-
-### Layout
+### Design
 
 ```text
 +--------------------------------------------------+
-|  [Photo of child        |  "More Than a Classroom.|
-|   building blocks]      |   A Community."         |
-|                         |                         |
-|   (rounded corners,     |   Body text paragraph   |
-|    object-cover)        |                         |
-|                         |   Three pillars stacked  |
-|                         |   vertically as compact  |
-|                         |   icon + text rows       |
+|                                                    |
+|        [YouTube iframe - muted autoplay]           |
+|                                                    |
+|     +--------------------------------------+       |
+|     |           OVERLAY (semi-dark)        |       |
+|     |                                      |       |
+|     |        [ Play icon button ]          |       |
+|     |         "Watch Our Story"            |       |
+|     +--------------------------------------+       |
+|                                                    |
 +--------------------------------------------------+
 ```
 
-- On desktop (md+): 2-column grid with image on the left, text + pillars on the right
-- On mobile: single column, image on top, text below
+- 16:9 aspect ratio container
+- On load: video autoplays muted in the background via YouTube iframe API (`autoplay=1&mute=1&loop=1&controls=0&showinfo=0`)
+- Overlay: semi-transparent dark gradient with a centered play button (using Lucide `Play` icon) and text
+- On click: overlay fades out, iframe `src` is swapped to unmuted version with `autoplay=1&mute=0&controls=1` so the user gets full playback with audio
 
-### Changes
+### Technical Details
 
-**New asset file**: Copy uploaded image to `src/assets/child-building-blocks.jpg`
+**File: `src/pages/Home.tsx`**
 
-**`src/pages/JoinOurTeam.tsx`**:
-- Import the new image asset
-- Replace the current centered header + 3-column card grid with a 2-column layout (`grid grid-cols-1 md:grid-cols-2 gap-12 items-center`)
-- Left column: the photo with rounded corners and shadow
-- Right column: section title, body text, and the three pillars displayed as a vertical list (icon + title + description in a compact row format instead of large cards)
+1. Add `useState` for tracking overlay visibility
+2. Import `Play` icon from `lucide-react`
+3. Insert a new `<section>` immediately after the hero section closing tag and before the first `<WaveDivider>`
+4. The section contains:
+   - A `relative` wrapper with `aspect-video` for 16:9 ratio
+   - An `<iframe>` embedding `https://www.youtube.com/embed/cr1b_0xommY?autoplay=1&mute=1&loop=1&playlist=cr1b_0xommY&controls=0&showinfo=0&rel=0&modestbranding=1`
+   - A conditional overlay `div` (absolute positioned, dark gradient bg) with a play button
+   - On click handler: sets state to hide overlay and swaps iframe src to `autoplay=1&mute=0&controls=1` (unmuted with controls)
+5. Background color matches surrounding sections (`bg-gray-50` or similar neutral)
 
-No translation file changes needed -- existing keys are reused as-is.
-
+No new dependencies required -- uses standard YouTube iframe embed.
