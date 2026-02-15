@@ -67,7 +67,7 @@ const Home = () => {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Background image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+          className="absolute inset-0 bg-cover bg-left bg-no-repeat bg-fixed"
           style={{ backgroundImage: `url(${heroRobotClassroom})` }}
         />
         {/* Light overlay for soft washed-out look */}
