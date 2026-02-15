@@ -141,7 +141,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
             <div className="w-full md:w-1/2 relative ml-auto md:ml-8 lg:ml-16">
               <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-[85%] ml-auto object-cover aspect-[4/3] relative z-10" />
-              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-[55%] object-cover aspect-[4/3] absolute -bottom-8 -left-4 z-20 border-4 border-white" />
+              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-[45%] object-cover aspect-[4/3] absolute bottom-8 -left-4 z-20 border-4 border-white" />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
