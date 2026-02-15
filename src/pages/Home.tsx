@@ -96,7 +96,7 @@ const Home = () => {
             
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              From 'I can't' to 'Let's fix it!' Our hands-on STEM play empowers your child to manage frustration and find solutions with others. We give them the tools to look at any challenge and say, 'I've got this.'
+              From <span className="inline-block relative bg-red-100 text-red-600 font-semibold px-3 py-0.5 rounded-full">'I can't'<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-red-100 rotate-45"></span></span> to <span className="inline-block relative bg-green-100 text-green-700 font-semibold px-3 py-0.5 rounded-full">'Let's fix it!'<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-green-100 rotate-45"></span></span> Our hands-on STEM play empowers your child to manage frustration and find solutions with others. We give them the tools to look at any challenge and say, <span className="inline-block relative bg-primary/15 text-primary font-semibold px-3 py-0.5 rounded-full">'I've got this.'<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-primary/15 rotate-45"></span></span>
             </p>
             
             {/* CTA Buttons */}
