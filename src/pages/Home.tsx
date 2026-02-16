@@ -148,10 +148,10 @@ const Home = () => {
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24">
             <div className="w-[70%] md:w-[38%]">
-              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-primary" />
+              <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-white" />
             </div>
             <div className="w-[70%] md:w-[38%]">
-              <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-white" />
+              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-primary" />
             </div>
           </div>
         </div>
