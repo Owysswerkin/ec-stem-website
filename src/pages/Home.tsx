@@ -68,19 +68,19 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-no-repeat bg-fixed"
-          style={{ backgroundImage: `url(${heroRobotClassroom})`, backgroundPosition: '18% 90%' }}
-        />
+        <div
+        className="absolute inset-0 bg-cover bg-no-repeat bg-fixed px-0 py-0 my-[20px]"
+        style={{ backgroundImage: `url(${heroRobotClassroom})`, backgroundPosition: '18% 90%' }} />
+
         {/* Light overlay for soft washed-out look */}
-        <div className="absolute inset-0 bg-white/[0.78]" />
+        <div className="absolute inset-0 bg-white/[0.78] mx-0" />
         {/* Grain noise overlay - subtle rasterised texture */}
-        <div 
-          className="absolute inset-0 opacity-[0.18] pointer-events-none z-[1]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-          }}
-        />
+        <div
+        className="absolute inset-0 opacity-[0.18] pointer-events-none z-[1]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`
+        }} />
+
         {/* Decorative STEM gears */}
         <img src={stemGearsYellowBlue} alt="" aria-hidden="true" className="absolute top-4 right-4 md:top-8 md:right-8 z-[2] w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 opacity-60 pointer-events-none select-none object-contain" />
         
@@ -103,23 +103,23 @@ const Home = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="bg-coral hover:bg-coral/90 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold" 
-                asChild
-              >
+              <Button
+              variant="default"
+              size="lg"
+              className="bg-coral hover:bg-coral/90 text-white px-8 py-6 text-lg rounded-full shadow-lg font-semibold"
+              asChild>
+
                 <Link to="/trial-class">
                   Sign Up for a Trial Class
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold" 
-                asChild
-              >
+              <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-8 py-6 text-lg rounded-full font-semibold"
+              asChild>
+
                 <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
                   Download Brochure
                 </a>
