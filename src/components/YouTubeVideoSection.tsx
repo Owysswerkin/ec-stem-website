@@ -10,7 +10,7 @@ const YouTubeVideoSection = () => {
   const unmutedSrc = `https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1`;
 
   return (
-    <section className="relative z-10 -mt-8 md:-mt-12 px-4 md:px-8 lg:px-16">
+    <section className="relative z-10 mt-4 md:mt-8 px-4 md:px-8 lg:px-16">
       <div className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-2xl">
         <iframe
           src={showOverlay ? mutedSrc : unmutedSrc}
