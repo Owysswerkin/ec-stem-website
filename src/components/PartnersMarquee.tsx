@@ -27,7 +27,7 @@ const PartnersMarquee = () => {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="max-h-16 max-w-[140px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="max-h-16 max-w-[140px] object-contain"
               />
             </div>
           ))}
