@@ -70,7 +70,7 @@ const Home = () => {
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat bg-fixed"
-          style={{ backgroundImage: `url(${heroRobotClassroom})`, backgroundPosition: '18% top' }}
+          style={{ backgroundImage: `url(${heroRobotClassroom})`, backgroundPosition: '18% 90%' }}
         />
         {/* Light overlay for soft washed-out look */}
         <div className="absolute inset-0 bg-white/[0.78]" />
