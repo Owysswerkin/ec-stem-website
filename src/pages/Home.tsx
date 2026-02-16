@@ -14,6 +14,7 @@ import stemChildBuilding from '@/assets/stem-child-building.jpg';
 import stemChildScrewdriver from '@/assets/stem-child-screwdriver.jpg';
 import AnimatedGear from '@/components/AnimatedGear';
 import YouTubeVideoSection from '@/components/YouTubeVideoSection';
+import PartnersMarquee from '@/components/PartnersMarquee';
 const Home = () => {
   const { t } = useTranslation();
 
@@ -192,7 +193,10 @@ const Home = () => {
         </div>
       </section>
 
-        {/* Wave Divider - Slogan to Programs */}
+      {/* Partners Marquee */}
+      <PartnersMarquee />
+
+        {/* Wave Divider - Partners to Programs */}
         <WaveDivider variant="wave1" colorClass="fill-teal-soft" flip />
 
       {/* Programs Preview */}
