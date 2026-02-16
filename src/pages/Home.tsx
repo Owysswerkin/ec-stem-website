@@ -144,7 +144,7 @@ const Home = () => {
               Learning Through Play, with the <br className="md:hidden" /><span className="text-primary">"Fix-it Mindset"</span>
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
+              At Ec STEM, we ignite a child's innate curiosity, transforming it into lasting confidence. Our Self-Ecstem Methodology is a dynamic framework designed to cultivate not just STEM skills, but a profound belief in one's own capability.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24">
