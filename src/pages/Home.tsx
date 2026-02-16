@@ -145,7 +145,7 @@ const Home = () => {
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Learning Through Play, with the <span className="text-primary">"Fix-it Mindset"</span>
+                Learning Through Play, with the <br className="md:hidden" /><span className="text-primary">"Fix-it Mindset"</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
