@@ -14,7 +14,7 @@ const allPartners = [...partners, ...partners, ...partners, ...partners];
 
 const PartnersMarquee = () => {
   return (
-    <section className="py-12 bg-background overflow-hidden">
+    <section className="py-12 bg-white overflow-hidden">
       <div className="container mx-auto px-4 mb-6">
         <h3 className="text-center text-lg font-semibold text-muted-foreground tracking-wide uppercase">
           Our Partner Centres
