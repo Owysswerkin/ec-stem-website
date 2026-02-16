@@ -138,21 +138,22 @@ const Home = () => {
       {/* Services Overview */}
         <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
-            <div className="w-full md:w-1/2 relative ml-auto md:ml-8 lg:ml-16">
-              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-[80%] ml-auto object-cover aspect-[4/3] relative z-10 border-4 border-primary" />
-              <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-[45%] object-cover aspect-[4/3] absolute bottom-8 -left-4 z-20 border-4 border-white" />
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Learning Through Play, with the <br className="md:hidden" /><span className="text-primary">"Fix-it Mindset"</span>
+            </h2>
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24">
+            <div className="w-[70%] md:w-[38%]">
+              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-primary" />
             </div>
-            <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Learning Through Play, with the <br className="md:hidden" /><span className="text-primary">"Fix-it Mindset"</span>
-              </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                We provide STEM learning that is active, child-led experimentation—where play becomes real-world scientific inquiry that develops critical thinking, creativity, and the problem-solving skills future innovators need.
-              </p>
+            <div className="w-[70%] md:w-[38%]">
+              <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-white" />
             </div>
           </div>
-          
         </div>
       </section>
 
