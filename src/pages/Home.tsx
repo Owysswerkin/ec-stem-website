@@ -66,7 +66,7 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-no-repeat bg-fixed"
