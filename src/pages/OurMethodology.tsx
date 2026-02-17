@@ -89,7 +89,7 @@ const OurMethodology: React.FC = () => {
               className="rounded-3xl shadow-xl w-full max-w-xl mx-auto border-4 border-primary/20 object-cover aspect-[4/3] mb-8"
             />
             <p className="text-xl font-semibold text-foreground mb-6">
-              Ready to see your child's confidence soar? Experience our hands-on STEM learning firsthand.
+              Ready to see your child's confidence soar?<br />Experience our hands-on STEM learning firsthand.
             </p>
             <Link to="/trial-class">
               <Button variant="hero" size="hero" className="rounded-full">
