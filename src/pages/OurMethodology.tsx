@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import StemDecorations from '@/components/StemDecorations';
 import methodologyPhoto from '@/assets/methodology-child-building.jpg';
+import screwdriverPhoto from '@/assets/stem-child-screwdriver.jpg';
 
 const OurMethodology: React.FC = () => {
   return (
@@ -10,7 +10,6 @@ const OurMethodology: React.FC = () => {
 
       {/* Hero / Intro Section */}
       <section className="relative py-20 md:py-28 bg-background overflow-hidden">
-        <StemDecorations variant="hero" />
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">
@@ -33,7 +32,6 @@ const OurMethodology: React.FC = () => {
 
       {/* Sys-STEM-ic Approach Section */}
       <section className="relative py-20 bg-muted overflow-hidden">
-        <StemDecorations variant="section" />
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -77,7 +75,6 @@ const OurMethodology: React.FC = () => {
 
       {/* Empowering Fixers Section */}
       <section className="relative py-20 bg-background overflow-hidden">
-        <StemDecorations variant="section" />
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -85,6 +82,14 @@ const OurMethodology: React.FC = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Our methodology shapes proactive problem-solvers. Children learn to see challenges as puzzles, equipped with the mindset and tools to innovate, tinker, and improve.
+            </p>
+            <img
+              src={screwdriverPhoto}
+              alt="Child hands-on with STEM tools"
+              className="rounded-3xl shadow-xl w-full max-w-xl mx-auto border-4 border-primary/20 object-cover aspect-[4/3] mb-8"
+            />
+            <p className="text-xl font-semibold text-foreground mb-6">
+              Ready to see your child's confidence soar? Experience our hands-on STEM learning firsthand.
             </p>
             <Link to="/trial-class">
               <Button variant="hero" size="hero" className="rounded-full">
