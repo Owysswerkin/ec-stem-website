@@ -155,6 +155,13 @@ const Home = () => {
               <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-primary" />
             </div>
           </div>
+          <div className="text-center mt-10">
+            <Link to="/our-methodology">
+              <Button variant="default" size="lg" className="rounded-full px-8">
+                Our Methodology
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
