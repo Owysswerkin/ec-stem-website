@@ -24,8 +24,8 @@ const OurMethodology: React.FC = () => {
             <img
               src={methodologyPhoto}
               alt="Child building with STEM materials"
-              className="rounded-3xl shadow-xl w-full max-w-xl mx-auto border-4 border-primary/20 object-cover aspect-[4/3]"
-            />
+              className="rounded-3xl shadow-xl w-full max-w-xl mx-auto border-4 border-primary/20 object-cover aspect-[4/3]" />
+
           </div>
         </div>
       </section>
@@ -84,10 +84,10 @@ const OurMethodology: React.FC = () => {
               Our methodology shapes proactive problem-solvers. Children learn to see challenges as puzzles, equipped with the mindset and tools to innovate, tinker, and improve.
             </p>
             <img
-              src={screwdriverPhoto}
+
               alt="Child hands-on with STEM tools"
-              className="rounded-3xl shadow-xl w-full max-w-xl mx-auto border-4 border-primary/20 object-cover aspect-[4/3] mb-8"
-            />
+              className="rounded-3xl shadow-xl w-full max-w-xl mx-auto object-cover aspect-[4/3] mb-8 border-accent-vibrant border-8" src="/lovable-uploads/a2cb5db0-dbdc-4564-8949-d9f975791fc9.jpg" />
+
             <p className="text-xl font-semibold text-foreground mb-6">
               Ready to see your child's confidence soar?<br />Experience our hands-on STEM learning firsthand.
             </p>
@@ -99,8 +99,8 @@ const OurMethodology: React.FC = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 };
 
 export default OurMethodology;
