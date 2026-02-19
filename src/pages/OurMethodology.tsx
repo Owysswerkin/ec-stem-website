@@ -18,8 +18,28 @@ const OurMethodology: React.FC = () => {
             <p className="text-2xl md:text-3xl font-semibold text-primary mb-6">
               Building a child's Self-Ecstem
             </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              We help our children develop a powerful internal narrative:
+            </p>
+            {/* Speech Bubble */}
+            <div className="relative inline-block mb-10">
+              <div className="relative bg-primary text-primary-foreground rounded-2xl px-8 py-5 text-xl md:text-2xl font-bold shadow-lg">
+                "There is no problem I can't solve."
+                {/* Tail pointing down-left */}
+                <div
+                  className="absolute -bottom-4 left-10"
+                  style={{
+                    width: 0,
+                    height: 0,
+                    borderLeft: '16px solid transparent',
+                    borderRight: '8px solid transparent',
+                    borderTop: '18px solid hsl(var(--primary))',
+                  }}
+                />
+              </div>
+            </div>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-              We help our children develop a powerful internal narrative: "There is no problem I can't solve." This is the foundation for a resilient, confident, and inventive future. Discover the Self-Ecstem Methodology where every challenge builds a stronger sense of self.
+              This is the foundation for a resilient, confident, and inventive future. Discover the Self-Ecstem Methodology where every challenge builds a stronger sense of self.
             </p>
             <img
               src={methodologyPhoto}
