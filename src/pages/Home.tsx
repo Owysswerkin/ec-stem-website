@@ -89,10 +89,14 @@ const Home = () => {
         <div className="relative z-[3] flex flex-col items-center justify-center px-4 pt-20 pb-16">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             {/* Main headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-dark mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 leading-[1.1] tracking-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
               Early Childhood
               <br />
-              <span className="text-primary">STEM Education</span>
+              <span style={{ color: '#E74C3C' }}>S</span>
+              <span style={{ color: '#27AE60' }}>T</span>
+              <span style={{ color: '#F1C40F' }}>E</span>
+              <span style={{ color: '#2980B9' }}>M</span>
+              {' '}Education
               <br />
               <span className="text-secondary">in Singapore</span>
             </h1>
