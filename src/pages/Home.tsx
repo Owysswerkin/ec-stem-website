@@ -8,7 +8,7 @@ import WaveDivider from '@/components/WaveDivider';
 import asianChildrenStem from '@/assets/asian-children-stem.jpg';
 import asianKidsRobotics from '@/assets/asian-kids-robotics.jpg';
 import asianKidsScience from '@/assets/asian-kids-science.jpg';
-import heroRobotClassroom from '@/assets/hero-robot-classroom.png';
+import heroRobotClassroom from '@/assets/hero-classroom-robot.jpg';
 import stemGearsYellowBlue from '@/assets/stem-gears-yellow-blue.png';
 import stemChildBuilding from '@/assets/stem-child-building.jpg';
 import stemChildScrewdriver from '@/assets/stem-child-screwdriver.jpg';
