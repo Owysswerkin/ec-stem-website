@@ -245,6 +245,29 @@ const Home = () => {
               </p>
             </div>
           </div>
+
+          {/* Side-by-side images + Our Methodology */}
+          <div className="mt-16 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <img
+                src={stemChildBuilding}
+                alt="Child building with STEM materials"
+                className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
+              />
+              <img
+                src={stemChildScrewdriver}
+                alt="Child using screwdriver in STEM activity"
+                className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
+              />
+            </div>
+            <div className="text-center">
+              <Link to="/our-methodology">
+                <Button variant="outline" size="lg" className="rounded-full">
+                  Our Methodology <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
