@@ -199,48 +199,48 @@ const Home = () => {
 
           {/* Our Core Curriculum */}
           <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">Our Core Curriculum</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground">Our Core Curriculum</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* FIX-IT Mindset */}
             <div className="text-center">
-              <h4 className="text-xl font-bold text-foreground mb-3">"FIX-IT" <span className="text-red-500">Mindset</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">"FIX-IT" <span className="text-red-500">Mindset</span></h4>
               <div className="relative inline-block mb-4">
-                <div className="bg-red-500 text-white px-5 py-2 rounded-2xl font-semibold text-sm">
+                <div className="bg-red-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
                   "I try again"
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-red-500" />
               </div>
-              <p className="text-muted-foreground leading-relaxed mt-2">
+              <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
                 We direct children to view challenges as opportunities to learn, persist, and get better.
               </p>
             </div>
 
             {/* Applied INNOVATION */}
             <div className="text-center">
-              <h4 className="text-xl font-bold text-foreground mb-3">Applied <span className="text-blue-500">INNOVATION</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">Applied <span className="text-blue-500">INNOVATION</span></h4>
               <div className="relative inline-block mb-4">
-                <div className="bg-blue-500 text-white px-5 py-2 rounded-2xl font-semibold text-sm">
+                <div className="bg-blue-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
                   "I think and figure things out"
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-blue-500" />
               </div>
-              <p className="text-muted-foreground leading-relaxed mt-2">
+              <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
                 We guide children toward solutions that are useful, testable, and rooted in real-world needs.
               </p>
             </div>
 
             {/* CONSCIENTIOUS Making */}
             <div className="text-center">
-              <h4 className="text-xl font-bold text-foreground mb-3">CONSCIENTIOUS <span className="text-green-500">Making</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">CONSCIENTIOUS <span className="text-green-500">Making</span></h4>
               <div className="relative inline-block mb-4">
-                <div className="bg-green-500 text-white px-5 py-2 rounded-2xl font-semibold text-sm">
+                <div className="bg-green-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
                   "I care for people and the planet"
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-green-500" />
               </div>
-              <p className="text-muted-foreground leading-relaxed mt-2">
+              <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
                 We teach kids to design with empathy, safety, and consideration for our world.
               </p>
             </div>
