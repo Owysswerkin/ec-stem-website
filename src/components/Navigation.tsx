@@ -56,18 +56,9 @@ const Navigation = () => {
         isScrolled ? 'bg-teal-soft shadow-warm' : 'bg-teal-soft'
       }`}>
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            {/* Logo */}
-            <Link to="/" className="flex items-center">
-              <img 
-                src={ecStemLogo} 
-                alt="Ec stem Logo" 
-                className="h-10 w-auto"
-              />
-            </Link>
-
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+        <div className="flex justify-between items-center py-4">
+            {/* Left Nav Links (Desktop) */}
+            <div className="hidden lg:flex items-center space-x-8 flex-1">
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.path}
@@ -107,7 +98,19 @@ const Navigation = () => {
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
+            </div>
 
+            {/* Center Logo */}
+            <Link to="/" className="flex items-center">
+              <img 
+                src={ecStemLogo} 
+                alt="Ec stem Logo" 
+                className="h-16 w-auto"
+              />
+            </Link>
+
+            {/* Right Nav Links (Desktop) */}
+            <div className="hidden lg:flex items-center space-x-8 flex-1 justify-end">
               {navItems.slice(2).map((item) => (
                 <Link
                   key={item.path}
