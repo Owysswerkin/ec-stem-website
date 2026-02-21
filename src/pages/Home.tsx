@@ -248,6 +248,12 @@ const Home = () => {
 
           {/* Side-by-side images + Our Methodology */}
           <div className="mt-16 max-w-5xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-3">
+              Learning Through Play, with the "Fix-it" <span className="text-primary">Mindset</span>
+            </h3>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+              Our hands-on approach turns everyday curiosity into meaningful STEM experiences, building confidence one challenge at a time.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <img
                 src={stemChildBuilding}
