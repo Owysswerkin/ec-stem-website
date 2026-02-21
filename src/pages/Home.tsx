@@ -247,7 +247,7 @@ const Home = () => {
           </div>
 
           {/* Side-by-side images + Our Methodology */}
-          <div className="mt-16 max-w-5xl mx-auto">
+          <div className="mt-24 max-w-5xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-3">
               Learning Through Play, with the "Fix-it" <span className="text-primary">Mindset</span>
             </h3>
