@@ -89,7 +89,7 @@ const Home = () => {
         <div className="relative z-[3] flex flex-col items-center justify-center px-4 pt-20 pb-16">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             {/* Main headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.1] tracking-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-[1.1] tracking-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
               Early Childhood
               <br />
               <span style={{ color: '#2980B9' }}>S</span>
@@ -107,7 +107,7 @@ const Home = () => {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col gap-4 justify-center items-center">
               <Button 
                 variant="default" 
                 size="lg" 
