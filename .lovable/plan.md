@@ -1,50 +1,47 @@
 
-## Summary
 
-Update the Home page H1 to use Montserrat font, color each letter of "STEM" in the puzzle logo colors, and make the rest of the heading text blue.
+## Replace Services Overview Section with "Building Blocks of Early STEM"
 
----
+### What Changes
 
-## Changes
+The current "Learning Through Play, with the Fix-it Mindset" section (with two images and methodology button) will be replaced with a new two-part section:
 
-### 1. Add Montserrat font import (`src/index.css`)
+### Part 1: Building Blocks of Early STEM
 
-Add a Google Fonts import for Montserrat (bold weights) alongside existing font imports:
-```
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
-```
+- New title: **"Building Blocks of Early STEM"**
+- Four rectangle Lego-style bricks displayed in a row (responsive grid), each with a 3D/shadow effect to look like actual Lego bricks:
+  - **Red brick** - "Observation"
+  - **Green brick** - "Exploration"
+  - **Yellow brick** - "Imagination"
+  - **Blue brick** - "Construction"
+- Each brick will have rounded studs on top (CSS-styled circles) and a slight 3D shadow on the bottom/right to simulate depth
 
-### 2. Update Home page H1 (`src/pages/Home.tsx`)
+### Part 2: Our Core Curriculum
 
-**Font**: Override the H1 from "Lilita One" to Montserrat using `style={{ fontFamily: "'Montserrat', sans-serif" }}`.
+Below the bricks, an **"Our Core Curriculum"** heading followed by three curriculum pillars, each containing:
 
-**Colors**: Change the heading text to blue (`text-primary`) and individually color each letter of "STEM" in the puzzle logo colors:
-- **S** = Red/Coral (`#E74C3C`)
-- **T** = Green (`#27AE60`)
-- **E** = Yellow/Orange (`#F1C40F`)
-- **M** = Blue (`#2980B9`)
+1. **"FIX-IT" Mindset**
+   - Speech bubble: "I try again"
+   - Description: We direct children to view challenges as opportunities to learn, persist, and get better.
 
-The current structure:
-```
-Early Childhood
-STEM Education
-in Singapore
-```
+2. **Applied INNOVATION**
+   - Speech bubble: "I think and figure things out"
+   - Description: We guide children toward solutions that are useful, testable, and rooted in real-world needs.
 
-Will become:
-```
-Early Childhood          (blue)
-S T E M  Education       (S=red, T=green, E=yellow, M=blue, "Education"=blue)
-in Singapore             (keep current green or change to blue per preference)
-```
+3. **CONSCIENTIOUS Making**
+   - Speech bubble: "I care for people and the planet"
+   - Description: We teach kids to design with empathy, safety, and consideration for our world.
 
-"in Singapore" will remain green (`text-secondary`) as it currently is, since the user only specified "the rest of the text will be blue" referring to the non-STEM portions of the main heading line.
+Each speech bubble will be styled with a colored background, rounded corners, and a small triangular tail pointing down-left (similar to the one on the OurMethodology page).
 
----
+### Technical Details
 
-## Technical Details
+**File modified:** `src/pages/Home.tsx` (lines 143-170)
 
-- Montserrat loaded via Google Fonts CDN in `src/index.css`
-- STEM letters wrapped in individual `<span>` elements with inline `style={{ color: '...' }}`
-- Only the Home page H1 is affected; global H1 style remains unchanged for other pages
-- The `font-display` override in the H1 ensures Montserrat is used instead of the base `Lilita One`
+- The two side-by-side images (`stemChildBuilding`, `stemChildScrewdriver`) and the "Our Methodology" button will be removed from this section
+- The unused image imports can remain for now (they may be used elsewhere or cleaned up later)
+- Lego bricks will be built with pure CSS using Tailwind classes: colored rectangles with `rounded-lg`, darker bottom borders for 3D effect, and small circular pseudo-elements or divs on top for studs
+- The three curriculum pillars will be laid out in a responsive 3-column grid (`grid-cols-1 md:grid-cols-3`)
+- Speech bubbles will use a pattern similar to the existing speech bubble on the OurMethodology page (a div with a triangular CSS tail)
+- Color scheme: Red uses `bg-red-500`, Green uses `bg-green-500`, Yellow uses `bg-yellow-400`, Blue uses `bg-blue-500` to match the STEM color palette already used in the hero heading
+
