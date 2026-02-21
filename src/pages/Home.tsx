@@ -160,9 +160,9 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center mt-10">
-            <Link to="/our-methodology">
+            <Link to="/our-curriculum">
               <Button variant="default" size="lg" className="rounded-full px-8">
-                Our Methodology
+                Our Curriculum
               </Button>
             </Link>
           </div>
