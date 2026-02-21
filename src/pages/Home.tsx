@@ -140,31 +140,110 @@ const Home = () => {
       {/* Wave Divider - Hero to Services */}
       <WaveDivider variant="wave1" colorClass="fill-gray-50" />
 
-      {/* Services Overview */}
-        <section className="py-20 bg-gray-50 relative overflow-hidden">
+      {/* Building Blocks of Early STEM */}
+      <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4">
+          {/* Section Title */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Learning Through Play, with the <br className="md:hidden" /><span className="text-primary">"Fix-it Mindset"</span>
+              Building Blocks of Early <span className="text-primary">STEM</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              At Ec STEM, we ignite a child's innate curiosity, transforming it into lasting confidence. Our Self-Ecstem Methodology is a dynamic framework designed to cultivate not just STEM skills, but a profound belief in one's own capability.
-            </p>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24">
-            <div className="w-[70%] md:w-[38%]">
-              <img src={stemChildBuilding} alt="Child engaged in hands-on STEM building activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-white" />
+
+          {/* Lego Bricks */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto mb-16">
+            {/* Red Brick - Observation */}
+            <div className="relative">
+              <div className="flex justify-center gap-2 mb-[-4px] relative z-10">
+                <div className="w-5 h-3 rounded-full bg-red-600 border-b-2 border-red-700 shadow-inner" />
+                <div className="w-5 h-3 rounded-full bg-red-600 border-b-2 border-red-700 shadow-inner" />
+              </div>
+              <div className="bg-red-500 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-red-700">
+                <span className="text-white font-bold text-sm md:text-base tracking-wide">Observation</span>
+              </div>
             </div>
-            <div className="w-[70%] md:w-[38%]">
-              <img src={stemChildScrewdriver} alt="Child using screwdriver in STEM activity" className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3] border-4 border-primary" />
+
+            {/* Green Brick - Exploration */}
+            <div className="relative">
+              <div className="flex justify-center gap-2 mb-[-4px] relative z-10">
+                <div className="w-5 h-3 rounded-full bg-green-600 border-b-2 border-green-700 shadow-inner" />
+                <div className="w-5 h-3 rounded-full bg-green-600 border-b-2 border-green-700 shadow-inner" />
+              </div>
+              <div className="bg-green-500 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-green-700">
+                <span className="text-white font-bold text-sm md:text-base tracking-wide">Exploration</span>
+              </div>
+            </div>
+
+            {/* Yellow Brick - Imagination */}
+            <div className="relative">
+              <div className="flex justify-center gap-2 mb-[-4px] relative z-10">
+                <div className="w-5 h-3 rounded-full bg-yellow-500 border-b-2 border-yellow-600 shadow-inner" />
+                <div className="w-5 h-3 rounded-full bg-yellow-500 border-b-2 border-yellow-600 shadow-inner" />
+              </div>
+              <div className="bg-yellow-400 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-yellow-600">
+                <span className="text-white font-bold text-sm md:text-base tracking-wide drop-shadow-sm">Imagination</span>
+              </div>
+            </div>
+
+            {/* Blue Brick - Construction */}
+            <div className="relative">
+              <div className="flex justify-center gap-2 mb-[-4px] relative z-10">
+                <div className="w-5 h-3 rounded-full bg-blue-600 border-b-2 border-blue-700 shadow-inner" />
+                <div className="w-5 h-3 rounded-full bg-blue-600 border-b-2 border-blue-700 shadow-inner" />
+              </div>
+              <div className="bg-blue-500 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-blue-700">
+                <span className="text-white font-bold text-sm md:text-base tracking-wide">Construction</span>
+              </div>
             </div>
           </div>
-          <div className="text-center mt-10">
-            <Link to="/our-methodology">
-              <Button variant="default" size="lg" className="rounded-full px-8">
-                Our Methodology
-              </Button>
-            </Link>
+
+          {/* Our Core Curriculum */}
+          <div className="text-center mb-10">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground">Our Core Curriculum</h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* FIX-IT Mindset */}
+            <div className="text-center">
+              <h4 className="text-xl font-bold text-foreground mb-3">"FIX-IT" <span className="text-red-500">Mindset</span></h4>
+              <div className="relative inline-block mb-4">
+                <div className="bg-red-500 text-white px-5 py-2 rounded-2xl font-semibold text-sm">
+                  "I try again"
+                </div>
+                <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-red-500" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                We direct children to view challenges as opportunities to learn, persist, and get better.
+              </p>
+            </div>
+
+            {/* Applied INNOVATION */}
+            <div className="text-center">
+              <h4 className="text-xl font-bold text-foreground mb-3">Applied <span className="text-blue-500">INNOVATION</span></h4>
+              <div className="relative inline-block mb-4">
+                <div className="bg-blue-500 text-white px-5 py-2 rounded-2xl font-semibold text-sm">
+                  "I think and figure things out"
+                </div>
+                <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-blue-500" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                We guide children toward solutions that are useful, testable, and rooted in real-world needs.
+              </p>
+            </div>
+
+            {/* CONSCIENTIOUS Making */}
+            <div className="text-center">
+              <h4 className="text-xl font-bold text-foreground mb-3">CONSCIENTIOUS <span className="text-green-500">Making</span></h4>
+              <div className="relative inline-block mb-4">
+                <div className="bg-green-500 text-white px-5 py-2 rounded-2xl font-semibold text-sm">
+                  "I care for people and the planet"
+                </div>
+                <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-green-500" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-2">
+                We teach kids to design with empathy, safety, and consideration for our world.
+              </p>
+            </div>
           </div>
         </div>
       </section>
