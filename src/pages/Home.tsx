@@ -318,42 +318,25 @@ const Home = () => {
         {/* Wave Divider - Partners to Programs */}
         <WaveDivider variant="wave1" colorClass="fill-teal-soft" flip />
 
-      {/* Programs Preview */}
+      {/* CTA Section */}
         <section className="py-20 bg-teal-soft relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              {t('programs.title')}
-            </h2>
-          </div>
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+            Ready to turn your child's "I can't" into <span className="text-primary">"I'll try again."</span>?
+          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {programs.map((program, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
-                <CardContent className="p-8">
-                  <div className="bg-accent w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {index === 0 && <Users className="h-8 w-8 text-white" />}
-                    {index === 1 && <Lightbulb className="h-8 w-8 text-white" />}
-                    {index === 2 && <Cpu className="h-8 w-8 text-white" />}
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{program.title}</h3>
-                  <div className="text-sm font-semibold text-primary bg-primary-glow px-3 py-1 rounded-full inline-block mb-4">
-                    {index === 0 && 'Nursery 2'}
-                    {index === 1 && 'Kindergarten 1'}
-                    {index === 2 && 'Kindergarten 2'}
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">{program.description}</p>
-                </CardContent>
-              </Card>)}
-          </div>
+          <Button variant="hero" size="hero" asChild>
+            <Link to="/trial-class">
+              Book a FREE Trial Session
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
 
-          <div className="text-center mt-12">
-            <Button variant="default" size="lg" asChild>
-              <Link to="/programmes">
-                View All Programs
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
+          <p className="mt-6 text-muted-foreground text-lg">
+            <Link to="/programmes" className="text-primary hover:underline font-medium">
+              View our programs →
+            </Link>
+          </p>
         </div>
       </section>
 
