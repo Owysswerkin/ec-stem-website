@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 const Footer = () => {
   const {
@@ -20,6 +20,9 @@ const Footer = () => {
               </a>
               <a href="https://www.instagram.com/ecstemedu?igsh=MXhwOTZxaTlsc2RxZA==" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
                 <Instagram className="h-5 w-5 text-primary-foreground" />
+              </a>
+              <a href="https://www.linkedin.com/company/ecstemeducation/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-colors">
+                <Linkedin className="h-5 w-5 text-primary-foreground" />
               </a>
             </div>
           </div>
