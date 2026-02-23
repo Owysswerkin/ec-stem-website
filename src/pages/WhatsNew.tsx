@@ -31,15 +31,15 @@ const WhatsNew = () => {
   const posts: Post[] = [
     {
       id: '1',
-      title: 'FREE STEM Trial Class – 31 Jan 2026',
-      excerpt: `🚀 Calling all curious kids! Join our FREE STEM Trial Class at LC Education Singapore on 31st January 2026!
+      title: 'FREE STEM Trial Class',
+      excerpt: `🚀 Calling all curious kids! Join our FREE STEM Trial Class at LC Education Singapore!
 
 Watch your little ones build, create, and discover through hands-on play with our age-appropriate programmes.
 
 📅 Schedule:
-• N2 Early Explorers (4 years old): 10:00am - 11:00am
-• K1 Curious Creators (5 years old): 11:15am - 12:15pm
-• K2 Super Solvers (6 years old): 12:30pm - 1:30pm
+• N2 Early Explorers (4 years old): 9:00am - 10:30am
+• K1 Curious Creators (5 years old): 10:45am - 12:15pm
+• K2 Super Solvers (6 years old): 12:30pm - 2:00pm
 
 📍 155B Thomson Rd, Goldhill Centre, Singapore 307610
 
