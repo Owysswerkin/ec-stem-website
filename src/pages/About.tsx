@@ -4,7 +4,7 @@ import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from
 import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
 import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
-import teacherClairabel from '@/assets/teacher-clairabel.jpg';
+
 import teamPhoto from '@/assets/team-photo.jpg';
 import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
 import teacherJayne from '@/assets/teacher-jayne.jpg';
@@ -27,11 +27,6 @@ const About = () => {
     description: t('aboutPage.values.handsMinds.description')
   }];
   const team = [{
-    name: t('aboutPage.team.msHuang.name'),
-    role: t('aboutPage.team.msHuang.role'),
-    image: teacherClairabel,
-    description: t('aboutPage.team.msHuang.description')
-  }, {
     name: t('aboutPage.team.jennifer.name'),
     role: t('aboutPage.team.jennifer.role'),
     image: teacherWanRong,
