@@ -153,18 +153,18 @@ const About = () => {
 
       {/* Team Section */}
       <section className="py-20 bg-soft-gradient">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 md:px-12 lg:px-20">
           {/* 2-column header: title left, subtitle right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 {t('aboutPage.team.title')}
               </h2>
-              <p className="text-2xl md:text-3xl font-bold text-foreground">
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 {t('aboutPage.team.heading')}
               </p>
             </div>
-            <div>
+            <div className="max-w-sm">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 {t('aboutPage.team.subtitle')}
               </p>
