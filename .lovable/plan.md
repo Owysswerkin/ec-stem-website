@@ -1,47 +1,43 @@
+# Redesign Team Section - "Meet Our Teachers"
 
+## Overview
 
-## Replace Services Overview Section with "Building Blocks of Early STEM"
+Redesign the team section on the About page to match the playful, colorful style from the reference image. The title changes to "Meet Our Teachers" and each teacher card gets a unique colorful background.
 
-### What Changes
+## Design Changes
 
-The current "Learning Through Play, with the Fix-it Mindset" section (with two images and methodology button) will be replaced with a new two-part section:
+### Header Area
 
-### Part 1: Building Blocks of Early STEM
+- Change title from "Meet Our Expert Team" to "Meet Our Teachers"  
+- Add a playful large heading: "Behind every little inventor... is a big heart" with a heart emoji
+- Keep the subtitle text describing the team
 
-- New title: **"Building Blocks of Early STEM"**
-- Four rectangle Lego-style bricks displayed in a row (responsive grid), each with a 3D/shadow effect to look like actual Lego bricks:
-  - **Red brick** - "Observation"
-  - **Green brick** - "Exploration"
-  - **Yellow brick** - "Imagination"
-  - **Blue brick** - "Construction"
-- Each brick will have rounded studs on top (CSS-styled circles) and a slight 3D shadow on the bottom/right to simulate depth
+### Teacher Cards (Inspired by Reference)
 
-### Part 2: Our Core Curriculum
+- Remove the current Card-based design with white backgrounds
+- Each teacher photo gets a unique **colorful background** (e.g., pink/lavender, lime/yellow, teal, pink/coral) — cycling through colors
+- Photos displayed in **rounded-corner rectangles** with the colored background visible around/behind the image
+- Teacher name shown in a **pill-shaped colored badge** below each photo (matching or complementing the card background color)
+- Role and description text shorten and hidden from the card to keep it clean and playful like the reference. It will show when clicking on the pill.
+- Grid layout: 3 columns on desktop (since there are 3 teachers), responsive to 1 column on mobile
 
-Below the bricks, an **"Our Core Curriculum"** heading followed by three curriculum pillars, each containing:
+### Color Palette for Cards
 
-1. **"FIX-IT" Mindset**
-   - Speech bubble: "I try again"
-   - Description: We direct children to view challenges as opportunities to learn, persist, and get better.
+Using the brand's playful palette:
 
-2. **Applied INNOVATION**
-   - Speech bubble: "I think and figure things out"
-   - Description: We guide children toward solutions that are useful, testable, and rooted in real-world needs.
+- Card 1 (Wan Rong): Lavender/pink background, green name badge
+- Card 2 (Jayne): Lime/yellow background, teal name badge  
+- Card 3 (Flynne): Teal background, coral/orange name badge
 
-3. **CONSCIENTIOUS Making**
-   - Speech bubble: "I care for people and the planet"
-   - Description: We teach kids to design with empathy, safety, and consideration for our world.
+## Technical Details
 
-Each speech bubble will be styled with a colored background, rounded corners, and a small triangular tail pointing down-left (similar to the one on the OurMethodology page).
+### Files Modified
 
-### Technical Details
-
-**File modified:** `src/pages/Home.tsx` (lines 143-170)
-
-- The two side-by-side images (`stemChildBuilding`, `stemChildScrewdriver`) and the "Our Methodology" button will be removed from this section
-- The unused image imports can remain for now (they may be used elsewhere or cleaned up later)
-- Lego bricks will be built with pure CSS using Tailwind classes: colored rectangles with `rounded-lg`, darker bottom borders for 3D effect, and small circular pseudo-elements or divs on top for studs
-- The three curriculum pillars will be laid out in a responsive 3-column grid (`grid-cols-1 md:grid-cols-3`)
-- Speech bubbles will use a pattern similar to the existing speech bubble on the OurMethodology page (a div with a triangular CSS tail)
-- Color scheme: Red uses `bg-red-500`, Green uses `bg-green-500`, Yellow uses `bg-yellow-400`, Blue uses `bg-blue-500` to match the STEM color palette already used in the hero heading
-
+1. `**src/pages/About.tsx**` - Redesign the team section:
+  - Update section heading text
+  - Replace Card-based layout with colorful custom cards
+  - Each card: colored `div` with rounded corners, image inside, and a pill-shaped name badge below
+  - Use Tailwind classes for the colorful backgrounds (e.g., `bg-pink-200`, `bg-lime-200`, `bg-teal-200`)
+  - Grid changes to `lg:grid-cols-3` (3 teachers instead of 4)
+2. `**src/i18n/locales/en.json**` - Update `aboutPage.team.title` to "Meet Our Teachers"
+3. `**src/i18n/locales/zh.json**` - Update Chinese translation for the team title accordingly
