@@ -154,40 +154,50 @@ const About = () => {
       {/* Team Section */}
       <section className="py-20 bg-soft-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              {t('aboutPage.team.title')}
-            </h2>
-            <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              {t('aboutPage.team.heading')}
-            </p>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('aboutPage.team.subtitle')}
-            </p>
+          {/* 2-column header: title left, subtitle right */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                {t('aboutPage.team.title')}
+              </h2>
+              <p className="text-2xl md:text-3xl font-bold text-foreground">
+                {t('aboutPage.team.heading')}
+              </p>
+            </div>
+            <div>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                {t('aboutPage.team.subtitle')}
+              </p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
             {team.map((member, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className={`${member.bgColor} rounded-3xl p-6 w-full aspect-[3/4] flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-105`}>
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-                <button
+              <div key={index} className="flex flex-col items-center [perspective:1000px]">
+                {/* Flip card container */}
+                <div
+                  className={`relative w-full aspect-[3/4] cursor-pointer transition-transform duration-700 [transform-style:preserve-3d] ${expandedTeacher === index ? '[transform:rotateY(180deg)]' : ''}`}
                   onClick={() => setExpandedTeacher(expandedTeacher === index ? null : index)}
-                  className={`${member.badgeColor} mt-4 px-6 py-2 rounded-full text-lg font-bold shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer`}
+                >
+                  {/* Front - Photo */}
+                  <div className={`absolute inset-0 [backface-visibility:hidden] ${member.bgColor} rounded-3xl p-5 flex items-center justify-center overflow-hidden`}>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  </div>
+                  {/* Back - Description */}
+                  <div className={`absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] ${member.bgColor} rounded-3xl p-6 flex flex-col items-center justify-center text-center`}>
+                    <p className="text-primary font-bold text-lg mb-3">{member.role}</p>
+                    <p className="text-foreground/80 text-sm leading-relaxed">{member.description}</p>
+                  </div>
+                </div>
+                <div
+                  className={`${member.badgeColor} mt-4 px-6 py-2 rounded-full text-lg font-bold shadow-md`}
                 >
                   {member.name}
-                </button>
-                {expandedTeacher === index && (
-                  <div className="mt-3 p-4 bg-card rounded-2xl shadow-gentle text-center animate-in fade-in slide-in-from-top-2 duration-300">
-                    <p className="text-primary font-semibold mb-2">{member.role}</p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
-                  </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
