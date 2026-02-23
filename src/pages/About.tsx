@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,6 +13,7 @@ const About = () => {
   const {
     t
   } = useTranslation();
+  const [expandedTeacher, setExpandedTeacher] = useState<number | null>(null);
   const values = [{
     icon: Star,
     title: t('aboutPage.values.curiosity.title'),
@@ -30,17 +31,23 @@ const About = () => {
     name: t('aboutPage.team.jennifer.name'),
     role: t('aboutPage.team.jennifer.role'),
     image: teacherWanRong,
-    description: t('aboutPage.team.jennifer.description')
+    description: t('aboutPage.team.jennifer.description'),
+    bgColor: 'bg-pink-200',
+    badgeColor: 'bg-emerald-500 text-white'
   }, {
     name: t('aboutPage.team.david.name'),
     role: t('aboutPage.team.david.role'),
     image: teacherJayne,
-    description: t('aboutPage.team.david.description')
+    description: t('aboutPage.team.david.description'),
+    bgColor: 'bg-lime-200',
+    badgeColor: 'bg-teal-500 text-white'
   }, {
     name: t('aboutPage.team.flynne.name'),
     role: t('aboutPage.team.flynne.role'),
     image: teacherFlynne,
-    description: t('aboutPage.team.flynne.description')
+    description: t('aboutPage.team.flynne.description'),
+    bgColor: 'bg-teal-200',
+    badgeColor: 'bg-orange-500 text-white'
   }];
   return <div className="min-h-screen">
       {/* Mission & Vision */}
@@ -148,25 +155,41 @@ const About = () => {
       <section className="py-20 bg-soft-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t('aboutPage.team.title')}
             </h2>
+            <p className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              {t('aboutPage.team.heading')}
+            </p>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               {t('aboutPage.team.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle">
-                <div className="relative h-64 overflow-hidden rounded-t-3xl">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover scale-120 group-hover:scale-125 transition-transform duration-300" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-4xl mx-auto">
+            {team.map((member, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className={`${member.bgColor} rounded-3xl p-6 w-full aspect-[3/4] flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-105`}>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-3">{member.role}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
-                </CardContent>
-              </Card>)}
+                <button
+                  onClick={() => setExpandedTeacher(expandedTeacher === index ? null : index)}
+                  className={`${member.badgeColor} mt-4 px-6 py-2 rounded-full text-lg font-bold shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer`}
+                >
+                  {member.name}
+                </button>
+                {expandedTeacher === index && (
+                  <div className="mt-3 p-4 bg-card rounded-2xl shadow-gentle text-center animate-in fade-in slide-in-from-top-2 duration-300">
+                    <p className="text-primary font-semibold mb-2">{member.role}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
