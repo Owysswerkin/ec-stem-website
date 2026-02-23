@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import parentsDuploImage from '@/assets/parents-child-duplo.jpg';
 import {
   Clock, 
   Users, 
@@ -103,12 +102,6 @@ const ForParents = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${parentsDuploImage})` }}
-        />
-        {/* Overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-background/85 to-sunshine/70" />
         
         <div className="container mx-auto px-4 relative z-10">
