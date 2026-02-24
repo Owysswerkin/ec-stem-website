@@ -35,31 +35,32 @@ const About = () => {
     badgeColor: 'bg-orange-500 text-white'
   }];
   return <div className="min-h-screen">
-      {/* Mission & Vision */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img src={teamPhoto} alt="Ec stem education team collaborating with STEM materials and technology" className="rounded-3xl shadow-warm w-full" />
+      {/* Mission & Vision - Hero with Team Photo Background */}
+      <section 
+        className="relative min-h-[70vh] flex items-center bg-cover bg-center"
+        style={{ backgroundImage: `url(${teamPhoto})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+        <div className="relative z-10 container mx-auto px-4 py-20 text-white">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-14" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            {t('aboutPage.mission.title')}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+              <span className="inline-block bg-blue-500 text-white px-5 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide mb-5">
+                {t('aboutPage.mission.missionHeader')}
+              </span>
+              <p className="text-lg md:text-xl leading-relaxed text-white/90">
+                {t('aboutPage.mission.missionText')}
+              </p>
             </div>
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                {t('aboutPage.mission.title')}
-              </h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold text-primary mb-3">{t('aboutPage.mission.missionHeader')}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t('aboutPage.mission.missionText')}
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-primary mb-3">{t('aboutPage.mission.visionHeader')}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t('aboutPage.mission.visionText')}
-                  </p>
-                </div>
-              </div>
+            <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+              <span className="inline-block bg-green-500 text-white px-5 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide mb-5">
+                {t('aboutPage.mission.visionHeader')}
+              </span>
+              <p className="text-lg md:text-xl leading-relaxed text-white/90">
+                {t('aboutPage.mission.visionText')}
+              </p>
             </div>
           </div>
         </div>
@@ -121,11 +122,11 @@ const About = () => {
       </section>
 
       {/* Founder's Message */}
-      <section className="py-20">
+      <section className="py-20 bg-amber-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 {t('aboutPage.founder.title')}
               </h2>
             </div>
@@ -133,10 +134,9 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
-                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary/10 rounded-full blur-xl"></div>
-                  <blockquote className="relative text-lg text-muted-foreground leading-relaxed italic mb-8">
-                    "{t('aboutPage.founder.quote')}"
+                  <span className="absolute -top-6 -left-4 text-8xl text-primary/20 font-serif leading-none select-none">"</span>
+                  <blockquote className="relative text-xl md:text-2xl text-muted-foreground leading-relaxed italic mb-8 pl-6">
+                    {t('aboutPage.founder.quote')}
                   </blockquote>
                 </div>
                 <div className="flex items-start gap-4">
