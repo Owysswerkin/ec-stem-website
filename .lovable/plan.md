@@ -1,43 +1,54 @@
-# Redesign Team Section - "Meet Our Teachers"
+
+
+# Redesign About Page - Replace Values with Core Curriculum
 
 ## Overview
+Replace the "Our Core Values" section on the About page with the **Core Curriculum** section from the Home page. This brings the three pillars -- "FIX-IT" Mindset, Applied Innovation, and Conscientious Making -- with their colorful speech bubble quotes into the About page, making the design bolder and more impactful.
 
-Redesign the team section on the About page to match the playful, colorful style from the reference image. The title changes to "Meet Our Teachers" and each teacher card gets a unique colorful background.
+## What Changes
 
-## Design Changes
+### Remove: "Our Core Values" Section (lines 83-107)
+The current 3-card grid (Curiosity, Understanding, Hands & Minds) with icon cards will be replaced entirely.
 
-### Header Area
+### Add: "Our Core Curriculum" Section
+Ported from the Home page (lines 200-247), styled to match the About page context:
 
-- Change title from "Meet Our Expert Team" to "Meet Our Teachers"  
-- Add a playful large heading: "Behind every little inventor... is a big heart" with a heart emoji
-- Keep the subtitle text describing the team
+- **Section title**: "Our Core Curriculum" in bold, large font (Lilita One or Montserrat)
+- **3-column grid** with three pillars:
 
-### Teacher Cards (Inspired by Reference)
+  1. **"FIX-IT" Mindset** -- Red speech bubble saying "I try again" with descriptive text below
+  2. **Applied INNOVATION** -- Blue speech bubble saying "I think and figure things out" with descriptive text below
+  3. **CONSCIENTIOUS Making** -- Green speech bubble saying "I care for people and the planet" with descriptive text below
 
-- Remove the current Card-based design with white backgrounds
-- Each teacher photo gets a unique **colorful background** (e.g., pink/lavender, lime/yellow, teal, pink/coral) — cycling through colors
-- Photos displayed in **rounded-corner rectangles** with the colored background visible around/behind the image
-- Teacher name shown in a **pill-shaped colored badge** below each photo (matching or complementing the card background color)
-- Role and description text shorten and hidden from the card to keep it clean and playful like the reference. It will show when clicking on the pill.
-- Grid layout: 3 columns on desktop (since there are 3 teachers), responsive to 1 column on mobile
+- Each pillar uses the same **colored speech bubble with tail** design from the Home page
+- Colored keyword highlights in headings (red for Mindset, blue for INNOVATION, green for Making)
+- Text size slightly larger for bolder feel (text-lg descriptions, text-2xl headings)
 
-### Color Palette for Cards
+### File Changes
 
-Using the brand's playful palette:
+1. **`src/pages/About.tsx`**
+   - Remove the `values` array and the Values Section JSX (lines 17-107)
+   - Remove unused imports (`Star`, `Zap`, `Card`, `CardContent`, `gearClippyCharacter`) that were only used by the values section
+   - Insert the Core Curriculum section with the 3-column speech bubble layout, matching the Home page design
+   - Keep the same `bg-muted/30` background for visual consistency
 
-- Card 1 (Wan Rong): Lavender/pink background, green name badge
-- Card 2 (Jayne): Lime/yellow background, teal name badge  
-- Card 3 (Flynne): Teal background, coral/orange name badge
+2. **No translation file changes needed** -- the curriculum text is hardcoded in the Home page component and will be the same here. No i18n keys required for this content.
 
 ## Technical Details
 
-### Files Modified
+### New Section Structure (replacing lines 83-107)
+```text
+section (py-20, bg-muted/30)
+  +-- container
+       +-- h2 "Our Core Curriculum" (centered, bold, large)
+       +-- 3-col grid (md:grid-cols-3)
+            +-- Pillar 1: h4 + red speech bubble + description
+            +-- Pillar 2: h4 + blue speech bubble + description
+            +-- Pillar 3: h4 + green speech bubble + description
+```
 
-1. `**src/pages/About.tsx**` - Redesign the team section:
-  - Update section heading text
-  - Replace Card-based layout with colorful custom cards
-  - Each card: colored `div` with rounded corners, image inside, and a pill-shaped name badge below
-  - Use Tailwind classes for the colorful backgrounds (e.g., `bg-pink-200`, `bg-lime-200`, `bg-teal-200`)
-  - Grid changes to `lg:grid-cols-3` (3 teachers instead of 4)
-2. `**src/i18n/locales/en.json**` - Update `aboutPage.team.title` to "Meet Our Teachers"
-3. `**src/i18n/locales/zh.json**` - Update Chinese translation for the team title accordingly
+### Imports Cleanup
+- Remove: `Star`, `Card`, `CardContent`, `gearClippyCharacter`
+- Keep: `Heart`, `Zap` only if used elsewhere (Heart is not used elsewhere either, so remove both)
+- Final imports: `React`, `useState`, `useTranslation`, plus image imports and team-related code
+
