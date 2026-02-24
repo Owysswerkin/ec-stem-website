@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Heart, Users, Trophy, Star, BookOpen, Shield, Target, Award, Zap } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
 import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
-import gearClippyCharacter from '@/assets/gear-clippy-character.jpg';
+
 
 import teamPhoto from '@/assets/team-photo.jpg';
 import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
@@ -14,19 +12,6 @@ const About = () => {
     t
   } = useTranslation();
   const [expandedTeacher, setExpandedTeacher] = useState<number | null>(null);
-  const values = [{
-    icon: Star,
-    title: t('aboutPage.values.curiosity.title'),
-    description: t('aboutPage.values.curiosity.description')
-  }, {
-    icon: Zap,
-    title: t('aboutPage.values.understanding.title'),
-    description: t('aboutPage.values.understanding.description')
-  }, {
-    icon: Heart,
-    title: t('aboutPage.values.handsMinds.title'),
-    description: t('aboutPage.values.handsMinds.description')
-  }];
   const team = [{
     name: t('aboutPage.team.jennifer.name'),
     role: t('aboutPage.team.jennifer.role'),
@@ -80,28 +65,57 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Our Core Curriculum */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('aboutPage.values.title')}
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              Our Core Curriculum
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('aboutPage.values.subtitle')}
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {values.map((value, index) => <Card key={index} className="group hover:shadow-warm transition-all duration-300 transform hover:scale-105 border-none shadow-gentle bg-card">
-                <CardContent className="p-8 text-center">
-                  <div className="bg-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <value.icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
-                </CardContent>
-              </Card>)}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            {/* FIX-IT Mindset */}
+            <div className="text-center">
+              <h4 className="text-2xl font-bold text-foreground mb-3">"FIX-IT" <span className="text-red-500">Mindset</span></h4>
+              <div className="relative inline-block mb-4">
+                <div className="bg-red-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
+                  "I try again"
+                </div>
+                <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-red-500" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
+                We direct children to view challenges as opportunities to learn, persist, and get better.
+              </p>
+            </div>
+
+            {/* Applied INNOVATION */}
+            <div className="text-center">
+              <h4 className="text-2xl font-bold text-foreground mb-3">Applied <span className="text-blue-500">INNOVATION</span></h4>
+              <div className="relative inline-block mb-4">
+                <div className="bg-blue-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
+                  "I think and figure things out"
+                </div>
+                <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-blue-500" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
+                We guide children toward solutions that are useful, testable, and rooted in real-world needs.
+              </p>
+            </div>
+
+            {/* CONSCIENTIOUS Making */}
+            <div className="text-center">
+              <h4 className="text-2xl font-bold text-foreground mb-3">CONSCIENTIOUS <span className="text-green-500">Making</span></h4>
+              <div className="relative inline-block mb-4">
+                <div className="bg-green-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
+                  "I care for people and the planet"
+                </div>
+                <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-green-500" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
+                We teach kids to design with empathy, safety, and consideration for our world.
+              </p>
+            </div>
           </div>
         </div>
       </section>
