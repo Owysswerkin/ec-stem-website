@@ -4,6 +4,7 @@ import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
 
 
 import teamPhoto from '@/assets/team-photo.jpg';
+import missionBg from '@/assets/mission-bg.png';
 import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
 import teacherJayne from '@/assets/teacher-jayne.jpg';
 import teacherFlynne from '@/assets/teacher-flynne.jpg';
@@ -49,13 +50,17 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-sky-50">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={missionBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-sky-900/60" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-block bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('aboutPage.mission.missionHeader')}
             </span>
-            <p className="text-xl md:text-2xl leading-relaxed text-foreground/80">
+            <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed text-white font-semibold">
               {t('aboutPage.mission.missionText')}
             </p>
           </div>
@@ -63,13 +68,13 @@ const About = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-20 bg-emerald-50">
+      <section className="py-24 bg-emerald-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('aboutPage.mission.visionHeader')}
             </span>
-            <p className="text-xl md:text-2xl leading-relaxed text-foreground/80">
+            <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed text-foreground/80 font-semibold">
               {t('aboutPage.mission.visionText')}
             </p>
           </div>
