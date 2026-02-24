@@ -35,33 +35,43 @@ const About = () => {
     badgeColor: 'bg-orange-500 text-white'
   }];
   return <div className="min-h-screen">
-      {/* Mission & Vision - Hero with Team Photo Background */}
-      <section 
-        className="relative min-h-[70vh] flex items-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${teamPhoto})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
-        <div className="relative z-10 container mx-auto px-4 py-20 text-white">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-14" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+      {/* Header Hero - Soft Pastel */}
+      <section className="relative min-h-[50vh] flex items-center bg-gradient-to-br from-sky-50 via-rose-50 to-amber-50">
+        <div className="absolute inset-0 overflow-hidden">
+          <img src={teamPhoto} alt="Ec stem education team" className="w-full h-full object-cover opacity-15" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             {t('aboutPage.mission.title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
-              <span className="inline-block bg-blue-500 text-white px-5 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide mb-5">
-                {t('aboutPage.mission.missionHeader')}
-              </span>
-              <p className="text-lg md:text-xl leading-relaxed text-white/90">
-                {t('aboutPage.mission.missionText')}
-              </p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
-              <span className="inline-block bg-green-500 text-white px-5 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide mb-5">
-                {t('aboutPage.mission.visionHeader')}
-              </span>
-              <p className="text-lg md:text-xl leading-relaxed text-white/90">
-                {t('aboutPage.mission.visionText')}
-              </p>
-            </div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Nurturing curious minds through play-based STEM learning</p>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-20 bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="inline-block bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+              {t('aboutPage.mission.missionHeader')}
+            </span>
+            <p className="text-xl md:text-2xl leading-relaxed text-foreground/80">
+              {t('aboutPage.mission.missionText')}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="py-20 bg-emerald-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+              {t('aboutPage.mission.visionHeader')}
+            </span>
+            <p className="text-xl md:text-2xl leading-relaxed text-foreground/80">
+              {t('aboutPage.mission.visionText')}
+            </p>
           </div>
         </div>
       </section>
