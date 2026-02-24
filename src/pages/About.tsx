@@ -44,7 +44,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             {t('aboutPage.mission.title')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Nurturing curious minds through play-based STEM learning</p>
+          
         </div>
       </section>
 
