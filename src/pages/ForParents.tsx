@@ -106,7 +106,7 @@ const ForParents = () => {
         <div className="absolute inset-0">
           <img src={enrichmentHero} alt="EC STEM classroom" className="w-full h-full object-cover" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-foreground/70 via-foreground/50 to-foreground/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-foreground/50 via-foreground/30 to-foreground/40" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
              <h1 className="text-4xl md:text-5xl font-bold text-background mb-6 drop-shadow-sm">
