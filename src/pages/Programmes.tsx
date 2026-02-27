@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Users, Calendar, Clock, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-import classroomHero from '@/assets/classroom-activities.jpg';
+import programmesHero from '@/assets/programmes-hero.png';
 import parentsDuplo from '@/assets/parents-child-duplo.jpg';
 import k1Robots from '@/assets/k1-robots-playing.png';
 import stemBuilding from '@/assets/stem-child-building.jpg';
@@ -48,44 +48,15 @@ const Programmes = () => {
       {/* Hero Banner */}
       <section className="relative h-[50vh] min-h-[360px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={classroomHero} alt="STEM classroom" className="w-full h-full object-cover" />
+          <img src={programmesHero} alt="STEM classroom" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-sky-800/50" />
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white drop-shadow-lg">
-            {t('programmesPage.highlights.title')}
+            For Preschool
           </h1>
         </div>
       </section>
-
-      {/* Program Levels */}
-      {programs.map((program, index) => {
-        const isReversed = index % 2 === 1;
-        return (
-          <section key={index} className={`${program.bg} py-16 md:py-24`}>
-            <div className="container mx-auto px-4">
-              <div className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-10 md:gap-16`}>
-                {/* Image */}
-                <div className="w-full md:w-1/2">
-                  <img
-                    src={program.image}
-                    alt={program.title}
-                    className="w-full h-[300px] md:h-[400px] object-cover rounded-3xl shadow-warm"
-                  />
-                </div>
-                {/* Text */}
-                <div className="w-full md:w-1/2">
-                  <span className="inline-block bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-                    {program.level}
-                  </span>
-                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{program.title}</h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">{program.description}</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-      })}
 
       {/* Highlights Strip */}
       <section className="py-16 bg-gradient-to-r from-sky-50 via-amber-50 to-rose-50">
@@ -105,6 +76,33 @@ const Programmes = () => {
           </div>
         </div>
       </section>
+
+      {/* Program Levels */}
+      {programs.map((program, index) => {
+        const isReversed = index % 2 === 1;
+        return (
+          <section key={index} className={`${program.bg} py-16 md:py-24`}>
+            <div className="container mx-auto px-4">
+              <div className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-10 md:gap-16`}>
+                <div className="w-full md:w-1/2">
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className="w-full h-[300px] md:h-[400px] object-cover rounded-3xl shadow-warm"
+                  />
+                </div>
+                <div className="w-full md:w-1/2">
+                  <span className="inline-block bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-bold mb-4">
+                    {program.level}
+                  </span>
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{program.title}</h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed">{program.description}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary/5">
