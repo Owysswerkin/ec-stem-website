@@ -5,7 +5,7 @@ import { Users, Calendar, Clock, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 import programmesHero from '@/assets/programmes-hero.png';
-import parentsDuplo from '@/assets/parents-child-duplo.jpg';
+import earlyExplorers from '@/assets/early-explorers.png';
 import k1Robots from '@/assets/k1-robots-playing.png';
 import stemBuilding from '@/assets/stem-child-building.jpg';
 
@@ -17,7 +17,7 @@ const Programmes = () => {
       title: t('programmesPage.programs.earlyExplorers.title'),
       level: t('programmesPage.programs.earlyExplorers.level'),
       description: t('programmesPage.programs.earlyExplorers.description'),
-      image: parentsDuplo,
+      image: earlyExplorers,
       bg: 'bg-sky-50',
     },
     {
