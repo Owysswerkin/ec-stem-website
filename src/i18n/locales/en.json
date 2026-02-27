@@ -539,83 +539,68 @@
   },
   "forParentsPage": {
     "title": "For Enrichment Centre",
-    "subtitle": "Discover how our STEM programs nurture children's curiosity, creativity, and critical thinking through hands-on learning experiences.",
+    "subtitle": "Hands-on STEM enrichment that children love and parents trust.",
     "signUpTrial": "Sign Up for Trial Lesson",
-    "learningOutcomes": {
-      "title": "Learning Outcomes",
-      "description": "Our age-appropriate programs are designed to build essential skills and foster a love for learning at every stage of your child's development."
-    },
     "levels": {
       "n2": {
         "title": "Early Explorers",
         "level": "4 Years Old",
-        "description": "At this explorer stage, your child will engage in playful learning by exploring building blocks, enhancing their ability to interlock pieces and create simple structures. This hands-on experience is crafted to develop their fine motor skills, ignite problem-solving capabilities, and nurture their natural curiosity. By focusing on these key areas, we aim to lay a strong foundation for future STEM learning."
+        "description": "Hands-on play with building blocks to develop fine motor skills, problem-solving, and natural curiosity."
       },
       "k1": {
         "title": "Curious Creators",
         "level": "5 Years Old",
-        "description": "At this creator stage, we provide a dynamic environment where your child engages with simple tools to securely connect blocks. This hands-on experience enhances their coordination, precision, and fosters early engineering skills. Our program is designed to nurture creativity and collaboration through both guided and open-ended construction challenges."
+        "description": "Using simple tools to connect and build, developing coordination, precision, and early engineering skills."
       },
       "k2": {
         "title": "Super Solvers",
         "level": "6 Years Old",
-        "description": "At this solver stage, our program is designed to engage your child with hands-on experimentation that cultivates problem-solving, critical thinking, and engineering understanding. Each lesson introduces a new mechanism concept, allowing your child to explore gears and mechanisms in a fun, interactive way. Through exploration and play, we build a strong foundation for future learning and innovation."
+        "description": "Exploring gears and mechanisms through experiments that build critical thinking and engineering understanding."
       }
     },
     "highlights": {
-      "title": "Program Highlights",
       "duration": {
         "title": "Duration",
-        "description": "1 hour per session *timing may vary based on programs"
+        "description": "1 hour per session"
       },
       "classSize": {
         "title": "Class Size",
-        "description": "Up to 8 children per group"
+        "description": "Up to 8 children"
       },
       "flexible": {
-        "title": "Flexible Model",
-        "description": "Weekly enrichment / Holiday Camps / Themed Activities"
+        "title": "Flexible",
+        "description": "Weekly / Holiday / Events"
       },
       "materials": {
-        "title": "All Materials Provided",
-        "description": "Complete set up by our team"
+        "title": "All Materials",
+        "description": "We bring everything"
       }
     },
     "whyParentsLove": {
-      "title": "Why Do Parents Love Us",
-      "subtitle": "Join thousands of satisfied parents who have seen their children thrive through our STEM programs."
+      "title": "Why Parents Love Us"
     },
     "benefits": {
-      "development": {
-        "title": "Boost Child's Development",
-        "description": "Our STEM curriculum fosters essential 21st-century skills such as critical thinking, collaboration, and creativity. We nurture positive attitudes towards science, mathematics, and problem-solving."
-      },
-      "realWorld": {
-        "title": "Real World Applications",
-        "description": "Our programs provide practical, real-world experiences by exploring a variety of engaging topics. These activities connect their interests to everyday applications, fostering a deeper comprehension of the world around them."
-      },
       "robot": {
-        "title": "First Ever Robot Experience",
-        "description": "Our child-sized robot, Robo, acts as both a learning companion and teaching aid, enriching your child's educational journey."
+        "title": "Child-Sized Robot Companion",
+        "description": "Our robot Robo co-learns alongside your child as a teaching buddy."
       },
       "facilitators": {
-        "title": "Qualified Facilitators",
-        "description": "Our team comprises experienced ex-preschool teachers dedicated to meeting the diverse learning needs of every child."
+        "title": "Qualified Ex-Preschool Teachers",
+        "description": "Experienced educators who understand how young children learn best."
       },
       "quality": {
-        "title": "Guaranteed High Quality",
-        "description": "We offer small class sizes, a high-quality curriculum, and exceptional learning materials to ensure an outstanding experience for your child."
+        "title": "Small Classes, Big Impact",
+        "description": "Max 8 children per group with high-quality curriculum and materials."
       }
     },
     "nel": {
       "title": "100% Aligned with Singapore's NEL Framework",
-      "intro": "Our lessons reinforce key learning areas:",
       "items": {
-        "discovery": "Discovery of the World — exploring how things work",
-        "numeracy": "Numeracy — counting, matching, sorting, comparing",
-        "motor": "Motor Skills Development — fine motor skills, eye hand coordination",
-        "creative": "Creative Expression — design and imagination",
-        "social": "Social & Emotional Development — teamwork, sharing"
+        "discovery": "Discovery of the World",
+        "numeracy": "Numeracy",
+        "motor": "Motor Skills",
+        "creative": "Creative Expression",
+        "social": "Social & Emotional"
       }
     },
     "motto": "Think like a scientist, solve problems like an engineer.",
