@@ -97,6 +97,23 @@ const Centres = () => {
         </div>
       </section>
 
+      {/* Trial Class CTA */}
+      <section className="py-16 bg-gradient-to-br from-sunshine/10 via-background to-coral/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              Experience Our STEM Classes First-Hand
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Let your child discover the joy of hands-on STEM learning. Sign up for a FREE trial session today!
+            </p>
+            <Button size="lg" className="bg-sunshine hover:bg-sunshine/90 text-foreground font-semibold" asChild>
+              <Link to="/trial-class">Book a FREE Trial Class</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-primary to-primary/80">
         <div className="container mx-auto px-4">
