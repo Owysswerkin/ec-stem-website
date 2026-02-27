@@ -1,67 +1,57 @@
 
 
-# About Page Redesign - Colorful Blocks Style
+# Programmes Page Redesign
 
-## Overview
-Redesign the About page with a **Colorful Blocks** aesthetic: large rounded color blocks, the team photo as a wide banner background behind Mission and Vision, chunky bold typography, and vibrant section separations.
+## Changes
 
-## Design Changes
+### 1. Remove "Why Preschools Love Our Program" section
+Delete lines 105-299 (the entire bento grid section).
 
-### 1. Mission and Vision Section (Hero-style with Team Photo Background)
-**Current**: 2-column grid with team photo on the left, text on the right.
-**New**: Full-width section with `teamPhoto` as a background image, covered by a semi-transparent dark overlay. Mission and Vision text displayed large and bold on top.
+### 2. Add a hero banner at the top
+Use `classroom-activities.jpg` as a full-width hero background with a soft pastel overlay, similar to the About page style. Display the page title large and centered.
 
-- Team photo becomes `background-image` with `bg-cover bg-center`, minimum height ~70vh
-- Dark gradient overlay (`bg-black/50`) for text readability
-- Title in white, extra large (`text-4xl md:text-5xl lg:text-6xl`)
-- Mission and Vision headers in colored pill badges (blue for Mission, green for Vision)
-- Body text in white/light color, larger size (`text-lg md:text-xl`)
-- Mission and Vision stacked vertically, centered, with generous spacing
+### 3. Redesign the program levels as colorful image-backed cards
+Each of the 3 program cards gets a relevant background image:
+- **Early Explorers (N2)**: `parents-child-duplo.jpg` — children with hands-on play
+- **Curious Creators (K1)**: `k1-robots-playing.png` — kids with robots
+- **Super Solvers (K2)**: `stem-child-building.jpg` — child building
 
-### 2. Core Curriculum Section - No changes
-Keep the existing speech-bubble design as-is. It already fits the playful aesthetic.
+Layout: Stacked alternating rows (image left/text right, then flipped), large rounded blocks with soft pastel backgrounds per level (sky-50, amber-50, rose-50).
 
-### 3. Founder's Message Section - Bolder treatment
-- Wrap in a colored block background (e.g., `bg-amber-50` or `bg-orange-50`)
-- Increase quote text size to `text-xl md:text-2xl`
-- Add a large colored quotation mark decoration
-- Keep the existing 2-column layout with photo
+### 4. Keep the highlights section but move it below the program cards
+Restyle as a single horizontal strip with a soft gradient background, keeping the 4 highlight items (duration, class size, flexible, materials).
 
-### 4. Meet Our Teachers Section - No changes
-Already has the colorful flip cards and playful design. Kept as-is.
+### 5. Add a CTA section at the bottom
+Simple call-to-action block encouraging schools to partner, linking to the contact page.
 
-## Technical Details
+## Structure
 
-### File: `src/pages/About.tsx`
-
-**Lines 38-66 (Mission and Vision section)** - Replace with:
-- Remove the `<img>` tag for `teamPhoto` from the grid
-- Convert section to use inline `backgroundImage` style with `teamPhoto`
-- Add overlay div with dark gradient
-- Restructure content to be centered, single-column, with large white text
-- Mission and Vision headers in colored rounded badges/pills
-
-**Lines 124-166 (Founder section)** - Update:
-- Add warm background color (`bg-amber-50`)
-- Increase blockquote font size
-- Add decorative large quotation mark element
-
-**No new imports needed** - all assets already imported.
-**No translation file changes** - using existing i18n keys.
-
-### Structure for new Mission/Vision section:
 ```text
-section (relative, min-h-[70vh], bg-cover, bg-center)
-  +-- backgroundImage: teamPhoto (inline style)
-  +-- overlay div (absolute inset-0, bg-gradient-to-b from-black/60 to-black/40)
-  +-- content div (relative z-10, centered, text-white)
-       +-- h2 title (text-5xl, bold, white)
-       +-- flex/grid with 2 blocks:
-            +-- Mission block (bg-blue-500/20 backdrop-blur rounded-3xl)
-            |    +-- pill badge header
-            |    +-- body text (text-lg/xl, white)
-            +-- Vision block (bg-green-500/20 backdrop-blur rounded-3xl)
-                 +-- pill badge header
-                 +-- body text (text-lg/xl, white)
+Hero Banner (classroom-activities.jpg background, pastel overlay)
+  +-- Page title
+
+Program Level 1 - Early Explorers (bg-sky-50)
+  +-- Row: image left | text right
+
+Program Level 2 - Curious Creators (bg-amber-50)  
+  +-- Row: text left | image right
+
+Program Level 3 - Super Solvers (bg-rose-50)
+  +-- Row: image left | text right
+
+Highlights Strip (soft gradient)
+  +-- 4 items in a row
+
+CTA Section
+  +-- "Partner with us" button → /contact
 ```
+
+## File Changes
+- `src/pages/Programmes.tsx` — full redesign
+
+## Images Used
+- `classroom-activities.jpg` (hero)
+- `parents-child-duplo.jpg` (Early Explorers)
+- `k1-robots-playing.png` (Curious Creators)
+- `stem-child-building.jpg` (Super Solvers)
 
