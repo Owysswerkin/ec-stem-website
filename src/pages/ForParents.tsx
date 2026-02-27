@@ -93,7 +93,7 @@ const ForParents = () => {
           <p className="text-lg md:text-xl text-background/90 mb-8 drop-shadow-sm">
             {t('forParentsPage.subtitle')}
           </p>
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="bg-sunshine hover:bg-sunshine/90 text-foreground font-semibold">
             <Link to="/trial-class">
               {t('forParentsPage.signUpTrial')}
             </Link>
