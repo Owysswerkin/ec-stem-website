@@ -540,7 +540,7 @@
   "forParentsPage": {
     "title": "For Enrichment Centre",
     "subtitle": "Discover how our STEM programs nurture children's curiosity, creativity, and critical thinking through hands-on learning experiences.",
-    "downloadBrochure": "Download Brochure",
+    "signUpTrial": "Sign Up for Trial Lesson",
     "learningOutcomes": {
       "title": "Learning Outcomes",
       "description": "Our age-appropriate programs are designed to build essential skills and foster a love for learning at every stage of your child's development."
@@ -548,17 +548,17 @@
     "levels": {
       "n2": {
         "title": "Early Explorers",
-        "level": "Nursery 2",
+        "level": "4 Years Old",
         "description": "At this explorer stage, your child will engage in playful learning by exploring building blocks, enhancing their ability to interlock pieces and create simple structures. This hands-on experience is crafted to develop their fine motor skills, ignite problem-solving capabilities, and nurture their natural curiosity. By focusing on these key areas, we aim to lay a strong foundation for future STEM learning."
       },
       "k1": {
         "title": "Curious Creators",
-        "level": "Kindergarten 1",
+        "level": "5 Years Old",
         "description": "At this creator stage, we provide a dynamic environment where your child engages with simple tools to securely connect blocks. This hands-on experience enhances their coordination, precision, and fosters early engineering skills. Our program is designed to nurture creativity and collaboration through both guided and open-ended construction challenges."
       },
       "k2": {
         "title": "Super Solvers",
-        "level": "Kindergarten 2",
+        "level": "6 Years Old",
         "description": "At this solver stage, our program is designed to engage your child with hands-on experimentation that cultivates problem-solving, critical thinking, and engineering understanding. Each lesson introduces a new mechanism concept, allowing your child to explore gears and mechanisms in a fun, interactive way. Through exploration and play, we build a strong foundation for future learning and innovation."
       }
     },
@@ -619,7 +619,7 @@
       }
     },
     "motto": "Think like a scientist, solve problems like an engineer.",
-    "cta": "Register Your Interest"
+    "cta": "Sign Up for Trial Lesson"
   },
   "joinOurTeamPage": {
     "hero": {

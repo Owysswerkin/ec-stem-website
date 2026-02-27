@@ -113,9 +113,9 @@ const ForParents = () => {
               {t('forParentsPage.subtitle')}
             </p>
             <Button asChild size="lg">
-              <a href="/Centres_EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
-                {t('forParentsPage.downloadBrochure')}
-              </a>
+              <Link to="/trial-class">
+                {t('forParentsPage.signUpTrial')}
+              </Link>
             </Button>
           </div>
         </div>
@@ -248,8 +248,8 @@ const ForParents = () => {
           <blockquote className="text-2xl md:text-3xl font-bold text-primary-foreground max-w-3xl mx-auto mb-8">
             "{t('forParentsPage.motto')}"
           </blockquote>
-          <Button size="lg" className="bg-[#F8B529] hover:bg-[#e6a418] text-white font-semibold" asChild>
-            <Link to="/contact">{t('forParentsPage.cta')}</Link>
+          <Button size="lg" className="bg-sunshine hover:bg-sunshine/90 text-foreground font-semibold" asChild>
+            <Link to="/trial-class">{t('forParentsPage.cta')}</Link>
           </Button>
         </div>
       </section>
