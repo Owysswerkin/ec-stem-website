@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useTranslation } from 'react-i18next';
 const Contact = () => {
   const {
@@ -118,31 +119,26 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[{
-            question: t('contactPage.faq.questions.whatIsEcStem.question'),
-            answer: t('contactPage.faq.questions.whatIsEcStem.answer')
-          }, {
-            question: t('contactPage.faq.questions.howItWorks.question'),
-            answer: t('contactPage.faq.questions.howItWorks.answer')
-          }, {
-            question: t('contactPage.faq.questions.whyChooseUs.question'),
-            answer: t('contactPage.faq.questions.whyChooseUs.answer')
-          }, {
-            question: t('contactPage.faq.questions.safetyConcerns.question'),
-            answer: t('contactPage.faq.questions.safetyConcerns.answer')
-          }, {
-            question: t('contactPage.faq.questions.costEffective.question'),
-            answer: t('contactPage.faq.questions.costEffective.answer')
-          }, {
-            question: t('contactPage.faq.questions.getStarted.question'),
-            answer: t('contactPage.faq.questions.getStarted.answer')
-          }].map((faq, index) => <Card key={index} className="border-none shadow-gentle">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">{faq.question}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{faq.answer}</p>
-                </CardContent>
-              </Card>)}
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              {[
+                { question: t('contactPage.faq.questions.whatIsEcStem.question'), answer: t('contactPage.faq.questions.whatIsEcStem.answer'), color: 'bg-sky/10 border-sky/30' },
+                { question: t('contactPage.faq.questions.howItWorks.question'), answer: t('contactPage.faq.questions.howItWorks.answer'), color: 'bg-sunshine/10 border-sunshine/30' },
+                { question: t('contactPage.faq.questions.whyChooseUs.question'), answer: t('contactPage.faq.questions.whyChooseUs.answer'), color: 'bg-coral/10 border-coral/30' },
+                { question: t('contactPage.faq.questions.safetyConcerns.question'), answer: t('contactPage.faq.questions.safetyConcerns.answer'), color: 'bg-leaf/10 border-leaf/30' },
+                { question: t('contactPage.faq.questions.costEffective.question'), answer: t('contactPage.faq.questions.costEffective.answer'), color: 'bg-primary/10 border-primary/30' },
+                { question: t('contactPage.faq.questions.getStarted.question'), answer: t('contactPage.faq.questions.getStarted.answer'), color: 'bg-sunshine/10 border-sunshine/30' },
+              ].map((faq, index) => (
+                <AccordionItem key={index} value={`faq-${index}`} className={`${faq.color} border rounded-2xl px-6 overflow-hidden`}>
+                  <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-base pb-5">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
