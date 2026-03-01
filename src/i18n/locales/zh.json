@@ -635,7 +635,8 @@
       "title": "准备好做出改变了吗？",
       "body": "将您的简历发送至 hr@ecstem.education 或在我们的LinkedIn页面上探索开放职位。我们期待您的消息。",
       "emailButton": "发送简历",
-    "linkedinButton": "在LinkedIn查看"
+      "linkedinButton": "在LinkedIn查看"
+    }
   },
   "home": {
     "hero": {
@@ -785,5 +786,4 @@
       "description": "与Ec stem一起构建未来。我们正在寻找充满热情的教育者来激励下一代STEM创新者。"
     }
   }
-}
 }

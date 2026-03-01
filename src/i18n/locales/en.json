@@ -635,7 +635,8 @@
       "title": "Ready to Make a Difference?",
       "body": "Send your resume to hr@ecstem.education or explore open positions on our LinkedIn page. We'd love to hear from you.",
       "emailButton": "Send Your Resume",
-    "linkedinButton": "View on LinkedIn"
+      "linkedinButton": "View on LinkedIn"
+    }
   },
   "home": {
     "hero": {
@@ -785,5 +786,4 @@
       "description": "Build the future with Ec stem. We're looking for passionate educators to inspire the next generation of STEM innovators."
     }
   }
-}
 }
