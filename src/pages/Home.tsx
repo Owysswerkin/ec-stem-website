@@ -333,7 +333,7 @@ const Home = () => {
           </Button>
 
           <p className="mt-6 text-muted-foreground text-lg">
-            <Link to="/programmes" className="text-primary hover:underline font-medium">
+            <Link to="/programmes/for-parents" className="text-primary hover:underline font-medium">
               View our programs →
             </Link>
           </p>
