@@ -90,20 +90,20 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             {/* Main headline */}
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-[1.1] tracking-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-              Early Childhood
+              {t('home.hero.line1')}
               <br />
               <span style={{ color: '#2980B9' }}>S</span>
               <span style={{ color: '#E74C3C' }}>T</span>
               <span style={{ color: '#F1C40F' }}>E</span>
               <span style={{ color: '#27AE60' }}>M</span>
-              {' '}Education
+              {' '}{t('home.hero.line2')}
               <br />
-              <span className="text-foreground">in Singapore</span>
+              <span className="text-foreground">{t('home.hero.line3')}</span>
             </h1>
             
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              From <span className="inline-block relative bg-red-100 text-red-600 font-semibold px-3 py-0.5 rounded-full">'I can't'<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-red-100 rotate-45"></span></span> to <span className="inline-block relative bg-green-100 text-green-700 font-semibold px-3 py-0.5 rounded-full">'Let's fix it!'<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-green-100 rotate-45"></span></span> Our hands-on STEM play empowers your child to manage frustration and find solutions with others. We give them the tools to look at any challenge and say, <span className="inline-block relative bg-primary/15 text-primary font-semibold px-3 py-0.5 rounded-full">'I've got this.'<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-primary/15 rotate-45"></span></span>
+              {t('home.hero.fromTo.prefix')} <span className="inline-block relative bg-red-100 text-red-600 font-semibold px-3 py-0.5 rounded-full">{t('home.hero.fromTo.iCant')}<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-red-100 rotate-45"></span></span> {t('home.hero.fromTo.to')} <span className="inline-block relative bg-green-100 text-green-700 font-semibold px-3 py-0.5 rounded-full">{t('home.hero.fromTo.letsFixIt')}<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-green-100 rotate-45"></span></span> {t('home.hero.fromTo.body')} <span className="inline-block relative bg-primary/15 text-primary font-semibold px-3 py-0.5 rounded-full">{t('home.hero.fromTo.iveGotThis')}<span className="absolute -bottom-1.5 left-4 w-2.5 h-2.5 bg-primary/15 rotate-45"></span></span>
             </p>
             
             {/* CTA Buttons */}
@@ -115,7 +115,7 @@ const Home = () => {
                 asChild
               >
                 <Link to="/trial-class">
-                  Sign Up for a Trial Class
+                  {t('home.hero.trialCta')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -126,7 +126,7 @@ const Home = () => {
                 asChild
               >
                 <a href="/EC_STEM_Booklet.pdf" target="_blank" rel="noopener noreferrer">
-                  Download Brochure
+                  {t('home.hero.brochureCta')}
                 </a>
               </Button>
             </div>
@@ -146,7 +146,7 @@ const Home = () => {
           {/* Section Title */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Building Blocks of Early <span className="text-primary">STEM</span>
+              {t('home.buildingBlocks.title')} <span className="text-primary">STEM</span>
             </h2>
           </div>
 
@@ -159,7 +159,7 @@ const Home = () => {
                 <div className="w-5 h-3 rounded-full bg-red-600 border-b-2 border-red-700 shadow-inner" />
               </div>
               <div className="bg-red-500 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-red-700">
-                <span className="text-white font-bold text-sm md:text-base tracking-wide">Observation</span>
+                <span className="text-white font-bold text-sm md:text-base tracking-wide">{t('home.buildingBlocks.observation')}</span>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ const Home = () => {
                 <div className="w-5 h-3 rounded-full bg-green-600 border-b-2 border-green-700 shadow-inner" />
               </div>
               <div className="bg-green-500 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-green-700">
-                <span className="text-white font-bold text-sm md:text-base tracking-wide">Exploration</span>
+                <span className="text-white font-bold text-sm md:text-base tracking-wide">{t('home.buildingBlocks.exploration')}</span>
               </div>
             </div>
 
@@ -181,7 +181,7 @@ const Home = () => {
                 <div className="w-5 h-3 rounded-full bg-yellow-500 border-b-2 border-yellow-600 shadow-inner" />
               </div>
               <div className="bg-yellow-400 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-yellow-600">
-                <span className="text-white font-bold text-sm md:text-base tracking-wide drop-shadow-sm">Imagination</span>
+                <span className="text-white font-bold text-sm md:text-base tracking-wide drop-shadow-sm">{t('home.buildingBlocks.imagination')}</span>
               </div>
             </div>
 
@@ -192,56 +192,56 @@ const Home = () => {
                 <div className="w-5 h-3 rounded-full bg-blue-600 border-b-2 border-blue-700 shadow-inner" />
               </div>
               <div className="bg-blue-500 rounded-lg p-6 md:p-8 text-center shadow-[inset_0_-4px_0_0_rgba(0,0,0,0.2),0_4px_8px_rgba(0,0,0,0.15)] border-b-4 border-blue-700">
-                <span className="text-white font-bold text-sm md:text-base tracking-wide">Construction</span>
+                <span className="text-white font-bold text-sm md:text-base tracking-wide">{t('home.buildingBlocks.construction')}</span>
               </div>
             </div>
           </div>
 
           {/* Our Core Curriculum */}
           <div className="text-center mb-10">
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground">Our Core Curriculum</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground">{t('home.coreCurriculum.title')}</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* FIX-IT Mindset */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-foreground mb-3">"FIX-IT" <span className="text-red-500">Mindset</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">{t('home.coreCurriculum.fixIt.label')} <span className="text-red-500">{t('home.coreCurriculum.fixIt.highlight')}</span></h4>
               <div className="relative inline-block mb-4">
                 <div className="bg-red-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
-                  "I try again"
+                  {t('home.coreCurriculum.fixIt.bubble')}
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-red-500" />
               </div>
               <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
-                We direct children to view challenges as opportunities to learn, persist, and get better.
+                {t('home.coreCurriculum.fixIt.description')}
               </p>
             </div>
 
             {/* Applied INNOVATION */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-foreground mb-3">Applied <span className="text-blue-500">INNOVATION</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">{t('home.coreCurriculum.innovation.label')} <span className="text-blue-500">{t('home.coreCurriculum.innovation.highlight')}</span></h4>
               <div className="relative inline-block mb-4">
                 <div className="bg-blue-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
-                  "I think and figure things out"
+                  {t('home.coreCurriculum.innovation.bubble')}
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-blue-500" />
               </div>
               <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
-                We guide children toward solutions that are useful, testable, and rooted in real-world needs.
+                {t('home.coreCurriculum.innovation.description')}
               </p>
             </div>
 
             {/* CONSCIENTIOUS Making */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-foreground mb-3">CONSCIENTIOUS <span className="text-green-500">Making</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">{t('home.coreCurriculum.conscientious.label')} <span className="text-green-500">{t('home.coreCurriculum.conscientious.highlight')}</span></h4>
               <div className="relative inline-block mb-4">
                 <div className="bg-green-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
-                  "I care for people and the planet"
+                  {t('home.coreCurriculum.conscientious.bubble')}
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-green-500" />
               </div>
               <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
-                We teach kids to design with empathy, safety, and consideration for our world.
+                {t('home.coreCurriculum.conscientious.description')}
               </p>
             </div>
           </div>
@@ -249,27 +249,29 @@ const Home = () => {
           {/* Side-by-side images + Our Methodology */}
           <div className="mt-24 max-w-5xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-3">
-              Learning Through Play, with the "Fix-it" <span className="text-primary">Mindset</span>
+              {t('home.methodology.title')} <span className="text-primary">{t('home.methodology.highlight')}</span>
             </h3>
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8 leading-relaxed">
-              Our hands-on approach turns everyday curiosity into meaningful STEM experiences, building confidence one challenge at a time.
+              {t('home.methodology.description')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <img
                 src={stemChildBuilding}
-                alt="Child building with STEM materials"
+                alt={t('home.methodology.imageAlt1')}
+                loading="lazy"
                 className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
               />
               <img
                 src={stemChildScrewdriver}
-                alt="Child using screwdriver in STEM activity"
+                alt={t('home.methodology.imageAlt2')}
+                loading="lazy"
                 className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
               />
             </div>
             <div className="text-center">
               <Link to="/our-methodology">
                 <Button variant="outline" size="lg" className="rounded-full">
-                  Our Methodology <ArrowRight className="ml-2 w-4 h-4" />
+                  {t('home.methodology.button')} <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
             </div>
@@ -322,19 +324,19 @@ const Home = () => {
         <section className="py-20 bg-teal-soft relative overflow-hidden">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-            Ready to turn your child's "I can't" into <span className="text-primary">"I'll try again."</span>?
+            {t('home.cta.title')} <span className="text-primary">{t('home.cta.highlight')}</span>
           </h2>
 
           <Button variant="hero" size="hero" asChild>
             <Link to="/trial-class">
-              Book a FREE Trial Session
+              {t('home.cta.button')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
 
           <p className="mt-6 text-muted-foreground text-lg">
             <Link to="/programmes/for-parents" className="text-primary hover:underline font-medium">
-              View our programs →
+              {t('home.cta.viewPrograms')}
             </Link>
           </p>
         </div>

@@ -48,7 +48,7 @@ const Contact = () => {
             <Card className="border-none shadow-warm">
               
               <CardContent>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8_df3eLRk1e8RAx_sGPJZBb0KStutvqI2EsIW-c8RE_IoMQ/viewform?embedded=true" width="100%" height="1200" frameBorder="0" marginHeight={0} marginWidth={0} className="rounded-lg">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8_df3eLRk1e8RAx_sGPJZBb0KStutvqI2EsIW-c8RE_IoMQ/viewform?embedded=true" width="100%" height="1200" frameBorder="0" marginHeight={0} marginWidth={0} loading="lazy" className="rounded-lg">
                   Loading…
                 </iframe>
               </CardContent>

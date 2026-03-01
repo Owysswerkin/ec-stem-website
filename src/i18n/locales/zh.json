@@ -521,7 +521,7 @@
       "phone": "+65 8644 5667",
       "email": "hello@ecstem.education"
     },
-    "copyright": "© 2025 Ec stem. 版权所有。",
+    "copyright": "© 2026 Ec stem. 版权所有。",
     "privacy": "隐私政策",
     "terms": "服务条款"
   },
@@ -635,7 +635,155 @@
       "title": "准备好做出改变了吗？",
       "body": "将您的简历发送至 hr@ecstem.education 或在我们的LinkedIn页面上探索开放职位。我们期待您的消息。",
       "emailButton": "发送简历",
-      "linkedinButton": "在LinkedIn查看"
+    "linkedinButton": "在LinkedIn查看"
+  },
+  "home": {
+    "hero": {
+      "line1": "幼儿",
+      "line2": "教育",
+      "line3": "新加坡",
+      "fromTo": {
+        "prefix": "从",
+        "iCant": "'我不会'",
+        "to": "到",
+        "letsFixIt": "'让我们来修好它！'",
+        "body": "我们的动手STEM游戏帮助您的孩子学会管理挫折感，与他人一起找到解决方案。我们赋予他们面对任何挑战时说出",
+        "iveGotThis": "'我能行。'"
+      },
+      "trialCta": "报名试课",
+      "brochureCta": "下载手册"
+    },
+    "buildingBlocks": {
+      "title": "早期STEM的基石",
+      "observation": "观察",
+      "exploration": "探索",
+      "imagination": "想象",
+      "construction": "建造"
+    },
+    "coreCurriculum": {
+      "title": "我们的核心课程",
+      "fixIt": {
+        "label": "\"修好它\"",
+        "highlight": "心态",
+        "bubble": "\"我再试一次\"",
+        "description": "我们引导孩子们将挑战视为学习、坚持和进步的机会。"
+      },
+      "innovation": {
+        "label": "应用",
+        "highlight": "创新",
+        "bubble": "\"我思考并解决问题\"",
+        "description": "我们引导孩子们找到实用的、可测试的、扎根于现实需求的解决方案。"
+      },
+      "conscientious": {
+        "label": "用心",
+        "highlight": "制作",
+        "bubble": "\"我关心人和地球\"",
+        "description": "我们教孩子们以同理心、安全意识和对世界的关爱来设计。"
+      }
+    },
+    "methodology": {
+      "title": "通过游戏学习，培养\"修好它\"",
+      "highlight": "心态",
+      "description": "我们的动手方法将日常好奇心转化为有意义的STEM体验，一个挑战一个挑战地建立自信心。",
+      "imageAlt1": "孩子使用STEM材料搭建",
+      "imageAlt2": "孩子在STEM活动中使用螺丝刀",
+      "button": "我们的方法论"
+    },
+    "cta": {
+      "title": "准备好让您的孩子从\"我不会\"变成",
+      "highlight": "\"我再试一次。\"",
+      "button": "预约免费试课",
+      "viewPrograms": "查看我们的课程 →"
+    }
+  },
+  "trialClassPage": {
+    "title": "报名试课",
+    "subtitle": "亲身体验我们的动手STEM学习。填写下面的表格为您的孩子注册试课。"
+  },
+  "centresPage": {
+    "badge": "我们的合作伙伴中心",
+    "heroTitle": "我们的地点",
+    "heroSubtitle": "了解Ec stem在新加坡各地为年轻学习者带来动手STEM教育的地点。",
+    "whereWeTeach": "我们在哪里教学",
+    "whereWeTeachSubtitle": "我们与优质学前教育中心和丰富课程中心合作，为孩子们带来我们的STEM课程。",
+    "forParents": "给家长",
+    "forParentsSubtitle": "让您的孩子发现动手STEM学习的乐趣。今天就报名免费试课！",
+    "bookTrial": "预约免费试课",
+    "partnerTitle": "想让Ec stem进入您的中心？",
+    "partnerSubtitle": "与我们合作，为您的学前教育中心或课程中心带来引人入胜的STEM教育。",
+    "contactUs": "联系我们"
+  },
+  "methodologyPage": {
+    "hero": {
+      "title": "我们的方法论",
+      "subtitle": "建立孩子的自信心",
+      "narrative": "我们帮助孩子们发展强大的内在叙事：",
+      "speechBubble": "\"没有我解决不了的问题。\"",
+      "foundation": "这是培养韧性、自信和创造力的基础。探索自信心方法论，每个挑战都能建立更强的自我意识。",
+      "imageAlt": "孩子使用STEM材料搭建"
+    },
+    "systematic": {
+      "titleSuffix": "方法",
+      "description": "我们通过综合性的动手学习将科学、技术、工程和数学联系起来。每个活动都是有目的的游戏，精心设计以激发发现并实现明确的学习目标。"
+    },
+    "quote": "\"没有太傻的问题，\n没有太大的想法。\"",
+    "productiveStruggle": {
+      "title": "建设性挑战",
+      "description": "我们引导孩子们度过挑战，培养韧性。这个学习的\"最佳区域\"——努力与支持相遇的地方——建立毅力和深层理解。"
+    },
+    "empoweringFixers": {
+      "title": "赋能修复者",
+      "description": "我们的方法论塑造积极主动的问题解决者。孩子们学会将挑战视为谜题，配备创新、修补和改进的心态和工具。",
+      "imageAlt": "孩子动手使用STEM工具",
+      "cta": "准备好看到您孩子的自信心飞翔了吗？\n亲身体验我们的动手STEM学习。",
+      "button": "预约试课"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Ec stem | 新加坡幼儿STEM教育",
+      "description": "Ec stem为新加坡4-6岁学龄前儿童提供动手STEM丰富课程。通过游戏培养自信心、好奇心和解决问题的能力。"
+    },
+    "about": {
+      "title": "关于Ec stem | 我们的使命、愿景和团队",
+      "description": "了解Ec stem通过专业团队和成熟方法论为新加坡幼儿学习者带来创新STEM教育的使命。"
+    },
+    "programmes": {
+      "title": "STEM丰富课程 | Ec stem 新加坡",
+      "description": "探索Ec stem为学龄前儿童设计的基于游戏的STEM课程，符合新加坡NEL框架。适合4-6岁。"
+    },
+    "forParents": {
+      "title": "给家长 | Ec stem 试课和丰富课程",
+      "description": "孩子喜爱的动手STEM丰富课程。小班教学、资深教师和机器人学习伙伴。今天就预约免费试课。"
+    },
+    "contact": {
+      "title": "联系Ec stem | 联系我们",
+      "description": "联系Ec stem了解STEM丰富课程咨询、合作机会或为您的学前教育中心安排咨询。"
+    },
+    "centres": {
+      "title": "我们的地点 | Ec stem 新加坡合作伙伴中心",
+      "description": "在新加坡各地找到Ec stem合作伙伴中心，为年轻学习者提供动手STEM教育。"
+    },
+    "trialClass": {
+      "title": "预约免费试课 | Ec stem 新加坡",
+      "description": "为您的孩子报名免费STEM试课。亲身体验我们的动手学习方法。"
+    },
+    "methodology": {
+      "title": "我们的方法论 | 自信心方法",
+      "description": "探索自信心方法论——通过有目的的STEM游戏培养韧性、自信和解决问题的能力。"
+    },
+    "learningBuddy": {
+      "title": "乐学伙伴 | AI机器人伙伴 | Ec stem",
+      "description": "认识我们的AI驱动乐学伙伴机器人，在STEM课堂上与孩子们共同学习，培养自信和好奇心。"
+    },
+    "whatsNew": {
+      "title": "最新动态 | Ec stem 新闻和活动",
+      "description": "了解Ec stem新加坡的最新文章、新闻和即将举行的活动。"
+    },
+    "joinTeam": {
+      "title": "加入我们的团队 | Ec stem 职业机会",
+      "description": "与Ec stem一起构建未来。我们正在寻找充满热情的教育者来激励下一代STEM创新者。"
     }
   }
+}
 }

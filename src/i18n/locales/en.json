@@ -521,7 +521,7 @@
       "phone": "+65 8644 5667",
       "email": "hello@ecstem.education"
     },
-    "copyright": "© 2025 Ec stem. All rights reserved.",
+    "copyright": "© 2026 Ec stem. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -635,7 +635,155 @@
       "title": "Ready to Make a Difference?",
       "body": "Send your resume to hr@ecstem.education or explore open positions on our LinkedIn page. We'd love to hear from you.",
       "emailButton": "Send Your Resume",
-      "linkedinButton": "View on LinkedIn"
+    "linkedinButton": "View on LinkedIn"
+  },
+  "home": {
+    "hero": {
+      "line1": "Early Childhood",
+      "line2": "Education",
+      "line3": "in Singapore",
+      "fromTo": {
+        "prefix": "From",
+        "iCant": "'I can't'",
+        "to": "to",
+        "letsFixIt": "'Let's fix it!'",
+        "body": "Our hands-on STEM play empowers your child to manage frustration and find solutions with others. We give them the tools to look at any challenge and say,",
+        "iveGotThis": "'I've got this.'"
+      },
+      "trialCta": "Sign Up for a Trial Class",
+      "brochureCta": "Download Brochure"
+    },
+    "buildingBlocks": {
+      "title": "Building Blocks of Early",
+      "observation": "Observation",
+      "exploration": "Exploration",
+      "imagination": "Imagination",
+      "construction": "Construction"
+    },
+    "coreCurriculum": {
+      "title": "Our Core Curriculum",
+      "fixIt": {
+        "label": "\"FIX-IT\"",
+        "highlight": "Mindset",
+        "bubble": "\"I try again\"",
+        "description": "We direct children to view challenges as opportunities to learn, persist, and get better."
+      },
+      "innovation": {
+        "label": "Applied",
+        "highlight": "INNOVATION",
+        "bubble": "\"I think and figure things out\"",
+        "description": "We guide children toward solutions that are useful, testable, and rooted in real-world needs."
+      },
+      "conscientious": {
+        "label": "CONSCIENTIOUS",
+        "highlight": "Making",
+        "bubble": "\"I care for people and the planet\"",
+        "description": "We teach kids to design with empathy, safety, and consideration for our world."
+      }
+    },
+    "methodology": {
+      "title": "Learning Through Play, with the \"Fix-it\"",
+      "highlight": "Mindset",
+      "description": "Our hands-on approach turns everyday curiosity into meaningful STEM experiences, building confidence one challenge at a time.",
+      "imageAlt1": "Child building with STEM materials",
+      "imageAlt2": "Child using screwdriver in STEM activity",
+      "button": "Our Methodology"
+    },
+    "cta": {
+      "title": "Ready to turn your child's \"I can't\" into",
+      "highlight": "\"I'll try again.\"",
+      "button": "Book a FREE Trial Session",
+      "viewPrograms": "View our programs →"
+    }
+  },
+  "trialClassPage": {
+    "title": "Sign Up for a Trial Class",
+    "subtitle": "Experience our hands-on STEM learning first-hand. Fill in the form below to register your child for a trial class."
+  },
+  "centresPage": {
+    "badge": "Our Partner Centres",
+    "heroTitle": "Our Locations",
+    "heroSubtitle": "Discover where Ec stem brings hands-on STEM education to young learners across Singapore.",
+    "whereWeTeach": "Where We Teach",
+    "whereWeTeachSubtitle": "We partner with quality preschools and enrichment centres to bring our STEM curriculum to children.",
+    "forParents": "For Parents",
+    "forParentsSubtitle": "Let your child discover the joy of hands-on STEM learning. Sign up for a FREE trial session today!",
+    "bookTrial": "Book a FREE Trial Class",
+    "partnerTitle": "Want Ec stem at Your Centre?",
+    "partnerSubtitle": "Partner with us to bring engaging STEM education to your preschool or enrichment centre.",
+    "contactUs": "Contact Us"
+  },
+  "methodologyPage": {
+    "hero": {
+      "title": "Our Methodology",
+      "subtitle": "Building a child's Self-Ecstem",
+      "narrative": "We help our children develop a powerful internal narrative:",
+      "speechBubble": "\"There is no problem I can't solve.\"",
+      "foundation": "This is the foundation for a resilient, confident, and inventive future. Discover the Self-Ecstem Methodology where every challenge builds a stronger sense of self.",
+      "imageAlt": "Child building with STEM materials"
+    },
+    "systematic": {
+      "titleSuffix": "Approach",
+      "description": "We connect science, technology, engineering, and mathematics through integrated, hands-on learning. Every activity is purposeful play, meticulously designed to spark discovery and achieve clear learning objectives."
+    },
+    "quote": "\"No question is too silly,\nNo idea is too big.\"",
+    "productiveStruggle": {
+      "title": "Productive Struggle",
+      "description": "We guide children through challenges, fostering resilience. This \"sweet spot\" of learning—where effort meets support—builds perseverance and deep understanding."
+    },
+    "empoweringFixers": {
+      "title": "Empowering Fixers",
+      "description": "Our methodology shapes proactive problem-solvers. Children learn to see challenges as puzzles, equipped with the mindset and tools to innovate, tinker, and improve.",
+      "imageAlt": "Child hands-on with STEM tools",
+      "cta": "Ready to see your child's confidence soar?\nExperience our hands-on STEM learning firsthand.",
+      "button": "Book a Trial Class"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Ec stem | Early Childhood STEM Education in Singapore",
+      "description": "Ec stem provides hands-on STEM enrichment for preschoolers aged 4-6 in Singapore. Build confidence, curiosity, and problem-solving skills through play."
+    },
+    "about": {
+      "title": "About Ec stem | Our Mission, Vision & Team",
+      "description": "Learn about Ec stem's mission to bring innovative STEM education to early childhood learners in Singapore through our expert team and proven methodology."
+    },
+    "programmes": {
+      "title": "STEM Enrichment Programmes | Ec stem Singapore",
+      "description": "Discover Ec stem's play-based STEM programmes for preschoolers, aligned with Singapore's NEL Framework. Ages 4-6."
+    },
+    "forParents": {
+      "title": "For Parents | Ec stem Trial Classes & Enrichment",
+      "description": "Hands-on STEM enrichment your child will love. Small classes, qualified teachers, and a robot learning buddy. Book a free trial today."
+    },
+    "contact": {
+      "title": "Contact Ec stem | Get in Touch",
+      "description": "Contact Ec stem for STEM enrichment enquiries, partnership opportunities, or to schedule a consultation for your preschool."
+    },
+    "centres": {
+      "title": "Our Locations | Ec stem Partner Centres in Singapore",
+      "description": "Find Ec stem partner centres across Singapore offering hands-on STEM education for young learners."
+    },
+    "trialClass": {
+      "title": "Book a Free Trial Class | Ec stem Singapore",
+      "description": "Sign up for a free STEM trial class for your child. Experience our hands-on learning approach first-hand."
+    },
+    "methodology": {
+      "title": "Our Methodology | Self-Ecstem Approach",
+      "description": "Discover the Self-Ecstem methodology — building resilience, confidence, and problem-solving through purposeful STEM play."
+    },
+    "learningBuddy": {
+      "title": "Learning Buddy | AI Robot Companion | Ec stem",
+      "description": "Meet our AI-powered Learning Buddy robot that co-learns with children in STEM classes, building confidence and curiosity."
+    },
+    "whatsNew": {
+      "title": "What's New | Ec stem News & Events",
+      "description": "Stay updated with the latest articles, news, and upcoming events from Ec stem Singapore."
+    },
+    "joinTeam": {
+      "title": "Join Our Team | Careers at Ec stem",
+      "description": "Build the future with Ec stem. We're looking for passionate educators to inspire the next generation of STEM innovators."
     }
   }
+}
 }
