@@ -1,125 +1,62 @@
 
 
-## Site Audit: SEO, Speed, Cleanup & Chinese Translation
+## SEO Audit Report
 
-### 1. Unused Assets (files in `src/assets/` not imported anywhere)
-
-The following 14 image files are never imported or referenced in any component:
-
-- `booster-logo.png`
-- `booster-robotics-logo.png`
-- `classroom-activities.jpg`
-- `ec-stem-logo-white.jpg`
-- `ec-stem-logo.jpg`
-- `gear-clippy-character.jpg`
-- `hero-preschool.jpg`
-- `hero-robot-classroom.png`
-- `holiday-stem-trial-banner.jpg`
-- `ms-huang-founder-portrait.jpg`
-- `ms-huang-founder.jpg`
-- `ms-huang-new.jpg`
-- `ms-huang-portrait.jpg`
-- `outdoor-play.jpg`
-- `parents-child-duplo.jpg`
-- `preschooler-scientist.jpg`
-- `principal-portrait.jpg`
-- `team-gear-avatar.jpg`
-- `teacher-clairabel.jpg` (Teacher Clairabel exists in translation but is no longer in the About page team array)
-
-**Action**: Delete all unused assets to reduce bundle size.
+### What's Working Well
+- Dynamic per-page `<title>` and `<meta description>` via SEOHead component with localized translations
+- Canonical URLs dynamically set per page
+- sitemap.xml is up-to-date with all current routes and 2026 dates
+- robots.txt properly configured with sitemap reference
+- Route-level code splitting with React.lazy() for performance
+- `loading="lazy"` on below-fold images and iframes
+- Google Analytics (gtag) and Microsoft Clarity tracking in place
+- Google Search Console verification file present
+- OpenGraph and Twitter Card meta tags in index.html
 
 ---
 
-### 2. Unused Import in `OurMethodology.tsx`
+### Issues Found
 
-`screwdriverPhoto` is imported but never used in the JSX (only `methodologyPhoto` and a lovable-upload image are rendered).
+#### Critical SEO Issues
 
-**Action**: Remove the unused import.
+| # | Issue | Impact | Fix |
+|---|-------|--------|-----|
+| 1 | **No JSON-LD structured data** | Search engines can't understand your business type. Missing Organization, LocalBusiness, and EducationalOrganization schema markup. Reduces chances of rich snippets in Google results. | Add JSON-LD script to index.html or inject dynamically via SEOHead |
+| 2 | **OG/Twitter meta tags are static** | All pages share the same OG title/description/image from index.html. When sharing `/about` or `/programmes` on social media, the wrong title and description appear. | Update SEOHead to dynamically set `og:title`, `og:description`, and `og:url` meta tags per page |
+| 3 | **OG image uses relative path** | `content="/lovable-uploads/..."` — social media crawlers need absolute URLs. The image won't render on Facebook/Twitter/LinkedIn shares. | Change to `content="https://ecstem.education/lovable-uploads/..."` |
+| 4 | **Missing SEO meta for legal pages** | `/privacy-policy`, `/cookies-policy`, `/terms-conditions`, `/policies/access-control` have no entries in SEOHead's pageMeta — they fall back to a generic title and lose their meta description entirely. | Add entries to pageMeta and seo translations |
+| 5 | **Stale `nav.admissions` translation key** | Still present in en.json and zh.json despite page deletion. Not actively breaking anything but adds dead weight. | Remove from both locale files |
 
----
+#### Moderate SEO Issues
 
-### 3. Deprecated Admissions Page Still Routed
+| # | Issue | Impact | Fix |
+|---|-------|--------|-----|
+| 6 | **Many images missing `loading="lazy"`** | Programmes hero, About page images, LearningBuddy hero, WhatsNew post images, JoinOurTeam hero — all load eagerly, slowing initial paint. | Add `loading="lazy"` to below-fold images across these pages |
+| 7 | **Hard-coded English alt text** | JoinOurTeam (`"Child building with colourful blocks"`), LearningBuddy (`"Learning Buddy Hero"`), About (`"Ec stem education team"`, `"Ms Huang, Founder..."`) — not translatable for Chinese SEO. | Wrap in `t()` with translation keys |
+| 8 | **No `hreflang` tags** | Site supports English and Chinese but doesn't signal this to search engines. Google may not know which language version to serve. | Add `<link rel="alternate" hreflang="en" />` and `hreflang="zh"` in SEOHead |
+| 9 | **`html lang` attribute never updates** | `<html lang="en">` is hardcoded. When user switches to Chinese, the lang attribute stays "en", which confuses screen readers and search engines. | Update `document.documentElement.lang` in SEOHead or i18n config based on active language |
 
-Per your memory note, Admissions was deprecated. However:
-- `src/pages/Admissions.tsx` still exists and is routed at `/admissions` in `App.tsx`
-- The 404 page (`NotFound.tsx`) still links to `/admissions` with `t('nav.admissions')`
-- Translation files still have `"admissions": "Admissions"` in nav keys
-- `admissionsPage` translations still exist in both en.json and zh.json
+#### Minor / Nice-to-Have
 
-**Action**: Remove the `/admissions` route from `App.tsx`, delete `Admissions.tsx`, remove the admissions link from `NotFound.tsx`, and clean up unused translation keys.
-
----
-
-### 4. Unused `Index.tsx` Page
-
-`src/pages/Index.tsx` redirects to `/` but is never routed in `App.tsx`.
-
-**Action**: Delete `Index.tsx`.
-
----
-
-### 5. SEO Issues
-
-| Issue | Detail | Fix |
-|-------|--------|-----|
-| **Hardcoded hero text** | Home.tsx hero title/subtitle is not using i18n translations | Wrap in `t()` calls |
-| **Missing alt text i18n** | Many images have English-only alt text | Not critical but could improve |
-| **Sitemap outdated** | Missing `/centres`, `/trial-class`, `/our-methodology`, `/join-our-team` pages; still lists `/admissions`; `lastmod` dates are old (2025-11-27) | Update sitemap.xml |
-| **Copyright year** | Footer says "© 2025" — should be 2026 given current date | Update in both en.json and zh.json |
-| **Missing meta descriptions per page** | Only one global meta description in index.html | Could add per-page via SEOHead component |
-| **Trial Class page not i18n** | `TrialClass.tsx` has hardcoded English text, no `t()` calls | Add translations |
-| **Centres page not i18n** | `Centres.tsx` has all hardcoded English text | Add translations |
-| **OurMethodology page not i18n** | All text is hardcoded English | Add translations |
+| # | Issue | Impact | Fix |
+|---|-------|--------|-----|
+| 10 | **No `<meta name="robots">` on legal pages** | Legal pages rank low-priority but still compete with main content. Could add `noindex` to prevent index dilution. | Optional: add `<meta name="robots" content="noindex">` for legal pages |
+| 11 | **Netlify hidden form in body** | `<form name="interest-registration" netlify ...>` — if not deployed on Netlify, this is dead markup. | Remove if not using Netlify |
 
 ---
 
-### 6. Chinese Translation Gaps
+### Recommended Implementation Plan
 
-Pages/sections with **no Chinese translation support** (hardcoded English):
+**Phase 1 — High-impact fixes:**
+1. Make OG/Twitter meta tags dynamic per page in SEOHead (title, description, url)
+2. Fix OG image to use absolute URL
+3. Add JSON-LD Organization structured data to index.html
+4. Add SEO meta entries for legal pages (privacy, cookies, terms, access-control)
+5. Update `html lang` attribute when language changes
 
-| Page | Missing Chinese |
-|------|----------------|
-| **Home.tsx** | Hero section (title, subtitle, CTA text), Building Blocks section, Core Curriculum section, methodology section — all hardcoded |
-| **Centres.tsx** | Entire page hardcoded in English |
-| **TrialClass.tsx** | Entire page hardcoded in English |
-| **OurMethodology.tsx** | Entire page hardcoded in English |
-| **Admissions.tsx** | FAQ section hardcoded (but page is deprecated) |
-| **About.tsx** | "Our Core Curriculum" section text hardcoded |
-
-The `en.json` and `zh.json` translation files are otherwise well-matched for pages that do use `t()`.
-
----
-
-### 7. Performance/Speed Observations
-
-- **Large number of image assets** (50+ files in `src/assets/`). Removing ~18 unused ones will help.
-- **No lazy loading on routes** — all pages are eagerly imported in `App.tsx`. Adding `React.lazy()` + `Suspense` would improve initial load.
-- **No image lazy loading** — images below the fold should use `loading="lazy"` attribute.
-- **Two Google Forms iframes** (Contact + Trial Class) — these are heavy. Consider adding `loading="lazy"` to iframes.
-
----
-
-### 8. Other Issues Found
-
-- **NotFound.tsx** references `t('nav.admissions')` which links to the deprecated admissions page
-- **Footer copyright** in zh.json still says "© 2025"
-- **`home.programmes.viewAll`** translation key is referenced in Home.tsx but doesn't exist in either translation file (the text "View our programs →" is hardcoded in JSX)
-
----
-
-### Recommended Implementation Plan (Priority Order)
-
-1. **Delete unused assets** (18 files) — immediate bundle size reduction
-2. **Delete `Index.tsx`** and remove Admissions route + page
-3. **Update `sitemap.xml`** — add missing pages, remove `/admissions`, update dates
-4. **Fix NotFound.tsx** — remove admissions link
-5. **Add `React.lazy()`** for route-level code splitting in `App.tsx`
-6. **Add `loading="lazy"`** to all below-fold images and iframes
-7. **Add i18n to hardcoded pages**: Home hero, Centres, TrialClass, OurMethodology, About curriculum section
-8. **Add corresponding Chinese translations** to `zh.json`
-9. **Update copyright year** to 2026 in both locale files
-10. **Remove unused `screwdriverPhoto` import** from OurMethodology
-11. **Enhance SEOHead** to set per-page `<title>` and `<meta description>`
-
-This is a substantial amount of work. I'd recommend tackling items 1-6 first (cleanup and performance), then items 7-8 (i18n) as a second pass.
+**Phase 2 — Moderate fixes:**
+6. Add `loading="lazy"` to remaining below-fold images (About, Programmes, LearningBuddy, WhatsNew, JoinOurTeam)
+7. Add `hreflang` alternate link tags
+8. Internationalize remaining hard-coded alt text
+9. Clean up stale `nav.admissions` translation key
 
