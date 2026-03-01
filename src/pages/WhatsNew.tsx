@@ -151,6 +151,7 @@ Limited slots available – sign up now!`,
                             src={post.image} 
                             alt={post.title}
                             className="w-full h-full object-cover object-top"
+                            loading="lazy"
                           />
                         </div>
                       )}
@@ -223,6 +224,7 @@ Limited slots available – sign up now!`,
                               src={post.image} 
                               alt={post.title}
                               className="w-full h-full object-cover object-top"
+                              loading="lazy"
                             />
                           </div>
                         )}

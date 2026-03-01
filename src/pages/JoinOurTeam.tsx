@@ -72,8 +72,9 @@ const JoinOurTeam = () => {
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={childBuildingBlocks}
-                alt="Child building with colourful blocks"
+                alt={t('joinOurTeamPage.altText.childBuilding')}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div>

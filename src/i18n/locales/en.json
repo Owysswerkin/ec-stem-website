@@ -5,7 +5,6 @@
     "programmes": "Programmes",
     "forPreschool": "For Preschool",
     "forParents": "For Parents",
-    "admissions": "Admissions",
     "ourLocations": "Our Locations",
     "contact": "Contact",
     "whatsNew": "What's New",
@@ -96,6 +95,10 @@
     "button": "Partner with Ec stem"
   },
   "aboutPage": {
+    "altText": {
+      "team": "Ec stem education team",
+      "founder": "Ms Huang, Founder of Ec stem, passionate early childhood STEM educator"
+    },
     "title": "",
     "subtitle": "Ec stem is an early childhood (4-6 years old) enrichment provider dedicated to making STEM — Science, Technology, Engineering, and Mathematics — fun, hands-on, and meaningful for young learners. Through structured, age-appropriate programmes, children explore and create using interactive kits that spark curiosity and build essential skills like problem-solving, creativity, and teamwork. Aligned with the MOE NEL Framework, Ec stem delivers engaging learning experiences that nurture confident, curious, and future-ready innovators from a young age.",
     "slogan": "Think like a scientist. Solve problems like an engineer.",
@@ -290,7 +293,10 @@
       "feature3": "Suitable for all ages"
     },
     "partnershipTitle": "Why Preschools Choose Ec stem",
-    "partnershipIntro": "Our programs are designed to seamlessly integrate with your existing curriculum while bringing the excitement of hands-on STEM learning to your classroom."
+    "partnershipIntro": "Our programs are designed to seamlessly integrate with your existing curriculum while bringing the excitement of hands-on STEM learning to your classroom.",
+    "altText": {
+      "hero": "STEM classroom with children learning"
+    }
   },
   "admissionsPage": {
     "title": "Partner with Ec stem",
@@ -535,7 +541,10 @@
     "collaborationBadge": "Collaboration",
     "partnersTitle": "Partners in Innovation",
     "partnersDescription": "Our collaboration with Booster brings the latest robotics to co-learn with the children across preschools. This partnership allows children to experience first hand learning and interactive with our learning buddy to build confidence and compassion while exploring real-world technology.",
-    "partnersTagline": "Together, we're nurturing future-ready creators by combining Ec stem's pedagogy and Booster's robotics innovation."
+    "partnersTagline": "Together, we're nurturing future-ready creators by combining Ec stem's pedagogy and Booster's robotics innovation.",
+    "altText": {
+      "hero": "Learning Buddy AI robot companion for preschool STEM education"
+    }
   },
   "forParentsPage": {
     "title": "For Parents",
@@ -636,6 +645,9 @@
       "body": "Send your resume to hr@ecstem.education or explore open positions on our LinkedIn page. We'd love to hear from you.",
       "emailButton": "Send Your Resume",
       "linkedinButton": "View on LinkedIn"
+    },
+    "altText": {
+      "childBuilding": "Child building with colourful blocks"
     }
   },
   "home": {
@@ -784,6 +796,22 @@
     "joinTeam": {
       "title": "Join Our Team | Careers at Ec stem",
       "description": "Build the future with Ec stem. We're looking for passionate educators to inspire the next generation of STEM innovators."
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy | Ec stem",
+      "description": "Read Ec stem's privacy policy on how we collect, use, and protect your personal information."
+    },
+    "cookiesPolicy": {
+      "title": "Cookies Policy | Ec stem",
+      "description": "Learn about how Ec stem uses cookies and similar technologies on our website."
+    },
+    "termsConditions": {
+      "title": "Terms & Conditions | Ec stem",
+      "description": "Review the terms and conditions for Ec stem's STEM enrichment programmes, including enrollment and payment policies."
+    },
+    "accessControl": {
+      "title": "Access Control Policy | Ec stem",
+      "description": "Ec stem's access control policy for data protection and security."
     }
   }
 }

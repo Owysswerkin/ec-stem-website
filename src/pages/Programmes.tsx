@@ -48,7 +48,7 @@ const Programmes = () => {
       {/* Hero Banner */}
       <section className="relative h-[50vh] min-h-[360px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={programmesHero} alt="STEM classroom" className="w-full h-full object-cover" />
+          <img src={programmesHero} alt={t('programmesPage.altText.hero')} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-sky-800/50" />
         </div>
         <div className="relative z-10 text-center px-4">
@@ -89,6 +89,7 @@ const Programmes = () => {
                     src={program.image}
                     alt={program.title}
                     className="w-full h-[300px] md:h-[400px] object-cover rounded-3xl shadow-warm"
+                    loading="lazy"
                   />
                 </div>
                 <div className="w-full md:w-1/2">
