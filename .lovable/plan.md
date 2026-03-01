@@ -1,54 +1,125 @@
 
 
-# Redesign "For Enrichment Centre" Page — Make It Visual and Scannable
+## Site Audit: SEO, Speed, Cleanup & Chinese Translation
 
-## Problem
-The current page is text-heavy with multiple card grids that all look similar. Parents scanning quickly will bounce. The key issues:
-- Long paragraph descriptions in the program level cards
-- Too many small cards (4 highlights + 5 benefits + NEL checklist) create visual fatigue
-- Every section uses the same card layout — no visual variety
-- No photos of actual children/classrooms beyond the hero
+### 1. Unused Assets (files in `src/assets/` not imported anywhere)
 
-## Proposed Design Changes
+The following 14 image files are never imported or referenced in any component:
 
-### 1. Hero Section — Keep As-Is
-Already has the background image, CTA, and concise text. No changes needed.
+- `booster-logo.png`
+- `booster-robotics-logo.png`
+- `classroom-activities.jpg`
+- `ec-stem-logo-white.jpg`
+- `ec-stem-logo.jpg`
+- `gear-clippy-character.jpg`
+- `hero-preschool.jpg`
+- `hero-robot-classroom.png`
+- `holiday-stem-trial-banner.jpg`
+- `ms-huang-founder-portrait.jpg`
+- `ms-huang-founder.jpg`
+- `ms-huang-new.jpg`
+- `ms-huang-portrait.jpg`
+- `outdoor-play.jpg`
+- `parents-child-duplo.jpg`
+- `preschooler-scientist.jpg`
+- `principal-portrait.jpg`
+- `team-gear-avatar.jpg`
+- `teacher-clairabel.jpg` (Teacher Clairabel exists in translation but is no longer in the About page team array)
 
-### 2. Programme Levels — Use the Preschool Page Layout
-Instead of 3 small icon cards with long paragraphs, switch to the alternating image + text layout already used on the Preschool Programmes page (`Programmes.tsx`). Each programme gets:
-- A large photo (reuse `early-explorers.png`, `k1-robots-playing.png`, `stem-child-building.jpg`)
-- Age badge (e.g. "4 Years Old")
-- Programme name as heading
-- **Shortened description** — trim each to 1-2 sentences max, focusing on the outcome rather than method
+**Action**: Delete all unused assets to reduce bundle size.
 
-### 3. Program Highlights — Compact Horizontal Strip
-Replace the 4-card grid with a single-row icon strip (like the Preschool page's highlights strip), using colored background. More scannable, less vertical space.
+---
 
-### 4. Why Parents Love Us — Replace 5 Cards with 3 Key Points
-Reduce from 5 benefit cards to 3 strongest selling points. Use a simpler layout with large icons and short one-liner descriptions instead of paragraphs:
-- "Child-sized robot companion" (most unique differentiator)
-- "Qualified ex-preschool teachers"
-- "Small class sizes, max 8 children"
+### 2. Unused Import in `OurMethodology.tsx`
 
-### 5. NEL Framework — Collapse into Expandable or Badge Row
-Replace the long checklist with a compact row of 5 colourful badges/pills showing each NEL area. Parents who care can click to expand; others just see the alignment at a glance.
+`screwdriverPhoto` is imported but never used in the JSX (only `methodologyPhoto` and a lovable-upload image are rendered).
 
-### 6. Bottom CTA — Keep As-Is
-The motto + trial lesson CTA is already clean and effective.
+**Action**: Remove the unused import.
 
-## Text Shortening (en.json updates)
-Trim programme descriptions from ~3 sentences to 1-2:
-- **Early Explorers (4 yrs)**: "Hands-on play with building blocks to develop fine motor skills, problem-solving, and natural curiosity."
-- **Curious Creators (5 yrs)**: "Using simple tools to connect and build, developing coordination, precision, and early engineering skills."
-- **Super Solvers (6 yrs)**: "Exploring gears and mechanisms through experiments that build critical thinking and engineering understanding."
+---
 
-## Files to Change
-- `src/pages/ForParents.tsx` — Restructure layout: alternating image+text for programmes, compact highlight strip, reduce benefits to 3, NEL as badge pills
-- `src/i18n/locales/en.json` — Shorten programme descriptions, trim benefit descriptions to one-liners
-- `src/i18n/locales/zh.json` — Same shortening in Chinese
+### 3. Deprecated Admissions Page Still Routed
 
-## Technical Notes
-- Reuse programme images already imported in `Programmes.tsx` (`early-explorers.png`, `k1-robots-playing.png`, `stem-child-building.jpg`)
-- The alternating layout pattern is already proven in `Programmes.tsx` lines 81-105
-- NEL badges can use the existing `Badge` component from `@/components/ui/badge`
+Per your memory note, Admissions was deprecated. However:
+- `src/pages/Admissions.tsx` still exists and is routed at `/admissions` in `App.tsx`
+- The 404 page (`NotFound.tsx`) still links to `/admissions` with `t('nav.admissions')`
+- Translation files still have `"admissions": "Admissions"` in nav keys
+- `admissionsPage` translations still exist in both en.json and zh.json
+
+**Action**: Remove the `/admissions` route from `App.tsx`, delete `Admissions.tsx`, remove the admissions link from `NotFound.tsx`, and clean up unused translation keys.
+
+---
+
+### 4. Unused `Index.tsx` Page
+
+`src/pages/Index.tsx` redirects to `/` but is never routed in `App.tsx`.
+
+**Action**: Delete `Index.tsx`.
+
+---
+
+### 5. SEO Issues
+
+| Issue | Detail | Fix |
+|-------|--------|-----|
+| **Hardcoded hero text** | Home.tsx hero title/subtitle is not using i18n translations | Wrap in `t()` calls |
+| **Missing alt text i18n** | Many images have English-only alt text | Not critical but could improve |
+| **Sitemap outdated** | Missing `/centres`, `/trial-class`, `/our-methodology`, `/join-our-team` pages; still lists `/admissions`; `lastmod` dates are old (2025-11-27) | Update sitemap.xml |
+| **Copyright year** | Footer says "© 2025" — should be 2026 given current date | Update in both en.json and zh.json |
+| **Missing meta descriptions per page** | Only one global meta description in index.html | Could add per-page via SEOHead component |
+| **Trial Class page not i18n** | `TrialClass.tsx` has hardcoded English text, no `t()` calls | Add translations |
+| **Centres page not i18n** | `Centres.tsx` has all hardcoded English text | Add translations |
+| **OurMethodology page not i18n** | All text is hardcoded English | Add translations |
+
+---
+
+### 6. Chinese Translation Gaps
+
+Pages/sections with **no Chinese translation support** (hardcoded English):
+
+| Page | Missing Chinese |
+|------|----------------|
+| **Home.tsx** | Hero section (title, subtitle, CTA text), Building Blocks section, Core Curriculum section, methodology section — all hardcoded |
+| **Centres.tsx** | Entire page hardcoded in English |
+| **TrialClass.tsx** | Entire page hardcoded in English |
+| **OurMethodology.tsx** | Entire page hardcoded in English |
+| **Admissions.tsx** | FAQ section hardcoded (but page is deprecated) |
+| **About.tsx** | "Our Core Curriculum" section text hardcoded |
+
+The `en.json` and `zh.json` translation files are otherwise well-matched for pages that do use `t()`.
+
+---
+
+### 7. Performance/Speed Observations
+
+- **Large number of image assets** (50+ files in `src/assets/`). Removing ~18 unused ones will help.
+- **No lazy loading on routes** — all pages are eagerly imported in `App.tsx`. Adding `React.lazy()` + `Suspense` would improve initial load.
+- **No image lazy loading** — images below the fold should use `loading="lazy"` attribute.
+- **Two Google Forms iframes** (Contact + Trial Class) — these are heavy. Consider adding `loading="lazy"` to iframes.
+
+---
+
+### 8. Other Issues Found
+
+- **NotFound.tsx** references `t('nav.admissions')` which links to the deprecated admissions page
+- **Footer copyright** in zh.json still says "© 2025"
+- **`home.programmes.viewAll`** translation key is referenced in Home.tsx but doesn't exist in either translation file (the text "View our programs →" is hardcoded in JSX)
+
+---
+
+### Recommended Implementation Plan (Priority Order)
+
+1. **Delete unused assets** (18 files) — immediate bundle size reduction
+2. **Delete `Index.tsx`** and remove Admissions route + page
+3. **Update `sitemap.xml`** — add missing pages, remove `/admissions`, update dates
+4. **Fix NotFound.tsx** — remove admissions link
+5. **Add `React.lazy()`** for route-level code splitting in `App.tsx`
+6. **Add `loading="lazy"`** to all below-fold images and iframes
+7. **Add i18n to hardcoded pages**: Home hero, Centres, TrialClass, OurMethodology, About curriculum section
+8. **Add corresponding Chinese translations** to `zh.json`
+9. **Update copyright year** to 2026 in both locale files
+10. **Remove unused `screwdriverPhoto` import** from OurMethodology
+11. **Enhance SEOHead** to set per-page `<title>` and `<meta description>`
+
+This is a substantial amount of work. I'd recommend tackling items 1-6 first (cleanup and performance), then items 7-8 (i18n) as a second pass.
 
