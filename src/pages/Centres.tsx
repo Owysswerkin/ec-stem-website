@@ -102,7 +102,7 @@ const Centres = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Experience Our STEM Classes First-Hand
+              For Parents
             </h2>
             <p className="text-muted-foreground mb-6">
               Let your child discover the joy of hands-on STEM learning. Sign up for a FREE trial session today!
