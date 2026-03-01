@@ -6,7 +6,6 @@
     "forPreschool": "幼儿园合作",
     "forParents": "给家长",
     "ourLocations": "我们的地点",
-    "admissions": "招生",
     "contact": "联系我们",
     "whatsNew": "最新动态",
     "joinOurTeam": "加入我们",
@@ -96,6 +95,10 @@
     "button": "与Ec stem合作"
   },
   "aboutPage": {
+    "altText": {
+      "team": "Ec stem 教育团队",
+      "founder": "黄老师，Ec stem 创始人，充满热情的幼儿STEM教育者"
+    },
     "title": "",
     "subtitle": "我们通过创新的STEM学习体验赋能托儿中心，激发幼儿的好奇心、创造力和批判性思维。",
     "slogan": "像科学家一样思考。像工程师一样解决问题。",
@@ -290,7 +293,10 @@
       "feature3": "适合所有年龄"
     },
     "partnershipTitle": "为什么幼儿园选择Ec stem",
-    "partnershipIntro": "我们的项目旨在与您现有的课程无缝整合，同时为您的课堂带来激动人心的实践STEM学习体验。"
+    "partnershipIntro": "我们的项目旨在与您现有的课程无缝整合，同时为您的课堂带来激动人心的实践STEM学习体验。",
+    "altText": {
+      "hero": "孩子们在STEM课堂上学习"
+    }
   },
   "admissionsPage": {
     "title": "与Ec stem合作",
@@ -535,7 +541,10 @@
     "collaborationBadge": "合作",
     "partnersTitle": "创新伙伴",
     "partnersDescription": "我们与Booster的合作将最新的机器人技术带入学前教育中心，与孩子们共同学习。这种合作伙伴关系让孩子们亲身体验与乐学伙伴的学习和互动，在探索真实世界技术的同时建立信心和同理心。",
-    "partnersTagline": "我们将Ec stem的教学法与Booster的机器人创新相结合，培养面向未来的创造者。"
+    "partnersTagline": "我们将Ec stem的教学法与Booster的机器人创新相结合，培养面向未来的创造者。",
+    "altText": {
+      "hero": "乐学伙伴AI机器人陪伴幼儿STEM教育"
+    }
   },
   "forParentsPage": {
     "title": "给家长",
@@ -636,6 +645,9 @@
       "body": "将您的简历发送至 hr@ecstem.education 或在我们的LinkedIn页面上探索开放职位。我们期待您的消息。",
       "emailButton": "发送简历",
       "linkedinButton": "在LinkedIn查看"
+    },
+    "altText": {
+      "childBuilding": "孩子用彩色积木搭建"
     }
   },
   "home": {
@@ -784,6 +796,22 @@
     "joinTeam": {
       "title": "加入我们的团队 | Ec stem 职业机会",
       "description": "与Ec stem一起构建未来。我们正在寻找充满热情的教育者来激励下一代STEM创新者。"
+    },
+    "privacyPolicy": {
+      "title": "隐私政策 | Ec stem",
+      "description": "了解Ec stem如何收集、使用和保护您的个人信息。"
+    },
+    "cookiesPolicy": {
+      "title": "Cookie政策 | Ec stem",
+      "description": "了解Ec stem如何在网站上使用Cookie和类似技术。"
+    },
+    "termsConditions": {
+      "title": "条款与条件 | Ec stem",
+      "description": "查看Ec stem STEM丰富课程的条款与条件，包括注册和付款政策。"
+    },
+    "accessControl": {
+      "title": "访问控制政策 | Ec stem",
+      "description": "Ec stem的数据保护和安全访问控制政策。"
     }
   }
 }

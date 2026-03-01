@@ -40,7 +40,7 @@ const About = () => {
       {/* Header Hero - Soft Pastel */}
       <section className="relative min-h-[50vh] flex items-center bg-gradient-to-br from-sky-50 via-rose-50 to-amber-50">
         <div className="absolute inset-0 overflow-hidden">
-          <img src={teamPhoto} alt="Ec stem education team" className="w-full h-full object-cover opacity-15" />
+          <img src={teamPhoto} alt={t('aboutPage.altText.team')} className="w-full h-full object-cover opacity-15" loading="lazy" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
@@ -175,8 +175,9 @@ const About = () => {
                   <div className="absolute inset-0 bg-primary/20 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
                   <img 
                     src={msHuangPortrait} 
-                    alt="Ms Huang, Founder of Ec stem, passionate early childhood STEM educator" 
+                    alt={t('aboutPage.altText.founder')}
                     className="relative rounded-3xl shadow-warm w-[70%] mx-auto"
+                    loading="lazy"
                   />
                 </div>
               </div>
