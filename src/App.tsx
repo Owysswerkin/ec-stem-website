@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,22 +7,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageLayout from "./components/PageLayout";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Programmes from "./pages/Programmes";
-import ForParents from "./pages/ForParents";
-import Admissions from "./pages/Admissions";
-import Contact from "./pages/Contact";
-import LearningBuddy from "./pages/LearningBuddy";
-import CookiesPolicy from "./pages/CookiesPolicy";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsConditions from "./pages/TermsConditions";
-import AccessControl from "./pages/AccessControl";
-import WhatsNew from "./pages/WhatsNew";
-import JoinOurTeam from "./pages/JoinOurTeam";
-import NotFound from "./pages/NotFound";
-import Centres from "./pages/Centres";
-import TrialClass from "./pages/TrialClass";
-import OurMethodology from "./pages/OurMethodology";
+
+const About = React.lazy(() => import("./pages/About"));
+const Programmes = React.lazy(() => import("./pages/Programmes"));
+const ForParents = React.lazy(() => import("./pages/ForParents"));
+const Contact = React.lazy(() => import("./pages/Contact"));
+const LearningBuddy = React.lazy(() => import("./pages/LearningBuddy"));
+const CookiesPolicy = React.lazy(() => import("./pages/CookiesPolicy"));
+const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
+const TermsConditions = React.lazy(() => import("./pages/TermsConditions"));
+const AccessControl = React.lazy(() => import("./pages/AccessControl"));
+const WhatsNew = React.lazy(() => import("./pages/WhatsNew"));
+const JoinOurTeam = React.lazy(() => import("./pages/JoinOurTeam"));
+const NotFound = React.lazy(() => import("./pages/NotFound"));
+const Centres = React.lazy(() => import("./pages/Centres"));
+const TrialClass = React.lazy(() => import("./pages/TrialClass"));
+const OurMethodology = React.lazy(() => import("./pages/OurMethodology"));
 
 const queryClient = new QueryClient();
 
@@ -33,26 +34,27 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <PageLayout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/programmes" element={<Programmes />} />
-            <Route path="/programmes/for-parents" element={<ForParents />} />
-            <Route path="/admissions" element={<Admissions />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/learning-buddy" element={<LearningBuddy />} />
-            <Route path="/cookies-policy" element={<CookiesPolicy />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-conditions" element={<TermsConditions />} />
-            <Route path="/policies/access-control" element={<AccessControl />} />
-            <Route path="/whats-new" element={<WhatsNew />} />
-            <Route path="/join-our-team" element={<JoinOurTeam />} />
-            <Route path="/centres" element={<Centres />} />
-            <Route path="/trial-class" element={<TrialClass />} />
-            <Route path="/our-methodology" element={<OurMethodology />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/programmes" element={<Programmes />} />
+              <Route path="/programmes/for-parents" element={<ForParents />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/learning-buddy" element={<LearningBuddy />} />
+              <Route path="/cookies-policy" element={<CookiesPolicy />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-conditions" element={<TermsConditions />} />
+              <Route path="/policies/access-control" element={<AccessControl />} />
+              <Route path="/whats-new" element={<WhatsNew />} />
+              <Route path="/join-our-team" element={<JoinOurTeam />} />
+              <Route path="/centres" element={<Centres />} />
+              <Route path="/trial-class" element={<TrialClass />} />
+              <Route path="/our-methodology" element={<OurMethodology />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </PageLayout>
       </BrowserRouter>
     </TooltipProvider>

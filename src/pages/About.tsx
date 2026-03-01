@@ -91,50 +91,50 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-              Our Core Curriculum
+              {t('home.coreCurriculum.title')}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
             {/* FIX-IT Mindset */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-foreground mb-3">"FIX-IT" <span className="text-red-500">Mindset</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">{t('home.coreCurriculum.fixIt.label')} <span className="text-red-500">{t('home.coreCurriculum.fixIt.highlight')}</span></h4>
               <div className="relative inline-block mb-4">
                 <div className="bg-red-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
-                  "I try again"
+                  {t('home.coreCurriculum.fixIt.bubble')}
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-red-500" />
               </div>
               <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
-                We direct children to view challenges as opportunities to learn, persist, and get better.
+                {t('home.coreCurriculum.fixIt.description')}
               </p>
             </div>
 
             {/* Applied INNOVATION */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-foreground mb-3">Applied <span className="text-blue-500">INNOVATION</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">{t('home.coreCurriculum.innovation.label')} <span className="text-blue-500">{t('home.coreCurriculum.innovation.highlight')}</span></h4>
               <div className="relative inline-block mb-4">
                 <div className="bg-blue-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
-                  "I think and figure things out"
+                  {t('home.coreCurriculum.innovation.bubble')}
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-blue-500" />
               </div>
               <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
-                We guide children toward solutions that are useful, testable, and rooted in real-world needs.
+                {t('home.coreCurriculum.innovation.description')}
               </p>
             </div>
 
             {/* CONSCIENTIOUS Making */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-foreground mb-3">CONSCIENTIOUS <span className="text-green-500">Making</span></h4>
+              <h4 className="text-2xl font-bold text-foreground mb-3">{t('home.coreCurriculum.conscientious.label')} <span className="text-green-500">{t('home.coreCurriculum.conscientious.highlight')}</span></h4>
               <div className="relative inline-block mb-4">
                 <div className="bg-green-500 text-white px-5 py-3 rounded-2xl font-semibold text-base">
-                  "I care for people and the planet"
+                  {t('home.coreCurriculum.conscientious.bubble')}
                 </div>
                 <div className="absolute -bottom-2 left-6 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-green-500" />
               </div>
               <p className="text-muted-foreground leading-relaxed mt-2 text-lg">
-                We teach kids to design with empathy, safety, and consideration for our world.
+                {t('home.coreCurriculum.conscientious.description')}
               </p>
             </div>
           </div>

@@ -3,11 +3,14 @@ import { MapPin, Building2 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 import edventureLogo from '@/assets/edventure-logo.png';
 import lcentralLogo from '@/assets/lcentral-logo.png';
 import chickyOliveLogo from '@/assets/chicky-olive-logo.png';
 
 const Centres = () => {
+  const { t } = useTranslation();
+
   const centres = [
     {
       id: 1,
@@ -36,7 +39,6 @@ const Centres = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-br from-primary/10 via-background to-sunshine/10">
-        {/* Decorative elements */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-sunshine/10 rounded-full blur-3xl" />
         
@@ -44,13 +46,13 @@ const Centres = () => {
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
               <MapPin className="h-4 w-4" />
-              Our Partner Centres
+              {t('centresPage.badge')}
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Locations
+              {t('centresPage.heroTitle')}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Discover where Ec stem brings hands-on STEM education to young learners across Singapore.
+              {t('centresPage.heroSubtitle')}
             </p>
           </div>
         </div>
@@ -61,10 +63,10 @@ const Centres = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Where We Teach
+              {t('centresPage.whereWeTeach')}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We partner with quality preschools and enrichment centres to bring our STEM curriculum to children.
+              {t('centresPage.whereWeTeachSubtitle')}
             </p>
           </div>
 
@@ -72,13 +74,13 @@ const Centres = () => {
             {centres.map((centre) => (
               <Card 
                 key={centre.id} 
-                className={`relative overflow-hidden border-0 shadow-warm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
+                className="relative overflow-hidden border-0 shadow-warm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${centre.color} opacity-50`} />
                 <CardContent className="relative p-6 flex flex-col items-center text-center">
                   <div className="w-48 h-48 flex items-center justify-center mb-4">
                     {centre.logo ? (
-                      <img src={centre.logo} alt={centre.name} className="max-w-full max-h-full object-contain" />
+                      <img src={centre.logo} alt={centre.name} loading="lazy" className="max-w-full max-h-full object-contain" />
                     ) : (
                       <Building2 className="h-16 w-16 text-primary" />
                     )}
@@ -102,13 +104,13 @@ const Centres = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              For Parents
+              {t('centresPage.forParents')}
             </h2>
             <p className="text-muted-foreground mb-6">
-              Let your child discover the joy of hands-on STEM learning. Sign up for a FREE trial session today!
+              {t('centresPage.forParentsSubtitle')}
             </p>
             <Button size="lg" className="bg-sunshine hover:bg-sunshine/90 text-foreground font-semibold" asChild>
-              <Link to="/trial-class">Book a FREE Trial Class</Link>
+              <Link to="/trial-class">{t('centresPage.bookTrial')}</Link>
             </Button>
           </div>
         </div>
@@ -119,13 +121,13 @@ const Centres = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Want Ec stem at Your Centre?
+              {t('centresPage.partnerTitle')}
             </h2>
             <p className="text-primary-foreground/90 mb-6 max-w-xl mx-auto">
-              Partner with us to bring engaging STEM education to your preschool or enrichment centre.
+              {t('centresPage.partnerSubtitle')}
             </p>
             <Button size="lg" className="bg-[#F8B529] hover:bg-[#e6a418] text-white font-semibold" asChild>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">{t('centresPage.contactUs')}</Link>
             </Button>
           </div>
         </div>

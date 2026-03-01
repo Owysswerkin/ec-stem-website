@@ -2,8 +2,8 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Home, Users, BookOpen, Handshake, Mail, FileText, Cookie } from "lucide-react";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Home, Users, BookOpen, Mail, FileText, Cookie } from "lucide-react";
 
 const NotFound = () => {
   const { t } = useTranslation();
@@ -34,12 +34,6 @@ const NotFound = () => {
       title: t('nav.programmes'),
       description: t('notFound.pages.programmes'),
       path: '/programmes',
-    },
-    {
-      icon: Handshake,
-      title: t('nav.admissions'),
-      description: t('notFound.pages.partnership'),
-      path: '/admissions',
     },
     {
       icon: Mail,
@@ -76,7 +70,7 @@ const NotFound = () => {
         </div>
 
         {/* Main Navigation Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {mainPages.map((page) => {
             const Icon = page.icon;
             return (
