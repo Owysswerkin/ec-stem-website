@@ -272,7 +272,7 @@ King's Centre, Singapore 169662
           <CardContent className="p-6 space-y-4">
             <h2 className="text-2xl font-bold text-primary border-b border-border pb-3">12. How can you review, update, or delete your data?</h2>
             <p className="text-foreground leading-relaxed">
-              To request access, correction, or withdrawal of consent, contact us at <a href="mailto:dpo@ecstem.education" className="text-primary hover:text-primary/80 underline font-medium">dpo@ecstem.education</a>. Requests will be processed within a reasonable timeframe.
+              To request access, correction, or withdrawal of consent, contact us at <a href="mailto:office.ecstem@gmail.com" className="text-primary hover:text-primary/80 underline font-medium">office.ecstem@gmail.com</a>. Requests will be processed within a reasonable timeframe.
             </p>
           </CardContent>
         </Card>
