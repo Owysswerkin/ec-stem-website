@@ -376,7 +376,7 @@
       },
       "email": {
         "title": "Email Us",
-        "address": "hello@ecstem.education",
+        "address": "office.ecstem@gmail.com",
         "response": "We reply within 24 hours",
         "action": "Send Email"
       }
@@ -525,7 +525,7 @@
       "title": "Contact Info",
       "address": "123 Education Street, Singapore 123456",
       "phone": "+65 8644 5667",
-      "email": "hello@ecstem.education"
+      "email": "office.ecstem@gmail.com"
     },
     "copyright": "© 2026 Ec stem. All rights reserved.",
     "privacy": "Privacy Policy",
@@ -642,7 +642,7 @@
     },
     "cta": {
       "title": "Ready to Make a Difference?",
-      "body": "Send your resume to hr@ecstem.education or explore open positions on our LinkedIn page. We'd love to hear from you.",
+      "body": "Send your resume to office.ecstem@gmail.com or explore open positions on our LinkedIn page. We'd love to hear from you.",
       "emailButton": "Send Your Resume",
       "linkedinButton": "View on LinkedIn"
     },

@@ -376,7 +376,7 @@
       },
       "email": {
         "title": "发邮件给我们",
-        "address": "hello@ecstem.education",
+        "address": "office.ecstem@gmail.com",
         "response": "我们在24小时内回复",
         "action": "发送邮件"
       }
@@ -525,7 +525,7 @@
       "title": "联系信息",
       "address": "新加坡教育街123号 123456",
       "phone": "+65 8644 5667",
-      "email": "hello@ecstem.education"
+      "email": "office.ecstem@gmail.com"
     },
     "copyright": "© 2026 Ec stem. 版权所有。",
     "privacy": "隐私政策",
@@ -642,7 +642,7 @@
     },
     "cta": {
       "title": "准备好做出改变了吗？",
-      "body": "将您的简历发送至 hr@ecstem.education 或在我们的LinkedIn页面上探索开放职位。我们期待您的消息。",
+      "body": "将您的简历发送至 office.ecstem@gmail.com 或在我们的LinkedIn页面上探索开放职位。我们期待您的消息。",
       "emailButton": "发送简历",
       "linkedinButton": "在LinkedIn查看"
     },
