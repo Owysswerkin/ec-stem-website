@@ -251,8 +251,8 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-bold text-primary border-b border-border pb-3">11. How can you contact us about this Notice?</h2>
             <p className="text-foreground leading-relaxed">Email our Data Protection Officer at:</p>
             <p>
-              <a href="mailto:dpo@ecstem.education" className="text-primary hover:text-primary/80 underline font-medium text-lg">
-                dpo@ecstem.education
+               <a href="mailto:office.ecstem@gmail.com" className="text-primary hover:text-primary/80 underline font-medium text-lg">
+                office.ecstem@gmail.com
               </a>
             </p>
             <p className="text-foreground leading-relaxed">Or by post:</p>
