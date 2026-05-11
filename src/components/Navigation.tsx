@@ -65,7 +65,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
             {/* Left Nav Links (Desktop) */}
             <div className="hidden lg:flex items-center space-x-8 flex-1">
-              {navItems.slice(0, 2).map((item) => (
+              {leftNavItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
