@@ -33,12 +33,18 @@ const Navigation = () => {
     setIsProgrammesOpen(false);
   }, [location.pathname]);
 
-  const navItems = [
+  const leftNavItems = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
+  ];
+
+  const leftAfterProgrammes = [
     { name: t('nav.ourLocations'), path: '/centres' },
-    { name: t('nav.joinOurTeam'), path: '/join-our-team' },
+  ];
+
+  const rightNavItems = [
     { name: t('nav.whatsNew'), path: '/whats-new' },
+    { name: t('nav.joinOurTeam'), path: '/join-our-team' },
   ];
 
   const programmesSubItems = [
