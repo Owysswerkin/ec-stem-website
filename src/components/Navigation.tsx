@@ -239,7 +239,7 @@ const Navigation = () => {
                   href="https://ecstemapp.glide.page"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-4 py-2 rounded-xl text-base font-semibold text-white shadow-soft mt-2 mx-4 bg-gradient-to-r from-primary/80 via-accent-vibrant/80 to-blue-accent/80"
+                  className="inline-flex items-center justify-center px-4 py-2 rounded-xl text-base font-semibold text-sky-900 shadow-soft mt-2 mx-4 bg-gradient-to-r from-sky-100 to-blue-100"
                 >
                   {t('nav.staffLogin')}
                 </a>
