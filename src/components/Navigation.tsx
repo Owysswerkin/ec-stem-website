@@ -33,12 +33,18 @@ const Navigation = () => {
     setIsProgrammesOpen(false);
   }, [location.pathname]);
 
-  const navItems = [
+  const leftNavItems = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
+  ];
+
+  const leftAfterProgrammes = [
     { name: t('nav.ourLocations'), path: '/centres' },
-    { name: t('nav.joinOurTeam'), path: '/join-our-team' },
+  ];
+
+  const rightNavItems = [
     { name: t('nav.whatsNew'), path: '/whats-new' },
+    { name: t('nav.joinOurTeam'), path: '/join-our-team' },
   ];
 
   const programmesSubItems = [
@@ -59,7 +65,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
             {/* Left Nav Links (Desktop) */}
             <div className="hidden lg:flex items-center space-x-8 flex-1">
-              {navItems.slice(0, 2).map((item) => (
+              {leftNavItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
@@ -98,6 +104,20 @@ const Navigation = () => {
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
+
+              {leftAfterProgrammes.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-semibold transition-colors duration-200 ${
+                    isActive(item.path)
+                      ? 'text-primary border-b-2 border-primary pb-1'
+                      : 'text-foreground hover:text-primary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
 
             {/* Center Logo */}
@@ -110,8 +130,8 @@ const Navigation = () => {
             </Link>
 
             {/* Right Nav Links (Desktop) */}
-            <div className="hidden lg:flex items-center space-x-8 flex-1 justify-end">
-              {navItems.slice(2).map((item) => (
+            <div className="hidden lg:flex items-center space-x-6 flex-1 justify-end">
+              {rightNavItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
@@ -127,6 +147,14 @@ const Navigation = () => {
                   )}
                 </Link>
               ))}
+              <a
+                href="https://ecstemapp.glide.page"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold text-white shadow-soft hover:shadow-warm transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-primary/80 via-accent-vibrant/80 to-blue-accent/80"
+              >
+                {t('nav.staffLogin')}
+              </a>
               <LanguageToggle />
             </div>
 
@@ -145,7 +173,7 @@ const Navigation = () => {
           <div className="lg:hidden bg-teal-soft border-t shadow-warm">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
-                {navItems.slice(0, 2).map((item) => (
+                {leftNavItems.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
@@ -191,7 +219,7 @@ const Navigation = () => {
                   )}
                 </div>
 
-                {navItems.slice(2).map((item) => (
+                {[...leftAfterProgrammes, ...rightNavItems].map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
@@ -207,7 +235,15 @@ const Navigation = () => {
                     )}
                   </Link>
                 ))}
-                <div className="flex items-center mt-4 gap-2">
+                <a
+                  href="https://ecstemapp.glide.page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-4 py-2 rounded-xl text-base font-semibold text-white shadow-soft mt-2 mx-4 bg-gradient-to-r from-primary/80 via-accent-vibrant/80 to-blue-accent/80"
+                >
+                  {t('nav.staffLogin')}
+                </a>
+                <div className="flex items-center mt-4 gap-2 pl-4">
                   <LanguageToggle />
                 </div>
               </div>
