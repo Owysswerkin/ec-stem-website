@@ -173,7 +173,7 @@ const Navigation = () => {
           <div className="lg:hidden bg-teal-soft border-t shadow-warm">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
-                {navItems.slice(0, 2).map((item) => (
+                {leftNavItems.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
