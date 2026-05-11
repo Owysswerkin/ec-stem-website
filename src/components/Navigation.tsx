@@ -219,7 +219,7 @@ const Navigation = () => {
                   )}
                 </div>
 
-                {navItems.slice(2).map((item) => (
+                {[...leftAfterProgrammes, ...rightNavItems].map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
@@ -235,7 +235,15 @@ const Navigation = () => {
                     )}
                   </Link>
                 ))}
-                <div className="flex items-center mt-4 gap-2">
+                <a
+                  href="https://ecstemapp.glide.page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-4 py-2 rounded-xl text-base font-semibold text-white shadow-soft mt-2 mx-4 bg-gradient-to-r from-primary/80 via-accent-vibrant/80 to-blue-accent/80"
+                >
+                  {t('nav.staffLogin')}
+                </a>
+                <div className="flex items-center mt-4 gap-2 pl-4">
                   <LanguageToggle />
                 </div>
               </div>
