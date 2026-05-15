@@ -35,8 +35,25 @@ const Centres = () => {
     }
   ];
 
+  const localBusinessJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': centres.map((c) => ({
+      '@type': 'LocalBusiness',
+      name: c.name,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: c.address,
+        addressCountry: 'SG',
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-br from-primary/10 via-background to-sunshine/10">
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
