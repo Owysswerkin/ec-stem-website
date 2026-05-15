@@ -1,0 +1,26 @@
+# Ec stem
+
+> Early childhood STEM education provider in Singapore delivering playful, hands-on robotics, science, engineering and math learning for preschoolers aged 4-6.
+
+Ec stem partners with preschools and enrichment centres across Singapore to bring STEM to life through the Self-Ecstem Methodology. Programmes are aligned with Singapore's NEL Framework and built around three core pillars: FIX-IT, Applied INNOVATION, and CONSCIENTIOUS Making.
+
+## Pages
+
+- [Home](/): Overview of Ec stem's playful, robots-first STEM programmes for young children.
+- [About](/about): Our mission, vision, founding story and team.
+- [Programmes](/programmes): Early Explorers (N2), Curious Creators (K1) and Super Solvers (K2) preschool programmes.
+- [For Parents](/programmes/for-parents): Programme details and benefits for parents.
+- [Our Methodology](/our-methodology): The Self-Ecstem Methodology and curriculum pillars.
+- [Locations](/centres): Partner preschools and enrichment centres where we teach.
+- [Trial Class](/trial-class): Book a free hands-on STEM trial class.
+- [Learning Buddy](/learning-buddy): Our mascot and learning companion for children.
+- [What's New](/whats-new): Latest news, events and trial class announcements.
+- [Join Our Team](/join-our-team): Career opportunities for educators and STEM enthusiasts.
+- [Contact](/contact): Get in touch — office.ecstem@gmail.com, +65 8644 5667.
+
+## Optional
+
+- [Privacy Policy](/privacy-policy)
+- [Cookies Policy](/cookies-policy)
+- [Terms & Conditions](/terms-conditions)
+- [Access Control Policy](/policies/access-control)

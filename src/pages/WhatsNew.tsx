@@ -67,8 +67,44 @@ Limited slots available – sign up now!`,
     setExpandedPostId(expandedPostId === postId ? null : postId);
   };
 
+  const postsJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': posts.map((post) => {
+      const isoDate = new Date(post.date).toISOString();
+      if (post.tag === 'event') {
+        return {
+          '@type': 'Event',
+          name: post.title,
+          description: post.excerpt,
+          startDate: isoDate,
+          eventStatus: 'https://schema.org/EventScheduled',
+          eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+          location: {
+            '@type': 'Place',
+            name: 'LC Education Singapore',
+            address: '155B Thomson Rd, Goldhill Centre, Singapore 307610',
+          },
+          organizer: { '@type': 'Organization', name: 'Ec stem', url: 'https://ecstem.education' },
+          ...(post.image ? { image: post.image } : {}),
+        };
+      }
+      return {
+        '@type': 'Article',
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: isoDate,
+        author: { '@type': 'Organization', name: 'Ec stem' },
+        ...(post.image ? { image: post.image } : {}),
+      };
+    }),
+  };
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(postsJsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-secondary/20 to-accent/10 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.1),transparent_50%)]" />
