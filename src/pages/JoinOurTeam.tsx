@@ -111,7 +111,7 @@ const JoinOurTeam = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t('joinOurTeamPage.cta.title')}
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed whitespace-pre-line">
               {t('joinOurTeamPage.cta.body')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
