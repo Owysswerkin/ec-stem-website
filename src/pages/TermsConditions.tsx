@@ -264,8 +264,8 @@ const TermsConditions = () => {
             <h2 className="text-xl font-bold text-primary">Questions?</h2>
             <p className="text-foreground">
               If you have any questions about these Terms & Conditions, please contact us at{" "}
-               <a href="mailto:hello@ecstem.education" className="text-primary hover:text-primary/80 underline font-medium">
-                hello@ecstem.education
+               <a href="mailto:office.ecstem@gmail.com" className="text-primary hover:text-primary/80 underline font-medium">
+                office.ecstem@gmail.com
               </a>
             </p>
           </CardContent>
