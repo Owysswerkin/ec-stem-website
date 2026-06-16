@@ -251,8 +251,8 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-bold text-primary border-b border-border pb-3">11. How can you contact us about this Notice?</h2>
             <p className="text-foreground leading-relaxed">Email our Data Protection Officer at:</p>
             <p>
-               <a href="mailto:office.ecstem@gmail.com" className="text-primary hover:text-primary/80 underline font-medium text-lg">
-                office.ecstem@gmail.com
+               <a href="mailto:hello@ecstem.education" className="text-primary hover:text-primary/80 underline font-medium text-lg">
+                hello@ecstem.education
               </a>
             </p>
             <p className="text-foreground leading-relaxed">Or by post:</p>
@@ -272,7 +272,7 @@ King's Centre, Singapore 169662
           <CardContent className="p-6 space-y-4">
             <h2 className="text-2xl font-bold text-primary border-b border-border pb-3">12. How can you review, update, or delete your data?</h2>
             <p className="text-foreground leading-relaxed">
-              To request access, correction, or withdrawal of consent, contact us at <a href="mailto:office.ecstem@gmail.com" className="text-primary hover:text-primary/80 underline font-medium">office.ecstem@gmail.com</a>. Requests will be processed within a reasonable timeframe.
+              To request access, correction, or withdrawal of consent, contact us at <a href="mailto:hello@ecstem.education" className="text-primary hover:text-primary/80 underline font-medium">hello@ecstem.education</a>. Requests will be processed within a reasonable timeframe.
             </p>
           </CardContent>
         </Card>
