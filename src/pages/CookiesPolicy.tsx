@@ -179,12 +179,12 @@ word-break: break-word !important;
 <br />
 <p style="font-size: 17px; font-family: Arial;"><strong>Where can I get further information?</strong></p>
 <br />
-<p style="font-size: 14px; font-family: Arial;">If you have any questions about our use of cookies or other technologies, please email us at <a href="mailto:hello@ecstem.education" style="font-size: 14px; font-family: Arial;">hello@ecstem.education</a> or by post to:</p>
+<p style="font-size: 14px; font-family: Arial;">If you have any questions about our use of cookies or other technologies, please email us at <a href="mailto:office.ecstem@gmail.com" style="font-size: 14px; font-family: Arial;">office.ecstem@gmail.com</a> or by post to:</p>
 <br />
 <p style="font-size: 14px; font-family: Arial;">CDL King's Centre #06-03</p>
 <br />
 <p style="font-size: 14px; font-family: Arial;">390 Havelock Road, Singapore 169662</p>
-</div></div>`.replace(/hello@ecstem\.education/g, 'hello@ecstem.education');
+</div></div>`.replace(/hello@ecstem\.education/g, 'office.ecstem@gmail.com');
 
   return (
     <main className="container mx-auto px-4 py-8">
