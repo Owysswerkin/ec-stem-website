@@ -1,9 +1,23 @@
-## Add Maple Bear Labrador to Our Partners
+## Update Make-Up Classes Policy (Section 11)
 
-1. Upload the provided logo as a Lovable asset (`src/assets/maplebear-labrador-logo.png.asset.json`).
-2. **`src/components/PartnersMarquee.tsx`** — import the new logo and append a 4th partner entry: `{ name: 'Maple Bear Labrador', logo: maplebearLogo }`.
-3. **`src/pages/Centres.tsx`** — add a 4th centre card for Maple Bear Labrador with the logo. Grid will switch to wrap (md:grid-cols-2 lg:grid-cols-4, or keep 3 cols and wrap). Will use `md:grid-cols-2 lg:grid-cols-4` so all 4 fit on desktop.
-4. Update the `LocalBusiness` JSON-LD `@graph` automatically (derived from centres array).
+Replace the existing MC-based make-up policy in `src/pages/TermsConditions.tsx` with a new rescheduling policy.
 
-## Question
-Do you have the **street address** for Maple Bear Labrador (Singapore)? Without it, I'll list it on the partners marquee only and add a placeholder "Singapore" address on the Centres page — or omit it from Centres entirely until you provide the address.
+### New Section 11 content
+
+- Parents/guardians may reschedule a **maximum of two (2) classes per term**.
+- Rescheduling requests must be submitted **at least one (1) month in advance**.
+- Requests made with less than one (1) month notice may still be accommodated at the Company's discretion, **subject to availability**.
+- Rescheduled classes are subject to available slots and timings determined by the Company.
+- Unused reschedule entitlements do not carry over to subsequent terms.
+- No refunds or class credits will be provided for missed lessons.
+
+### Files to update
+
+- `src/pages/TermsConditions.tsx` — replace the bullet list inside the Section 11 card.
+- `Last updated` header → change from "January 2025" to "June 2026".
+
+No i18n locale changes needed (this page is English-only static content).
+
+### Memory update
+
+Update `mem://legal/terms-and-conditions-policy` to reflect the new make-up/reschedule rules.
