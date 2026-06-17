@@ -25,6 +25,14 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5 text-primary-foreground" />
               </a>
             </div>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4">
+              <Link to="/privacy-policy" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
+                {t('footer.privacy')}
+              </Link>
+              <Link to="/terms-conditions" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
+                {t('footer.terms')}
+              </Link>
+            </div>
           </div>
 
 
@@ -61,19 +69,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-background/20 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-sm opacity-75 mb-4 md:mb-0">
-              <p>{t('footer.copyright')}</p>
-              <p>UEN202525801M</p>
-            </div>
-            <div className="flex space-x-6">
-              <Link to="/privacy-policy" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
-                {t('footer.privacy')}
-              </Link>
-              <Link to="/terms-conditions" className="text-sm opacity-75 hover:opacity-100 hover:text-primary transition-all duration-200">
-                {t('footer.terms')}
-              </Link>
-            </div>
+          <div className="text-sm opacity-75 text-center md:text-left">
+            <p>{t('footer.copyright')}</p>
+            <p>UEN202525801M</p>
           </div>
         </div>
       </div>
