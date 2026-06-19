@@ -174,15 +174,25 @@ const TermsConditions = () => {
           <CardContent className="p-6 space-y-4">
             <h2 className="text-2xl font-bold text-primary border-b border-border pb-3">11. Make-Up Classes Policy</h2>
             <ul className="space-y-2 text-foreground">
-              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Parents/guardians may reschedule a <strong>maximum of two (2) classes per term</strong>.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Make-up classes are only applicable for absence due to sickness or illness.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Parents/guardians must provide a valid Medical Certificate (MC) to qualify for a make-up class.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span><strong>Deadline for MC Submission:</strong> MC must be submitted within 48 hours of the missed class.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Each child is entitled to <strong>one (1) MC-based make-up class per term only</strong>.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Absences beyond the one (1) MC entitlement will not be eligible for additional make-up classes, even if supported by further MCs.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Make-up classes are subject to availability and scheduling determined by the Company.</span></li>
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>No refunds or class credits will be provided for missed lessons.</span></li>
+            </ul>
+            <h3 className="text-xl font-semibold text-secondary pt-2">Rescheduling Policy</h3>
+            <ul className="space-y-2 text-foreground">
+              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>In addition, parents/guardians may reschedule a <strong>maximum of two (2) classes per term</strong>.</span></li>
               <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Rescheduling requests must be submitted <strong>at least one (1) month in advance</strong>.</span></li>
               <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Requests made with less than one (1) month's notice may still be accommodated at the Company's sole discretion, <strong>subject to availability</strong>.</span></li>
               <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Rescheduled classes are subject to available slots and timings determined by the Company.</span></li>
               <li className="flex items-start"><span className="text-accent mr-2">•</span><span>Unused reschedule entitlements do not carry over to subsequent terms.</span></li>
-              <li className="flex items-start"><span className="text-accent mr-2">•</span><span>No refunds or class credits will be provided for missed lessons.</span></li>
             </ul>
           </CardContent>
         </Card>
+
 
         {/* Section 12 */}
         <Card id="materials" className="shadow-gentle">
