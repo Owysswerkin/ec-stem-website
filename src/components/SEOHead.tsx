@@ -17,9 +17,9 @@ const pageMeta: Record<string, { titleKey: string; descKey: string; noindex?: bo
   '/learning-buddy': { titleKey: 'seo.learningBuddy.title', descKey: 'seo.learningBuddy.description' },
   '/whats-new': { titleKey: 'seo.whatsNew.title', descKey: 'seo.whatsNew.description' },
   '/join-our-team': { titleKey: 'seo.joinTeam.title', descKey: 'seo.joinTeam.description' },
-  '/privacy-policy': { titleKey: 'seo.privacyPolicy.title', descKey: 'seo.privacyPolicy.description', noindex: true },
-  '/cookies-policy': { titleKey: 'seo.cookiesPolicy.title', descKey: 'seo.cookiesPolicy.description', noindex: true },
-  '/terms-conditions': { titleKey: 'seo.termsConditions.title', descKey: 'seo.termsConditions.description', noindex: true },
+  '/privacy-policy': { titleKey: 'seo.privacyPolicy.title', descKey: 'seo.privacyPolicy.description' },
+  '/cookies-policy': { titleKey: 'seo.cookiesPolicy.title', descKey: 'seo.cookiesPolicy.description' },
+  '/terms-conditions': { titleKey: 'seo.termsConditions.title', descKey: 'seo.termsConditions.description' },
   '/policies/access-control': { titleKey: 'seo.accessControl.title', descKey: 'seo.accessControl.description', noindex: true },
 };
 
