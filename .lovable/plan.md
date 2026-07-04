@@ -1,23 +1,20 @@
-## Update Make-Up Classes Policy (Section 11)
+## Fix: Allow legal pages to be indexed by Google
 
-Replace the existing MC-based make-up policy in `src/pages/TermsConditions.tsx` with a new rescheduling policy.
+Google Search Console flagged pages excluded by `noindex`. The tag is set in `src/components/SEOHead.tsx` for four routes. We'll allow the three public legal pages to be indexed and keep the internal Access Control page hidden.
 
-### New Section 11 content
+### Change
 
-- Parents/guardians may reschedule a **maximum of two (2) classes per term**.
-- Rescheduling requests must be submitted **at least one (1) month in advance**.
-- Requests made with less than one (1) month notice may still be accommodated at the Company's discretion, **subject to availability**.
-- Rescheduled classes are subject to available slots and timings determined by the Company.
-- Unused reschedule entitlements do not carry over to subsequent terms.
-- No refunds or class credits will be provided for missed lessons.
+In `src/components/SEOHead.tsx`, remove `noindex: true` from:
+- `/privacy-policy`
+- `/cookies-policy`
+- `/terms-conditions`
 
-### Files to update
+Keep `noindex: true` on:
+- `/policies/access-control` (internal)
 
-- `src/pages/TermsConditions.tsx` — replace the bullet list inside the Section 11 card.
-- `Last updated` header → change from "January 2025" to "June 2026".
+### After deploy
 
-No i18n locale changes needed (this page is English-only static content).
+1. In Google Search Console, use **URL Inspection** on each of the three legal URLs and click **Request Indexing** to speed up re-crawl.
+2. The "Excluded by noindex" report will still list `/policies/access-control` — that's intentional and can be ignored.
 
-### Memory update
-
-Update `mem://legal/terms-and-conditions-policy` to reflect the new make-up/reschedule rules.
+No other files affected.
