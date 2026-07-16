@@ -2,13 +2,11 @@ import React from 'react';
 import edventureLogo from '@/assets/edventure-logo.png';
 import lcentralLogo from '@/assets/lcentral-logo.png';
 import chickyOliveLogo from '@/assets/chicky-olive-logo.png';
-import maplebearLogo from '@/assets/maplebear-labrador-logo.jpg';
 
 const partners = [
 { name: 'Edventure Learning Academy', logo: edventureLogo },
 { name: 'LCENTRAL English', logo: lcentralLogo },
-{ name: 'Chicky & Olive International Preschool', logo: chickyOliveLogo },
-{ name: 'Maple Bear Labrador', logo: maplebearLogo }];
+{ name: 'Chicky & Olive International Preschool', logo: chickyOliveLogo }];
 
 
 // Duplicate for seamless loop
