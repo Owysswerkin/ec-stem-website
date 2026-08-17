@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
 
 
-import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
 import missionBg from '@/assets/mission-bg.png';
 import visionBg from '@/assets/vision-bg.png';
 import teacherJayne from '@/assets/teacher-jayne.jpg';
