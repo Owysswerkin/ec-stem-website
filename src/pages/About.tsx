@@ -6,7 +6,6 @@ import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
 import teamPhoto from '@/assets/team-photo.jpg';
 import missionBg from '@/assets/mission-bg.png';
 import visionBg from '@/assets/vision-bg.png';
-import teacherWanRong from '@/assets/teacher-wan-rong.jpg';
 import teacherJayne from '@/assets/teacher-jayne.jpg';
 import teacherFlynne from '@/assets/teacher-flynne.jpg';
 const About = () => {
@@ -15,13 +14,6 @@ const About = () => {
   } = useTranslation();
   const [expandedTeacher, setExpandedTeacher] = useState<number | null>(null);
   const team = [{
-    name: t('aboutPage.team.jennifer.name'),
-    role: t('aboutPage.team.jennifer.role'),
-    image: teacherWanRong,
-    description: t('aboutPage.team.jennifer.description'),
-    bgColor: 'bg-pink-200',
-    badgeColor: 'bg-emerald-500 text-white'
-  }, {
     name: t('aboutPage.team.david.name'),
     role: t('aboutPage.team.david.role'),
     image: teacherJayne,
