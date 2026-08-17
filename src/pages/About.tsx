@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import msHuangPortrait from '@/assets/ms-huang-founder-cropped.jpg';
 
 
-import teamPhoto from '@/assets/team-photo.jpg';
 import missionBg from '@/assets/mission-bg.png';
 import visionBg from '@/assets/vision-bg.png';
 import teacherJayne from '@/assets/teacher-jayne.jpg';
@@ -32,7 +31,6 @@ const About = () => {
       {/* Header Hero - Soft Pastel */}
       <section className="relative min-h-[50vh] flex items-center bg-gradient-to-br from-sky-50 via-rose-50 to-amber-50">
         <div className="absolute inset-0 overflow-hidden">
-          <img src={teamPhoto} alt={t('aboutPage.altText.team')} className="w-full h-full object-cover opacity-15" loading="lazy" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
